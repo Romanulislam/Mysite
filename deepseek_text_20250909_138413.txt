@@ -1,0 +1,21 @@
+your-website.zip/
+├── index.html
+├── online-doctor-bd.html
+├── reviews.html
+├── contact.html
+├── blog.html
+├── admin/
+│   ├── index.html
+│   └── config.yml
+├── blog/
+│   └── 2023-11-15-telimedicine-ki.md
+├── assets/
+│   ├── css/
+│   │   └── styles.css
+│   └── images/
+│       ├── whatsapp.gif
+│       ├── og-placeholder.png
+│       └── profile-placeholder.jpg
+├── build.js
+├── package.json
+└── README.txt

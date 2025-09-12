@@ -1,0 +1,16 @@
+{
+  "name": "mysite",
+  "version": "1.0.0",
+  "description": "Dr. Romanul Islam website",
+  "main": "index.html",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "fs-extra": "^11.0.0",
+    "markdown-it": "^13.0.1"
+  },
+  "engines": {
+    "node": "16"
+  }
+}
