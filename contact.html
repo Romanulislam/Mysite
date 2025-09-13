@@ -5,26 +5,331 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>যোগাযোগ | ডা. রোমানুল ইসলাম – যোগাযোগ ও চেম্বার</title>
   <meta name="description" content="টেলিমেডিসিনের জন্য WhatsApp-এ যোগাযোগ করুন। অফলাইন চেম্বারের ঠিকানা ও মানচিত্র।">
-  <link rel="canonical" href="/contact.html">
+  <link rel="canonical" href="https://www.romanulislam.com/contact.html">
   <meta name="theme-color" content="#0ea5a5">
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="যোগাযোগ | ডা. রোমানুল ইসলাম – যোগাযোগ ও চেম্বার">
   <meta property="og:description" content="টেলিমেডিসিনের জন্য WhatsApp-এ যোগাযোগ করুন। অফলাইন চেম্বারের ঠিকানা ও মানচিত্র।">
-  <meta property="og:url" content="/contact.html">
+  <meta property="og:url" content="https://www.romanulislam.com/contact.html">
   <meta property="og:image" content="assets/images/og-placeholder.png">
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="যোগাযোগ | ডা. রোমানুল ইসলাম – যোগাযোগ ও চেম্বার">
+  <meta name="twitter:title" content="যোগাযোগ | ডা. রোমানুল ইসলাম – যোগাযোগ ও চেম্বار">
   <meta name="twitter:description" content="টেলিমেডিসিনের জন্য WhatsApp-এ যোগাযোগ করুন। অফলাইন চেম্বারের ঠিকানা ও মানচিত্র।">
   <meta name="twitter:image" content="assets/images/og-placeholder.png">
-  <!-- Fonts -->
+  <!-- Preload critical resources -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- AOS for simple scroll animations -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Inline critical CSS -->
+  <style>
+    /* Critical CSS from index.html with additions for contact page */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Noto Sans Bengali', 'Inter', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f5f7fa;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Header Styles */
+    .site-header {
+      background: linear-gradient(135deg, #0ea5a5 0%, #0c7a7a 100%);
+      color: white;
+      padding: 15px 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .brand {
+      font-size: 24px;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+    }
+    
+    .site-header nav {
+      display: flex;
+    }
+    
+    .site-header nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    
+    .site-header nav a:hover {
+      color: #e0f7fa;
+    }
+    
+    /* Section Styles */
+    .section {
+      padding: 60px 0;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    }
+    
+    .card h2 {
+      color: #0c7a7a;
+      margin-bottom: 20px;
+      font-size: 1.6rem;
+    }
+    
+    /* Contact Page Specific Styles */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      align-items: start;
+    }
+    
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 25px;
+    }
+    
+    .contact-list li {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    .contact-list strong {
+      min-width: 100px;
+      display: inline-block;
+    }
+    
+    .map-container {
+      height: 400px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    }
+    
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    
+    .chamber-list {
+      margin-top: 30px;
+    }
+    
+    .chamber-card {
+      background: #f8fafc;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 4px solid #0ea5a5;
+    }
+    
+    .chamber-card h3 {
+      color: #0c7a7a;
+      margin-bottom: 10px;
+    }
+    
+    /* Button Styles */
+    .btn {
+      display: inline-block;
+      background-color: #ff7043;
+      color: white;
+      padding: 14px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+    
+    .btn:hover {
+      background-color: #f4511e;
+      transform: translateY(-3px);
+    }
+    
+    .cta {
+      margin-top: 20px;
+    }
+    
+    /* Footer Styles */
+    .site-footer {
+      background: #0c7a7a;
+      color: white;
+      padding: 50px 0 20px;
+    }
+    
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    
+    .site-footer h3, .site-footer h4 {
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+    
+    .site-footer h3:after, .site-footer h4:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 50px;
+      height: 2px;
+      background: #0ea5a5;
+    }
+    
+    .site-footer a {
+      color: #e0f7fa;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .site-footer a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+    
+    .copyright {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    /* WhatsApp Float */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      right: 40px;
+      border-radius: 50px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      background-color: #25D366;
+    }
+    
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+    
+    .whatsapp-float img {
+      width: 70%;
+      height: auto;
+      border-radius: 50%;
+    }
+    
+    /* Skip link for accessibility */
+    .skip a {
+      position: absolute;
+      left: -10000px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    
+    .skip a:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      background: #0ea5a5;
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+    }
+    
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .nav {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .site-header nav {
+        margin-top: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      
+      .site-header nav a {
+        margin: 0 10px 10px;
+      }
+      
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .map-container {
+        height: 300px;
+        order: -1;
+      }
+      
+      .contact-list li {
+        flex-direction: column;
+      }
+      
+      .contact-list strong {
+        min-width: auto;
+        margin-bottom: 5px;
+      }
+      
+      .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+      }
+    }
+  </style>
+  <!-- Defer non-critical CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  </noscript>
 </head>
 <body>
 <div class="skip"><a href="#main">Skip to content</a></div>
@@ -35,7 +340,7 @@
       <a href="index.html">হোম</a>
       <a href="online-doctor-bd.html">সেবা</a>
       <a href="blog.html">ব্লগ</a>
-      <a href="reviews.html">রোগীর মতামত</a>
+      <a href="reviews.html">রিভিউ</a>
       <a href="contact.html">যোগাযোগ</a>
     </nav>
   </div>
@@ -43,68 +348,166 @@
 <main id="main">
 
 <section class="section">
-  <div class="container contact-grid">
-    <div class="card" data-aos="fade-right">
-      <h1>যোগাযোগ</h1>
-      <ul class="contact-list">
-        <li><strong>WhatsApp:</strong> <a href="https://wa.me/8801826589958" target="_blank" rel="noopener">+8801826589958</a></li>
-        <li><strong>ইমেইল:</strong> dr.romanulislam@gmail.com</li>
-        <li><strong>চেম্বার:</strong> ডি সি রোড, চট্টগ্রাম 4203</li>
-        <li><strong>সময়সূচি:</strong> প্রতিদিন সকাল ৭টা থেকে রাত ১ টা (অনলাইন), অফলাইন অ্যাপয়েন্টমেন্ট অনুযায়ী</li>
-      </ul>
-      <div class="cta">
-        <a class="btn" href="https://wa.me/8801826589958" target="_blank">WhatsApp-এ মেসেজ করুন</a>
+  <div class="container">
+    <div class="contact-grid">
+      <div class="card">
+        <h1>যোগাযোগ</h1>
+        <ul class="contact-list">
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/8801826589958" target="_blank" rel="noopener">+8801826589958</a></li>
+          <li><strong>ইমেইল:</strong> dr.romanulislam@gmail.com</li>
+          <li><strong>সময়সূচি:</strong> প্রতিদিন সকাল ৭টা থেকে রাত ১ টা (অনলাইন), অফলাইন অ্যাপয়েন্টমেন্ট অনুযায়ী</li>
+        </ul>
+        
+        <div class="chamber-list">
+          <h2>চেম্বার সমূহ</h2>
+          
+          <div class="chamber-card">
+            <h3>প্রধান চেম্বার</h3>
+            <p><strong>ঠিকানা:</strong> ডি সি রোড, চট্টগ্রাম 4203</p>
+            <p><strong>সময়:</strong> শনি থেকে বৃহস্পতিবার: সন্ধ্যা ৬:০০ - রাত ১০:০০</p>
+            <p><strong>যোগাযোগ:</strong> +8801826589958</p>
+          </div>
+          
+          <div class="chamber-card">
+            <h3>বাংলাদেশ স্পেশালাইজড হাসপাতাল</h3>
+            <p><strong>ঠিকানা:</strong> ওয়াসা রোড, শাহাজাদপুর, চট্টগ্রাম</p>
+            <p><strong>সময়:</strong> শুক্রবার বন্ধ | শনি-বৃহ: সকাল ১০:০০ - দুপুর ২:০০</p>
+            <p><strong>যোগাযোগ:</strong> +8801826589958</p>
+          </div>
+        </div>
+        
+        <div class="cta">
+          <a class="btn" href="https://wa.me/8801826589958" target="_blank" rel="noopener">WhatsApp-এ মেসেজ করুন</a>
+        </div>
+      </div>
+      
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.049532862803!2d91.83758627529404!3d22.35175847964948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad27f9e92415a1%3A0x6c726c2ab2879ae6!2sDr.%20Md.%20Romanul%20Islam%20%E2%80%93%20Online%20Doctor%20Consultation%20in%20BD!5e0!3m2!1sen!2sbd!4v1700000000000!5m2!1sen!2sbd" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          alt="ডা. রোমানুল ইসলামের চেম্বারের গুগল ম্যাপ লোকেশন">
+        </iframe>
+        <p style="margin-top: 8px; color: #475569; text-align: center;">ডি সি রোড, চট্টগ্রাম 4203</p>
       </div>
     </div>
-   <div class="map-container">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.049532862803!2d91.83758617529398!3d22.35175847964948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad27f9e92415a1%3A0x6c726c2ab2879ae6!2sDr.%20Md.%20Romanul%20Islam%20%E2%80%93%20Online%20Doctor%20Consultation%20in%20BD!5e0!3m2!1sbn!2sbd!4v1756924209057!5m2!1sbn!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <p style="margin-top:8px; color:#475569;">ডি সি রোড, চট্টগ্রাম 4203</p>
-</div>
   </div>
 </section>
 
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "ডা. রোমানুল ইসলাম (টেলিমেডিসিন)", "telephone": "+8801826589958", "address": {"@type": "PostalAddress", "addressLocality": "Chittagong", "addressRegion": "Chittagong", "postalCode": "4203", "addressCountry": "BD", "streetAddress": "D.C Road"}, "geo": {"@type": "GeoCoordinates", "latitude": 22.351966857064628, "longitude": 91.8401718249049}, "openingHours": ["Mo-Su 07:00-01:00"]}
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "ডা. রোমানুল ইসলাম (টেলিমেডিসিন)",
+  "medicalSpecialty": ["Internal Medicine", "Family Medicine", "Telemedicine"],
+  "description": "বাংলাদেশে ২৪/৭ টেলিমেডিসিন পরামর্শ। এমবিবিএস (চমেক), এফসিপিএস পার্ট-১ (মেডিসিন), এমসিজিপি (বিজিএইচআরআই), সিএমইউ (আল্ট্রাসনোগ্রাফি)।",
+  "url": "https://www.romanulislam.com/contact.html",
+  "telephone": "+8801826589958",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "D.C Road",
+    "addressLocality": "Chittagong",
+    "addressRegion": "Chittagong",
+    "postalCode": "4203",
+    "addressCountry": "BD"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 22.34195465741596,
+    "longitude": 91.8529112167778
+  },
+  "openingHours": [
+    "Mo-Su 07:00-13:00",
+    "Mo-Th 18:00-22:00",
+    "Sa-Th 10:00-14:00"
+  ],
+  "sameAs": []
+}
 </script>
 
 </main>
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>ডা. রোমানুল ইসলাম</h3>
-                    <p>২৪/৭ ঘরে বসে ডাক্তারের পরামর্শ --- Best Online Doctor BD</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>দ্রুত যোগাযোগ</h3>
-                    <ul>
-                        <li>WhatsApp: <a href="https://wa.me/8801826589958">+8801826589958</a></li>
-                        <li>Email: <a href="mailto:dr.romanulislam@gmail.com">dr.romanulislam@gmail.com</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>দরকারী লিংক</h3>
-                    <ul>
-                        <li><a href="index.html">হোম</a></li>
-                        <li><a href="services.html">সেবা</a></li>
-                        <li><a href="blog.html">ব্লগ</a></li>
-                        <li><a href="reviews.html">রোগীর মতামত</a></li>
-                        <li><a href="contact.html">যোগাযোগ</a></li>
-                    </ul>
-                </div>
-            </div>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>ডা. রোমানুল ইসলাম</h3>
+        <p>২৪/৭ ঘরে বসে ডাক্তারের পরামর্শ --- Best Online Doctor BD</p>
+      </div>
+      <div>
+        <h3>দ্রুত যোগাযোগ</h3>
+        <ul>
+          <li>WhatsApp: <a href="https://wa.me/8801826589958" rel="noopener" target="_blank">+8801826589958</a></li>
+          <li>Email: <span>dr.romanulislam@gmail.com</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>লিংক</h3>
+        <ul>
+          <li><a href="index.html">হোম</a></li>
+          <li><a href="online-doctor-bd.html">সেবা</a></li>
+          <li><a href="blog.html">ব্লগ</a></li>
+          <li><a href="reviews.html">রিভিউ</a></li>
+          <li><a href="contact.html">যোগাযোগ</a></li>
+        </ul>
+      </div>
+    </div>
     <p class="copyright">© <span id="year"></span> Dr. Romanul Islam. All rights reserved.</p>
   </div>
 </footer>
 
-<a class="whatsapp-float" href="https://wa.me/8801826589958?text=স্যার, আমি একটি অ্যাপয়ন্টমেন্ট বুক করতে চাই" target="_blank" aria-label="WhatsApp Chat">
-  <img src="assets/images/whatsapp.gif" alt="WhatsApp">
+<a class="whatsapp-float" href="https://wa.me/8801826589958?text=স্যার, আমি একটি অ্যাপয়ন্টমেন্ট বুক করতে চাই" target="_blank" rel="noopener" aria-label="WhatsApp Chat">
+  <img src="assets/images/whatsapp-icon.svg" alt="WhatsApp" width="60" height="60" loading="lazy">
 </a>
 
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script src="assets/js/main.js"></script>
+<!-- Defer non-critical JavaScript -->
+<script>
+  // Set current year for copyright
+  document.getElementById('year').textContent = new Date().getFullYear();
+  
+  // Load AOS animation library asynchronously
+  function loadAOS() {
+    if (typeof AOS !== 'undefined') {
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
+      });
+    }
+  }
+  
+  // Load scripts with minimal impact on page load
+  if (window.requestIdleCallback) {
+    window.requestIdleCallback(function() {
+      var script = document.createElement('script');
+      script.src = 'https://unpkg.com/aos@2.3.4/dist/aos.js';
+      script.onload = loadAOS;
+      document.body.appendChild(script);
+    });
+  } else {
+    setTimeout(function() {
+      var script = document.createElement('script');
+      script.src = 'https://unpkg.com/aos@2.3.4/dist/aos.js';
+      script.onload = loadAOS;
+      document.body.appendChild(script);
+    }, 1000);
+  }
+  
+  // Lazy load map iframe when in viewport
+  document.addEventListener('DOMContentLoaded', function() {
+    const mapFrame = document.querySelector('.map-container iframe');
+    
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(function(entries) {
+        if (entries[0].isIntersecting) {
+          const src = mapFrame.getAttribute('src');
+          mapFrame.setAttribute('src', src);
+          observer.disconnect();
+        }
+      });
+      
+      observer.observe(mapFrame);
+    }
+  });
+</script>
 </body>
 </html>
