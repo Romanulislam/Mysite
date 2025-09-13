@@ -1,237 +1,681 @@
 <!DOCTYPE html>
-<html lang="bn" dir="ltr">
+<html lang="bn">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ব্লগ | ডা. রোমানুল ইসলাম – স্বাস্থ্য বিষয়ক টিপস এবং আপডেট</title>
-  <meta name="description" content="ডা. রোমানুল ইসলাম-এর ব্লগে স্বাস্থ্য বিষয়ক টিপস, টেলিমেডিসিন এবং সাধারণ স্বাস্থ্য সমস্যার সমাধান জানুন।">
-  <link rel="canonical" href="https://romanulislam.com/blog.html">
-  <meta name="theme-color" content="#0ea5a5">
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="ব্লগ | ডা. রোমানুল ইসলাম – স্বাস্থ্য বিষয়ক টিপস এবং আপডেট">
-  <meta property="og:description" content="ডা. রোমানুল ইসলাম-এর ব্লগে স্বাস্থ্য বিষয়ক টিপস, টেলিমেডিসিন এবং সাধারণ স্বাস্থ্য সমস্যার সমাধান জানুন।">
-  <meta property="og:url" content="/blog.html">
-  <meta property="og:image" content="assets/images/og-placeholder.png">
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="ব্লগ | ডা. রোমানুল ইসলাম – স্বাস্থ্য বিষয়ক টিপস এবং আপডেট">
-  <meta name="twitter:description" content="ডা. রোমানুল ইসলাম-এর ব্লগে স্বাস্থ্য বিষয়ক টিপস, টেলিমেডিসিন এবং সাধারণ স্বাস্থ্য সমস্যার সমাধান জানুন।">
-  <meta name="twitter:image" content="assets/images/og-placeholder.png">
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- AOS for simple scroll animations -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <style>
-    .blog-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-      gap: 2rem;
-      margin: 2rem 0;
-    }
-    
-    .blog-card {
-      background: white;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      height: 100%;
-    }
-    
-    .blog-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.15);
-    }
-    
-    .blog-card-content {
-      padding: 1.5rem;
-    }
-    
-    .blog-card-meta {
-      display: flex;
-      gap: 1rem;
-      margin-bottom: 0.5rem;
-      font-size: 0.9rem;
-      color: #64748b;
-    }
-    
-    .blog-card-title {
-      font-size: 1.25rem;
-      margin-bottom: 0.75rem;
-      color: #0ea5a5;
-    }
-    
-    .blog-card-title a {
-      color: inherit;
-      text-decoration: none;
-    }
-    
-    .blog-card-title a:hover {
-      text-decoration: underline;
-    }
-    
-    .blog-card-excerpt {
-      color: #475569;
-      margin-bottom: 1rem;
-    }
-    
-    .blog-card-footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 1rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ব্লগ | ডা. রোমানুল ইসলাম - স্বাস্থ্য বিষয়ক টিপস এবং আপডেট</title>
+    <meta name="description" content="ডা. রোমানুল ইসলাম-এর ব্লগে স্বাস্থ্য বিষয়ক টিপস, টেলিমেডিসিন এবং সাধারণ স্বাস্থ্য সমস্যার সমাধান জানুন।">
+    <meta name="keywords" content="ঘরে বসে ডাক্তারের পরামর্শ, online doctor bd, টেলিমেডিসিন, স্বাস্থ্য ব্লগ, ডা. রোমানুল ইসলাম">
+    <meta name="theme-color" content="#0ea5a5">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ব্লগ | ডা. রোমানুল ইসলাম - স্বাস্থ্য বিষয়ক টিপস এবং আপডেট">
+    <meta property="og:description" content="ডা. রোমানুল ইসলাম-এর ব্লগে স্বাস্থ্য বিষয়ক টিপস, টেলিমেডিসিন এবং সাধারণ স্বাস্থ্য সমস্যার সমাধান জানুন।">
+    <meta property="og:url" content="https://www.romanulislam.com/blog">
+    <meta property="og:image" content="https://www.romanulislam.com/assets/images/og-image.jpg">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ব্লগ | ডা. রোমানুল ইসলাম - স্বাস্থ্য বিষয়ক টিপস এবং আপডেট">
+    <meta name="twitter:description" content="ডা. রোমানুল ইসলাম-এর ব্লগে স্বাস্থ্য বিষয়ক টিপস, টেলিমেডিসিন এবং সাধারণ স্বাস্থ্য সমস্যার সমাধান জানুন।">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+            width: 100%;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            width: 100%;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #0ea5a5 0%, #0c7a7a 100%);
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo span {
+            margin-right: 8px;
+            font-size: 24px;
+        }
+        
+        nav {
+            width: 100%;
+            margin-top: 15px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 5px 10px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 15px;
+            display: block;
+        }
+        
+        nav ul li a:hover, nav ul li a:focus {
+            color: #0c7a7a;
+            background-color: white;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(14, 165, 165, 0.8), rgba(14, 165, 165, 0.9)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect fill="%230ea5a5" width="100" height="100"/><path fill="%230c7a7a" d="M0 0L100 100M100 0L0 100" stroke-width="0.5"/></svg>');
+            background-size: cover;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .hero h1 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            padding: 0 10px;
+        }
+        
+        .hero p {
+            font-size: 1rem;
+            max-width: 100%;
+            margin: 0 auto 20px;
+            padding: 0 15px;
+        }
+        
+        .content-section {
+            padding: 40px 0;
+            width: 100%;
+        }
+        
+        .section-title {
+            text-align: center;
+            color: #0c7a7a;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+            position: relative;
+            padding: 0 10px;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #0ea5a5;
+            margin: 15px auto;
+            border-radius: 2px;
+        }
+        
+        .blog-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-top: 30px;
+            width: 100%;
+        }
+        
+        .blog-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+            width: 100%;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .blog-card-content {
+            padding: 20px;
+        }
+        
+        .blog-card-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #64748b;
+        }
+        
+        .blog-card-title {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            color: #0c7a7a;
+        }
+        
+        .blog-card-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .blog-card-title a:hover, .blog-card-title a:focus {
+            color: #0ea5a5;
+            text-decoration: underline;
+        }
+        
+        .blog-card-excerpt {
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .blog-card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+        
+        .read-more {
+            display: inline-block;
+            background-color: #0ea5a5;
+            color: white;
+            padding: 8px 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        
+        .read-more:hover, .read-more:focus {
+            background-color: #0c7a7a;
+            transform: translateY(-2px);
+        }
+        
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 30px 0;
+            justify-content: center;
+        }
+        
+        .category-btn {
+            padding: 8px 16px;
+            background: white;
+            border: 1px solid #0ea5a5;
+            border-radius: 50px;
+            color: #0c7a7a;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        
+        .category-btn:hover, .category-btn.active {
+            background: #0ea5a5;
+            color: white;
+        }
+        
+        footer {
+            background: #0c7a7a;
+            color: white;
+            padding: 40px 0 20px;
+            width: 100%;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            position: relative;
+            padding-bottom: 8px;
+        }
+        
+        .footer-section h3:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 2px;
+            background: #0ea5a5;
+        }
+        
+        .footer-section p, .footer-section li {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+        
+        .footer-section a {
+            color: #e0f7fa;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover, .footer-section a:focus {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 14px;
+        }
+        
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            bottom: 20px;
+            right: 20px;
+            border-radius: 50%;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            background-color: #25D366;
+        }
+        
+        .whatsapp-float:hover, .whatsapp-float:focus {
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .whatsapp-icon {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+        
+        /* Breadcrumb */
+        .breadcrumb {
+            padding: 15px 0;
+            font-size: 0.9rem;
+            color: #444;
+            width: 100%;
+        }
+        
+        .breadcrumb a {
+            color: #0a5c5c;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .breadcrumb a:hover, .breadcrumb a:focus {
+            text-decoration: underline;
+            color: #083a3a;
+        }
+        
+        /* Media Queries for Larger Screens */
+        @media (min-width: 480px) {
+            .logo {
+                font-size: 22px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .header-content {
+                flex-wrap: nowrap;
+            }
+            
+            nav {
+                width: auto;
+                margin-top: 0;
+            }
+            
+            nav ul {
+                justify-content: flex-end;
+            }
+            
+            .logo {
+                font-size: 24px;
+            }
+            
+            .hero {
+                padding: 60px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+                max-width: 800px;
+            }
+            
+            .content-section {
+                padding: 60px 0;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .blog-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+            
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+            
+            .whatsapp-float {
+                width: 60px;
+                height: 60px;
+                bottom: 30px;
+                right: 30px;
+            }
+            
+            .whatsapp-icon {
+                width: 35px;
+                height: 35px;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .blog-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .footer-content {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .container {
+                padding: 0 20px;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            /* Ensure no horizontal scrolling */
+            html, body {
+                overflow-x: hidden;
+            }
+            
+            /* Adjust container padding for mobile */
+            .container {
+                padding: 0 15px;
+            }
+            
+            /* Make sure all elements stay within viewport */
+            .blog-card, .footer-section {
+                max-width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-<div class="skip"><a href="#main">Skip to content</a></div>
-<header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="index.html">👨‍⚕️ডা. রোমানুল ইসলাম</a>
-    <nav>
-      <a href="index.html">হোম</a>
-      <a href="online-doctor-bd.html">সেবা</a>
-      <a href="blog.html">ব্লগ</a>
-      <a href="reviews.html">রোগীর মতামত</a>
-      <a href="contact.html">যোগাযোগ</a>
-    </nav>
-  </div>
-</header>
-<main id="main">
-
-<section class="section">
-  <div class="container">
-    <h1 data-aos="fade-up">স্বাস্থ্য বিষয়ক ব্লগ</h1>
-    <p class="lead" data-aos="fade-up">ঘরে বসে স্বাস্থ্য সম্পর্কিত প্রয়োজনীয় তথ্য এবং টিপস জানুন</p>
-    
-    <div id="blog-posts" class="blog-grid">
-      <!-- Blog posts will be dynamically loaded here -->
-      <div class="blog-card" data-aos="fade-up">
-        <div class="blog-card-content">
-          <div class="blog-card-meta">
-            <span>১৫ নভেম্বর, ২০২৩</span> | <span>ডা. রোমানুল ইসলাম</span>
-          </div>
-          <h2 class="blog-card-title"><a href="telemedicineki.html">টেলিমেডিসিন কী এবং কিভাবে এটি কাজ করে?</a></h2>
-          <p class="blog-card-excerpt">টেলিমেডিসিন হল প্রযুক্তির মাধ্যমে দূরবর্তী চিকিৎসা সেবা প্রদান। এটি ইন্টারনেটের মাধ্যমে ডাক্তার এবং রোগীর মধ্যে যোগাযোগ স্থাপন করে।</p>
-          <div class="blog-card-footer">
-            <a href="telemedicineki.html" class="btn outline">আরও পড়ুন</a>
-          </div>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span>👨‍⚕️</span> ডা. রোমানুল ইসলাম
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">হোম</a></li>
+                        <li><a href="services.html">সেবা</a></li>
+                        <li><a href="blog.html">ব্লগ</a></li>
+                        <li><a href="reviews.html">রোগীর মতামত</a></li>
+                        <li><a href="contact.html">যোগাযোগ</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>স্বাস্থ্য বিষয়ক ব্লগ</h1>
+            <p>ঘরে বসে স্বাস্থ্য সম্পর্কিত প্রয়োজনীয় তথ্য এবং টিপস জানুন। টেলিমেডিসিন এবং online doctor bd সম্পর্কে জানুন।</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">হোম</a> &gt; <span>ব্লগ</span>
+        </div>
     </div>
 
-  <div id="blog-posts" class="blog-grid">
-      <!-- Blog posts will be dynamically loaded here -->
-      <div class="blog-card" data-aos="fade-up">
-        <div class="blog-card-content">
-          <div class="blog-card-meta">
-            <span>১৩ সেপ্টেম্বর, ২০২৫</span> | <span>ডা. রোমানুল ইসলাম</span>
-          </div>
-          <h2 class="blog-card-title"><a href="nasal-congestion.html">নাকের সর্দি: কারণ, লক্ষণ ও ঘরোয়া উপায়</a></h2>
-          <p class="blog-card-excerpt">নাক বন্ধ হলে ঘরোয়া উপায়, ঠান্ডায় নাক বন্ধ হলে করনীয়, এক নাক বন্ধ হলে করনীয় সম্পর্কে সম্পূর্ণ গাইড</p>
-          <div class="blog-card-footer">
-            <a href="nasal-congestion.html" class="btn outline">আরও পড়ুন</a>
-          </div>
+    <!-- Blog Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">সাম্প্রতিক ব্লগ পোস্ট</h2>
+            
+            <div class="categories">
+                <a href="#" class="category-btn active">সব বিষয়</a>
+                <a href="#" class="category-btn">টেলিমেডিসিন</a>
+                <a href="#" class="category-btn">ঘরোয়া চিকিৎসা</a>
+                <a href="#" class="category-btn">স্বাস্থ্য টিপস</a>
+                <a href="#" class="category-btn">রোগ প্রতিরোধ</a>
+            </div>
+            
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span>১৫ নভেম্বর, ২০২৩</span> | <span>ডা. রোমানুল ইসলাম</span>
+                        </div>
+                        <h3 class="blog-card-title"><a href="telemedicineki.html">টেলিমেডিসিন কী এবং কিভাবে এটি কাজ করে?</a></h3>
+                        <p class="blog-card-excerpt">টেলিমেডিসিন হল প্রযুক্তির মাধ্যমে দূরবর্তী চিকিৎসা সেবা প্রদান। এটি ইন্টারনেটের মাধ্যমে ডাক্তার এবং রোগীর মধ্যে যোগাযোগ স্থাপন করে।</p>
+                        <div class="blog-card-footer">
+                            <a href="telemedicineki.html" class="read-more">আরও পড়ুন</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span>১৩ সেপ্টেম্বর, ২০২৫</span> | <span>ডা. রোমানুল ইসলাম</span>
+                        </div>
+                        <h3 class="blog-card-title"><a href="nasal-congestion.html">নাকের সর্দি: কারণ, লক্ষণ ও ঘরোয়া উপায়</a></h3>
+                        <p class="blog-card-excerpt">নাক বন্ধ হলে ঘরোয়া উপায়, ঠান্ডায় নাক বন্ধ হলে করনীয়, এক নাক বন্ধ হলে করনীয় সম্পর্কে সম্পূর্ণ গাইড</p>
+                        <div class="blog-card-footer">
+                            <a href="nasal-congestion.html" class="read-more">আরও পড়ুন</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span>১০ সেপ্টেম্বর, ২০২৫</span> | <span>ডা. রোমানুল ইসলাম</span>
+                        </div>
+                        <h3 class="blog-card-title"><a href="diabetes-management.html">ডায়াবেটিস নিয়ন্ত্রণ: খাদ্য, exercise এবং lifestyle টিপস</a></h3>
+                        <p class="blog-card-excerpt">ডায়াবেটিস নিয়ন্ত্রণে রাখার সহজ উপায়, কী খাবেন, কী evit করবেন এবং daily routine কীভাবে maintain করবেন</p>
+                        <div class="blog-card-footer">
+                            <a href="diabetes-management.html" class="read-more">আরও পড়ুন</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span>৫ সেপ্টেম্বর, ২০২৫</span> | <span>ডা. রোমানুল ইসলাম</span>
+                        </div>
+                        <h3 class="blog-card-title"><a href="stress-management.html">মানসিক চাপ management: কাজের চাপে how to stay healthy</a></h3>
+                        <p class="blog-card-excerpt">দৈনন্দিন কাজের চাপ এবং মানসিক চাপ management এর কার্যকরী উপায়, meditation এবং relaxation techniques</p>
+                        <div class="blog-card-footer">
+                            <a href="stress-management.html" class="read-more">আরও পড়ুন</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span>১ সেপ্টেম্বর, ২০২৫</span> | <span>ডা. রোমানুল ইসলাম</span>
+                        </div>
+                        <h3 class="blog-card-title"><a href="immunity-booster.html">রোগ প্রতিরোধ ক্ষমতা বাড়ানোর ১০টি effective উপায়</a></h3>
+                        <p class="blog-card-excerpt">প্রাকৃতিকভাবে immunity booster foods, vitamins এবং lifestyle changes এর মাধ্যমে রোগ প্রতিরোধ ক্ষমতা如何 বাড়াবেন</p>
+                        <div class="blog-card-footer">
+                            <a href="immunity-booster.html" class="read-more">আরও পড়ুন</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span>২৮ আগস্ট, ২০২৫</span> | <span>ডা. রোমানুল ইসলাম</span>
+                        </div>
+                        <h3 class="blog-card-title"><a href="child-health.html">শিশুর health care: সাধারণ সমস্যা এবং সমাধান</a></h3>
+                        <p class="blog-card-excerpt">শিশুর常见的 health problems, vaccination schedule, nutrition এবং什么时候 doctor-এর পরামর্শ নেবেন</p>
+                        <div class="blog-card-footer">
+                            <a href="child-health.html" class="read-more">আরও পড়ুন</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<script>
-  // This will load blog posts from a hardcoded list since the JSON approach isn't working
-  document.addEventListener('DOMContentLoaded', function() {
-    // Sample blog data - replace with your actual blog posts
-    const blogPosts = [
-      {
-        slug: 'telemedicineki',
-        title: 'টেলিমেডিসিন কী এবং কিভাবে এটি কাজ করে?',
-        date: '2023-11-15',
-        excerpt: 'টেলিমেডিসিন হল প্রযুক্তির মাধ্যমে দূরবর্তী চিকিৎসা সেবা প্রদান। এটি ইন্টারনেটের মাধ্যমে ডাক্তার এবং রোগীর মধ্যে যোগাযোগ স্থাপন করে।',
-        author: 'ডা. রোমানুল ইসলাম'
-      }
-    ];
-    [
-    {
-        slug: 'nasal-congestion',
-        title: 'নাকের সর্দি: কারণ, লক্ষণ ও ঘরোয়া উপায়',
-        date: '2025-09-13',
-        excerpt: 'নাক বন্ধ হলে ঘরোয়া উপায়, ঠান্ডায় নাক বন্ধ হলে করনীয়, এক নাক বন্ধ হলে করনীয় সম্পর্কে সম্পূর্ণ গাইড',
-        author: 'ডা. রোমানুল ইসলাম'
-      }
-      // Add more posts here as needed
-    ];
-    
-    const container = document.getElementById('blog-posts');
-    container.innerHTML = ''; // Clear the sample content
-    
-    blogPosts.forEach(post => {
-      const formattedDate = new Date(post.date).toLocaleDateString('bn-BD');
-      const postElement = document.createElement('div');
-      postElement.className = 'blog-card';
-      postElement.innerHTML = `
-        <div class="blog-card-content">
-          <div class="blog-card-meta">
-            <span>${formattedDate}</span> | <span>${post.author}</span>
-          </div>
-          <h2 class="blog-card-title"><a href="${post.slug}.html">${post.title}</a></h2>
-          <p class="blog-card-excerpt">${post.excerpt}</p>
-          <div class="blog-card-footer">
-            <a href="${post.slug}.html" class="btn outline">আরও পড়ুন</a>
-          </div>
+    <!-- Newsletter Section -->
+    <section class="content-section" style="background-color: #e0f7fa; padding: 40px 0;">
+        <div class="container">
+            <h2 class="section-title">নিয়মিত health tips পান</h2>
+            <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+                <p>আমাদের newsletter-এ subscribe করুন এবং regular health tips, updates এবং offers পান।</p>
+                <form style="margin-top: 20px; display: flex; flex-direction: column; gap: 10px;">
+                    <input type="email" placeholder="আপনার ইমেইল ঠিকানা" style="padding: 12px; border-radius: 50px; border: 1px solid #ccc; width: 100%;">
+                    <button type="submit" style="background: #0ea5a5; color: white; padding: 12px; border-radius: 50px; border: none; cursor: pointer; font-weight: bold;">Subscribe করুন</button>
+                </form>
+            </div>
         </div>
-      `;
-      container.appendChild(postElement);
-    });
-  });
-</script>
+    </section>
 
-</main>
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <h4>ডা. রোমানুল ইসলাম</h4>
-        <p>২৪/৭ ঘরে বসে ডাক্তারের পরামর্শ --- Best Online Doctor BD</p>
-      </div>
-      <div>
-        <h4>দ্রুত যোগাযোগ</h4>
-        <ul>
-          <li>WhatsApp: <a href="https://wa.me/8801826589958" rel="noopener" target="_blank">+8801826589958</a></li>
-          <li>Email: <span>dr.romanulislam@gmail.com</span></li>
-        </ul>
-      </div>
-      <div>
-        <h4>লিংক</h4>
-        <ul>
-          <li><a href="index.html">হোম</a></li>
-          <li><a href="online-doctor-bd.html">সেবা</a></li>
-          <li><a href="blog.html">ব্লগ</a></li>
-          <li><a href="reviews.html">রোগীর মতামত</a></li>
-          <li><a href="contact.html">যোগাযোগ</a></li>
-        </ul>
-      </div>
-    </div>
-    <p class="copyright">© <span id="year"></span> Dr. Romanul Islam. All rights reserved.</p>
-  </div>
-</footer>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ডা. রোমানুল ইসলাম</h3>
+                    <p>২৪/৭ ঘরে বসে ডাক্তারের পরামর্শ --- Best Online Doctor BD</p>
+                    <p>টেলিমেডিসিন সেবার মাধ্যমে যেকোনো সময়, যেকোনো স্থান থেকে বিশেষজ্ঞ চিকিৎসা পরামর্শ নিন।</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>দ্রুত যোগাযোগ</h3>
+                    <ul>
+                        <li>WhatsApp: <a href="https://wa.me/8801826589958">+8801826589958</a></li>
+                        <li>Email: <a href="mailto:dr.romanulislam@gmail.com">dr.romanulislam@gmail.com</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>দরকারী লিংক</h3>
+                    <ul>
+                        <li><a href="index.html">হোম</a></li>
+                        <li><a href="services.html">সেবা</a></li>
+                        <li><a href="blog.html">ব্লগ</a></li>
+                        <li><a href="reviews.html">রোগীর মতামত</a></li>
+                        <li><a href="contact.html">যোগাযোগ</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© ডা. রোমানুল ইসলাম। সকল স্বত্ব সংরক্ষিত।</p>
+            </div>
+        </div>
+    </footer>
 
-<a class="whatsapp-float" href="https://wa.me/8801826589958?text=স্যার, আমি একটি অ্যাপয়ন্টমেন্ট বুক করতে চাই" target="_blank" aria-label="WhatsApp Chat">
-  <img src="assets/images/whatsapp.gif" alt="WhatsApp">
-</a>
+    <!-- WhatsApp Floating Button -->
+    <a class="whatsapp-float" href="https://wa.me/8801826589958?text=স্যার, আমি একটি অ্যাপয়ন্টমেন্ট বুক করতে চাই" target="_blank" aria-label="WhatsApp Chat">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.510-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335 .157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.864 3.488"/>
+        </svg>
+    </a>
 
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script src="assets/js/main.js"></script>
-<script>
-  // Initialize animations
-  AOS.init({ once: true, duration: 600, easing: "ease-out" });
-  
-  // Set current year in footer
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+    <script>
+        // Simple animation for blog cards
+        document.addEventListener('DOMContentLoaded', function() {
+            const blogCards = document.querySelectorAll('.blog-card');
+            
+            function checkScroll() {
+                blogCards.forEach(card => {
+                    const cardPosition = card.getBoundingClientRect().top;
+                    const screenPosition = window.innerHeight / 1.3;
+                    
+                    if(cardPosition < screenPosition) {
+                        card.style.opacity = 1;
+                        card.style.transform = 'translateY(0)';
+                    }
+                });
+            }
+            
+            // Initialize
+            blogCards.forEach(card => {
+                card.style.opacity = 0;
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            });
+            
+            window.addEventListener('scroll', checkScroll);
+            checkScroll(); // Check on load
+        });
+    </script>
 </body>
 </html>
