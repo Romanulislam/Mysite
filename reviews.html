@@ -277,88 +277,89 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
         
-        /* WhatsApp Floating Button Styles */
-        .whatsapp-float {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 40px;
-            right: 40px;
-            border-radius: 50px;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-            z-index: 100;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-            background-color: #25D366;
-        }
-        
-        .whatsapp-float:hover, .whatsapp-float:focus {
-            transform: scale(1.1);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-        }
-        
-        .whatsapp-icon {
-            width: 35px;
-            height: 35px;
-            fill: white;
-        }
-        
-        .breadcrumb {
-            padding: 15px 0;
-            font-size: 0.9rem;
-            color: #444;
-        }
-        
-        .breadcrumb a {
-            color: #0a5c5c;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        .breadcrumb a:hover, .breadcrumb a:focus {
-            text-decoration: underline;
-            color: #083a3a;
-        }
-        
-        @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            nav ul {
-                margin-top: 20px;
-                justify-content: center;
-                flex-wrap: wrap;
-            }
-            
-            nav ul li {
-                margin: 5px 10px;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .reviews-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .whatsapp-float {
-                width: 50px;
-                height: 50px;
-                bottom: 20px;
-                right: 20px;
-            }
-            
-            .whatsapp-icon {
-                width: 28px;
-                height: 28px;
-            }
-        }
+    /* WhatsApp Float */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      right: 40px;
+      border-radius: 50px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+    
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+    
+    .whatsapp-float img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+    
+    /* Skip link for accessibility */
+    .skip a {
+      position: absolute;
+      left: -10000px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    
+    .skip a:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      background: #0ea5a5;
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+    }
+    
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .nav {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .site-header nav {
+        margin-top: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      
+      .site-header nav a {
+        margin: 0 10px 10px;
+      }
+      
+      .hero .title {
+        font-size: 2rem;
+      }
+      
+      .cta {
+        justify-content: center;
+      }
+      
+      .btn {
+        padding: 12px 25px;
+      }
+      
+      .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+      }
+    }
     </style>
 </head>
 <body>
