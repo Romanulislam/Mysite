@@ -9,7 +9,7 @@
   <meta name="theme-color" content="#0ea5a5">
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="ডা. রোমানুল ইসলাম – টেলিমেডিসিন সেবا | Home">
+  <meta property="og:title" content="ডা. রোমানুল ইসলাম – টেলিমেডিসিন সেবা | Home">
   <meta property="og:description" content="বাংলাদেশে ২৪/৭ টেলিমেডিসিন পরামর্শ। ঘরে বসে ডাক্তারের পরামর্শ। WhatsApp-এ এখনই যোগাযোগ করুন।">
   <meta property="og:url" content="/">
   <meta property="og:image" content="assets/images/og-placeholder.png">
@@ -18,13 +18,323 @@
   <meta name="twitter:title" content="ডা. রোমানুল ইসলাম – টেলিমেডিসিন সেবা | Home">
   <meta name="twitter:description" content="বাংলাদেশে ২৪/৭ টেলিমেডিসিন পরামর্শ। এমবিবিএস (চমেক), এফসিপিএস পার্ট-১ (মেডিসিন), এমসিজিপি (বিজিএইচআরআই), সিএমইউ (আল্ট্রাসনোগ্রাফি)। WhatsApp-এ এখনই যোগাযোগ করুন।">
   <meta name="twitter:image" content="assets/images/og-placeholder.png">
-  <!-- Fonts -->
+  <!-- Preload critical resources -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- AOS for simple scroll animations -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Inline critical CSS -->
+  <style>
+    /* Critical CSS extracted from nasal-congestion.html and optimized */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Noto Sans Bengali', 'Inter', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f5f7fa;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Header Styles */
+    .site-header {
+      background: linear-gradient(135deg, #0ea5a5 0%, #0c7a7a 100%);
+      color: white;
+      padding: 15px 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .brand {
+      font-size: 24px;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+    }
+    
+    .site-header nav {
+      display: flex;
+    }
+    
+    .site-header nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    
+    .site-header nav a:hover {
+      color: #e0f7fa;
+    }
+    
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 0;
+      background: linear-gradient(rgba(14, 165, 165, 0.8), rgba(14, 165, 165, 0.9));
+      color: white;
+    }
+    
+    .hero > div {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+    }
+    
+    .hero .title {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+    
+    .hero .subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+    
+    .badgelist {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
+    
+    .badge {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 8px 15px;
+      border-radius: 50px;
+      font-size: 0.9rem;
+    }
+    
+    .cta {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    
+    .btn {
+      display: inline-block;
+      background-color: #ff7043;
+      color: white;
+      padding: 14px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    
+    .btn:hover {
+      background-color: #f4511e;
+      transform: translateY(-3px);
+    }
+    
+    .btn.outline {
+      background: transparent;
+      border: 2px solid white;
+    }
+    
+    .btn.outline:hover {
+      background: white;
+      color: #0c7a7a;
+    }
+    
+    .kv {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Section Styles */
+    .section {
+      padding: 60px 0;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    }
+    
+    .card h2 {
+      color: #0c7a7a;
+      margin-bottom: 20px;
+      font-size: 1.6rem;
+    }
+    
+    .card ul {
+      padding-left: 20px;
+      margin-bottom: 15px;
+    }
+    
+    .card ul li {
+      margin-bottom: 10px;
+    }
+    
+    /* Footer Styles */
+    .site-footer {
+      background: #0c7a7a;
+      color: white;
+      padding: 50px 0 20px;
+    }
+    
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    
+    .site-footer h4 {
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+    
+    .site-footer h4:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 50px;
+      height: 2px;
+      background: #0ea5a5;
+    }
+    
+    .site-footer a {
+      color: #e0f7fa;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .site-footer a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+    
+    .copyright {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    /* WhatsApp Float */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      right: 40px;
+      border-radius: 50px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+    
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+    
+    .whatsapp-float img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+    
+    /* Skip link for accessibility */
+    .skip a {
+      position: absolute;
+      left: -10000px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    
+    .skip a:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      background: #0ea5a5;
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+    }
+    
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .nav {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .site-header nav {
+        margin-top: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      
+      .site-header nav a {
+        margin: 0 10px 10px;
+      }
+      
+      .hero .title {
+        font-size: 2rem;
+      }
+      
+      .cta {
+        justify-content: center;
+      }
+      
+      .btn {
+        padding: 12px 25px;
+      }
+      
+      .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+      }
+    }
+  </style>
+  <!-- Defer non-critical CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  </noscript>
 </head>
 <body>
 <div class="skip"><a href="#main">Skip to content</a></div>
@@ -42,18 +352,20 @@
 </header>
 <main id="main">
 
-<section class="section hero">
-  <div data-aos="fade-right">
+<section class="hero">
+  <div>
     <h1 class="title">👨‍⚕️ডাক্তার মোহাম্মদ রোমানুল ইসলাম</h1>
-	<h3>🚨রেজিস্টার্ড চিকিৎসক ও সনোলজিস্ট🚨</h3>
-    <p class="subtitle"><b> <ul>
-          <li>🏅এমবিবিএস (চট্টগ্রাম মেডিকেল কলেজ)</li>
-          <li>🏅এফসিপিএস পার্ট ১ (মেডিসিন)</li>
-          <li>🏅এমসিজিপি (বিজিএইচআরআই)</li>
-          <li>🏅সিএমইউ (আল্ট্রাসনোগ্রাফি)</li>
-          রেজিস্ট্রেশন নাম্বারঃ 129438
-        </ul></b></p>
-    <div class="badges badgelist">
+    <h3>🚨রেজিস্টার্ড চিকিৎসক ও সনোলজিস্ট🚨</h3>
+    <p class="subtitle"><b>
+      <ul>
+        <li>🏅এমবিবিএস (চট্টগ্রাম মেডিকেল কলেজ)</li>
+        <li>🏅এফসিপিএস পার্ট ১ (মেডিসিন)</li>
+        <li>🏅এমসিজিপি (বিজিএইচআরআই)</li>
+        <li>🏅সিএমইউ (আল্ট্রাসনোগ্রাফি)</li>
+        <li>রেজিস্ট্রেশন নাম্বারঃ 129438</li>
+      </ul>
+    </b></p>
+    <div class="badgelist">
       <span class="badge">💊মেডিসিন</span>
       <span class="badge">💊বাত-ব্যথা</span>
       <span class="badge">💊ডায়াবেটিস</span>
@@ -62,41 +374,41 @@
       <span class="badge">💊চর্ম ও যৌন রোগ</span>
       <span class="badge">💊মা ও শিশু রোগের অভিজ্ঞ</span>
     </div>
-    <p class="subtitle">২৮/৭ ঘরে বসেই পরামর্শ — WhatsApp-এ সরাসরি যোগাযোগ।</p>
+    <p class="subtitle">২৪/৭ ঘরে বসেই পরামর্শ — WhatsApp-এ সরাসরি যোগাযোগ।</p>
     <div class="cta">
       <a class="btn" href="https://wa.me/8801826589958" target="_blank" rel="noopener">WhatsApp-এ কথা বলুন</a>
       <a class="btn outline" href="/online-doctor-bd.html">সেবাসমূহ দেখুন</a>
     </div>
   </div>
-  <div data-aos="zoom-in">
-    <img class="kv" src="assets/images/profile-placeholder.jpg" alt="ডা. রোমানুল ইসলাম (প্লেসহোল্ডার ছবি)" />
+  <div>
+    <img class="kv" src="assets/images/profile-placeholder.jpg" alt="ডা. রোমানুল ইসলাম (প্লেসহোল্ডার ছবি)" width="400" height="400" loading="lazy" />
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <div class="grid cols-2">
-      <div class="card" data-aos="fade-up">
+    <div class="grid">
+      <div class="card">
         <h2>🩺আমার সম্পর্কে</h2>
-        <p class="lead">আমি ডাক্তার রোমানুল ইসলাম---রেজিস্টার্ড চিকিৎসক ও সনոլজিস্ট । আপনার ও আপনার পরিবারের স্বাস্থ্যবিষয়ক যেকোন সমস্যা সমাধানে ২৪/৭ আমার সাথে সরাসরি হোয়াটসঅ্যাপে যোগাযোগ করতে পারবেন। আপনার কথা মনোযোগ দিয়ে শুনে সে অনুযায়ী নিরাপদ, আধুনিক, गाइডলাইন-ভিত্তিক চিকিৎসা প্রদান করা হবে।</p>
+        <p class="lead">আমি ডাক্তার রোমানুল ইসলাম---রেজিস্টার্ড চিকিৎসক ও সনোলজিস্ট । আপনার ও আপনার পরিবারের স্বাস্থ্যবিষয়ক যেকোন সমস্যা সমাধানে ২৪/৭ আমার সাথে সরাসরি হোয়াটসঅ্যাপে যোগাযোগ করতে পারবেন। আপনার কথা মনোযোগ দিয়ে শুনে সে অনুযায়ী নিরাপদ, আধুনিক, গাইডলাইন-ভিত্তিক চিকিৎসা প্রদান করা হবে।</p>
         <ul>
           <li>এমবিবিএস (চট্টগ্রাম মেডিকেল কলেজ)</li>
           <li>এফসিপিএস পার্ট ১ (মেডিসিন)</li>
           <li>এমসিজিপি (বিজিএইচআরআই)</li>
           <li>সিএমইউ (আল্ট্রাসনোগ্রাফি)</li>
-         রেজিস্ট্রেশন নাম্বারঃ 129438
+          <li>রেজিস্ট্রেশন নাম্বারঃ 129438</li>
         </ul>
       </div>
-      <div class="card" data-aos="fade-up">
+      <div class="card">
         <h2>🔊কেন আপনি টেলিমেডিসিন সেবা গ্রহণ করবেন?</h2>
         <p>ঘরে বসে দ্রুত পরামর্শ, প্রেসক্রিপশন গাইডেন্স, ফলো-আপ আর দ্বিতীয় মতামত — সবকিছুই WhatsApp/ফোনে। জরুরি নয় এমন সমস্যায় সময়, ভিড়, যাতায়াত ও খরচ বাঁচায়।</p>
         <ul>
-          <li>📢টেলिमেডিসিন সেবা সহজ, দ্রুত ও যেকোনো সময় পাওয়া যায়</li>
+          <li>📢টেলিমেডিসিন সেবা সহজ, দ্রুত ও যেকোনো সময় পাওয়া যায়</li>
           <li>📢আপনাকে গাড়ি ভাড়া, সময় ও শারীরিক শক্তি ব্যয় করে ডাক্তারের কাছে যাওয়ার প্রয়োজন পড়ছে না।(রোগের তথ্য বিস্তারিত জানলে ৯০% ক্ষেত্রে রোগ নির্ণয় করা যায়)</li>
           <li>📢এতে আপনার অনেক খরচ ও সময় বেঁচে যাবে।
 (কিছু ক্ষেত্রে সরাসরি ডাক্তার দেখানোর প্রয়োজন হয়। তখন আপনাকে সে পরামর্শও দেওয়া হবে)</li>
-	  <li>📢অনেকে সময়ের অভাবে এবং অতিরিক্ত খরচের জন্য डाक্তারके কাছে যেতে চায় না। ফলে রোগ জটিল হয়ে যায় এবং পরবর্তীতে কষ্ট ও খরচ বেড়ে যায়। তাই স্বল্প সময়ে স্বল্প খরচে টেলিমেডিসিন সেবা গ্রহণ করুন।/li>
-          <li>📢গ্রাম পর্যায়ে ভালো ডাক্তার না থাকায় অনেকে কোয়াকদের কাছে গিয়ে রোগ জটিল করে ফেলে। আপনার স্বাস্থ্য সুরক্ষিত রাখতে টেলिमেডিসিনের মাধ্যমে রেজিস্টার্ড ডাক্তারের পরামর্শ নিন।</li>
+          <li>📢অনেকে সময়ের অভাবে এবং অতিরিক্ত খরচের জন্য ডাক্তারের কাছে যেতে চায় না। ফলে রোগ জটিল হয়ে যায় এবং পরবর্তীতে কষ্ট ও খরচ বেড়ে যায়। তাই স্বল্প সময়ে স্বল্প খরচে টেলিমেডিসিন সেবা গ্রহণ করুন।</li>
+          <li>📢গ্রাম পর্যায়ে ভালো ডাক্তার না থাকায় অনেকে কোয়াকদের কাছে গিয়ে রোগ জটিল করে ফেলে। আপনার স্বাস্থ্য সুরক্ষিত রাখতে টেলিমেডিসিনের মাধ্যমে রেজিস্টার্ড ডাক্তারের পরামর্শ নিন।</li>
         </ul>
       </div>
     </div>
@@ -104,7 +416,24 @@
 </section>
 
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "Physician", "name": "ডাক্তার রোমানুল ইসলাম", "medicalSpecialty": ["InternalMedicine", "FamilyMedicine", "Pediatrics"], "description": "বাংলাদেশে ۲৪/৭ টেলিমেডিসিন পরামর্শ। এমবিবিএস (চমেক), এফসিপিএস পার্ট-১ (মেডিসিন), এমসিজিপি (বিজিএইচআরআই), সিএমইউ (আল্ট্রাসনোগ্রাফি)।", "url": "/", "telephone": "+8801826589958", "areaServed": "Bangladesh", "address": {"@type": "PostalAddress", "addressCountry": "BD", "addressLocality": "Chittagong", "streetAddress": "Placeholder Road, Placeholder Area", "postalCode": "4203"}, "sameAs": []}
+{
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "name": "ডাক্তার রোমানুল ইসলাম",
+  "medicalSpecialty": ["InternalMedicine", "FamilyMedicine", "Pediatrics"],
+  "description": "বাংলাদেশে ২৪/৭ টেলিমেডিসিন পরামর্শ। এমবিবিএস (চমেক), এফসিপিএস পার্ট-১ (মেডিসিন), এমসিজিপি (বিজিএইচআরআই), সিএমইউ (আল্ট্রাসনোগ্রাফি)।",
+  "url": "/",
+  "telephone": "+8801826589958",
+  "areaServed": "Bangladesh",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "BD",
+    "addressLocality": "Chittagong",
+    "streetAddress": "Placeholder Road, Placeholder Area",
+    "postalCode": "4203"
+  },
+  "sameAs": []
+}
 </script>
 
 </main>
@@ -138,10 +467,41 @@
 </footer>
 
 <a class="whatsapp-float" href="https://wa.me/8801826589958?text=স্যার, আমি একটি অ্যাপয়ন্টমেন্ট বুক করতে চাই" target="_blank" aria-label="WhatsApp Chat">
-  <img src="assets/images/whatsapp.gif" alt="WhatsApp">
+  <img src="assets/images/whatsapp.gif" alt="WhatsApp" width="60" height="60" loading="lazy">
 </a>
 
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script src="assets/js/main.js"></script>
+<!-- Defer non-critical JavaScript -->
+<script>
+  // Set current year for copyright
+  document.getElementById('year').textContent = new Date().getFullYear();
+  
+  // Load AOS animation library asynchronously
+  function loadAOS() {
+    if (typeof AOS !== 'undefined') {
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
+      });
+    }
+  }
+  
+  // Load scripts with minimal impact on page load
+  if (window.requestIdleCallback) {
+    window.requestIdleCallback(function() {
+      var script = document.createElement('script');
+      script.src = 'https://unpkg.com/aos@2.3.4/dist/aos.js';
+      script.onload = loadAOS;
+      document.body.appendChild(script);
+    });
+  } else {
+    setTimeout(function() {
+      var script = document.createElement('script');
+      script.src = 'https://unpkg.com/aos@2.3.4/dist/aos.js';
+      script.onload = loadAOS;
+      document.body.appendChild(script);
+    }, 1000);
+  }
+</script>
 </body>
 </html>
