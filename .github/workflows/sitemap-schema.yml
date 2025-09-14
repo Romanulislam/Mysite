@@ -1,0 +1,82 @@
+name: Generate Sitemap & Validate Schema
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout repo
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      # 3. Install dependencies
+      - name: Install sitemap generator & schema validator
+        run: |
+          npm install -g sitemap-generator-cli axios jsdom
+
+      # 4. Generate sitemap.xml
+      - name: Generate sitemap.xml
+        run: |
+          generator https://www.romanulislam.com \
+            --strip-querystring true \
+            --max-depth 5 \
+            --output ./sitemap.xml
+
+      # 5. Validate sitemap XML syntax
+      - name: Validate sitemap XML
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libxml2-utils
+          xmllint --noout sitemap.xml
+
+      # 6. Validate structured data on each page
+      - name: Validate structured data
+        run: |
+          node <<'EOF'
+          const axios = require('axios');
+          const fs = require('fs');
+          const sitemap = fs.readFileSync('sitemap.xml', 'utf8');
+          const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(m => m[1]);
+
+          async function validate(url) {
+            try {
+              const api = "https://validator.schema.org/validate";
+              const res = await axios.post(api, { url });
+              if (res.data.errors && res.data.errors.length > 0) {
+                console.error(`❌ Schema errors on ${url}`);
+                console.error(res.data.errors);
+              } else {
+                console.log(`✅ Schema valid: ${url}`);
+              }
+            } catch (err) {
+              console.error(`⚠️ Failed to validate ${url}`, err.message);
+            }
+          }
+
+          (async () => {
+            for (let url of urls) {
+              await validate(url);
+            }
+          })();
+          EOF
+
+      # 7. Commit and push updated sitemap
+      - name: Commit sitemap.xml
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add sitemap.xml
+          git commit -m "Auto-update sitemap.xml [skip ci]" || echo "No changes to commit"
+          git push
