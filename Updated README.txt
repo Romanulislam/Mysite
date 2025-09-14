@@ -12,7 +12,7 @@ This folder contains 5 static pages: index.html, online-doctor-bd.html, blog.htm
 ## Deploy on Cloudflare Pages
 1) Create a new Pages project and connect this folder (or upload as zip)
 2) Build command: `npm run build`
-3) Build output directory: `_site`
+3) Build output directory: `    `
 4) Install dependencies: `npm install`
 5) Set custom domain in Pages, then point your DNS to Cloudflare as instructed
 
