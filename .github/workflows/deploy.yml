@@ -1,0 +1,60 @@
+name: Build and Deploy with GA + GSC Injection
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout repo
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      # 2. Inject GA + GSC
+      - name: Inject GA and GSC
+        run: |
+          GA_ID="G-S8DEQ62FVN"   # Replace with your GA4 Measurement ID
+          GSC_CODE="phaJ6eaZUl6EU_Wkv3H90PM91RrLOxZlfXXH078L49o"   # Replace with your GSC verification code
+
+          GA_SCRIPT='<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id='"$GA_ID"'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "'"$GA_ID"'");
+</script>'
+
+          GSC_TAG='<meta name="google-site-verification" content="'"$GSC_CODE"'" />'
+
+          # Loop through all HTML files
+          find . -type f -name "*.html" | while read file; do
+            # Inject Google Analytics if missing
+            if ! grep -q "$GA_ID" "$file"; then
+              echo "Injecting GA into $file"
+              sed -i "/<\/head>/i $GA_SCRIPT" "$file"
+            else
+              echo "Skipping GA (already present) in $file"
+            fi
+
+            # Inject Google Search Console tag if missing
+            if ! grep -q "$GSC_CODE" "$file"; then
+              echo "Injecting GSC tag into $file"
+              sed -i "/<\/head>/i $GSC_TAG" "$file"
+            else
+              echo "Skipping GSC tag (already present) in $file"
+            fi
+          done
+
+      # 3. Deploy to Cloudflare Pages
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          projectName: romanulislam
+          directory: .
