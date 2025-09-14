@@ -31,12 +31,16 @@
       box-sizing: border-box;
     }
     
+    html {
+      font-size: 100%; /* Set base font size to browser default (typically 16px) */
+    }
+    
     body {
       font-family: 'Noto Sans Bengali', 'Inter', sans-serif;
       line-height: 1.6;
       color: #333;
       background-color: #f5f7fa;
-      font-size: 16px; /* Added to fix font size warning */
+      font-size: 1rem; /* Use relative units instead of fixed px */
     }
     
     .container {
@@ -64,7 +68,7 @@
     }
     
     .brand {
-      font-size: 24px;
+      font-size: 1.5rem; /* Use relative units */
       font-weight: 700;
       color: white;
       text-decoration: none;
@@ -80,6 +84,7 @@
       margin-left: 25px;
       font-weight: 500;
       transition: color 0.3s ease;
+      font-size: 1rem; /* Ensure consistent font size */
     }
     
     .site-header nav a:hover {
@@ -104,10 +109,16 @@
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     }
     
+    .card h1 {
+      color: #0c7a7a;
+      margin-bottom: 20px;
+      font-size: 2rem; /* Use relative units */
+    }
+    
     .card h2 {
       color: #0c7a7a;
       margin-bottom: 20px;
-      font-size: 1.6rem;
+      font-size: 1.6rem; /* Use relative units */
     }
     
     /* Contact Page Specific Styles */
@@ -128,6 +139,7 @@
       margin-bottom: 15px;
       display: flex;
       align-items: flex-start;
+      font-size: 1rem; /* Ensure consistent font size */
     }
     
     .contact-list strong {
@@ -163,6 +175,7 @@
     .chamber-card h3 {
       color: #0c7a7a;
       margin-bottom: 10px;
+      font-size: 1.3rem; /* Use relative units */
     }
     
     /* Button Styles */
@@ -176,6 +189,7 @@
       font-weight: 600;
       transition: all 0.3s ease;
       text-align: center;
+      font-size: 1rem; /* Ensure consistent font size */
     }
     
     .btn:hover {
@@ -222,6 +236,7 @@
       color: #e0f7fa;
       text-decoration: none;
       transition: color 0.3s ease;
+      font-size: 1rem; /* Ensure consistent font size */
     }
     
     .site-footer a:hover {
@@ -233,6 +248,7 @@
       text-align: center;
       padding-top: 20px;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 1rem; /* Ensure consistent font size */
     }
     
     /* WhatsApp Float */
@@ -249,6 +265,7 @@
       align-items: center;
       justify-content: center;
       transition: all 0.3s ease;
+      background-color: #25D366; /* WhatsApp green */
     }
     
     .whatsapp-float:hover {
@@ -256,10 +273,10 @@
       box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     }
     
-    .whatsapp-float img {
-      width: 100%;
-      height: auto;
-      border-radius: 50%;
+    .whatsapp-icon {
+      width: 35px;
+      height: 35px;
+      fill: white;
     }
     
     /* Skip link for accessibility */
@@ -284,6 +301,10 @@
     
     /* Responsive styles */
     @media (max-width: 768px) {
+      html {
+        font-size: 14px; /* Slightly reduce base font size on mobile */
+      }
+      
       .nav {
         flex-direction: column;
         text-align: center;
@@ -297,6 +318,7 @@
       
       .site-header nav a {
         margin: 0 10px 10px;
+        font-size: 0.9rem; /* Adjust font size for mobile */
       }
       
       .contact-grid {
@@ -322,6 +344,11 @@
         height: 50px;
         bottom: 20px;
         right: 20px;
+      }
+      
+      .whatsapp-icon {
+        width: 28px;
+        height: 28px;
       }
     }
   </style>
@@ -367,7 +394,14 @@
             <p><strong>সময়:</strong> সোমবার, বুধবার ও শুক্রবারঃ সন্ধ্যা ৭:০০ টা থেকে রাত ১০:০০ টা</p>
             <p><strong>যোগাযোগ:</strong> 01860613399 , 01826589958</p>
           </div>
-           <div class="map-container">
+        </div>
+        
+        <div class="cta">
+          <a class="btn" href="https://wa.me/8801826589958" target="_blank" rel="noopener">WhatsApp-এ মেসেজ করুন</a>
+        </div>
+      </div>
+      
+      <div class="map-container">
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22488.738575682317!2d91.84594983816733!3d22.35265994599499!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad2700689303d9%3A0x9817fd42dec4b822!2z4Kaq4KeN4Kaw4Ka-4KaH4KauIOCmueCnh-CmsuCmpSDgppXgp4fgp5_gpr7gprAgLSBQcmltZSBIZWFsdGggQ2FyZQ!5e0!3m2!1sbn!2sbd!4v1757836147899!5m2!1sbn!2sbd" 
           loading="lazy" 
@@ -375,13 +409,7 @@
           title="ডা. রোমানুল ইসলামের প্রাইম হেলথ কেয়ার চেম্বারের গুগল ম্যাপ লোকেশন"
           aria-label="ডা. রোমানুল ইসলামের চেম্বারের প্রাইম হেলথ কেয়ার গুগল ম্যাপ লোকেশন">
         </iframe>
-          <p style="margin-top: 8px; color: #475569; text-align: center;">কল্পলোক আবাসিক, বাকলিয়া, চট্টগ্রাম</p>
-      </div>
-        </div>
-        
-        <div class="cta">
-          <a class="btn" href="https://wa.me/8801826589958" target="_blank" rel="noopener">WhatsApp-এ মেসেজ করুন</a>
-        </div>
+        <p style="margin-top: 8px; color: #475569; text-align: center;">কল্পলোক আবাসিক, বাকলিয়া, চট্টগ্রাম</p>
       </div>
     </div>
   </div>
@@ -411,8 +439,7 @@
   },
   "openingHours": [
     "Mo-Su 07:00-13:00",
-    "Mo-Th 18:00-22:00",
-    "Sa-Th 10:00-14:00"
+    "Mo,We,Fr 19:00-22:00"
   ],
   "sameAs": []
 }
@@ -424,7 +451,7 @@
     <div class="footer-grid">
       <div>
         <h3>ডা. রোমানুল ইসলাম</h3>
-        <p>২৪/৭ ঘরে বসে ডাক্তারের পরামর্শ --- Best Online Doctor BD</p>
+        <p>۲৪/৭ ঘরে বসে ডাক্তারের পরামর্শ --- Best Online Doctor BD</p>
       </div>
       <div>
         <h3>দ্রুত যোগাযোগ</h3>
@@ -448,8 +475,10 @@
   </div>
 </footer>
 
-<a class="whatsapp-float" href="https://wa.me/8801826589958?text=স্যার, আমি একটি অ্যাপয়ন্টমেন্ট বুক করতে চাই" target="_blank" aria-label="WhatsApp Chat">
-  <img src="assets/images/whatsapp.gif" alt="WhatsApp" width="60" height="60" loading="lazy">
+<a class="whatsapp-float" href="https://wa.me/8801826589958?text=স্যার, আমি একটি অ্যাপয়ন্টমেন্ট বুক করতে চাই" target="_blank" rel="noopener" aria-label="WhatsApp Chat">
+  <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+    <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+  </svg>
 </a>
 
 <!-- Defer non-critical JavaScript -->
