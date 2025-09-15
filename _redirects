@@ -1,3 +1,1 @@
-/*.html   /:splat.html   200
-/*        /index.html    200
-https://www.romanulislam.com/* https://romanulislam.com/:splat 301!
+https://romanulislam.com/*  https://www.romanulislam.com/:splat  301!
