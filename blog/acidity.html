@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-      <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="https://www.romanulislam.com/assets/images/favicon.ico" type="image/x-icon">
       <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S8DEQ62FVN"></script>
 <script>
@@ -1104,4 +1104,62 @@
                     <div class="faq-question">প্রশ্ন ৩০: গ্যাস্ট্রিক ও অ্যাসিডিটি প্রতিরোধে টেলিমেডিসিন কি সাহায্য করতে পারে? <span>+</span></div>
                     <div class="faq-answer">উত্তর: অবশ্যই। টেলিমেডিসিনের মাধ্যমে রোগীরা সহজেই ভিডিও কলে বা ফোনে ডাক্তার দেখাতে পারেন। ডাক্তার সঠিক ডায়েট প্ল্যান, ওষুধের প্রেসক্রিপশন ও জীবনযাত্রার পরামর্শ দেন। এতে সময় বাঁচে এবং জরুরি অবস্থা না হলে বাড়ি থেকে চিকিৎসা নেওয়া যায়।</div>
                 </div>
+              </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ডা. রোমানুল ইসলাম</h3>
+                    <p>২৪/৭ ঘরে বসে ডাক্তারের পরামর্শ --- Best Online Doctor BD</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>দ্রুত যোগাযোগ</h3>
+                    <ul>
+                        <li>WhatsApp: <a href="https://wa.me/8801826589958">+8801826589958</a></li>
+                        <li>Email: <a href="mailto:dr.romanulislam@gmail.com">email us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>দরকারী লিংক</h3>
+                    <ul>
+                        <li><a href="https://www.romanulislam.com/index.html">হোম</a></li>
+                        <li><a href="https://www.romanulislam.com/online-doctor-bd.html">সেবা</a></li>
+                        <li><a href="https://www.romanulislam.com/blog.html">ব্লগ</a></li>
+                        <li><a href="https://www.romanulislam.com/reviews.html">রিভিউ</a></li>
+                        <li><a href="https://www.romanulislam.com/contact.html">যোগাযোগ</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© ডা. রোমানুল ইসলাম। সকল স্বত্ব সংরক্ষিত।</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a class="whatsapp-float" href="https://wa.me/8801826589958?text=স্যার, আমি একটি অ্যাপয়ন্টমেন্ট বুক করতে চাই" target="_blank" aria-label="WhatsApp Chat">
+        <img src="https://www.romanulislam.com/assets/images/whatsapp.gif" alt="WhatsApp">
+    </a>
+
+    <script>
+        // FAQ Toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('faq-active');
+                
+                // Change the plus/minus sign
+                const sign = question.querySelector('span');
+                sign.textContent = item.classList.contains('faq-active') ? '-' : '+';
+            });
+        });
+    </script>
+</body>
+</html>
