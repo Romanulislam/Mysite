@@ -7,7 +7,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-S8DEQ62FVN');
 </script>
   <meta charset="utf-8">
@@ -33,333 +32,77 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <!-- Inline critical CSS -->
   <style>
-    /* Critical CSS from index.html with additions for contact page */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    html {
-      font-size: 100%; /* Set base font size to browser default (typically 16px) */
-    }
-    
-    body {
-      font-family: 'Noto Sans Bengali', 'Inter', sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background-color: #f5f7fa;
-      font-size: 1rem; /* Use relative units instead of fixed px */
-    }
-    
-    .container {
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    
-    /* Header Styles */
-    .site-header {
-      background: linear-gradient(135deg, #0ea5a5 0%, #0c7a7a 100%);
-      color: white;
-      padding: 15px 0;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    
-    .nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .brand {
-      font-size: 1.5rem; /* Use relative units */
-      font-weight: 700;
-      color: white;
-      text-decoration: none;
-    }
-    
-    .site-header nav {
-      display: flex;
-    }
-    
-    .site-header nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 25px;
-      font-weight: 500;
-      transition: color 0.3s ease;
-      font-size: 1rem; /* Ensure consistent font size */
-    }
-    
-    .site-header nav a:hover {
-      color: #e0f7fa;
-    }
-    
-    /* Section Styles */
-    .section {
-      padding: 60px 0;
-    }
-    
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-    }
-    
-    .card {
-      background: white;
-      border-radius: 12px;
-      padding: 30px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-    }
-    
-    .card h1 {
-      color: #0c7a7a;
-      margin-bottom: 20px;
-      font-size: 2rem; /* Use relative units */
-    }
-    
-    .card h2 {
-      color: #0c7a7a;
-      margin-bottom: 20px;
-      font-size: 1.6rem; /* Use relative units */
-    }
-    
-    /* Contact Page Specific Styles */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      align-items: start;
-    }
-    
-    .contact-list {
-      list-style: none;
-      padding: 0;
-      margin-bottom: 25px;
-    }
-    
-    .contact-list li {
-      margin-bottom: 15px;
-      display: flex;
-      align-items: flex-start;
-      font-size: 1rem; /* Ensure consistent font size */
-    }
-    
-    .contact-list strong {
-      min-width: 100px;
-      display: inline-block;
-    }
-    
-    .map-container {
-      height: 400px;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-    }
-    
-    .map-container iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-    
-    .chamber-list {
-      margin-top: 30px;
-    }
-    
-    .chamber-card {
-      background: #f8fafc;
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-left: 4px solid #0ea5a5;
-    }
-    
-    .chamber-card h3 {
-      color: #0c7a7a;
-      margin-bottom: 10px;
-      font-size: 1.3rem; /* Use relative units */
-    }
-    
-    /* Button Styles */
-    .btn {
-      display: inline-block;
-      background-color: #ff7043;
-      color: white;
-      padding: 14px 30px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: all 0.3s ease;
-      text-align: center;
-      font-size: 1rem; /* Ensure consistent font size */
-    }
-    
-    .btn:hover {
-      background-color: #f4511e;
-      transform: translateY(-3px);
-    }
-    
-    .cta {
-      margin-top: 20px;
-    }
-    
-    /* Footer Styles */
-    .site-footer {
-      background: #0c7a7a;
-      color: white;
-      padding: 50px 0 20px;
-    }
-    
-    .footer-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      margin-bottom: 40px;
-    }
-    
-    .site-footer h3, .site-footer h4 {
-      font-size: 1.4rem;
-      margin-bottom: 20px;
-      position: relative;
-      padding-bottom: 10px;
-    }
-    
-    .site-footer h3:after, .site-footer h4:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 50px;
-      height: 2px;
-      background: #0ea5a5;
-    }
-    
-    .site-footer a {
-      color: #e0f7fa;
-      text-decoration: none;
-      transition: color 0.3s ease;
-      font-size: 1rem; /* Ensure consistent font size */
-    }
-    
-    .site-footer a:hover {
-      color: white;
-      text-decoration: underline;
-    }
-    
-    .copyright {
-      text-align: center;
-      padding-top: 20px;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      font-size: 1rem; /* Ensure consistent font size */
-    }
-    
-        /* WhatsApp Floating Button */
-     .whatsapp-float {
-      position: fixed;
-      width: 60px;
-      height: 60px;
-      bottom: 40px;
-      right: 40px;
-      border-radius: 50px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-      z-index: 100;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.3s ease;
-    }
-    
-    .whatsapp-float:hover {
-      transform: scale(1.1);
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-    }
-    
-    .whatsapp-float img {
-      width: 100%;
-      height: auto;
-      border-radius: 50%;
-    }
-    
-    /* Skip link for accessibility */
-    .skip a {
-      position: absolute;
-      left: -10000px;
-      top: auto;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-    }
-    
-    .skip a:focus {
-      position: static;
-      width: auto;
-      height: auto;
-      background: #0ea5a5;
-      color: white;
-      padding: 10px;
-      text-decoration: none;
-    }
-    
-    /* Responsive styles */
-    @media (max-width: 768px) {
-      html {
-        font-size: 14px; /* Slightly reduce base font size on mobile */
-      }
-      
-      .nav {
-        flex-direction: column;
-        text-align: center;
-      }
-      
-      .site-header nav {
-        margin-top: 20px;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-      
-      .site-header nav a {
-        margin: 0 10px 10px;
-        font-size: 0.9rem; /* Adjust font size for mobile */
-      }
-      
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
-      
-      .map-container {
-        height: 300px;
-        order: -1;
-      }
-      
-      .contact-list li {
-        flex-direction: column;
-      }
-      
-      .contact-list strong {
-        min-width: auto;
-        margin-bottom: 5px;
-      }
-      
-      .whatsapp-float {
-        width: 50px;
-        height: 50px;
-        bottom: 20px;
-        right: 20px;
-      }
+    * {margin:0;padding:0;box-sizing:border-box;}
+    html {font-size:100%;}
+    body {font-family:'Noto Sans Bengali','Inter',sans-serif;line-height:1.6;color:#333;background:#f5f7fa;font-size:1rem;}
+
+    .container {max-width:1200px;margin:0 auto;padding:0 20px;}
+
+    /* Header */
+    .site-header {background:linear-gradient(135deg,#0ea5a5 0%,#0c7a7a 100%);color:#fff;padding:15px 0;box-shadow:0 4px 12px rgba(0,0,0,.1);position:sticky;top:0;z-index:1000;}
+    .nav {display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;}
+    .brand {font-size:1.5rem;font-weight:700;color:#fff;text-decoration:none;line-height:1.4;min-height:48px;display:flex;align-items:center;}
+    .site-header nav {display:flex;flex-wrap:wrap;gap:12px;}
+    .site-header nav a {color:#fff;text-decoration:none;padding:12px 16px;min-width:48px;min-height:48px;display:flex;align-items:center;justify-content:center;font-weight:500;transition:color .3s;font-size:1rem;}
+    .site-header nav a:hover {color:#e0f7fa;}
+
+    /* Sections */
+    .section {padding:60px 0;}
+    .grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;}
+    .card {background:#fff;border-radius:12px;padding:30px;box-shadow:0 5px 20px rgba(0,0,0,.08);}
+    .card h1 {color:#0c7a7a;margin-bottom:20px;font-size:2rem;}
+    .card h2 {color:#0c7a7a;margin-bottom:20px;font-size:1.6rem;}
+
+    /* Contact */
+    .contact-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;align-items:start;}
+    .contact-list {list-style:none;margin-bottom:25px;}
+    .contact-list li {margin-bottom:20px;display:flex;flex-wrap:wrap;align-items:center;font-size:1rem;}
+    .contact-list a {display:inline-block;padding:10px 12px;min-width:48px;min-height:48px;line-height:1.4;}
+    .contact-list strong {margin-right:8px;flex-shrink:0;}
+
+    .map-container {height:400px;border-radius:12px;overflow:hidden;box-shadow:0 5px 20px rgba(0,0,0,.08);}
+    .map-container iframe {width:100%;height:100%;border:0;}
+
+    .chamber-list {margin-top:30px;}
+    .chamber-card {background:#f8fafc;border-radius:8px;padding:20px;margin-bottom:20px;border-left:4px solid #0ea5a5;}
+    .chamber-card h3 {color:#0c7a7a;margin-bottom:10px;font-size:1.3rem;}
+
+    /* Buttons */
+    .btn {display:inline-block;background:#ff7043;color:#fff;padding:14px 28px;border-radius:50px;text-decoration:none;font-weight:600;transition:.3s;font-size:1rem;min-width:48px;min-height:48px;text-align:center;}
+    .btn:hover {background:#f4511e;transform:translateY(-3px);}
+    .cta {margin-top:20px;text-align:center;}
+
+    /* Footer */
+    .site-footer {background:#0c7a7a;color:#fff;padding:50px 0 20px;}
+    .footer-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;margin-bottom:40px;}
+    .site-footer h3,.site-footer h4 {font-size:1.4rem;margin-bottom:20px;position:relative;padding-bottom:10px;}
+    .site-footer h3:after,.site-footer h4:after {content:'';position:absolute;left:0;bottom:0;width:50px;height:2px;background:#0ea5a5;}
+    .site-footer a {color:#e0f7fa;text-decoration:none;transition:.3s;font-size:1rem;display:inline-block;padding:8px;min-height:40px;}
+    .site-footer a:hover {color:#fff;text-decoration:underline;}
+    .copyright {text-align:center;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);font-size:1rem;}
+
+    /* WhatsApp floating button */
+    .whatsapp-float {position:fixed;width:64px;height:64px;bottom:40px;right:40px;border-radius:50%;box-shadow:0 4px 10px rgba(0,0,0,.25);z-index:100;display:flex;align-items:center;justify-content:center;transition:.3s;}
+    .whatsapp-float:hover {transform:scale(1.1);box-shadow:0 6px 15px rgba(0,0,0,.3);}
+    .whatsapp-float img {width:100%;height:auto;border-radius:50%;}
+
+    /* Skip link */
+    .skip a {position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;}
+    .skip a:focus {position:static;width:auto;height:auto;background:#0ea5a5;color:#fff;padding:10px;text-decoration:none;}
+
+    /* Responsive */
+    @media (max-width:768px){
+      html {font-size:14px;}
+      .nav {flex-direction:column;text-align:center;}
+      .site-header nav {margin-top:20px;justify-content:center;}
+      .site-header nav a {margin:4px;}
+      .contact-grid {grid-template-columns:1fr;}
+      .map-container {height:300px;order:-1;}
+      .whatsapp-float {width:56px;height:56px;bottom:20px;right:20px;}
     }
   </style>
-  <!-- Defer non-critical CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  </noscript>
+  <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"></noscript>
 </head>
 <body>
 <div class="skip"><a href="#main">Skip to content</a></div>
@@ -376,7 +119,6 @@
   </div>
 </header>
 <main id="main">
-
 <section class="section">
   <div class="container">
     <div class="contact-grid">
@@ -384,70 +126,30 @@
         <h1>যোগাযোগ</h1>
         <ul class="contact-list">
           <li><strong>WhatsApp:</strong> <a href="https://wa.me/8801826589958" target="_blank" rel="noopener">+8801826589958</a></li>
-          <li><strong>ইমেইল:</strong> roman@romanulislam.com</li>
-          <li><strong>সময়সূচি:</strong> টেলিমেডিসিনঃ প্রতিদিন সকাল ৭টা থেকে রাত ১ টা <br> সরাসরিঃ নিচের চেম্বারসমূহ থেকে আপনার সুবিধাজনক সময় ও স্থান অনুযায়ী অ্যাপয়েন্টমেন্ট গ্রহণ করুন</li>
+          <li><strong>ইমেইল:</strong> <a href="mailto:roman@romanulislam.com">roman@romanulislam.com</a></li>
+          <li><strong>সময়সূচি:</strong> টেলিমেডিসিনঃ প্রতিদিন সকাল ৭টা থেকে রাত ১ টা<br> সরাসরিঃ নিচের চেম্বারসমূহ থেকে আপনার সুবিধাজনক সময় ও স্থান অনুযায়ী অ্যাপয়েন্টমেন্ট গ্রহণ করুন</li>
         </ul>
-        
         <div class="chamber-list">
           <h2>চেম্বার সমূহ</h2>
-          
           <div class="chamber-card">
             <h3>প্রাইম হেলথ কেয়ার - Prime Health Care</h3>
             <p><strong>ঠিকানা:</strong> এ.এস.এম. জেদ্দা কমপ্লেক্স, (আল মদিনা ক্লাব এর ২য় তলা), কল্পলোক আবাসিকের বিপরীতে, পূর্ব বাকলিয়া, চট্টগ্রাম</p>
             <p><strong>সময়:</strong> সোমবার, বুধবার ও শুক্রবারঃ সন্ধ্যা ৭:০০ টা থেকে রাত ১০:০০ টা</p>
-            <p><strong>যোগাযোগঃ(সিরিয়ালের জন্য)</strong> 01860613399 , 01826589958</p>
+            <p><strong>যোগাযোগঃ (সিরিয়ালের জন্য)</strong> 01860613399 , 01826589958</p>
           </div>
-        <div class="map-container">
-          <p><strong>ম্যাপঃ</strong></p>
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22488.738575682317!2d91.84594983816733!3d22.35265994599499!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad2700689303d9%3A0x9817fd42dec4b822!2z4Kaq4KeN4Kaw4Ka-4KaH4KauIOCmueCnh-CmsuCmpSDgppXgp4fgp5_gpr7gprAgLSBQcmltZSBIZWFsdGggQ2FyZQ!5e0!3m2!1sbn!2sbd!4v1757836147899!5m2!1sbn!2sbd" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade"
-          title="ডা. রোমানুল ইসলামের প্রাইম হেলথ কেয়ার চেম্বারের গুগল ম্যাপ লোকেশন"
-          aria-label="ডা. রোমানুল ইসলামের চেম্বারের প্রাইম হেলথ কেয়ার গুগল ম্যাপ লোকেশন">
-        </iframe>
-        <p style="margin-top: 8px; color: #475569; text-align: center;">কল্পলোক আবাসিক, বাকলিয়া, চট্টগ্রাম</p>
-      </div>
-    </div>
-        
-        <center><div class="cta">
+          <div class="map-container">
+            <p><strong>ম্যাপঃ</strong></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!..." loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="ডা. রোমানুল ইসলামের প্রাইম হেলথ কেয়ার চেম্বারের গুগল ম্যাপ লোকেশন" aria-label="ডা. রোমানুল ইসলামের চেম্বারের প্রাইম হেলথ কেয়ার গুগল ম্যাপ লোকেশন"></iframe>
+            <p style="margin-top:8px;color:#475569;text-align:center;">কল্পলোক আবাসিক, বাকলিয়া, চট্টগ্রাম</p>
+          </div>
+        </div>
+        <div class="cta">
           <a class="btn" href="https://wa.me/8801826589958" target="_blank" rel="noopener">WhatsApp-এ মেসেজ করুন</a>
-        </div></center>
+        </div>
       </div>
     </div>
   </div>
 </section>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MedicalBusiness",
-  "name": "ডা. রোমানুল ইসলাম (টেলিমেডিসিন)",
-  "medicalSpecialty": ["Internal Medicine", "Family Medicine", "Telemedicine"],
-  "description": "বাংলাদেশে ২৪/৭ টেলিমেডিসিন পরামর্শ। এমবিবিএস (চমেক), এফসিপিএস পার্ট-২ (মেডিসিন), এমসিজিপি (বিজিএইচআরআই), সিএমইউ (আল্ট্রাসনোগ্রাফি)।",
-  "url": "https://www.romanulislam.com/contact.html",
-  "telephone": "+8801826589958",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "কল্পলোক আবাসিক, বাকলিয়া",
-    "addressLocality": "Chittagong",
-    "addressRegion": "Chittagong",
-    "postalCode": "4203",
-    "addressCountry": "BD"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 22.34195465741596,
-    "longitude": 91.8529112167778
-  },
-  "openingHours": [
-    "Mo-Su 07:00-13:00",
-    "Mo,We,Fr 19:00-22:00"
-  ],
-  "sameAs": []
-}
-</script>
-
 </main>
 <footer class="site-footer">
   <div class="container">
@@ -460,7 +162,7 @@
         <h3>দ্রুত যোগাযোগ</h3>
         <ul>
           <li>WhatsApp: <a href="https://wa.me/8801826589958" rel="noopener" target="_blank">+8801826589958</a></li>
-          <li>Email: <span>roman@romanulislam.com</span></li>
+          <li>Email: <a href="mailto:roman@romanulislam.com">roman@romanulislam.com</a></li>
         </ul>
       </div>
       <div>
@@ -477,61 +179,14 @@
     <p class="copyright">© <span id="year"></span> Dr. Romanul Islam. All rights reserved.</p>
   </div>
 </footer>
-
-    <!-- WhatsApp Floating Button -->
 <a class="whatsapp-float" href="https://wa.me/8801826589958?text=স্যার, আমি একটি অ্যাপয়ন্টমেন্ট বুক করতে চাই" target="_blank" aria-label="WhatsApp Chat">
-  <img src="assets/images/whatsapp.gif" alt="WhatsApp" width="60" height="60" loading="lazy">
+  <img src="assets/images/whatsapp.gif" alt="WhatsApp" width="64" height="64" loading="lazy">
 </a>
-
-<!-- Defer non-critical JavaScript -->
 <script>
-  // Set current year for copyright
-  document.getElementById('year').textContent = new Date().getFullYear();
-  
-  // Load AOS animation library asynchronously
-  function loadAOS() {
-    if (typeof AOS !== 'undefined') {
-      AOS.init({
-        duration: 800,
-        easing: 'ease-in-out',
-        once: true
-      });
-    }
-  }
-  
-  // Load scripts with minimal impact on page load
-  if (window.requestIdleCallback) {
-    window.requestIdleCallback(function() {
-      var script = document.createElement('script');
-      script.src = 'https://unpkg.com/aos@2.3.4/dist/aos.js';
-      script.onload = loadAOS;
-      document.body.appendChild(script);
-    });
-  } else {
-    setTimeout(function() {
-      var script = document.createElement('script');
-      script.src = 'https://unpkg.com/aos@2.3.4/dist/aos.js';
-      script.onload = loadAOS;
-      document.body.appendChild(script);
-    }, 1000);
-  }
-  
-  // Lazy load map iframe when in viewport
-  document.addEventListener('DOMContentLoaded', function() {
-    const mapFrame = document.querySelector('.map-container iframe');
-    
-    if ('IntersectionObserver' in window) {
-      const observer = new IntersectionObserver(function(entries) {
-        if (entries[0].isIntersecting) {
-          const src = mapFrame.getAttribute('src');
-          mapFrame.setAttribute('src', src);
-          observer.disconnect();
-        }
-      });
-      
-      observer.observe(mapFrame);
-    }
-  });
+  document.getElementById('year').textContent=new Date().getFullYear();
+  function loadAOS(){if(typeof AOS!=='undefined'){AOS.init({duration:800,easing:'ease-in-out',once:true});}}
+  if(window.requestIdleCallback){window.requestIdleCallback(function(){var s=document.createElement('script');s.src='https://unpkg.com/aos@2.3.4/dist/aos.js';s.onload=loadAOS;document.body.appendChild(s);});}
+  else{setTimeout(function(){var s=document.createElement('script');s.src='https://unpkg.com/aos@2.3.4/dist/aos.js';s.onload=loadAOS;document.body.appendChild(s);},1000);}
 </script>
 </body>
 </html>
