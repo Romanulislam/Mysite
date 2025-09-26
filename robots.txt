@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.romanulislam.com/sitemap.xml
 Disallow: /cdn-cgi/
+Sitemap: https://www.romanulislam.com/sitemap.xml
