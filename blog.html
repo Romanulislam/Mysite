@@ -2,14 +2,13 @@
 <html lang="bn">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-S8DEQ62FVN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-S8DEQ62FVN');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S8DEQ62FVN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-S8DEQ62FVN');
+    </script>
     <link rel="canonical" href="https://www.romanulislam.com/blog">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +25,7 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ব্লগ | ডা. রোমানুল ইসলাম - স্বাস্থ্য বিষয়ক টিপস এবং আপডেট">
-    <meta name="twitter:description" content="ডা. রোমানুল ইসলাম-এর ব্লগে স্বাস্থ্য বিষয়ক টিপস, টেলিমেডিসিন এবং সাধারণ স্বাস্থ্য সমস্যার সমাধান জানুন।">
+    <meta name="twitter:description" content="ডা. রোমানুল ইসলাম-এর ব্লগে স্বাস্থ্য বিষয়ক টিপস, টেলিমেডিসিন এবং সাধারণ স্বাস্থ্য সমস্যার সমাধান জানুন。">
     <style>
         * {
             margin: 0;
@@ -253,6 +252,7 @@
             text-decoration: none;
             font-size: 14px;
             transition: all 0.3s ease;
+            cursor: pointer;
         }
         
         .category-btn:hover, .category-btn.active {
@@ -315,31 +315,31 @@
         }
         
         /* WhatsApp Floating Button */
-     .whatsapp-float {
-      position: fixed;
-      width: 60px;
-      height: 60px;
-      bottom: 40px;
-      right: 40px;
-      border-radius: 50px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-      z-index: 100;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.3s ease;
-    }
-    
-    .whatsapp-float:hover {
-      transform: scale(1.1);
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-    }
-    
-    .whatsapp-float img {
-      width: 100%;
-      height: auto;
-      border-radius: 50%;
-    }
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            border-radius: 50px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .whatsapp-float img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
         
         /* Breadcrumb */
         .breadcrumb {
@@ -358,6 +358,97 @@
         .breadcrumb a:hover, .breadcrumb a:focus {
             text-decoration: underline;
             color: #083a3a;
+        }
+
+        /* Search Section */
+        .search-section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        .search-container {
+            display: flex;
+            gap: 10px;
+        }
+        
+        #search-input {
+            flex: 1;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 50px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        
+        #search-input:focus {
+            border-color: #0ea5a5;
+        }
+        
+        #search-button {
+            background: #0ea5a5;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 0 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        #search-button:hover {
+            background: #0c7a7a;
+        }
+        
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            gap: 10px;
+        }
+        
+        .pagination button {
+            padding: 8px 15px;
+            border: 1px solid #0ea5a5;
+            background: white;
+            color: #0c7a7a;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .pagination button:hover {
+            background: #0ea5a5;
+            color: white;
+        }
+        
+        .pagination button.active {
+            background: #0ea5a5;
+            color: white;
+        }
+        
+        .pagination button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        /* No Results Message */
+        .no-results {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        /* Blog Count */
+        .blog-count {
+            text-align: center;
+            color: #64748b;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
         }
         
         /* Media Queries for Larger Screens */
@@ -424,12 +515,12 @@
                 gap: 30px;
             }
             
-      .whatsapp-float {
-        width: 50px;
-        height: 50px;
-        bottom: 20px;
-        right: 20px;
-      }
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+            }
         }
         
         @media (min-width: 992px) {
@@ -460,6 +551,14 @@
             /* Make sure all elements stay within viewport */
             .blog-card, .footer-section {
                 max-width: 100%;
+            }
+            
+            .search-container {
+                flex-direction: column;
+            }
+            
+            #search-button {
+                padding: 12px;
             }
         }
     </style>
@@ -504,149 +603,26 @@
         <div class="container">
             <h2 class="section-title">সাম্প্রতিক ব্লগ পোস্ট</h2>
             
-            <div class="categories">
-                <a href="#" class="category-btn active">সব বিষয়</a>
-                <a href="#" class="category-btn">টেলিমেডিসিন</a>
-                <a href="#" class="category-btn">ঘরোয়া চিকিৎসা</a>
-                <a href="#" class="category-btn">স্বাস্থ্য টিপস</a>
-                <a href="#" class="category-btn">রোগ প্রতিরোধ</a>
+            <!-- Search Section -->
+            <div class="search-section">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="ব্লগ পোস্ট খুঁজুন...">
+                    <button id="search-button">খুঁজুন</button>
+                </div>
             </div>
             
-            <div class="blog-grid">
-                <div class="blog-card">
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span>১৫ নভেম্বর, ২০২৩</span> | <span>ডা. রোমানুল ইসলাম</span>
-                        </div>
-                        <h3 class="blog-card-title"><a href="https://www.romanulislam.com/blog/telemedicineki.html">টেলিমেডিসিন কী এবং কিভাবে এটি কাজ করে?</a></h3>
-                        <p class="blog-card-excerpt">টেলিমেডিসিন হল প্রযুক্তির মাধ্যমে দূরবর্তী চিকিৎসা সেবা প্রদান। এটি ইন্টারনেটের মাধ্যমে ডাক্তার এবং রোগীর মধ্যে যোগাযোগ স্থাপন করে।</p>
-                        <div class="blog-card-footer">
-                            <a href="https://www.romanulislam.com/blog/telemedicineki.html" class="read-more">আরও পড়ুন</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="blog-card">
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span>১৩ সেপ্টেম্বর, ২০২৫</span> | <span>ডা. রোমানুল ইসলাম</span>
-                        </div>
-                        <h3 class="blog-card-title"><a href="https://www.romanulislam.com/blog/nasal-congestion.html">নাকের সর্দি: কারণ, লক্ষণ ও ঘরোয়া উপায়</a></h3>
-                        <p class="blog-card-excerpt">নাক বন্ধ হলে ঘরোয়া উপায়, ঠান্ডায় নাক বন্ধ হলে করনীয়, এক নাক বন্ধ হলে করনীয় সম্পর্কে সম্পূর্ণ গাইড</p>
-                        <div class="blog-card-footer">
-                            <a href="https://www.romanulislam.com/blog/nasal-congestion.html" class="read-more">আরও পড়ুন</a>
-                        </div>
-                    </div>
-                </div>
-
-                                <div class="blog-card">
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span>১৬ সেপ্টেম্বর, ২০২৫</span> | <span>ডা. রোমানুল ইসলাম</span>
-                        </div>
-                        <h3 class="blog-card-title"><a href="https://www.romanulislam.com/blog/dengue.html">ডেঙ্গু জ্বর: লক্ষণ, চিকিৎসা ও প্রতিরোধের সম্পূর্ণ গাইড</a></h3>
-                        <p class="blog-card-excerpt">এই ব্লগ পোস্টে আমরা আপনাদের জন্য সাজিয়েছি একটি সম্পূর্ণ, বিস্তারিত, তথ্যবহুল গাইড, যাতে সাধারণ মানুষ বুঝতে পারে ডেঙ্গু কীভাবে ছড়ায়, কিভাবে শনাক্ত করবেন, খাবার ও যত্ন কেমন হবে, এবং কিভাবে প্রতিরোধ করা যায়।</p>
-                        <div class="blog-card-footer">
-                            <a href="https://www.romanulislam.com/blog/dengue.html" class="read-more">আরও পড়ুন</a>
-                        </div>
-                    </div>
-                </div>
-            <div class="blog-grid">
-                <div class="blog-card">
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span>১৫ নভেম্বর, ২০২৩</span> | <span>ডা. রোমানুল ইসলাম</span>
-                        </div>
-                        <h3 class="blog-card-title"><a href="https://www.romanulislam.com/blog/telemedicineki.html">টেলিমেডিসিন কী এবং কিভাবে এটি কাজ করে?</a></h3>
-                        <p class="blog-card-excerpt">টেলিমেডিসিন হল প্রযুক্তির মাধ্যমে দূরবর্তী চিকিৎসা সেবা প্রদান। এটি ইন্টারনেটের মাধ্যমে ডাক্তার এবং রোগীর মধ্যে যোগাযোগ স্থাপন করে।</p>
-                        <div class="blog-card-footer">
-                            <a href="https://www.romanulislam.com/blog/telemedicineki.html" class="read-more">আরও পড়ুন</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="blog-card">
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span>১৩ সেপ্টেম্বর, ২০২৫</span> | <span>ডা. রোমানুল ইসলাম</span>
-                        </div>
-                        <h3 class="blog-card-title"><a href="https://www.romanulislam.com/blog/nasal-congestion.html">নাকের সর্দি: কারণ, লক্ষণ ও ঘরোয়া উপায়</a></h3>
-                        <p class="blog-card-excerpt">নাক বন্ধ হলে ঘরোয়া উপায়, ঠান্ডায় নাক বন্ধ হলে করনীয়, এক নাক বন্ধ হলে করনীয় সম্পর্কে সম্পূর্ণ গাইড</p>
-                        <div class="blog-card-footer">
-                            <a href="https://www.romanulislam.com/blog/nasal-congestion.html" class="read-more">আরও পড়ুন</a>
-                        </div>
-                    </div>
-                </div>
-
-                                <div class="blog-card">
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span>১৬ সেপ্টেম্বর, ২০২৫</span> | <span>ডা. রোমানুল ইসলাম</span>
-                        </div>
-                        <h3 class="blog-card-title"><a href="https://www.romanulislam.com/blog/dengue.html">ডেঙ্গু জ্বর: লক্ষণ, চিকিৎসা ও প্রতিরোধের সম্পূর্ণ গাইড</a></h3>
-                        <p class="blog-card-excerpt">এই ব্লগ পোস্টে আমরা আপনাদের জন্য সাজিয়েছি একটি সম্পূর্ণ, বিস্তারিত, তথ্যবহুল গাইড, যাতে সাধারণ মানুষ বুঝতে পারে ডেঙ্গু কীভাবে ছড়ায়, কিভাবে শনাক্ত করবেন, খাবার ও যত্ন কেমন হবে, এবং কিভাবে প্রতিরোধ করা যায়।</p>
-                        <div class="blog-card-footer">
-                            <a href="https://www.romanulislam.com/blog/dengue.html" class="read-more">আরও পড়ুন</a>
-                        </div>
-                    </div>
-                </div>
-                                
-            <div class="blog-grid">
-                <div class="blog-card">
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span>১৫ নভেম্বর, ২০২৩</span> | <span>ডা. রোমানুল ইসলাম</span>
-                        </div>
-                        <h3 class="blog-card-title"><a href="https://www.romanulislam.com/blog/telemedicineki.html">টেলিমেডিসিন কী এবং কিভাবে এটি কাজ করে?</a></h3>
-                        <p class="blog-card-excerpt">টেলিমেডিসিন হল প্রযুক্তির মাধ্যমে দূরবর্তী চিকিৎসা সেবা প্রদান। এটি ইন্টারনেটের মাধ্যমে ডাক্তার এবং রোগীর মধ্যে যোগাযোগ স্থাপন করে।</p>
-                        <div class="blog-card-footer">
-                            <a href="https://www.romanulislam.com/blog/telemedicineki.html" class="read-more">আরও পড়ুন</a>
-                        </div>
-                    </div>
-                </div>
-                
-            <div class="blog-grid">
-                <div class="blog-card">
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span>১৫ নভেম্বর, ২০২৩</span> | <span>ডা. রোমানুল ইসলাম</span>
-                        </div>
-                        <h3 class="blog-card-title"><a href="https://www.romanulislam.com/blog/telemedicineki.html">টেলিমেডিসিন কী এবং কিভাবে এটি কাজ করে?</a></h3>
-                        <p class="blog-card-excerpt">টেলিমেডিসিন হল প্রযুক্তির মাধ্যমে দূরবর্তী চিকিৎসা সেবা প্রদান। এটি ইন্টারনেটের মাধ্যমে ডাক্তার এবং রোগীর মধ্যে যোগাযোগ স্থাপন করে।</p>
-                        <div class="blog-card-footer">
-                            <a href="https://www.romanulislam.com/blog/telemedicineki.html" class="read-more">আরও পড়ুন</a>
-                        </div>
-                    </div>
-                </div>
-            <div class="blog-grid">
-                <div class="blog-card">
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span>১৫ নভেম্বর, ২০২৩</span> | <span>ডা. রোমানুল ইসলাম</span>
-                        </div>
-                        <h3 class="blog-card-title"><a href="https://www.romanulislam.com/blog/telemedicineki.html">টেলিমেডিসিন কী এবং কিভাবে এটি কাজ করে?</a></h3>
-                        <p class="blog-card-excerpt">টেলিমেডিসিন হল প্রযুক্তির মাধ্যমে দূরবর্তী চিকিৎসা সেবা প্রদান। এটি ইন্টারনেটের মাধ্যমে ডাক্তার এবং রোগীর মধ্যে যোগাযোগ স্থাপন করে।</p>
-                        <div class="blog-card-footer">
-                            <a href="https://www.romanulislam.com/blog/telemedicineki.html" class="read-more">আরও পড়ুন</a>
-                        </div>
-                    </div>
-                </div>
-                
-            <div class="blog-grid">
-                <div class="blog-card">
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span>১৫ নভেম্বর, ২০২৩</span> | <span>ডা. রোমানুল ইসলাম</span>
-                        </div>
-                        <h3 class="blog-card-title"><a href="https://www.romanulislam.com/blog/telemedicineki.html">টেলিমেডিসিন কী এবং কিভাবে এটি কাজ করে?</a></h3>
-                        <p class="blog-card-excerpt">টেলিমেডিসিন হল প্রযুক্তির মাধ্যমে দূরবর্তী চিকিৎসা সেবা প্রদান। এটি ইন্টারনেটের মাধ্যমে ডাক্তার এবং রোগীর মধ্যে যোগাযোগ স্থাপন করে।</p>
-                        <div class="blog-card-footer">
-                            <a href="https://www.romanulislam.com/blog/telemedicineki.html" class="read-more">আরও পড়ুন</a>
-                        </div>
-                    </div>
-                </div>
-                              
-                                         
+            <div class="categories">
+<!-- category buttons generated by JS -->
+</div>
+            
+            <div class="blog-count" id="blog-count">মোট 6টি ব্লগ পোস্ট</div>
+            
+            <div class="blog-grid" id="blog-grid">
+                <!-- Blog posts will be dynamically inserted here -->
+            </div>
+            
+            <div class="pagination" id="pagination">
+                <!-- Pagination buttons will be dynamically inserted here -->
             </div>
         </div>
     </section>
@@ -702,37 +678,969 @@
     </footer>
 
     <!-- WhatsApp Floating Button -->
-<a class="whatsapp-float" href="https://wa.me/8801826589958?text=স্যার, আমি একটি অ্যাপয়ন্টমেন্ট বুক করতে চাই" target="_blank" aria-label="WhatsApp Chat">
-  <img src="assets/images/whatsapp.gif" alt="WhatsApp" width="60" height="60" loading="lazy">
-</a>
+    <a class="whatsapp-float" href="https://wa.me/8801826589958?text=স্যার, আমি একটি অ্যাপয়ন্টমেন্ট বুক করতে চাই" target="_blank" aria-label="WhatsApp Chat">
+        <img src="assets/images/whatsapp.gif" alt="WhatsApp" width="60" height="60" loading="lazy">
+    </a>
 
-    <script>
-        // Simple animation for blog cards
-        document.addEventListener('DOMContentLoaded', function() {
-            const blogCards = document.querySelectorAll('.blog-card');
-            
-            function checkScroll() {
-                blogCards.forEach(card => {
-                    const cardPosition = card.getBoundingClientRect().top;
-                    const screenPosition = window.innerHeight / 1.3;
-                    
-                    if(cardPosition < screenPosition) {
-                        card.style.opacity = 1;
-                        card.style.transform = 'translateY(0)';
-                    }
-                });
+    
+<script>
+const blogPosts = [
+  {
+    title: "হঠাৎ পেট ফোলা কি বিপজ্জনক? সত্য জানুন এখনই!",
+    excerpt: "হঠাৎ বা দীর্ঘদিনের পেট ফোলা নিয়ে দুশ্চিন্তায় আছেন? কারণ, লক্ষণ ও করণীয় জেনে নিন এবং প্রয়োজনে অনলাইনে বিশেষজ্ঞ ডাক্তারের পরামর্শ নিন",
+    link: "https://www.romanulislam.com/blog/abdominal-distension.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["নারী ও গাইনোকলজি"]
+  },
+  {
+    title: "পেটে ব্যথা কি বিপদের লক্ষণ? সত্য জানলে অবাক হবেন!",
+    excerpt: "পেটে ব্যথা কেন হয় ও কখন বিপজ্জনক হতে পারে জানুন। ঘরোয়া উপায়, করণীয় ও টেলিমেডিসিনে দ্রুত চিকিৎসা পেতে এখনই জানুন।",
+    link: "https://www.romanulislam.com/blog/abdominal-pain.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["পেট ও হজম"]
+  },
+  {
+    title: "গ্যাস্ট্রিক এবং অ্যাসিডিটির সমস্যা: কারণ, প্রতিকার ও জীবনযাপনের গল্প | ডা. রোমানুল ইসলাম",
+    excerpt: "গ্যাস্ট্রিক ও অ্যাসিডিটি কী, লক্ষণ, কারণ, চিকিৎসা, ঘরোয়া প্রতিকার এবং FAQ। ডা. রোমানুল ইসলামের সাথে অনলাইন চিকিৎসা পরামর্শ নিন।",
+    link: "https://www.romanulislam.com/blog/acidity.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["পেট ও হজম"]
+  },
+  {
+    title: "ব্রণ: কারণ, লক্ষণ, চিকিৎসা ও প্রতিকার | ডা. রোমানুল ইসলাম",
+    excerpt: "ব্রণ এর কারণ, লক্ষণ, চিকিৎসা ও প্রতিকার নিয়ে সম্পূর্ণ গাইড। এখনই অনলাইনে টেলিমেডিসিন সেবার মাধ্যমে ব্রণের সমাধান নিন।",
+    link: "https://www.romanulislam.com/blog/acne.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["ত্বকের রোগ"]
+  },
+  {
+    title: "এলার্জি কি স্থায়ী? ভয়ংকর সত্য ও মুক্তির উপায়",
+    excerpt: "এলার্জি কি আপনাকেও কষ্ট দিচ্ছে? ঘরে বসেই টেলিমেডিসিনে ডাক্তার দেখান। জানুন এলার্জি প্রতিরোধ ও কার্যকর চিকিৎসার উপায় আজই।",
+    link: "https://www.romanulislam.com/blog/allergy.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["ত্বকের রোগ"]
+  },
+  {
+    title: "রাগ কি নষ্ট করছে আপনার জীবন? নিয়ন্ত্রণের শক্তিশালী উপায় জানুন",
+    excerpt: "অতিরিক্ত রাগ দাম্পত্য, পরিবার ও স্বাস্থ্যের ক্ষতি করে। টেলিমেডিসিনের বিশেষজ্ঞদের সহায়তায় রাগ নিয়ন্ত্রণ ও সমাধান জানুন সহজ উপায়ে।",
+    link: "https://www.romanulislam.com/blog/anger.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["মানসিক স্বাস্থ্য"]
+  },
+  {
+    title: "ক্ষুধামন্দা কি মারাত্মক সমস্যা? সহজ সমাধান জানুন আজই",
+    excerpt: "ক্ষুধামন্দা দূর করার কার্যকর উপায় জানতে চান? সঠিক খাবার, ভিটামিন ও চিকিৎসকের পরামর্শে ক্ষুধামন্দা থেকে মুক্তির পথ খুঁজে নিন আজই।",
+    link: "https://www.romanulislam.com/blog/anorexia.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["মানসিক স্বাস্থ্য"]
+  },
+  {
+    title: "মনোযোগ কমে যাচ্ছে? জানুন শক্তিশালী উপায় ও সমাধান!",
+    excerpt: "পড়াশোনা, কাজ বা দৈনন্দিন জীবনে মনোযোগ বাড়াতে চান? টেলিমেডিসিনের সহায়তায় জানুন মনোযোগ বৃদ্ধির কার্যকর সমাধান ও প্রাকৃতিক উপায়।",
+    link: "https://www.romanulislam.com/blog/attention.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["মানসিক স্বাস্থ্য"]
+  },
+  {
+    title: "কোমর ব্যথা কি আপনার জীবন নষ্ট করছে? জানুন কারণ, উপশম ও কার্যকর সমাধান",
+    excerpt: "কোমর ব্যথা নিয়ে ভুগছেন? এখনই জানুন এর কারণ, প্রতিকার ও চিকিৎসার উপায়। অনলাইনে বিশেষজ্ঞ ডাক্তারের পরামর্শ নিন আজই।",
+    link: "https://www.romanulislam.com/blog/back-pain.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["হাড় ও মাংসপেশি"]
+  },
+  {
+    title: "চোখে ঝাপসা দেখা কি বিপজ্জনক? কারণ, প্রতিকার ও সমাধান",
+    excerpt: "চোখে ঝাপসা হলে অবহেলা নয়। জানুন চোখে ঝাপসা দেখার কারণ, প্রতিকার ও দৃষ্টি বৃদ্ধির উপায়। টেলিমেডিসিনে দ্রুত চিকিৎসা পান।",
+    link: "https://www.romanulislam.com/blog/blurred-vision.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["সংক্রামক রোগ"]
+  },
+  {
+    title: "শ্বাসকষ্ট কেন হয়? বিপজ্জনক নাকি নিরাময় সম্ভব?",
+    excerpt: "শ্বাসকষ্ট একটি সাধারণ কিন্তু কষ্টদায়ক সমস্যা। জানুন শ্বাসকষ্ট এর কারণ, চিকিৎসা, ঘরোয়া উপায় ও মুক্তির সমাধান",
+    link: "https://www.romanulislam.com/blog/breathlessness.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["শ্বাসনালী ও অ্যালার্জি"]
+  },
+  {
+    title: "হাত পা জ্বালাপোড়া: কেন হয়? মুক্তির সহজ ও কার্যকর উপায়",
+    excerpt: "হাত পা জ্বালাপোড়া কষ্টদায়ক সমস্যা? কারণ, ভিটামিন ঘাটতি ও প্রমাণিত সমাধান নিয়ে জানুন। হাত পা জ্বালাপোড়া কমাতে টেলিমেডিসিন সহায়তা নিন।",
+    link: "https://www.romanulislam.com/blog/burning-sensation.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["নারী ও গাইনোকলজি"]
+  },
+  {
+    title: "বুকে ব্যথা কি হার্ট অ্যাটাকের সংকেত? সত্য জানুন আজই!",
+    excerpt: "বুকে ব্যথা কেন হয়, কি খাওয়া উচিত ও ঘরোয়া উপায় জানুন। টেলিমেডিসিনে এখনই ডাক্তারের পরামর্শ নিন বুকে ব্যথা কমাতে।",
+    link: "https://www.romanulislam.com/blog/chest-pain.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["পেট ও হজম"]
+  },
+  {
+    title: "বুকের মাঝখানে চাপ: মারাত্মক নাকি সামান্য ব্যথা?",
+    excerpt: "বুকের মাঝখানে চাপ অবহেলা করা বিপজ্জনক হতে পারে। জানুন কারণ, উপসর্গ ও করণীয়, এখনই অনলাইনে ডাক্তারের সাথে পরামর্শ নিন।",
+    link: "https://www.romanulislam.com/blog/chest-tightness.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["পেট ও হজম"]
+  },
+  {
+    title: "কোষ্ঠকাঠিন্যে ভুগছেন? বিপদ কতটা গুরুতর জানেন কি?",
+    excerpt: "কোষ্ঠকাঠিন্য কেবল অস্বস্তি নয়, এটি মারাত্মক রোগের কারণ হতে পারে। এখনই জানুন প্রতিকার ও করণীয় এবং টেলিমেডিসিনে বিশেষজ্ঞের পরামর্শ নিন।",
+    link: "https://www.romanulislam.com/blog/constipation.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["পেট ও হজম"]
+  },
+  {
+    title: "রাতে কাশি: স্বাভাবিক নাকি বিপজ্জনক? | কারণ, লক্ষণ ও চিকিৎসা",
+    excerpt: "রাতের কাশি বাড়ার কারণ ও কার্যকর প্রতিকার জানুন। দ্রুত টেলিমেডিসিনে ডাক্তার দেখিয়ে নিরাপদ সমাধান নিন।",
+    link: "https://www.romanulislam.com/blog/cough.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["শ্বাসনালী ও অ্যালার্জি"]
+  },
+  {
+    title: "চিরতরে খুশকি দূর করবেন কীভাবে? সত্য জানুন আজই",
+    excerpt: "খুশকি দূর করার কার্যকর ঘরোয়া ও চিকিৎসা উপায় জানুন। মাথায় খুশকি কেন হয় এবং সমাধান কীভাবে পাবেন, টেলিমেডিসিন সেবা থেকেও পরামর্শ নিন।",
+    link: "https://www.romanulislam.com/blog/dandruff.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["ত্বকের রোগ"]
+  },
+  {
+    title: "ভয়ঙ্কর ভুলে যাওয়া রোগ: কি সত্যিই প্রতিকার আছে?",
+    excerpt: "ভুলে যাওয়া রোগ কি বিপজ্জনক? জানুন কারণ, লক্ষণ ও প্রতিকার। টেলিমেডিসিন পরামর্শ নিয়ে আজই ভুলে যাওয়া সমস্যার সমাধান শুরু করুন।",
+    link: "https://www.romanulislam.com/blog/dementia.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["এন্ডোক্রাইন ও মেটাবলিক"]
+  },
+  {
+    title: "ডেঙ্গু জ্বর: লক্ষণ, চিকিৎসা, খাবার ও প্রতিরোধের সম্পূর্ণ গাইড",
+    excerpt: "ডেঙ্গু জ্বরের লক্ষণ, চিকিৎসা, প্লাটিলেট বাড়ানোর খাবার, ঘরোয়া প্রতিকার ও প্রতিরোধের উপায় সম্পর্কে সম্পূর্ণ তথ্য",
+    link: "https://www.romanulislam.com/blog/dengue.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["সংক্রামক রোগ"]
+  },
+  {
+    title: "ডিপ্রেশন কি সারানো যায়? সত্যিকারের মুক্তির শক্তিশালী উপায়",
+    excerpt: "ডিপ্রেশন নিয়ে ভুগছেন? জানুন ডিপ্রেশনের লক্ষণ, চিকিৎসা, ব্যায়াম ও ডিপ্রেশন থেকে মুক্তির উপায়। অনলাইনে টেলিমেডিসিনে পরামর্শ নিন আজই।",
+    link: "https://www.romanulislam.com/blog/depression.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["মানসিক স্বাস্থ্য"]
+  },
+  {
+    title: "ডার্মাটাইটিস কি সারানো সম্ভব? ভয়ংকর সত্য জানুন!",
+    excerpt: "ডার্মাটাইটিসের দাগ ও চুলকানি দূর করতে চান? সঠিক চিকিৎসা ও টেলিমেডিসিন পরামর্শে ডার্মাটাইটিস নিয়ন্ত্রণ এখন সহজ।",
+    link: "https://www.romanulislam.com/blog/dermatitis.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["ত্বকের রোগ"]
+  },
+  {
+    title: "পাতলা পায়খানা কেন হয়? ডায়রিয়ার বিপজ্জনক সত্য ও সমাধান",
+    excerpt: "ডায়রিয়া হলে কী করবেন? এখনই টেলিমেডিসিনে অভিজ্ঞ ডাক্তারের সাথে যুক্ত হয়ে সঠিক চিকিৎসা নিন। ডায়রিয়া চিকিৎসায় দ্রুত পদক্ষেপ নিন।",
+    link: "https://www.romanulislam.com/blog/diarrhoea.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["শিশু স্বাস্থ্য"]
+  },
+  {
+    title: "শুকনো কাশি কি বিপদজনক? অবহেলা করলে ক্ষতি হতে পারে!",
+    excerpt: "শুকনো কাশি কেন হয়, কিভাবে মুক্তি পাবেন এবং চিকিৎসা দরকার কবে—জানুন। টেলিমেডিসিনে এখনই ডাক্তার দেখিয়ে শুকনো কাশি থেকে সমাধান নিন।",
+    link: "https://www.romanulislam.com/blog/dry-cough.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["শ্বাসনালী ও অ্যালার্জি"]
+  },
+  {
+    title: "শুষ্ক ত্বক কি আপনার সৌন্দর্যের শত্রু? জানুন সমাধান ও শক্তিশালী যত্নের কৌশল",
+    excerpt: "শুষ্ক ত্বক এখনই কমাতে চান? ঘরোয়া উপায়, সঠিক ফেসওয়াস, সাবান, খাবার ও ভিটামিনসহ সহজ যত্নে নরম মসৃণ ত্বক পেতে আমাদের গাইড পড়ুন।",
+    link: "https://www.romanulislam.com/blog/dry-skin.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["ত্বকের রোগ"]
+  },
+  {
+    title: "গলা শুকিয়ে যাওয়া: হঠাৎ হলে কি বিপদ? কারণ ও প্রতিকার",
+    excerpt: "গলা শুকিয়ে যাওয়া কেবল অস্বস্তি নয়, কখনও গুরুতর সমস্যার সংকেত হতে পারে। আজই জানুন কারণ, প্রতিকার ও চিকিৎসা পরামর্শ।",
+    link: "https://www.romanulislam.com/blog/dry-throat.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["সংক্রামক রোগ"]
+  },
+  {
+    title: "প্রস্রাবে জ্বালাপোড়া কেন হয়? অবাক করা কারণ ও প্রতিকার!",
+    excerpt: "প্রস্রাবে জ্বালাপোড়া সমস্যা দূর করার কার্যকরী ঘরোয়া ও চিকিৎসা উপায় জানুন। গর্ভবতী ও সাধারণ মানুষ উভয়ের জন্য কার্যকর পরামর্শ।",
+    link: "https://www.romanulislam.com/blog/dysuria.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["সংক্রামক রোগ"]
+  },
+  {
+    title: "কানে ব্যথা কেন হয়? বিপজ্জনক নাকি সাধারণ সমস্যা?",
+    excerpt: "কানে ব্যথা নিয়ে চিন্তিত? জানুন কানে ব্যথার কারণ, ঘরোয়া উপায় ও চিকিৎসা। কানে ব্যথা উপশমে টেলিমেডিসিনে ডাক্তার দেখান সহজেই।",
+    link: "https://www.romanulislam.com/blog/earache.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["সংক্রামক রোগ"]
+  },
+  {
+    title: "একজিমা: কারণ, লক্ষণ, প্রতিকার এবং সুস্থ জীবনের গল্প | ডা. রোমানুল ইসলাম",
+    excerpt: "একজিমা কী, লক্ষণ, কারণ, চিকিৎসা, ঘরোয়া প্রতিকার এবং FAQ। ডা. রোমানুল ইসলামের সাথে অনলাইন চিকিৎসা পরামর্শ নিন।",
+    link: "https://www.romanulislam.com/blog/eczema.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["ত্বকের রোগ"]
+  },
+  {
+    title: "শরীরে পানি আসা কি বিপদজনক? জানুন আসল কারণ ও সমাধান",
+    excerpt: "শরীরে পানি আসা এর প্রকৃত কারণ, লক্ষণ ও চিকিৎসা জেনে নিন। টেলিমেডিসিনে অভিজ্ঞ ডাক্তারের পরামর্শ নিন এখনই, সঠিক সমাধানের জন্য।",
+    link: "https://www.romanulislam.com/blog/edema.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["ত্বকের রোগ"]
+  },
+  {
+    title: "মৃগী রোগ কি সারানো যায়? সত্য জানলে বদলাবে জীবন",
+    excerpt: "মৃগী রোগ নিয়ে ভয় নয়, সমাধান চাই। মৃগী রোগের কারণ, লক্ষণ, চিকিৎসা ও মুক্তির উপায় জানুন এবং টেলিমেডিসিনে সহজে পরামর্শ নিন।",
+    link: "https://www.romanulislam.com/blog/epilepsy.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["নিউরোলজি ও স্নায়ুতন্ত্র"]
+  },
+  {
+    title: "ইরেকটাইল ডিসফাংশন কি সারানো সম্ভব? পুরুষদের জন্য সমাধান",
+    excerpt: "ইরেকটাইল ডিসফাংশন এর কারণ, লক্ষণ, ব্যায়াম ও সর্বশেষ চিকিৎসা নিয়ে বিস্তারিত জানুন। এখনই টেলিমেডিসিনে সমাধান পান।",
+    link: "https://www.romanulislam.com/blog/erectile-dysfunction.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["এন্ডোক্রাইন ও মেটাবলিক"]
+  },
+  {
+    title: "জ্বর কি বিপজ্জনক? কারণ, উপসর্গ ও মুক্তির উপায় জানুন",
+    excerpt: "জ্বর নিয়ে দুশ্চিন্তায় আছেন? জানুন জ্বরের কারণ, লক্ষণ ও চিকিৎসা। এখনই টেলিমেডিসিনে ডাক্তার দেখান ও ঘরে বসেই জ্বরের সঠিক সমাধান পান।",
+    link: "https://www.romanulislam.com/blog/fever.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["সংক্রামক রোগ"]
+  },
+  {
+    title: "পায়ের গোড়ালি ব্যথা: কি কারণে হয় এবং কিভাবে কমানো যায়? | ডা. রোমানুল ইসলাম",
+    excerpt: "পায়ের গোড়ালি ব্যথা দ্রুত কমানোর কার্যকর উপায়, ঘরোয়া চিকিৎসা এবং ব্যায়ামের পরামর্শ নিয়ে বিস্তারিত গাইড",
+    link: "https://www.romanulislam.com/blog/foot-pain.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["হাড় ও মাংসপেশি"]
+  },
+  {
+    title: "হাড় ভাঙ্গা: কারণ, লক্ষণ, প্রতিকার ও ঘরোয়া উপায় | ডা. রোমানুল ইসলাম",
+    excerpt: "হাড় ভাঙ্গার প্রাথমিক চিকিৎসা, দ্রুত সুস্থ হওয়ার ঘরোয়া উপায় এবং হাড় জোড়া লাগার প্রক্রিয়া সম্পর্কে সম্পূর্ণ তথ্য",
+    link: "https://www.romanulislam.com/blog/fracture.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["শিশু স্বাস্থ্য"]
+  },
+  {
+    title: "ফাঙ্গাল ইনফেকশন কি ভয়ঙ্কর? দ্রুত মুক্তির উপায় জানুন!",
+    excerpt: "ফাঙ্গাল ইনফেকশন নিয়ে সমস্যায় আছেন? ঘরে বসে টেলিমেডিসিনে ডাক্তার দেখান। জানুন কারণ, লক্ষণ ও কার্যকর চিকিৎসার উপায়।",
+    link: "https://www.romanulislam.com/blog/fungal-infection.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["ত্বকের রোগ"]
+  },
+  {
+    title: "চুল পড়া কি থামানো সম্ভব? জানুন শক্তিশালী সমাধান",
+    excerpt: "চুল পড়া কমাতে ও নতুন চুল গজাতে কার্যকর উপায় খুঁজছেন? এখানে জানুন চুল পড়ার কারণ, প্রতিকার ও চিকিৎসা নিয়ে ভরসাযোগ্য সমাধান।",
+    link: "https://www.romanulislam.com/blog/hair-fall.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["এন্ডোক্রাইন ও মেটাবলিক"]
+  },
+  {
+    title: "হ্যালুসিনেশন কি ভয়ংকর? সত্য জানলে বদলাবে জীবন",
+    excerpt: "হ্যালুসিনেশন কী, কেন হয়, লক্ষণ ও বাঁচার উপায় জানুন। অনলাইন ডাক্তারের পরামর্শে হ্যালুসিনেশন নিয়ন্ত্রণে আনুন এখনই সহজে।",
+    link: "https://www.romanulislam.com/blog/hallucination.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["শিশু স্বাস্থ্য"]
+  },
+  {
+    title: "প্রচণ্ড মাথা ব্যথা কেন হয়? বিপদজনক নাকি সাধারণ সমস্যা?",
+    excerpt: "মাথা ব্যথা কমানোর কার্যকর উপায় খুঁজছেন? জানুন মাথা ব্যথা কেন হয়, এর প্রাথমিক চিকিৎসা ও করণীয় সম্পর্কে বিস্তারিত তথ্য।",
+    link: "https://www.romanulislam.com/blog/headache.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["নারী ও গাইনোকলজি"]
+  },
+  {
+    title: "কানে কম শোনা: কারণ, প্রতিকার ও দ্রুত সমাধান - ডা. রোমানুল ইসলাম",
+    excerpt: "কানে কম শোনার কারণ, লক্ষণ, প্রতিকারের ঘরোয়া উপায়, আধুনিক চিকিৎসা ও কানে শোনার মেশিন সম্পর্কে বিস্তারিত তথ্য",
+    link: "https://www.romanulislam.com/blog/hearing-loss.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["শিশু স্বাস্থ্য"]
+  },
+  {
+    title: "বুক জ্বালাপোড়া কেন হয়? লুকানো সত্য ও সমাধান জানুন আজই!",
+    excerpt: "বুক জ্বালাপোড়া অনেকের দৈনন্দিন সমস্যা। এখনই জানুন বুক জ্বালাপোড়া কমানোর উপায় ও চিকিৎসা নিয়ে টেলিমেডিসিন সার্ভিসের মাধ্যমে সঠিক সমাধান।",
+    link: "https://www.romanulislam.com/blog/heartburn.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["পেট ও হজম"]
+  },
+  {
+    title: "প্রস্রাবের সাথে রক্ত কেন আসে? বিপজ্জনক নাকি নিরাময়যোগ্য?",
+    excerpt: "প্রস্রাবের সাথে রক্ত দেখা গেলে অবহেলা নয়। জানুন কারণ, করণীয় ও চিকিৎসা পদ্ধতি। টেলিমেডিসিনের মাধ্যমে নিরাপদ সমাধান নিন এখনই।",
+    link: "https://www.romanulislam.com/blog/hematuria.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["মূত্রনালি ও কিডনি"]
+  },
+  {
+    title: "কফের সাথে রক্ত: স্বাভাবিক নাকি বিপজ্জনক? | কারণ, লক্ষণ ও চিকিৎসা",
+    excerpt: "কফের সাথে রক্ত আসার কারণ, লক্ষণ, প্রতিকার এবং কখন ডাক্তার দেখাবেন। টেলিমেডিসিনের মাধ্যমে বিশেষজ্ঞ ডাক্তারের পরামর্শ নিন।",
+    link: "https://www.romanulislam.com/blog/hemoptysis.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["শ্বাসনালী ও অ্যালার্জি"]
+  },
+  {
+    title: "হঠাৎ হাই প্রেসার কি মারাত্মক? কারণ, সমাধান ও করণীয়",
+    excerpt: "হঠাৎ হাই প্রেসার হলে করণীয়, লক্ষণ, খাদ্য তালিকা ও ঘরোয়া উপায় জানুন। টেলিমেডিসিনে বিশেষজ্ঞ ডাক্তার থেকে অনলাইনে সঠিক চিকিৎসা নিন এখনই।",
+    link: "https://www.romanulislam.com/blog/high-pressure.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["হৃদরোগ ও রক্তচাপ"]
+  },
+  {
+    title: "গলা ভাঙ্গা কি বিপজ্জনক? দ্রুত আরোগ্যের শক্তিশালী উপায় জানুন!",
+    excerpt: "গলা ভাঙ্গা দূর করার ঘরোয়া ও চিকিৎসা উপায় জানুন। গলার আওয়াজ ফেরাতে প্রমাণিত কৌশল ও টেলিমেডিসিনে বিশেষজ্ঞের সহায়তা নিন।",
+    link: "https://www.romanulislam.com/blog/hoarse-voice.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["শ্বাসনালী ও অ্যালার্জি"]
+  },
+  {
+    title: "অন্ডকোষ ফুলে যাওয়া কি বিপজ্জনক? সত্য জানুন আজই",
+    excerpt: "অন্ডকোষ ফুলে যাওয়া অবহেলা করলে বড় সমস্যায় রূপ নেতে পারে। সঠিক কারণ, প্রতিকার ও চিকিৎসা জানুন এবং এখনই বিশেষজ্ঞ ডাক্তারের সাথে পরামর্শ নিন।",
+    link: "https://www.romanulislam.com/blog/hydrocele.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["সংক্রামক রোগ"]
+  },
+  {
+    title: "অতিরিক্ত ঘাম কেন হয়? চমকপ্রদ কারণ ও সমাধান জানুন",
+    excerpt: "অতিরিক্ত ঘামের কারণ, লক্ষণ, প্রতিকারের ঘরোয়া উপায় ও চিকিৎসা",
+    link: "https://www.romanulislam.com/blog/hyperhidrosis.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["এন্ডোক্রাইন ও মেটাবলিক"]
+  },
+  {
+    title: "❄️ শরীর ঠান্ডা হয়ে যাওয়া কি বিপদজনক? এখনই জানুন সমাধান",
+    excerpt: "শরীর ঠান্ডা হয়ে যাওয়া কেন হয় ও করণীয় জানুন। বিশেষজ্ঞ টেলিমেডিসিন সেবা নিয়ে ঘরে বসেই চিকিৎসা নিন এখনই।",
+    link: "https://www.romanulislam.com/blog/hypothermia.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["এন্ডোক্রাইন ও মেটাবলিক"]
+  },
+  {
+    title: "বদ হজমে ভুগছেন? বিপদ এড়াতে এখনই জানুন করণীয়",
+    excerpt: "বদ হজম থেকে মুক্তি চান? সহজ উপায়, খাদ্যাভ্যাস পরিবর্তন ও টেলিমেডিসিন সেবার মাধ্যমে এখনই জেনে নিন বদ হজম কমানোর কার্যকর সমাধান",
+    link: "https://www.romanulislam.com/blog/indigestion.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["পেট ও হজম"]
+  },
+  {
+    title: "অনিদ্রা কি জীবন ধ্বংস করছে? ঘুম ফেরানোর শক্তিশালী সমাধান জানুন আজই",
+    excerpt: "অনিদ্রা দূর করার কার্যকর উপায়, রাতে ঘুম না আসার কারণ ও চিকিৎসা নিয়ে বিস্তারিত জানুন। এখনই অনলাইনে ডাক্তারের পরামর্শ নিয়ে অনিদ্রা মোকাবিলা করুন।",
+    link: "https://www.romanulislam.com/blog/insomnia.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["মানসিক স্বাস্থ্য"]
+  },
+  {
+    title: "চুলকানি কি রোগের লক্ষণ? বিপজ্জনক না সাধারণ সমস্যা?",
+    excerpt: "সারা শরীরে চুলকানি হলে অবহেলা করবেন না। চুলকানি কেন হয়, করণীয় কী এবং দ্রুত সমাধান পেতে টেলিমেডিসিনে পরামর্শ নিন।",
+    link: "https://www.romanulislam.com/blog/itching.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["ত্বকের রোগ"]
+  },
+  {
+    title: "চোখ চুলকানো কি বিপজ্জনক? জানুন কারণ, ক্ষতি ও সমাধান",
+    excerpt: "চোখ চুলকানো সমস্যায় ভুগছেন? চোখ চুলকানোর কারণ, ক্ষতি ও প্রতিকার জানুন এবং আমাদের টেলিমেডিসিন সেবার মাধ্যমে তাৎক্ষণিক পরামর্শ নিন।",
+    link: "https://www.romanulislam.com/blog/itchy-eyes.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["সংক্রামক রোগ"]
+  },
+  {
+    title: "হাটুর জয়েন্টে ব্যথা নিয়ে ভুগছেন? সত্যিই ভয়ংকর নাকি সহজ সমাধান আছে?",
+    excerpt: "হাটুর জয়েন্টে ব্যথার কারণ, ঘরোয়া চিকিৎসা, খাবার ও ব্যায়ামসহ টেলিমেডিসিনে দ্রুত চিকিৎসকের পরামর্শ পাওয়ার উপায়",
+    link: "https://www.romanulislam.com/blog/knee-pain.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["হাড় ও মাংসপেশি"]
+  },
+  {
+    title: "হাটু ফোলা কেন হয়? ভয়ংকর ভুল ও আসল প্রতিকার জানুন আজই",
+    excerpt: "হাটু ফোলা অনেক সময় অবহেলা করলে বড় সমস্যা হতে পারে। টেলিমেডিসিনে ডাক্তার দেখিয়ে এখনই হাটু ফোলা কমানোর সঠিক সমাধান নিন।",
+    link: "https://www.romanulislam.com/blog/knee-swelling.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["সংক্রামক রোগ"]
+  },
+  {
+    title: "পায়ের পেশিতে টান কি বিপদজনক? জানুন সমাধান ও প্রতিকার",
+    excerpt: "হঠাৎ পেশিতে টান হলে কী করবেন? কেন হয় ও কিভাবে প্রতিকার করবেন জানুন। টেলিমেডিসিনের মাধ্যমে ঘরে বসেই সমাধান নিন আজই।",
+    link: "https://www.romanulislam.com/blog/leg-cramps.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["এন্ডোক্রাইন ও মেটাবলিক"]
+  },
+  {
+    title: "হঠাৎ পা ফোলা কেন? জানুন ভয়ঙ্কর কারণ ও সমাধান",
+    excerpt: "পা ফোলা কেবল সাধারণ সমস্যা নয়, বড় রোগের সতর্ক সংকেতও হতে পারে। টেলিমেডিসিনে এখনই জেনে নিন পা ফোলা কমানোর উপায় ও চিকিৎসা।",
+    link: "https://www.romanulislam.com/blog/leg-swelling.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["হাড় ও মাংসপেশি"]
+  },
+  {
+    title: "সাদা স্রাব বেশি হচ্ছে? বিপজ্জনক নাকি স্বাভাবিক লক্ষণ?",
+    excerpt: "সাদা স্রাব কেন হয়, কখন স্বাভাবিক আর কখন বিপজ্জনক—সব জানুন। অতিরিক্ত সাদা স্রাব হলে করণীয় ও চিকিৎসার জন্য এখনই পরামর্শ নিন।",
+    link: "https://www.romanulislam.com/blog/leukorrhea.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["সংক্রামক রোগ"]
+  },
+  {
+    title: "ভাত না খেলে ওজন কমে? অবিশ্বাস্য সত্য জানুন আজই",
+    excerpt: "সঠিক ডায়েট চার্ট ও ব্যায়ামের মাধ্যমে স্বাস্থ্যকরভাবে ওজন কমানো সম্ভব। ভাত বা রুটি খেলে কি ওজন কমে? জানুন সব তথ্য এক জায়গায়।",
+    link: "https://www.romanulislam.com/blog/lose-weight.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["নারী ও গাইনোকলজি"]
+  },
+  {
+    title: "লো প্রেসার কি বিপজ্জনক? অবহেলা করলে মারাত্মক ক্ষতি!",
+    excerpt: "হঠাৎ লো প্রেসার হলে করণীয়, ঘরোয়া উপায় ও চিকিৎসা জানুন। এখনই টেলিমেডিসিন সেবায় ডাক্তারদের সাথে পরামর্শ নিয়ে সুস্থ থাকুন।",
+    link: "https://www.romanulislam.com/blog/low-pressure.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["এন্ডোক্রাইন ও মেটাবলিক"]
+  },
+  {
+    title: "মেছতা কি স্থায়ী? মুখের কালো দাগের ভয়ংকর সত্য | Melasma Treatment",
+    excerpt: "মেছতা দূর করার উপায়, প্রাকৃতিক চিকিৎসা ও বিশেষজ্ঞ পরামর্শ। ঘরে বসেই টেলিমেডিসিনে পরামর্শ নিন আজই।",
+    link: "https://www.romanulislam.com/blog/melasma.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["নারী ও গাইনোকলজি"]
+  },
+  {
+    title: "স্মৃতিশক্তি দুর্বল? মস্তিষ্ক তীক্ষ্ণ করার চমকপ্রদ উপায় জানুন",
+    excerpt: "স্মৃতিশক্তি বাড়াতে চান? ঘরোয়া উপায়, খাবার, ব্যায়াম ও বৈজ্ঞানিক কৌশল জেনে নিন। এখনই স্মৃতিশক্তি উন্নত করার সহজ সমাধান পড়ুন।",
+    link: "https://www.romanulislam.com/blog/memory.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["এন্ডোক্রাইন ও মেটাবলিক"]
+  },
+  {
+    title: "নাকের সর্দি: কারণ, লক্ষণ, প্রতিকারের ঘরোয়া উপায়",
+    excerpt: "নাকের সর্দির কারণ, লক্ষণ, প্রতিকারের ঘরোয়া উপায়",
+    link: "https://www.romanulislam.com/blog/nasal-congestion.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["শ্বাসনালী ও অ্যালার্জি"]
+  },
+  {
+    title: "ঘাড় ব্যথা কেন হয়? অবহেলা করলে হতে পারে বড় বিপদ!",
+    excerpt: "ঘাড় ব্যথা কমানোর উপায়, কারণ ও প্রতিকার জানুন। সঠিক চিকিৎসা ও টেলিমেডিসিন সেবা নিয়ে ঘাড় ব্যথা থেকে মুক্তি পান সহজেই।",
+    link: "https://www.romanulislam.com/blog/neck-pain.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["হাড় ও মাংসপেশি"]
+  },
+  {
+    title: "হাত-পা ঝিনঝিন কি বিপদজনক? জেনে নিন সমাধান ও সঠিক প্রতিকার",
+    excerpt: "হাত-পা ঝিনঝিন হলে অবহেলা নয়! ঝিনঝিন এর কারণ, ভিটামিন ঘাটতি, ব্যায়াম ও প্রতিকার জেনে নিন সহজ সমাধান টেলিমেডিসিন সেবার মাধ্যমে।",
+    link: "https://www.romanulislam.com/blog/numbness.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["হৃদরোগ ও রক্তচাপ"]
+  },
+  {
+    title: "প্রস্রাব কম হলে কি মারাত্মক সমস্যা? এখনই জানুন সমাধান",
+    excerpt: "প্রস্রাব কম হলে বিপদ হতে পারে! জেনে নিন কারণ, প্রতিকার ও করণীয়। সময়মতো চিকিৎসা পেলে এই সমস্যার কার্যকর সমাধান সম্ভব।",
+    link: "https://www.romanulislam.com/blog/oliguria.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["সংক্রামক রোগ"]
+  },
+  {
+    title: "সহবাসের সময় ব্যথা কি স্বাভাবিক নাকি বিপদজনক? জানুন সত্য",
+    excerpt: "সহবাসের সময় ব্যথা হলে দেরি না করে সঠিক কারণ ও চিকিৎসা জানুন। টেলিমেডিসিনে এখনই ডাক্তার দেখান গোপনীয়ভাবে।",
+    link: "https://www.romanulislam.com/blog/pain-during-sex.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["সংক্রামক রোগ"]
+  },
+  {
+    title: "বুক ধড়ফড় হঠাৎ কেন হয়? বিপজ্জনক নাকি সাময়িক?",
+    excerpt: "বুক ধড়ফড় সমস্যার কারণ, লক্ষণ ও করণীয় জানুন। টেলিমেডিসিন সেবা নিয়ে দ্রুত বুক ধড়ফড় থেকে মুক্তি পান সহজে।",
+    link: "https://www.romanulislam.com/blog/palpitation.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["মানসিক স্বাস্থ্য"]
+  },
+  {
+    title: "ফুসকুড়ি কি বিপদজনক? সত্য জানলে অবাক হবেন!",
+    excerpt: "শরীরে বা মুখে ফুসকুড়ি হলে দেরি না করে চিকিৎসা নিন। জানুন ফুসকুড়ি কেন হয়, করণীয় ও ফুসকুড়ি কমানোর উপায় – এখনই পড়ুন।",
+    link: "https://www.romanulislam.com/blog/papule.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["ত্বকের রোগ"]
+  },
+  {
+    title: "হাত-পা অবশ কেন হয়? চরম প্রতিকার জানুন এখনই!",
+    excerpt: "হাত পা অবশ হওয়া স্বাভাবিক নয়। অবশ প্রতিকার, চিকিৎসা এবং করণীয় জানুন, দ্রুত শক্তি ফিরিয়ে আনুন। টেলিমেডিসিন সহায়তায় এখনই সমাধান।",
+    link: "https://www.romanulislam.com/blog/paralysis.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["হৃদরোগ ও রক্তচাপ"]
+  },
+  {
+    title: "অতিরিক্ত ভয় কি বিপজ্জনক? মানসিক ভয় দূর করার কার্যকর উপায়",
+    excerpt: "অতিরিক্ত ভয় আপনার জীবনে বাধা হতে পারে। জানুন কিভাবে মানসিক ভয় ও ফোবিয়া দূর করবেন এবং সুস্থ জীবনের পথে এগিয়ে যাবেন।",
+    link: "https://www.romanulislam.com/blog/phobia.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["শিশু স্বাস্থ্য"]
+  },
+  {
+    title: "মুখের কালো দাগ কি চিরদিন থাকবে? পিগমেন্টেশন এর সত্য",
+    excerpt: "পিগমেন্টেশন দূর করার কার্যকর উপায় ও চিকিৎসা এখন হাতের মুঠোয়। আমাদের টেলিমেডিসিন সার্ভিসে অনলাইনে ডাক্তার দেখিয়ে সমাধান নিন।",
+    link: "https://www.romanulislam.com/blog/pigmentation.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["ত্বকের রোগ"]
+  },
+  {
+    title: "ঘন ঘন প্রস্রাবের লুকানো কারণ কি? জানুন সত্য",
+    excerpt: "বারবার প্রস্রাব হওয়ার কারণ বুঝে সঠিক প্রতিকার নিন। ঘন ঘন প্রস্রাব দূর করার ঘরোয়া উপায়, খাবার ও চিকিৎসা এখনই জেনে নিন।",
+    link: "https://www.romanulislam.com/blog/polyuria.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["মূত্রনালি ও কিডনি"]
+  },
+  {
+    title: "দ্রুত বীর্য পাতের স্থায়ী সমাধান কি সম্ভব? সত্য জানুন",
+    excerpt: "দ্রুত বীর্য পাত অনেক পুরুষের জীবনে দুশ্চিন্তার কারণ। টেলিমেডিসিনে বিশেষজ্ঞ চিকিৎসকের পরামর্শে এর কার্যকর ও স্থায়ী সমাধান সম্ভব।",
+    link: "https://www.romanulislam.com/blog/premature-ejaculation.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["মানসিক স্বাস্থ্য"]
+  },
+  {
+    title: "সোরিয়াসিস: কারণ, লক্ষণ, চিকিৎসা ও খাদ্য তালিকা | ডা. রোমানুল ইসলাম",
+    excerpt: "সোরিয়াসিস এর কারণ, লক্ষণ, চিকিৎসা ও খাদ্য তালিকা নিয়ে সম্পূর্ণ গাইড। এখনই অনলাইনে টেলিমেডিসিন সেবার মাধ্যমে সোরিয়াসিসের সমাধান নিন।",
+    link: "https://www.romanulislam.com/blog/psoriasis.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["ত্বকের রোগ"]
+  },
+  {
+    title: "চোখ লাল হওয়া কি বিপজ্জনক? আসল কারণ ও সমাধান জানুন!",
+    excerpt: "চোখ লাল সমস্যা কি সাধারণ নাকি গুরুতর? চোখ লাল কমানোর কারণ, প্রতিকার, ঘরোয়া উপায় ও ড্রপ সম্পর্কে জানুন এবং চোখের সঠিক যত্ন নিন।",
+    link: "https://www.romanulislam.com/blog/red-eye.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["সংক্রামক রোগ"]
+  },
+  {
+    title: "দাদ: কারণ, লক্ষণ, চিকিৎসা ও প্রতিকার | ডা. রোমানুল ইসলাম",
+    excerpt: "দাদ এর কারণ, লক্ষণ, চিকিৎসা ও প্রতিকার নিয়ে সম্পূর্ণ গাইড। এখনই অনলাইনে টেলিমেডিসিন সেবার মাধ্যমে দাদের সমাধান নিন।",
+    link: "https://www.romanulislam.com/blog/ringworm.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["ত্বকের রোগ"]
+  },
+  {
+    title: "নাক দিয়ে পানি পড়া: স্বাভাবিক না কি বিপজ্জনক? | কারণ ও প্রতিকার",
+    excerpt: "জানুন নাক দিয়ে পানি পড়ার কারণ, লক্ষণ এবং ঘরোয়া প্রতিকার। দ্রুত টেলিমেডিসিনে ডাক্তারের পরামর্শ নিয়ে সমস্যা সমাধান করুন।",
+    link: "https://www.romanulislam.com/blog/runny-nose.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["শ্বাসনালী ও অ্যালার্জি"]
+  },
+  {
+    title: "স্ক্যাবিস কি আপনার জীবন দুর্বিষহ করছে? জেনে নিন মুক্তির সহজ সমাধান!",
+    excerpt: "স্ক্যাবিস থেকে মুক্তির উপায়, লক্ষণ ও ঘরোয়া চিকিৎসা নিয়ে সম্পূর্ণ গাইড। এখনই টেলিমেডিসিনে পরামর্শ নিয়ে স্ক্যাবিসের কার্যকর সমাধান নিন।",
+    link: "https://www.romanulislam.com/blog/scabies.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["ত্বকের রোগ"]
+  },
+  {
+    title: "প্রস্রাবে গন্ধ: এটি কি বিপজ্জনক? আসল কারণ ও কার্যকর প্রতিকার",
+    excerpt: "প্রস্রাবে গন্ধ নিয়ে চিন্তিত? জানুন এর আসল কারণ, স্বাস্থ্যঝুঁকি ও ঘরোয়া প্রতিকার। অনলাইনে বিশেষজ্ঞের পরামর্শ নিয়ে সমাধান পান সহজে।",
+    link: "https://www.romanulislam.com/blog/smelly-urine.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["এন্ডোক্রাইন ও মেটাবলিক"]
+  },
+  {
+    title: "হাঁচি: সাধারণ নাকি গুরুতর সংকেত? | কারণ, লক্ষণ ও প্রতিকার",
+    excerpt: "অতিরিক্ত হাঁচি কখনই অবহেলা করবেন না। জানুন কারণ, লক্ষণ ও ঘরোয়া সমাধান। এখনই অনলাইনে ডাক্তারের পরামর্শ নিন।",
+    link: "https://www.romanulislam.com/blog/sneezing.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["শ্বাসনালী ও অ্যালার্জি"]
+  },
+  {
+    title: "বুকে কফ জমে কষ্ট? ঘরোয়া ও মেডিকেল সমাধান জানুন",
+    excerpt: "বুকে কফ জমে শ্বাসকষ্ট? এখনই জানুন ঘরোয়া উপায় ও চিকিৎসকের সাহায্য নেওয়ার সময়। বুকে কফ সমস্যার কার্যকর সমাধান পেতে পড়ুন বিস্তারিত।",
+    link: "https://www.romanulislam.com/blog/sputum.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["শ্বাসনালী ও অ্যালার্জি"]
+  },
+  {
+    title: "টেনশন কি ক্ষতিকর? জেনে নিন সেরা ঘরোয়া উপায়!",
+    excerpt: "টেনশন কমানো ও নিয়ন্ত্রণের কার্যকর ঘরোয়া উপায় জানুন। হঠাৎ চাপ বা অস্থিরতা কমানোর সহজ কৌশল এখানে পড়ুন।",
+    link: "https://www.romanulislam.com/blog/stress.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["মানসিক স্বাস্থ্য"]
+  },
+  {
+    title: "শরীরের ফাটা দাগ চিরতরে যাবে? সত্য জানুন আজই!",
+    excerpt: "শরীরের ফাটা দাগ দূর করতে চান? ঘরোয়া ও আধুনিক চিকিৎসায় কিভাবে ফাটা দাগ কমানো যায় জেনে নিন। আপনার আত্মবিশ্বাস ফিরিয়ে আনুন আজই।",
+    link: "https://www.romanulislam.com/blog/stretch-marks.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["ত্বকের রোগ"]
+  },
+  {
+    title: "অতিরিক্ত ক্ষুধা কি বিপজ্জনক? ক্ষুধা কমানোর শক্তিশালী উপায় জানুন",
+    excerpt: "অতিরিক্ত ক্ষুধা নিয়ন্ত্রণে রাখুন সহজে। টেলিমেডিসিনে বিশেষজ্ঞ ডাক্তারের পরামর্শ নিয়ে ক্ষুধা কমানো ও সুস্থ জীবনের পথ এখন হাতের নাগালে।",
+    link: "https://www.romanulislam.com/blog/suppresses-appetite.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["পেট ও হজম"]
+  },
+  {
+    title: "টেলিমেডিসিন: ডিজিটাল স্বাস্থ্যসেবার এক নতুন যুগ | ডা. রোমানুল ইসলাম",
+    excerpt: "টেলিমেডিসিন কী, কিভাবে কাজ করে, সুবিধা, সীমাবদ্ধতা ও FAQ। ডা. রোমানুল ইসলামের সাথে অনলাইন চিকিৎসা পরামর্শ নিন।",
+    link: "https://www.romanulislam.com/blog/telemedicineki.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["মানসিক স্বাস্থ্য"]
+  },
+  {
+    title: "ত্বক পাতলা কেন হয়? ভয়াবহ কারণ ও সমাধান জানুন এখনই!",
+    excerpt: "ত্বক পাতলা সমস্যায় ভুগছেন? জানুন ত্বক পাতলা হওয়ার কারণ, করণীয় ও প্রাকৃতিক উপায়। টেলিমেডিসিনে ডাক্তারের পরামর্শ নিন আজই।",
+    link: "https://www.romanulislam.com/blog/thin-skin.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["ত্বকের রোগ"]
+  },
+  {
+    title: "গলা ব্যথা? জানুন সহজ ও কার্যকর উপায় যেভাবে তাড়াতাড়ি মুক্তি পাবেন - ডা. রোমানুল ইসলাম",
+    excerpt: "গলা ব্যথা এড়াতে এবং দ্রুত আরাম পেতে কার্যকর ঘরোয়া এবং চিকিৎসা উপায় সম্পর্কে জানুন। আপনার স্বস্তির জন্য এখনই পদক্ষেপ নিন।",
+    link: "https://www.romanulislam.com/blog/throat-pain.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["শ্বাসনালী ও অ্যালার্জি"]
+  },
+  {
+    title: "টিনিটাস কি সারবে? কানে ঝিঁ ঝিঁ শব্দ দূর করার কার্যকর উপায় জানুন",
+    excerpt: "কানে ঝিঁ ঝিঁ শব্দ বা টিনিটাসে ভুগছেন? টিনিটাস এর কারণ, লক্ষণ ও চিকিৎসা নিয়ে জানুন এবং টেলিমেডিসিনের মাধ্যমে টিনিটাসের সমাধান পান সহজেই।",
+    link: "https://www.romanulislam.com/blog/tinnitus.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["কান-নাক-গলা (ENT)"]
+  },
+  {
+    title: "শরীর কাঁপা কি বিপদজনক লক্ষণ? জানুন আসল সত্য এখনই",
+    excerpt: "শরীর কাঁপা কেন হয়, এর কারণ, সমাধান ও চিকিৎসা সম্পর্কে জানুন। টেলিমেডিসিনের মাধ্যমে দ্রুত সঠিক পরামর্শ পেতে এখনই যোগাযোগ করুন।",
+    link: "https://www.romanulislam.com/blog/tremor.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["এন্ডোক্রাইন ও মেটাবলিক"]
+  },
+  {
+    title: "ট্রিগার ফিঙ্গার: হাতের আঙ্গুল বেঁকে যাওয়ার ভয়ঙ্কর কারণ কি?",
+    excerpt: "ট্রিগার ফিঙ্গার সমস্যার পুরো বিশ্লেষণ। হাতের আঙ্গুল বেঁকে গেলে করণীয়, ব্যায়াম ও চিকিৎসা নিয়ে বিস্তারিত তথ্য পেতে পড়ুন।",
+    link: "https://www.romanulislam.com/blog/trigger-finger.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["নারী ও গাইনোকলজি"]
+  },
+  {
+    title: "অজ্ঞান কেন হয়? জানুন সতর্কতার সব শক্তিশালী উপায়!",
+    excerpt: "অজ্ঞান হওয়ার কারণ, লক্ষণ এবং প্রাথমিক চিকিৎসা। দ্রুত সতর্কতা নিন এবং অজ্ঞান হওয়া রোধে ঘরোয়া উপায় জানুন।",
+    link: "https://www.romanulislam.com/blog/unconsciousness.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["এন্ডোক্রাইন ও মেটাবলিক"]
+  },
+  {
+    title: "যোনির শুষ্কতা? শিখুন কার্যকর সমাধান ও প্রতিকার!",
+    excerpt: "যোনির শুষ্কতা দূর করার সহজ ও কার্যকর উপায় নিয়ে জানুন। ঘরোয়া প্রতিকার, চিকিৎসা ও গর্ভাবস্থায় যত্নের বিস্তারিত গাইড।",
+    link: "https://www.romanulislam.com/blog/vaginal-dryness.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["নারী ও গাইনোকলজি"]
+  },
+  {
+    title: "হঠাৎ মাথা ঘোরা কি বিপদের লক্ষণ? জেনে নিন সমাধান",
+    excerpt: "হঠাৎ মাথা ঘোরা হলে কী করবেন? মাথা ঘোরা এর কারণ, লক্ষণ ও প্রতিকার নিয়ে বিস্তারিত জেনে নিন। অনলাইনে ডাক্তার পরামর্শ পেতে এখনই ক্লিক করুন।",
+    link: "https://www.romanulislam.com/blog/vertigo.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["নিউরোলজি ও স্নায়ুতন্ত্র"]
+  },
+  {
+    title: "শরীরে হঠাৎ ছোট গুটি? ভয় না সতর্কবার্তা! জানুন সত্য",
+    excerpt: "শরীরে হঠাৎ ছোট গুটি হলে চিন্তা করবেন না। সঠিক কারণ ও করণীয় জানতে পড়ুন আমাদের বিস্তারিত গাইড। ছোট গুটি নিয়ে টেলিমেডিসিন সাপোর্ট পান।",
+    link: "https://www.romanulislam.com/blog/vesicle.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["ত্বকের রোগ"]
+  },
+  {
+    title: "শ্বেতী রোগ: কারণ, লক্ষণ, চিকিৎসা ও প্রাকৃতিক উপায় | ভিটিলিগো",
+    excerpt: "শ্বেতী রোগ বা ভিটিলিগো সম্পর্কে সম্পূর্ণ তথ্য: কারণ, লক্ষণ, চিকিৎসা, প্রাকৃতিক উপায় ও বিশেষজ্ঞ পরামর্শ",
+    link: "https://www.romanulislam.com/blog/vitiligo.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["ত্বকের রোগ"]
+  },
+  {
+    title: "হঠাৎ বমি হলে কি করবেন? ভয়ংকর কারণ ও সমাধান জানুন",
+    excerpt: "বমি হলে সঠিক করণীয় জানুন। হঠাৎ বমি, বারবার বমি বা খাবারের পর বমি বমি ভাব হলে টেলিমেডিসিনের মাধ্যমে দ্রুত সমাধান নিন।",
+    link: "https://www.romanulislam.com/blog/vomiting.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["পেট ও হজম"]
+  },
+  {
+    title: "শরীরের দুর্বলতা কি বিপজ্জনক? কারণ ও সমাধান জানুন এখনই!",
+    excerpt: "দুর্বলতা কেন হয়, কোন ভিটামিনের অভাবে হয় ও সমাধান কীভাবে সম্ভব জানুন। টেলিমেডিসিনের মাধ্যমে দুর্বলতা চিকিৎসা নিন সহজেই।",
+    link: "https://www.romanulislam.com/blog/weakness.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["মানসিক স্বাস্থ্য"]
+  },
+  {
+    title: "হঠাৎ ওজন কমে যাওয়া বিপদজনক? জানুন আসল কারণ ও প্রতিকার",
+    excerpt: "ওজন কমে যাওয়া কেন হয়, এর ঝুঁকি, প্রতিকার ও চিকিৎসা জানুন। টেলিমেডিসিনের মাধ্যমে সহজেই ডাক্তার দেখান ও সঠিক পরামর্শ পান।",
+    link: "https://www.romanulislam.com/blog/weight-loss.html",
+    date: "",
+    author: "ডা. রোমানুল ইসলাম",
+    categories: ["পেট ও হজম"]
+  }
+];
+
+// Robust UI script for blog filtering, categories, search, and pagination
+document.addEventListener('DOMContentLoaded', function() {
+    try {
+        // Pagination & state
+        let currentPage = 1;
+        const postsPerPage = 6;
+        let currentCategory = 'all';
+        let currentSearchTerm = '';
+
+        // DOM elements (graceful fallback)
+        const blogGrid = document.getElementById('blog-grid');
+        const pagination = document.getElementById('pagination');
+        const blogCount = document.getElementById('blog-count');
+        const searchInput = document.getElementById('search-input');
+        const searchButton = document.getElementById('search-button');
+        const categoriesContainer = document.querySelector('.categories');
+
+        if (!blogGrid) {
+            console.warn("blogGrid element not found; aborting blog script.");
+            return;
+        }
+
+        // Build canonical categories from blogPosts and sort by frequency
+        const freq = {};
+        blogPosts.forEach(p => {
+            if (Array.isArray(p.categories)) {
+                p.categories.forEach(c => { if(c) freq[c] = (freq[c] || 0) + 1; });
+            } else if (p.categories) {
+                freq[p.categories] = (freq[p.categories]||0)+1;
             }
-            
-            // Initialize
-            blogCards.forEach(card => {
-                card.style.opacity = 0;
-                card.style.transform = 'translateY(20px)';
-                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-            });
-            
-            window.addEventListener('scroll', checkScroll);
-            checkScroll(); // Check on load
         });
-    </script>
+        let categories = Object.keys(freq);
+        categories.sort((a,b) => (freq[b]||0) - (freq[a]||0));
+
+        // Generate category buttons dynamically
+        if (categoriesContainer) {
+            categoriesContainer.innerHTML = '';
+            const allBtn = document.createElement('button');
+            allBtn.className = 'category-btn active';
+            allBtn.dataset.category = 'all';
+            allBtn.textContent = 'সব বিষয়';
+            categoriesContainer.appendChild(allBtn);
+
+            categories.forEach(cat => {
+                const btn = document.createElement('button');
+                btn.className = 'category-btn';
+                btn.dataset.category = cat;
+                btn.textContent = cat;
+                categoriesContainer.appendChild(btn);
+            });
+        }
+
+        // Event delegation for category clicks
+        if (categoriesContainer) {
+            categoriesContainer.addEventListener('click', function(e) {
+                const btn = e.target.closest('.category-btn');
+                if (!btn) return;
+                // update active class
+                categoriesContainer.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentCategory = btn.dataset.category || 'all';
+                currentPage = 1;
+                displayBlogPosts();
+            });
+        }
+
+        // Search handlers
+        if (searchButton) {
+            searchButton.addEventListener('click', function() {
+                currentSearchTerm = (searchInput && searchInput.value) ? searchInput.value.trim().toLowerCase() : '';
+                currentPage = 1;
+                displayBlogPosts();
+            });
+        }
+        if (searchInput) {
+            searchInput.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter') {
+                    currentSearchTerm = searchInput.value.trim().toLowerCase();
+                    currentPage = 1;
+                    displayBlogPosts();
+                }
+            });
+        }
+
+        function filterBlogPosts() {
+            const search = currentSearchTerm || '';
+            return blogPosts.filter(post => {
+                const matchesCategory = currentCategory === 'all' || (Array.isArray(post.categories) ? post.categories.includes(currentCategory) : post.categories === currentCategory);
+                const matchesSearch = search === '' || (post.title && post.title.toLowerCase().includes(search)) || (post.excerpt && post.excerpt.toLowerCase().includes(search));
+                return matchesCategory && matchesSearch;
+            });
+        }
+
+        function displayBlogPosts() {
+            const filteredPosts = filterBlogPosts();
+            const totalPages = Math.max(1, Math.ceil(filteredPosts.length / postsPerPage));
+
+            // Update blog count
+            if (blogCount) blogCount.textContent = `মোট ${filteredPosts.length}টি ব্লগ পোস্ট`;
+
+            // Clear current grid
+            blogGrid.innerHTML = '';
+
+            if (filteredPosts.length === 0) {
+                blogGrid.innerHTML = '<div class="no-results">দুঃখিত, আপনার অনুসন্ধানের সাথে মিলছে না এমন কোনো ব্লগ পোস্ট পাওয়া যায়নি।</div>';
+                if (pagination) pagination.innerHTML = '';
+                return;
+            }
+
+            if (currentPage > totalPages) currentPage = totalPages;
+            const startIndex = (currentPage - 1) * postsPerPage;
+            const endIndex = startIndex + postsPerPage;
+            const postsToShow = filteredPosts.slice(startIndex, endIndex);
+
+            postsToShow.forEach(post => {
+                const blogCard = document.createElement('div');
+                blogCard.className = 'blog-card';
+                blogCard.innerHTML = `
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span>${post.date || ''}</span> | <span>${post.author || ''}</span>
+                        </div>
+                        <h3 class="blog-card-title"><a href="${post.link}">${post.title}</a></h3>
+                        <p class="blog-card-excerpt">${post.excerpt || ''}</p>
+                        <div class="blog-card-footer">
+                            <a href="${post.link}" class="read-more">আরও পড়ুন</a>
+                        </div>
+                    </div>
+                `;
+                blogGrid.appendChild(blogCard);
+            });
+
+            // Render pagination
+            renderPagination(totalPages);
+        }
+
+        function renderPagination(totalPages) {
+            if (!pagination) return;
+            pagination.innerHTML = '';
+
+            // Previous button
+            const prevBtn = document.createElement('button');
+            prevBtn.className = 'pagination-btn';
+            prevBtn.textContent = 'পূর্ববর্তী';
+            prevBtn.disabled = currentPage === 1;
+            prevBtn.addEventListener('click', function(){ if(currentPage>1){ currentPage--; displayBlogPosts(); } });
+            pagination.appendChild(prevBtn);
+
+            // Page numbers (show up to 5 around current)
+            const range = 2;
+            const start = Math.max(1, currentPage - range);
+            const end = Math.min(totalPages, currentPage + range);
+            for (let i = start; i <= end; i++) {
+                const pBtn = document.createElement('button');
+                pBtn.className = 'pagination-btn' + (i === currentPage ? ' active' : '');
+                pBtn.textContent = i;
+                if (i === currentPage) pBtn.disabled = true;
+                pBtn.addEventListener('click', function(){ currentPage = i; displayBlogPosts(); });
+                pagination.appendChild(pBtn);
+            }
+
+            // Next button
+            const nextBtn = document.createElement('button');
+            nextBtn.className = 'pagination-btn';
+            nextBtn.textContent = 'পরবর্তী';
+            nextBtn.disabled = currentPage === totalPages;
+            nextBtn.addEventListener('click', function(){ if(currentPage<totalPages){ currentPage++; displayBlogPosts(); } });
+            pagination.appendChild(nextBtn);
+        }
+
+        // Initial render
+        displayBlogPosts();
+
+    } catch (err) {
+        console.error('Error in blog UI script:', err);
+    }
+});
+</script>
+
 </body>
 </html>
