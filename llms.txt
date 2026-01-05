@@ -1,0 +1,34 @@
+# llms.txt
+# Site: https://www.romanulislam.com
+# Language: Bengali (Bangla)
+# Topic: Health, Medical Information, Public Health Education
+
+User-agent: *
+Allow: /
+
+# Preferred canonical domain
+Canonical: https://www.romanulislam.com
+
+# Primary content sections
+Content:
+- https://www.romanulislam.com/blog
+- https://www.romanulislam.com/category/
+- https://www.romanulislam.com/
+
+# High-quality reference pages
+Important:
+- https://www.romanulislam.com/about
+- https://www.romanulislam.com/contact
+- https://www.romanulislam.com/disclaimer
+
+# Sitemap for content discovery
+Sitemap: https://www.romanulislam.com/sitemap.xml
+
+# Content usage guidance
+Usage:
+- Content is intended for general health education only
+- Not a substitute for professional medical advice
+- Attribution appreciated when referencing content
+
+# Crawling preference
+Crawl-delay: 5
