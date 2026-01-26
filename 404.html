@@ -1,13 +1,513 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <title>পৃষ্ঠা পাওয়া যায়নি - ডা. রোমানুল ইসলাম</title>
-  <meta name="description" content="দুঃখিত, আপনি যে পৃষ্ঠাটি খুঁজছেন তা পাওয়া যায়নি। হোমপেজে ফিরে যান।">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>পৃষ্ঠা পাওয়া যায়নি - 404 | ডা. রোমানুল ইসলাম - স্বাস্থ্য বিষয়ক টিপস এবং আপডেট</title>
+    <meta name="description" content="দুঃখিত, আপনি যে পৃষ্ঠাটি খুঁজছেন তা পাওয়া যায়নি। হোমপেজে ফিরে যান।">
+    <meta name="keywords" content="404 পৃষ্ঠা, পৃষ্ঠা পাওয়া যায়নি, ডা. রোমানুল ইসলাম, স্বাস্থ্য ব্লগ">
+    <meta name="theme-color" content="#0ea5a5">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="পৃষ্ঠা পাওয়া যায়নি - 404 | ডা. রোমানুল ইসলাম">
+    <meta property="og:description" content="দুঃখিত, আপনি যে পৃষ্ঠাটি খুঁজছেন তা পাওয়া যায়নি। হোমপেজে ফিরে যান।">
+    <meta property="og:url" content="https://www.romanulislam.com/404">
+    <meta property="og:image" content="https://www.romanulislam.com/assets/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="পৃষ্ঠা পাওয়া যায়নি - 404 | ডা. রোমানুল ইসলাম">
+    <meta name="twitter:description" content="দুঃখিত, আপনি যে পৃষ্ঠাটি খুঁজছেন তা পাওয়া যায়নি। হোমপেজে ফিরে যান。">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            width: 100%;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #0ea5a5 0%, #0c7a7a 100%);
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo span {
+            margin-right: 8px;
+            font-size: 24px;
+        }
+        
+        nav {
+            width: 100%;
+            margin-top: 15px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 5px 10px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 15px;
+            display: block;
+        }
+        
+        nav ul li a:hover, nav ul li a:focus {
+            color: #0c7a7a;
+            background-color: white;
+        }
+        
+        .error-section {
+            padding: 80px 0;
+            width: 100%;
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+        
+        .error-content {
+            background: white;
+            padding: 60px 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .error-icon {
+            font-size: 5rem;
+            color: #ff6b6b;
+            margin-bottom: 30px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .error-title {
+            color: #0c7a7a;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+        }
+        
+        .error-message {
+            color: #444;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+        
+        .error-message a {
+            color: #0ea5a5;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .error-message a:hover, .error-message a:focus {
+            color: #0c7a7a;
+            text-decoration: underline;
+        }
+        
+        .home-button {
+            display: inline-block;
+            background: #0ea5a5;
+            color: white;
+            padding: 14px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(14, 165, 165, 0.3);
+            margin-top: 20px;
+        }
+        
+        .home-button:hover, .home-button:focus {
+            background: #0c7a7a;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(14, 165, 165, 0.4);
+        }
+        
+        .quick-links {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #eaeaea;
+        }
+        
+        .quick-links h3 {
+            color: #0c7a7a;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+        
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .link-item {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 3px solid #0ea5a5;
+            transition: all 0.3s ease;
+        }
+        
+        .link-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .link-item a {
+            color: #0c7a7a;
+            text-decoration: none;
+            font-weight: 500;
+            display: block;
+        }
+        
+        .link-item a:hover, .link-item a:focus {
+            color: #0ea5a5;
+        }
+        
+        footer {
+            background: #0c7a7a;
+            color: white;
+            padding: 40px 0 20px;
+            width: 100%;
+            margin-top: auto;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            position: relative;
+            padding-bottom: 8px;
+        }
+        
+        .footer-section h3:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 2px;
+            background: #0ea5a5;
+        }
+        
+        .footer-section p, .footer-section li {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+        
+        .footer-section a {
+            color: #e0f7fa;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover, .footer-section a:focus {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 14px;
+        }
+        
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            border-radius: 50px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .whatsapp-float img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+        
+        /* Media Queries for Larger Screens */
+        @media (min-width: 480px) {
+            .logo {
+                font-size: 22px;
+            }
+            
+            .error-title {
+                font-size: 2.8rem;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .header-content {
+                flex-wrap: nowrap;
+            }
+            
+            nav {
+                width: auto;
+                margin-top: 0;
+            }
+            
+            nav ul {
+                justify-content: flex-end;
+            }
+            
+            .logo {
+                font-size: 24px;
+            }
+            
+            .error-section {
+                padding: 100px 0;
+            }
+            
+            .error-content {
+                padding: 70px 50px;
+            }
+            
+            .error-title {
+                font-size: 3.5rem;
+            }
+            
+            .error-message {
+                font-size: 1.3rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+            
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .footer-content {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .container {
+                padding: 0 20px;
+            }
+            
+            .link-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        
+        @media (max-width: 767px) {
+            html, body {
+                overflow-x: hidden;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+            
+            .error-content {
+                padding: 40px 25px;
+            }
+            
+            .error-icon {
+                font-size: 4rem;
+            }
+            
+            .error-title {
+                font-size: 2.2rem;
+            }
+            
+            .error-message {
+                font-size: 1.1rem;
+            }
+            
+            .link-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>❌ 404 - পৃষ্ঠা পাওয়া যায়নি</h1>
-  <p>আপনি যে পৃষ্ঠাটি খুঁজছেন তা নেই। <a href="https://romanulislam.com/index.html">হোমপেজে ফিরে যান</a></p>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span>👨‍⚕️</span> ডা. রোমানুল ইসলাম
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="https://www.romanulislam.com/index.html">হোম</a></li>
+                        <li><a href="https://www.romanulislam.com/online-doctor-bd.html">সেবা</a></li>
+                        <li><a href="https://www.romanulislam.com/blog">ব্লগ</a></li>
+                        <li><a href="https://www.romanulislam.com/reviews.html">রিভিউ</a></li>
+                        <li><a href="https://www.romanulislam.com/contact.html">যোগাযোগ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Error Section -->
+    <section class="error-section">
+        <div class="container">
+            <div class="error-content">
+                <div class="error-icon">❌</div>
+                <h1 class="error-title">৪০৪ - পৃষ্ঠা পাওয়া যায়নি</h1>
+                <div class="error-message">
+                    <p>দুঃখিত, আপনি যে পৃষ্ঠাটি খুঁজছেন তা পাওয়া যায়নি।</p>
+                    <p>পৃষ্ঠাটি সরানো, মুছে ফেলা বা ঠিকানা ভুল হতে পারে।</p>
+                    <p><a href="https://romanulislam.com/index.html">হোমপেজে ফিরে যান</a></p>
+                </div>
+                
+                <a href="https://romanulislam.com/index.html" class="home-button">হোমপেজে ফিরে যান</a>
+                
+                <div class="quick-links">
+                    <h3>দ্রুত নেভিগেশন</h3>
+                    <div class="link-grid">
+                        <div class="link-item">
+                            <a href="https://www.romanulislam.com/index.html">হোম</a>
+                        </div>
+                        <div class="link-item">
+                            <a href="https://www.romanulislam.com/online-doctor-bd.html">সেবা</a>
+                        </div>
+                        <div class="link-item">
+                            <a href="https://www.romanulislam.com/blog">ব্লগ</a>
+                        </div>
+                        <div class="link-item">
+                            <a href="https://www.romanulislam.com/contact.html">যোগাযোগ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ডা. রোমানুল ইসলাম</h3>
+                    <p>২৪/৭ ঘরে বসে ডাক্তারের পরামর্শ --- Best Online Doctor BD</p>
+                    <p>টেলিমেডিসিন সেবার মাধ্যমে যেকোনো সময়, যেকোনো স্থান থেকে বিশেষজ্ঞ চিকিৎসা পরামর্শ নিন।</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>দ্রুত যোগাযোগ</h3>
+                    <ul>
+                        <li>WhatsApp: <a href="https://wa.me/8801826589958">+8801826589958</a></li>
+                        <li>Email: <a href="mailto:roman@romanulislam.com">roman@romanulislam.com</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>দরকারী লিংক</h3>
+                    <ul>
+                        <li><a href="https://romanulislam.com/index">হোম</a></li>
+                        <li><a href="https://romanulislam.com/online-doctor-bd">সেবা</a></li>
+                        <li><a href="https://romanulislam.com/blog">ব্লগ</a></li>
+                        <li><a href="https://romanulislam.com/reviews">রিভিউ</a></li>
+                        <li><a href="https://romanulislam.com/contact">যোগাযোগ</a></li>
+                        <li><a href="https://romanulislam.com/disclaimer">Disclaimer</a></li>
+                        <li><a href="https://www.romanulislam.com/about">About</a></li>
+                        <li><a href="https://www.romanulislam.com/privacy-policy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© ডা. রোমানুল ইসলাম। সকল স্বত্ব সংরক্ষিত।</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a class="whatsapp-float" href="https://wa.me/8801826589958" target="_blank" aria-label="WhatsApp Chat">
+        <img src="https://www.romanulislam.com/assets/images/whatsapp.gif" alt="WhatsApp" width="60" height="60" loading="lazy">
+    </a>
 </body>
 </html>
