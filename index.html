@@ -198,6 +198,63 @@
       margin-bottom: 10px;
     }
     
+    /* New sections styles */
+    .category-section, .article-section {
+      background-color: #f0f9f9;
+    }
+    
+    .category-section .container, .article-section .container {
+      max-width: 800px;
+    }
+    
+    .category-section h2, .article-section h2 {
+      color: #0c7a7a;
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 2rem;
+    }
+    
+    .category-section ul, .article-section ul {
+      list-style: none;
+      padding-left: 0;
+      display: grid;
+      gap: 15px;
+    }
+    
+    .category-section ul {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
+    .article-section ul {
+      grid-template-columns: 1fr;
+    }
+    
+    .category-section li, .article-section li {
+      background: white;
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .category-section li:hover, .article-section li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .category-section a, .article-section a {
+      color: #0c7a7a;
+      text-decoration: none;
+      font-weight: 600;
+      display: block;
+      transition: color 0.3s ease;
+    }
+    
+    .category-section a:hover, .article-section a:hover {
+      color: #ff7043;
+      text-decoration: underline;
+    }
+    
     /* Footer Styles */
     .site-footer {
       background: #0c7a7a;
@@ -322,6 +379,14 @@
         padding: 12px 25px;
       }
       
+      .category-section ul {
+        grid-template-columns: 1fr;
+      }
+      
+      .category-section h2, .article-section h2 {
+        font-size: 1.6rem;
+      }
+      
       .whatsapp-float {
         width: 50px;
         height: 50px;
@@ -416,6 +481,40 @@
         </ul>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- Section A: Categories -->
+<section class="section category-section">
+  <div class="container">
+    <h2>স্বাস্থ্য বিভাগসমূহ</h2>
+    <ul>
+      <li><a href="https://www.romanulislam.com/category/ent">নাক-কান-গলা</a></li>
+      <li><a href="https://www.romanulislam.com/category/gastro-liver">গ্যাস্ট্রোলিভার</a></li>
+      <li><a href="https://www.romanulislam.com/category/mental-health">মানসিক স্বাস্থ্য</a></li>
+      <li><a href="https://www.romanulislam.com/category/skin-problem">ত্বক</a></li>
+      <li><a href="https://www.romanulislam.com/category/sex-and-urology">যৌন স্বাস্থ্য</a></li>
+      <li><a href="https://www.romanulislam.com/category/cardio">হৃদরোগ</a></li>
+      <li><a href="https://www.romanulislam.com/category/neuro">স্নায়বিক সমস্যা</a></li>
+      <li><a href="https://www.romanulislam.com/category/general-health">সাধারণ স্বাস্থ্য সমস্যা</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Section B: Core articles -->
+<section class="section article-section">
+  <div class="container">
+    <h2>জনপ্রিয় স্বাস্থ্য আর্টিকেল</h2>
+    <ul>
+      <li><a href="https://www.romanulislam.com/blog/nasal-congestion.html">নাক বন্ধ হলে কী করবেন</a></li>
+      <li><a href="https://www.romanulislam.com/blog/acidity.html">গ্যাস্ট্রিক এবং অ্যাসিডিটির সমস্যা: কারণ, প্রতিকার ও জীবনযাপনের গল্প | ডা. রোমানুল ইসলাম</a></li>
+      <li><a href="https://www.romanulislam.com/blog/acne.html">ব্রণ: কারণ, লক্ষণ, চিকিৎসা ও প্রতিকার | ডা. রোমানুল ইসলাম</a></li>
+      <li><a href="https://www.romanulislam.com/blog/allergy.html">এলার্জি কি স্থায়ী? ভয়ংকর সত্য ও মুক্তির উপায়</a></li>
+      <li><a href="https://www.romanulislam.com/blog/back-pain.html">কোমর ব্যথা কি আপনার জীবন নষ্ট করছে? জানুন কারণ, উপশম ও কার্যকর সমাধান</a></li>
+      <li><a href="https://www.romanulislam.com/blog/depression.html">ডিপ্রেশন কি সারানো যায়? সত্যিকারের মুক্তির শক্তিশালী উপায়</a></li>
+      <li><a href="https://www.romanulislam.com/blog/knee-pain.html">হাটুর জয়েন্টে ব্যথা নিয়ে ভুগছেন? সত্যিই ভয়ংকর নাকি সহজ সমাধান আছে?</a></li>
+      <li><a href="https://www.romanulislam.com/blog/lose-weight.html">ভাত না খেলে ওজন কমে? অবিশ্বাস্য সত্য জানুন আজই</a></li>
+    </ul>
   </div>
 </section>
 
