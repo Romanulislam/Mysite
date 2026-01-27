@@ -16,7 +16,7 @@
       "@type": "BlogPosting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.romanulislam.com/blog/anorexia.html"
+        "@id": "https://www.romanulislam.com/blog/anorexia "
       },
       "headline": "ক্ষুধামন্দা কি মারাত্মক সমস্যা? সহজ সমাধান জানুন আজই",
       "description": "ক্ষুধামন্দা দূর করার কার্যকর উপায় জানতে চান? সঠিক খাবার, ভিটামিন ও চিকিৎসকের পরামর্শে ক্ষুধামন্দা থেকে মুক্তির পথ খুঁজে নিন আজই।",
@@ -26,7 +26,7 @@
         "name": "ডা. রোমানুল ইসলাম",
         "url": "https://www.romanulislam.com",
         "jobTitle": "রেজিস্টার্ড চিকিৎসক ও টেলিমেডিসিন বিশেষজ্ঞ",
-        "description": "বাংলাদেশে ২৪/৭ টেলিমেডিসিন পরামর্শ প্রদানকারী রেজিস্টار্ড চিকিৎসক",
+        "description": "বাংলাদেশে ২৪/৭ টেলিমেডিসিন পরামর্শ প্রদানকারী রেজিস্টার্ড চিকিৎসক",
         "medicalSpecialty": ["Internal Medicine", "Family Medicine", "Telemedicine"],
         "credentials": "এমবিবিএস (চমেক), বিসিএস(স্বাস্থ্য), এফসিপিএস পার্ট-২ (মেডিসিন), এমসিজিপি (বিজিএইচআরআই), সিএমইউ (আল্ট্রাসনোগ্রাফি)",
         "sameAs": [
@@ -116,7 +116,7 @@
           "name": "দীর্ঘসময় খালি পেটে থাকলে কি ক্ষুধামন্দা হয়?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "অবাক করা হলেও, হ্যাঁ। দীর্ঘসময় खालি পেটে থাকলে পেটের এসিড জমে অস্বস্তি তৈরি করে, ফলে খাওয়ার ইচ্ছা নষ্ট হয়ে যায়।"
+            "text": "অবাক করা হলেও, হ্যাঁ। দীর্ঘসময় খালি পেটে থাকলে পেটের এসিড জমে অস্বস্তি তৈরি করে, ফলে খাওয়ার ইচ্ছা নষ্ট হয়ে যায়।"
           }
         },
         {
@@ -655,6 +655,95 @@
             border-radius: 50%;
         }
         
+        /* New Styles for Related Articles, Author Box, and Medical Review */
+        .related-articles, .author-box, .medical-review {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .related-articles h3, .author-box h3 {
+            color: #0c7a7a;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+        
+        .related-articles ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+        
+        .related-articles ul li {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-left: 4px solid #0ea5a5;
+            background-color: #f5f7fa;
+        }
+        
+        .related-articles ul li a {
+            color: #0c7a7a;
+            text-decoration: none;
+            font-weight: 500;
+            display: block;
+        }
+        
+        .related-articles ul li a:hover {
+            color: #0ea5a5;
+            text-decoration: underline;
+        }
+        
+        .related-articles p {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .related-articles p a {
+            color: #0c7a7a;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-articles p a:hover {
+            text-decoration: underline;
+            color: #0ea5a5;
+        }
+        
+        .author-box p {
+            text-align: center;
+            line-height: 1.8;
+        }
+        
+        .author-box strong {
+            color: #0c7a7a;
+            font-size: 1.1rem;
+        }
+        
+        .medical-review {
+            background-color: #fff3e0;
+            border-left: 4px solid #ff7043;
+            margin-top: 20px;
+        }
+        
+        .medical-review p {
+            text-align: center;
+            color: #555;
+            font-style: italic;
+        }
+        
+        .medical-review a {
+            color: #0c7a7a;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        
+        .medical-review a:hover {
+            text-decoration: underline;
+        }
+        
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
@@ -684,6 +773,10 @@
                 bottom: 20px;
                 right: 20px;
             }
+            
+            .related-articles, .author-box, .medical-review {
+                padding: 20px;
+            }
         }
     </style>
 </head>
@@ -697,10 +790,10 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="https://www.romanulislam.com/index.html">হোম</a></li>
-                        <li><a href="https://www.romanulislam.com/online-doctor-bd.html">সেবা</a></li>
-                        <li><a href="https://www.romanulislam.com/reviews.html">রিভিউ</a></li>
-                        <li><a href="https://www.romanulislam.com/contact.html">যোগাযোগ</a></li>
+                        <li><a href="https://www.romanulislam.com/index ">হোম</a></li>
+                        <li><a href="https://www.romanulislam.com/online-doctor-bd ">সেবা</a></li>
+                        <li><a href="https://www.romanulislam.com/reviews ">রিভিউ</a></li>
+                        <li><a href="https://www.romanulislam.com/contact ">যোগাযোগ</a></li>
                     </ul>
                 </nav>
             </div>
@@ -725,7 +818,7 @@
                 
                 <p>বাংলাদেশে কিংবা আমাদের দক্ষিণ এশিয়ার অনেক পরিবারেই এই সমস্যা সাধারণ। ছোট শিশু থেকে শুরু করে বয়স্ক সবাই ক্ষুধামন্দায় আক্রান্ত হতে পারে। কিন্তু বেশিরভাগ মানুষ এটিকে গুরুত্ব দেয় না। অথচ দীর্ঘদিন ক্ষুধামন্দা থাকলে তা শরীরে গুরুতর প্রভাব ফেলে—ওজন কমে যায়, দুর্বলতা আসে, রোগ প্রতিরোধ ক্ষমতা কমে যায় এবং অনেক সময় বড় কোনো রোগের ইঙ্গিত দেয়।</p>
                 
-                <p>এই ব্লগ পোস্টে আমরা সহজ, গল্প বলার মতো ভঙ্গিতে ক্ষুধামন্দা নিয়ে বিস্তারিত জানব—এর কারণ, লক্ষণ, চিকিৎসা, কী খাওয়া উচিত আর কীভাবে সমাধান সম্ভব।</p>
+                <p>এই ব্লগ পোস্টে আমরা সহজ, গল্প বলার মতো ভঙ্গিতে ক্ষুধামন্দা নিয়ে বিস্তারিত জানব—এর কারণ, লক্ষণ, চিকিৎসা, কী খাওয়া উচিত আর কীভাবে সমাধান সম্ভব। <a href="https://www.romanulislam.com/" title="ডা. রোমানুল ইসলামের হোমপেজ">ডা. রোমানুল ইসলামের ওয়েবসাইট</a> থেকে আরও স্বাস্থ্য সম্পর্কিত তথ্য পাওয়া যাবে।</p>
                 
                 <div class="highlight">
                     <p><strong>দ্রুত সংক্ষেপ:</strong> এই ব্লগ পোস্টে আপনি যা শিখবেন: ক্ষুধামন্দার কারণ ও লক্ষণ, ক্ষুধা বাড়াতে কী খাওয়া উচিত, ভিটামিনের ভূমিকা, ঘরোয়া উপায় এবং কখন ডাক্তারের সাহায্য নেবেন।</p>
@@ -906,7 +999,31 @@
                     <li>খাবারের সাথে বমি বা রক্ত এলে</li>
                     <li>শিশু বা বৃদ্ধের ক্ষুধামন্দা দীর্ঘদিন থাকলে</li>
                 </ul>
+                
+                <p>এ ধরনের লক্ষণ দেখা দিলে <a href="https://www.romanulislam.com/online-doctor-bd" title="অনলাইন ডাক্তার পরামর্শ">অনলাইন ডাক্তার পরামর্শ</a> নেওয়া যেতে পারে।</p>
             </div>
+        </div>
+    </section>
+
+    <!-- Author Box -->
+    <section class="author-box">
+        <div class="container">
+            <h3>লেখক পরিচিতি</h3>
+            <p>
+                <strong>ডা. রোমানুল ইসলাম</strong> স্বাস্থ্য বিষয়ক তথ্যভিত্তিক কনটেন্ট প্রস্তুতকারক।
+                এই লেখাগুলো সাধারণ স্বাস্থ্য সচেতনতার উদ্দেশ্যে প্রকাশিত।
+            </p>
+        </div>
+    </section>
+
+    <!-- Medical Review Notice -->
+    <section class="medical-review">
+        <div class="container">
+            <p>
+                এই আর্টিকেলটি চিকিৎসা পরামর্শের বিকল্প নয়।
+                ব্যক্তিগত সমস্যার জন্য অবশ্যই চিকিৎসকের সঙ্গে পরামর্শ করুন।
+                বিস্তারিত জানতে <a href="https://www.romanulislam.com/disclaimer">ডিসক্লেইমার</a> দেখুন।
+            </p>
         </div>
     </section>
 
@@ -954,7 +1071,7 @@
                 
                 <div class="faq-item">
                     <div class="faq-question">প্রশ্ন ২: ক্ষুধামন্দা কি একদিনে সারিয়ে তোলা সম্ভব? <span>+</span></div>
-                    <div class="faq-answer">উত্তর: সাধারণ ক্ষুধামন্দা হয়তো কয়েক দিনের মধ্যেই ভালো হয়ে যায়, কিন্তু যদি কারণ ভিটামিন ঘাটতি বা দীর্ঘমেয়াদী রোগ হয় তবে चिकित्सকের পরামর্শ ছাড়া দ্রুত সমাধান পাওয়া কঠিন।</div>
+                    <div class="faq-answer">উত্তর: সাধারণ ক্ষুধামন্দা হয়তো কয়েক দিনের মধ্যেই ভালো হয়ে যায়, কিন্তু যদি কারণ ভিটামিন ঘাটতি বা দীর্ঘমেয়াদী রোগ হয় তবে चिकित্সকের পরামর্শ ছাড়া দ্রুত সমাধান পাওয়া কঠিন।</div>
                 </div>
                 
                 <div class="faq-item">
@@ -1024,7 +1141,7 @@
 
                 <div class="faq-item">
                     <div class="faq-question">প্রশ্ন ১৬: বাচ্চাদের ক্ষুধামন্দা হলে দুধ কমানো উচিত কি? <span>+</span></div>
-                    <div class="faq-answer">উত্তর: অনেক সময় শিশুরা অতিরিক্ত দুধ খেলে पেট ভরে যায় এবং অন্য খাবারে ক্ষুধা থাকে না। তাই দুধের পরিমাণ নিয়ন্ত্রণ করা জরুরি।</div>
+                    <div class="faq-answer">উত্তর: অনেক সময় শিশুরা অতিরিক্ত দুধ খেলে পেট ভরে যায় এবং অন্য খাবারে ক্ষুধা থাকে না। তাই দুধের পরিমাণ নিয়ন্ত্রণ করা জরুরি।</div>
                 </div>
 
                 <div class="faq-item">
@@ -1079,7 +1196,7 @@
 
                 <div class="faq-item">
                     <div class="faq-question">প্রশ্ন ২৭: ক্ষুধামন্দা কি শিশুদের পড়াশোনায় প্রভাব ফেলে? <span>+</span></div>
-                    <div class="faq-answer">উত্তর: হ্যাঁ, পর্যাপ্ত খাবার না পেলে শিশুদের মনোযোগ ও স্মৃতিশক্তি কমে যায়, যা পড়াশোনায় प्रभाव ফেলে।</div>
+                    <div class="faq-answer">উত্তর: হ্যাঁ, পর্যাপ্ত খাবার না পেলে শিশুদের মনোযোগ ও স্মৃতিশক্তি কমে যায়, যা পড়াশোনায় প্রভাব ফেলে।</div>
                 </div>
 
                 <div class="faq-item">
@@ -1094,9 +1211,26 @@
 
                 <div class="faq-item">
                     <div class="faq-question">প্রশ্ন ৩০: ক্ষুধামন্দা হলে কি টেলিমেডিসিনে চিকিৎসা নেওয়া যায়? <span>+</span></div>
-                    <div class="faq-answer">উত্তর: অবশ্যই। অনলাইন টেলিমেডিসিনে চিকিৎসক প্রাথমিক ইতিহাস শুনে পরামর্শ দিতে পারেন, প্রয়োজনে ল্যাব টেস্ট ও ওষুধ সাজেস্ট করেন।</div>
+                    <div class="faq-answer">উত্তর: অবশ্যই। অনলাইন টেলিমেডিসিনে চিকিৎসক প্রাথমিক ইতিহাস শুনে পরামর্শ দিতে পারেন, প্রয়োজনে ল্যাব টেস্ট ও ওষুধ সাজেস্ট করেন। <a href="https://www.romanulislam.com/online-doctor-bd" title="টেলিমেডিসিন সেবা">টেলিমেডিসিন সেবা</a> সম্পর্কে আরও জানতে আমাদের ওয়েবসাইট ভিজিট করুন।</div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Related Articles Section -->
+    <section class="related-articles">
+        <div class="container">
+            <h3>সম্পর্কিত আর্টিকেল</h3>
+            <ul>
+                <li><a href="https://www.romanulislam.com/blog/indigestion ">বদ হজমে ভুগছেন?</a></li>
+                <li><a href="https://www.romanulislam.com/blog/lose-weight ">ভাত না খেলে ওজন কমে?</a></li>
+            </ul>
+
+            <p>
+                এই আর্টিকেলটি <a href="https://www.romanulislam.com/category/gastro-liver">পেট, লিভার ও পরিপাকতন্ত্রের স্বাস্থ্য সমস্যা</a> বিভাগের অন্তর্ভুক্ত।
+            </p>
+
+            <p><a href="https://www.romanulislam.com/blog ">সব ব্লগ দেখুন</a></p>
         </div>
     </section>
 
@@ -1107,6 +1241,7 @@
                 <div class="footer-section">
                     <h3>ডা. রোমানুল ইসলাম</h3>
                     <p>২৪/৭ ঘরে বসে ডাক্তারের পরামর্শ --- Best Online Doctor BD</p>
+                    <p><a href="https://www.romanulislam.com/">প্রধান পৃষ্ঠায় ফিরে যান</a></p>
                 </div>
                 
                 <div class="footer-section">
