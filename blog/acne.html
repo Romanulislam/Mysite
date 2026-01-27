@@ -25,7 +25,7 @@
       "@type": "BlogPosting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.romanulislam.com/blog/acne.html"
+        "@id": "https://www.romanulislam.com/blog/acne "
       },
       "headline": "ব্রণ: কারণ, লক্ষণ, চিকিৎসা ও প্রতিকার",
       "description": "ব্রণ এর কারণ, লক্ষণ, চিকিৎসা ও প্রতিকার নিয়ে সম্পূর্ণ গাইড",
@@ -117,7 +117,7 @@
           "name": "কোন ভিটামিনের অভাবে ব্রণ হয়?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ভিটামিন A, ভিটামিন E, ভיטামিন D এবং জিঙ্কের অভাবে ব্রণ হতে পারে বা বেড়ে যেতে পারে।"
+            "text": "ভিটামিন A, ভিটামিন E, ভিটামিন D এবং জিঙ্কের অভাবে ব্রণ হতে পারে বা বেড়ে যেতে পারে।"
           }
         },
         {
@@ -665,6 +665,124 @@
             border-radius: 50%;
         }
         
+        /* New Styles for Added Sections */
+        .related-articles {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-top: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .related-articles h3 {
+            color: #0c7a7a;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+        }
+        
+        .related-articles ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+        
+        .related-articles ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .related-articles ul li:before {
+            content: "•";
+            color: #0ea5a5;
+            font-size: 1.5em;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+        
+        .related-articles ul li a {
+            color: #0c7a7a;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .related-articles ul li a:hover {
+            color: #0ea5a5;
+            text-decoration: underline;
+        }
+        
+        .related-articles p {
+            margin-bottom: 10px;
+        }
+        
+        .related-articles p a {
+            color: #0c7a7a;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-articles p a:hover {
+            color: #0ea5a5;
+            text-decoration: underline;
+        }
+        
+        .author-box {
+            background: #e0f7fa;
+            border-left: 4px solid #0ea5a5;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .author-box h3 {
+            color: #0c7a7a;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .author-box p {
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+        
+        .author-box a {
+            color: #0c7a7a;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .author-box a:hover {
+            color: #0ea5a5;
+            text-decoration: underline;
+        }
+        
+        .medical-review {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .medical-review p {
+            margin-bottom: 15px;
+            line-height: 1.7;
+            color: #5d4037;
+        }
+        
+        .medical-review a {
+            color: #0c7a7a;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .medical-review a:hover {
+            color: #0ea5a5;
+            text-decoration: underline;
+        }
+        
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
@@ -694,6 +812,10 @@
                 bottom: 20px;
                 right: 20px;
             }
+            
+            .related-articles, .author-box, .medical-review {
+                padding: 20px;
+            }
         }
     </style>
 </head>
@@ -707,10 +829,10 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="https://www.romanulislam.com/index.html">হোম</a></li>
-                        <li><a href="https://www.romanulislam.com/online-doctor-bd.html">সেবা</a></li>
-                        <li><a href="https://www.romanulislam.com/reviews.html">রিভিউ</a></li>
-                        <li><a href="https://www.romanulislam.com/contact.html">যোগাযোগ</a></li>
+                        <li><a href="https://www.romanulislam.com/index ">হোম</a></li>
+                        <li><a href="https://www.romanulislam.com/online-doctor-bd ">সেবা</a></li>
+                        <li><a href="https://www.romanulislam.com/reviews ">রিভিউ</a></li>
+                        <li><a href="https://www.romanulislam.com/contact ">যোগাযোগ</a></li>
                     </ul>
                 </nav>
             </div>
@@ -721,7 +843,7 @@
     <section class="hero">
         <div class="container">
             <h1>মুখে ব্রণ থামছে না? জানুন শক্তিশালী সমাধান এখনই!</h1>
-            <p>মুখের ব্রণ নিয়ে কষ্ট পাচ্ছেন? আমাদের টেলিমেডিসিন সার্ভিসে এখনই ডাক্তার দেখিয়ে ব্রণ কমানোর কার্যকর চিকিৎসা ও সমাধান নিন অনলাইনে।</p>
+            <p>মুখের ব্রণ নিয়ে কষ্ট পাচ্ছেন? আমাদের <a href="https://www.romanulislam.com/online-doctor-bd" style="color: #e0f7fa; text-decoration: underline;">টেলিমেডিসিন সার্ভিসে</a> এখনই ডাক্তার দেখিয়ে ব্রণ কমানোর কার্যকর চিকিৎসা ও সমাধান নিন অনলাইনে।</p>
             <a href="https://wa.me/8801826589958?text=স্যার, আমি একটি অ্যাপয়ন্টমেন্ট বুক করতে চাই" target="_blank" aria-label="WhatsApp Chat" class="cta-button">ডাক্তারের সাথে পরামর্শ করুন</a>
         </div>
     </section>
@@ -736,8 +858,9 @@
                 <p>আজকের এই ব্লগে আমরা মুখের ব্রণ নিয়ে সবকিছু সহজ ভাষায় আলোচনা করবো। কেন ব্রণ হয়, কীভাবে নিয়ন্ত্রণ করা যায়, কোন খাবার ভালো আর কোনটা খারাপ, এবং কিভাবে দাগমুক্ত ত্বক ফিরে পাবেন।</p>
                 
                 <div class="highlight">
-                    <p><strong>দ্রুত সংক্ষেপ:</strong> এই ব্লগ পোস্টে আপনি যা শিখবেন: ব্রণের কারণ ও লক্ষণ, ব্রণ দূর করার ঘরোয়া উপায়, ব্রণের দাগ দূর করার উপায়, কখন ডাক্তারের সাহায্য নেবেন এবং কীভাবে টেলিমেডিসিনের মাধ্যমে ঘরে বসে চিকিৎসা নেবেন।</p>
+                    <p><strong>দ্রুত সংক্ষেপ:</strong> এই ব্লগ পোস্টে আপনি যা শিখবেন: ব্রণের কারণ ও লক্ষণ, ব্রণ দূর করার ঘরোয়া উপায়, ব্রণের দাগ দূর করার উপায়, কখন ডাক্তারের সাহায্য নেবেন এবং কীভাবে <a href="https://www.romanulislam.com/online-doctor-bd">টেলিমেডিসিনের</a> মাধ্যমে ঘরে বসে চিকিৎসা নেবেন।</p>
                 </div>
+                <p>আরও স্বাস্থ্য টিপসের জন্য <a href="https://www.romanulislam.com/">প্রধান পাতায়</a> যান।</p>
             </div>
         </div>
     </section>
@@ -748,6 +871,7 @@
             <h2 class="section-title">ব্রণ আসলে কী?</h2>
             <div class="card">
                 <p>ব্রণ (Acne) হলো একটি ত্বকের সাধারণ সমস্যা, যেখানে ত্বকের লোমকূপ বা hair follicle তেল (Sebum) এবং মৃত কোষে আটকে যায়। ফলাফল – ছোট লাল ফুসকুড়ি, সাদা মাথার দাগ (Whitehead), কালো দাগ (Blackhead), এমনকি বড় ফোলা ও ব্যথাযুক্ত ব্রণ।</p>
+                <p>ব্রণ সমস্যা সমাধানে <a href="https://www.romanulislam.com/online-doctor-bd">অনলাইন চিকিৎসা পরামর্শ</a> নিতে পারেন।</p>
             </div>
         </div>
     </section>
@@ -768,6 +892,7 @@
                 
                 <h3>ছেলেদের মুখে ব্রণ বেশি কেন হয়?</h3>
                 <p>ছেলেদের শরীরে টেস্টোস্টেরন হরমোনের মাত্রা বেশি থাকে। এটি Sebum উৎপাদন বাড়ায়, যার ফলে ব্রণ তুলনামূলক বেশি হয়।</p>
+                <p>ব্রণ সমস্যা সমাধানে বিশেষজ্ঞ পরামর্শের জন্য <a href="https://www.romanulislam.com/">ডা. রোমানুল ইসলামের ওয়েবসাইট</a> দেখুন।</p>
             </div>
         </div>
     </section>
@@ -784,6 +909,7 @@
                     <li>ব্রণ শুকিয়ে গেলে দাগ পড়া</li>
                     <li>চামড়া রুক্ষ ও তৈলাক্ত হয়ে যাওয়া</li>
                 </ul>
+                <p>উপরের লক্ষণগুলো থাকলে দ্রুত <a href="https://www.romanulislam.com/online-doctor-bd">টেলিমেডিসিন সেবা</a> থেকে পরামর্শ নিন।</p>
             </div>
         </div>
     </section>
@@ -826,6 +952,7 @@
                     </div>
                 </div>
             </div>
+            <p>এছাড়াও <a href="https://www.romanulislam.com/">প্রধান পাতায়</a> আরও স্বাস্থ্য টিপস পাবেন।</p>
         </div>
     </section>
 
@@ -894,6 +1021,7 @@
                     <li><strong>কেমিক্যাল পিলিং ও লেজার থেরাপি:</strong> ডাক্তারের পরামর্শে করানো যায়</li>
                     <li><strong>ভিটামিন ই অয়েল:</strong> ত্বকের নতুন কোষ তৈরি করতে সাহায্য করে</li>
                 </ul>
+                <p>দাগ দূর করার কার্যকর সমাধানের জন্য <a href="https://www.romanulislam.com/online-doctor-bd">টেলিমেডিসিন পরামর্শ</a> নিন।</p>
             </div>
         </div>
     </section>
@@ -934,6 +1062,7 @@
                     <li>অতিরিক্ত চিনি ও প্রক্রিয়াজাত খাবার</li>
                     <li>অ্যালকোহল ও ধূমপান</li>
                 </ul>
+                <p>ব্যক্তিগত ডায়েট প্ল্যানের জন্য <a href="https://www.romanulislam.com/online-doctor-bd">অনলাইন ডাক্তারের সাথে কথা</a> বলুন।</p>
             </div>
         </div>
     </section>
@@ -950,6 +1079,7 @@
                     <li>পর্যাপ্ত ঘুম ও মানসিক চাপ কমানো</li>
                     <li>ধূমপান ও অ্যালকোহল পরিহার করা</li>
                 </ul>
+                <p>আরও স্বাস্থ্য টিপসের জন্য <a href="https://www.romanulislam.com/">প্রধান পাতায়</a> যান।</p>
             </div>
         </div>
     </section>
@@ -961,7 +1091,8 @@
             <div class="card">
                 <p>ব্রণ একটি সাধারণ ত্বকের সমস্যা হলেও এটি সঠিকভাবে চিকিৎসা না করলে দীর্ঘস্থায়ী দাগ এবং আত্মবিশ্বাসের সংকট তৈরি করতে পারে। ঘরোয়া উপায়গুলো সহায়ক হতে পারে, তবে স্থায়ী সমাধানের জন্য <strong>ডাক্তারের পরামর্শ নেওয়া জরুরি</strong>।</p>
                 
-                <p>আপনি যদি ব্রণে ভুগে থাকেন, তাহলে আজই আমাদের <strong>টেলিমেডিসিন সার্ভিসে</strong> যোগাযোগ করুন। এখানেই পাবেন ব্রণ দূর করার জন্য ডাক্তারি পরামর্শ, সঠিক ওষুধ এবং দাগ কমানোর কার্যকর সমাধান।</p>
+                <p>আপনি যদি ব্রণে ভুগে থাকেন, তাহলে আজই আমাদের <strong><a href="https://www.romanulislam.com/online-doctor-bd">টেলিমেডিসিন সার্ভিসে</a></strong> যোগাযোগ করুন। এখানেই পাবেন ব্রণ দূর করার জন্য ডাক্তারি পরামর্শ, সঠিক ওষুধ এবং দাগ কমানোর কার্যকর সমাধান।</p>
+                <p>আরও তথ্যের জন্য <a href="https://www.romanulislam.com/">ডা. রোমানুল ইসলামের ওয়েবসাইট</a> দেখুন।</p>
             </div>
         </div>
     </section>
@@ -1085,7 +1216,7 @@
 
                 <div class="faq-item">
                     <div class="faq-question">প্রশ্ন ১৭: ব্রণ হলে কি রোদে যাওয়া উচিত? <span>+</span></div>
-                    <div class="faq-answer">উত্তর: রোদে গেলে त्वचার তেল নিঃসরণ বাড়তে পারে। তবে কিছুটা সূর্যালোক ভিটামিন D দেয়, যা ত্বকের জন্য ভালো। তাই সরাসরি রোদে বেশি সময় না থাকা উত্তম।</div>
+                    <div class="faq-answer">উত্তর: রোদে গেলে ত্বকের তেল নিঃসরণ বাড়তে পারে। তবে কিছুটা সূর্যালোক ভিটামিন D দেয়, যা ত্বকের জন্য ভালো। তাই সরাসরি রোদে বেশি সময় না থাকা উত্তম।</div>
                 </div>
 
                 <div class="faq-item">
@@ -1152,7 +1283,43 @@
                     <div class="faq-question">প্রশ্ন ৩০: টেলিমেডিসিনে কি ব্রণের চিকিৎসা সম্ভব? <span>+</span></div>
                     <div class="faq-answer">উত্তর: অবশ্যই। টেলিমেডিসিনে ছবি পাঠিয়ে বা ভিডিও কল করে চর্মরোগ বিশেষজ্ঞের কাছ থেকে প্রেসক্রিপশন নেওয়া যায়, যা কার্যকর ও নিরাপদ।</div>
                 </div>
-            </div>
+              </div>
+              
+              <!-- Related Articles Section -->
+              <section class="related-articles">
+                <h3>সম্পর্কিত আর্টিকেল</h3>
+                <ul>
+                  <li><a href="https://www.romanulislam.com/blog/allergy ">এলার্জি কি স্থায়ী?</a></li>
+                  <li><a href="https://www.romanulislam.com/blog/dandruff ">চিরতরে খুশকি দূর করবেন কীভাবে?</a></li>
+                </ul>
+
+                <p>
+                  এই আর্টিকেলটি <a href="https://www.romanulislam.com/category/skin-problem">ত্বক ও চুলের স্বাস্থ্য সমস্যা</a> বিভাগের অন্তর্ভুক্ত।
+                </p>
+
+                <p><a href="https://www.romanulislam.com/blog ">সব ব্লগ দেখুন</a></p>
+              </section>
+
+              <!-- Author Box Section -->
+              <section class="author-box">
+                <h3>লেখক পরিচিতি</h3>
+                <p>
+                  <strong>ডা. রোমানুল ইসলাম</strong> স্বাস্থ্য বিষয়ক তথ্যভিত্তিক কনটেন্ট প্রস্তুতকারক।
+                  এই লেখাগুলো সাধারণ স্বাস্থ্য সচেতনতার উদ্দেশ্যে প্রকাশিত।
+                </p>
+                <p>
+                  আপনি চাইলে <a href="https://www.romanulislam.com/">প্রধান পাতায়</a> ফিরে যেতে পারেন অথবা <a href="https://www.romanulislam.com/online-doctor-bd">টেলিমেডিসিন সেবার পেজ</a> দেখতে পারেন।
+                </p>
+              </section>
+
+              <!-- Medical Review Notice -->
+              <section class="medical-review">
+                <p>
+                  এই আর্টিকেলটি চিকিৎসা পরামর্শের বিকল্প নয়।
+                  ব্যক্তিগত সমস্যার জন্য অবশ্যই চিকিৎসকের সঙ্গে পরামর্শ করুন।
+                  বিস্তারিত জানতে <a href="https://www.romanulislam.com/disclaimer">ডিসক্লেইমার</a> দেখুন।
+                </p>
+              </section>
         </div>
     </section>
 
