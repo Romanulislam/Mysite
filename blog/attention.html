@@ -16,7 +16,7 @@
       "@type": "BlogPosting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.romanulislam.com/blog/attention.html"
+        "@id": "https://www.romanulislam.com/blog/attention "
       },
       "headline": "মনোযোগ কমে যাচ্ছে? জানুন শক্তিশালী উপায় ও সমাধান!",
       "description": "পড়াশোনা, কাজ বা দৈনন্দিন জীবনে মনোযোগ বাড়াতে চান? টেলিমেডিসিনের সহায়তায় জানুন মনোযোগ বৃদ্ধির কার্যকর সমাধান ও প্রাকৃতিক উপায়।",
@@ -655,6 +655,95 @@
             border-radius: 50%;
         }
         
+        /* New Styles for Related Articles, Author Box, and Medical Review */
+        .related-articles, .author-box, .medical-review {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .related-articles h3, .author-box h3 {
+            color: #0c7a7a;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+        
+        .related-articles ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+        
+        .related-articles ul li {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-left: 4px solid #0ea5a5;
+            background-color: #f5f7fa;
+        }
+        
+        .related-articles ul li a {
+            color: #0c7a7a;
+            text-decoration: none;
+            font-weight: 500;
+            display: block;
+        }
+        
+        .related-articles ul li a:hover {
+            color: #0ea5a5;
+            text-decoration: underline;
+        }
+        
+        .related-articles p {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .related-articles p a {
+            color: #0c7a7a;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-articles p a:hover {
+            text-decoration: underline;
+            color: #0ea5a5;
+        }
+        
+        .author-box p {
+            text-align: center;
+            line-height: 1.8;
+        }
+        
+        .author-box strong {
+            color: #0c7a7a;
+            font-size: 1.1rem;
+        }
+        
+        .medical-review {
+            background-color: #fff3e0;
+            border-left: 4px solid #ff7043;
+            margin-top: 20px;
+        }
+        
+        .medical-review p {
+            text-align: center;
+            color: #555;
+            font-style: italic;
+        }
+        
+        .medical-review a {
+            color: #0c7a7a;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        
+        .medical-review a:hover {
+            text-decoration: underline;
+        }
+        
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
@@ -684,6 +773,10 @@
                 bottom: 20px;
                 right: 20px;
             }
+            
+            .related-articles, .author-box, .medical-review {
+                padding: 20px;
+            }
         }
     </style>
 </head>
@@ -697,10 +790,10 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="https://www.romanulislam.com/index.html">হোম</a></li>
-                        <li><a href="https://www.romanulislam.com/online-doctor-bd.html">সেবা</a></li>
-                        <li><a href="https://www.romanulislam.com/reviews.html">রিভিউ</a></li>
-                        <li><a href="https://www.romanulislam.com/contact.html">যোগাযোগ</a></li>
+                        <li><a href="https://www.romanulislam.com/index ">হোম</a></li>
+                        <li><a href="https://www.romanulislam.com/online-doctor-bd ">সেবা</a></li>
+                        <li><a href="https://www.romanulislam.com/reviews ">রিভিউ</a></li>
+                        <li><a href="https://www.romanulislam.com/contact ">যোগাযোগ</a></li>
                     </ul>
                 </nav>
             </div>
@@ -711,7 +804,7 @@
     <section class="hero">
         <div class="container">
             <h1>মনোযোগ কমে যাচ্ছে? জানুন শক্তিশালী উপায় ও সমাধান!</h1>
-            <p>পড়াশোনা, কাজ বা দৈনন্দিন জীবনে মনোযোগ বাড়াতে চান? টেলিমেডিসিনের সহায়তায় জানুন মনোযোগ বৃদ্ধির কার্যকর সমাধান ও প্রাকৃতিক উপায়।</p>
+            <p>পড়াশোনা, কাজ বা দৈনন্দিন জীবনে মনোযোগ বাড়াতে চান? টেলিমেডিসিনের সহায়তায় জানুন মনোযোগ বৃদ্ধির কার্যকর সমাধান ও প্রাকৃতিক উপায়। <a href="https://www.romanulislam.com/" title="ডা. রোমানুল ইসলামের হোমপেজ">ডা. রোমানুল ইসলামের ওয়েবসাইট</a> থেকে আরও স্বাস্থ্য সম্পর্কিত তথ্য পাওয়া যাবে।</p>
             <a href="https://wa.me/8801826589958?text=স্যার, আমি মনোযোগ সমস্যা নিয়ে পরামর্শ নিতে চাই" target="_blank" aria-label="WhatsApp Chat" class="cta-button">ডাক্তারের সাথে পরামর্শ করুন</a>
         </div>
     </section>
@@ -880,8 +973,30 @@
                 
                 <p>মনোযোগ শুধু পরীক্ষায় ভালো ফলাফলের জন্য নয়, বরং জীবনের প্রতিটি ক্ষেত্রে সাফল্যের চাবিকাঠি। মনোযোগ বাড়ানো একটি দক্ষতা, যা চর্চা, স্বাস্থ্যকর অভ্যাস ও সঠিক দিকনির্দেশনার মাধ্যমে গড়ে তোলা যায়।</p>
                 
-                <p>আজ যদি আপনি মনে করেন মনোযোগ ধরে রাখা আপনার জন্য কঠিন হয়ে পড়েছে, তাহলে দেরি না করে জীবনযাত্রার পরিবর্তনের পাশাপাশি অনলাইন ডাক্তারের পরামর্শ নিন। কারণ আপনার মনোযোগই আপনার ভবিষ্যতের চালিকাশক্তি।</p>
+                <p>আজ যদি আপনি মনে করেন মনোযোগ ধরে রাখা আপনার জন্য কঠিন হয়ে পড়েছে, তাহলে দেরি না করে জীবনযাত্রার পরিবর্তনের পাশাপাশি <a href="https://www.romanulislam.com/online-doctor-bd" title="অনলাইন ডাক্তার পরামর্শ">অনলাইন ডাক্তার পরামর্শ</a> নিন। কারণ আপনার মনোযোগই আপনার ভবিষ্যতের চালিকাশক্তি।</p>
             </div>
+        </div>
+    </section>
+
+    <!-- Author Box -->
+    <section class="author-box">
+        <div class="container">
+            <h3>লেখক পরিচিতি</h3>
+            <p>
+                <strong>ডা. রোমানুল ইসলাম</strong> স্বাস্থ্য বিষয়ক তথ্যভিত্তিক কনটেন্ট প্রস্তুতকারক।
+                এই লেখাগুলো সাধারণ স্বাস্থ্য সচেতনতার উদ্দেশ্যে প্রকাশিত।
+            </p>
+        </div>
+    </section>
+
+    <!-- Medical Review Notice -->
+    <section class="medical-review">
+        <div class="container">
+            <p>
+                এই আর্টিকেলটি চিকিৎসা পরামর্শের বিকল্প নয়।
+                ব্যক্তিগত সমস্যার জন্য অবশ্যই চিকিৎসকের সঙ্গে পরামর্শ করুন।
+                বিস্তারিত জানতে <a href="https://www.romanulislam.com/disclaimer">ডিসক্লেইমার</a> দেখুন।
+            </p>
         </div>
     </section>
 
@@ -1069,9 +1184,26 @@
 
                 <div class="faq-item">
                     <div class="faq-question">প্রশ্ন ৩০: টেলিমেডিসিন কি মনোযোগ সমস্যার সমাধান দিতে পারে? <span>+</span></div>
-                    <div class="faq-answer">উত্তর: হ্যাঁ, টেলিমেডিসিনের মাধ্যমে অভিজ্ঞ ডাক্তার সহজে কারণ নির্ণয় করতে পারেন, মানসিক পরামর্শ দিতে পারেন এবং প্রয়োজনে সঠিক চিকিৎসা নির্দেশ করতে পারেন।</div>
+                    <div class="faq-answer">উত্তর: হ্যাঁ, টেলিমেডিসিনের মাধ্যমে অভিজ্ঞ ডাক্তার সহজে কারণ নির্ণয় করতে পারেন, মানসিক পরামর্শ দিতে পারেন এবং প্রয়োজনে সঠিক চিকিৎসা নির্দেশ করতে পারেন। <a href="https://www.romanulislam.com/online-doctor-bd" title="টেলিমেডিসিন সেবা">টেলিমেডিসিন সেবা</a> সম্পর্কে আরও জানতে আমাদের ওয়েবসাইট ভিজিট করুন।</div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Related Articles Section -->
+    <section class="related-articles">
+        <div class="container">
+            <h3>সম্পর্কিত আর্টিকেল</h3>
+            <ul>
+                <li><a href="https://www.romanulislam.com/blog/hallucination ">হ্যালুসিনেশন কি ভয়ংকর?</a></li>
+                <li><a href="https://www.romanulislam.com/blog/insomnia ">অনিদ্রা কি জীবন ধ্বংস করছে?</a></li>
+            </ul>
+
+            <p>
+                এই আর্টিকেলটি <a href="https://www.romanulislam.com/category/mental-health">মানসিক স্বাস্থ্য সমস্যা</a> বিভাগের অন্তর্ভুক্ত।
+            </p>
+
+            <p><a href="https://www.romanulislam.com/blog ">সব ব্লগ দেখুন</a></p>
         </div>
     </section>
 
@@ -1082,6 +1214,7 @@
                 <div class="footer-section">
                     <h3>ডা. রোমানুল ইসলাম</h3>
                     <p>২৪/৭ ঘরে বসে ডাক্তারের পরামর্শ --- Best Online Doctor BD</p>
+                    <p><a href="https://www.romanulislam.com/">প্রধান পৃষ্ঠায় ফিরে যান</a></p>
                 </div>
                 
                 <div class="footer-section">
