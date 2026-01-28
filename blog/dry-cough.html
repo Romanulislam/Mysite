@@ -16,7 +16,7 @@
       "@type": "BlogPosting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.romanulislam.com/blog/dry-cough.html"
+        "@id": "https://www.romanulislam.com/blog/dry-cough "
       },
       "headline": "শুকনো কাশি কি বিপদজনক? অবহেলা করলে ক্ষতি হতে পারে!",
       "description": "শুকনো কাশি কেন হয়, কিভাবে মুক্তি পাবেন এবং চিকিৎসা দরকার কবে—জানুন। টেলিমেডিসিনে এখনই ডাক্তার দেখিয়ে শুকনো কাশি থেকে সমাধান নিন।",
@@ -172,7 +172,7 @@
           "name": "শিশুদের শুকনো কাশিতে کফ সিরাপ দেওয়া কি নিরাপদ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ডাক্তারের পরামর্শ ছাড়া শিশুদের কফ সিরাপ দেওয়া উচিত নয়। অনেক সیرাপ শিশুদের জন্য ক্ষতিকর হতে পারে।"
+            "text": "ডাক্তারের পরামর্শ ছাড়া শিশুদের কফ সিরাপ দেওয়া উচিত নয়। অনেক সিরাপ শিশুদের জন্য ক্ষতিকর হতে পারে।"
           }
         },
         {
@@ -655,6 +655,103 @@
             border-radius: 50%;
         }
         
+        /* New Styles for Related Articles, Author Box and Medical Review */
+        .related-articles {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 40px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .related-articles h3 {
+            color: #0c7a7a;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #e0f7fa;
+            padding-bottom: 10px;
+        }
+        
+        .related-articles ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .related-articles ul li {
+            margin-bottom: 12px;
+            list-style-type: square;
+        }
+        
+        .related-articles ul li a {
+            color: #0ea5a5;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .related-articles ul li a:hover {
+            color: #0c7a7a;
+            text-decoration: underline;
+        }
+        
+        .related-articles p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        
+        .related-articles p a {
+            color: #0ea5a5;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-articles p a:hover {
+            text-decoration: underline;
+        }
+        
+        .author-box {
+            background: #e0f7fa;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 30px 0;
+            border-left: 5px solid #0ea5a5;
+        }
+        
+        .author-box h3 {
+            color: #0c7a7a;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .author-box p {
+            line-height: 1.8;
+            color: #333;
+        }
+        
+        .medical-review {
+            background: #fff8e1;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 30px 0;
+            border-left: 5px solid #ff9800;
+        }
+        
+        .medical-review p {
+            line-height: 1.8;
+            color: #5d4037;
+            font-weight: 500;
+        }
+        
+        .medical-review a {
+            color: #0ea5a5;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .medical-review a:hover {
+            text-decoration: underline;
+        }
+        
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
@@ -684,6 +781,10 @@
                 bottom: 20px;
                 right: 20px;
             }
+            
+            .related-articles, .author-box, .medical-review {
+                padding: 20px;
+            }
         }
     </style>
 </head>
@@ -697,10 +798,10 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="https://www.romanulislam.com/index.html">হোম</a></li>
-                        <li><a href="https://www.romanulislam.com/online-doctor-bd.html">সেবা</a></li>
-                        <li><a href="https://www.romanulislam.com/reviews.html">রিভিউ</a></li>
-                        <li><a href="https://www.romanulislam.com/contact.html">যোগাযোগ</a></li>
+                        <li><a href="https://www.romanulislam.com/index ">হোম</a></li>
+                        <li><a href="https://www.romanulislam.com/online-doctor-bd ">সেবা</a></li>
+                        <li><a href="https://www.romanulislam.com/reviews ">রিভিউ</a></li>
+                        <li><a href="https://www.romanulislam.com/contact ">যোগাযোগ</a></li>
                     </ul>
                 </nav>
             </div>
@@ -723,12 +824,12 @@
             <div class="card">
                 <p>মানুষের জীবনে কাশি একটি খুব সাধারণ অভিজ্ঞতা। কখনও ঠান্ডা-জ্বরের কারণে, কখনও ধুলোবালির সংস্পর্শে, আবার কখনও অ্যালার্জির কারণে আমরা কাশতে শুরু করি। কিন্তু যখন কাশি দীর্ঘস্থায়ী হয় এবং শ্লেষ্মা বা কফ বের হয় না, তখন তাকে বলা হয় শুকনো কাশি (Dry Cough)।</p>
                 
-                <p>শুকনো কাশি শুধু বিরক্তিকর নয়, অনেক সময় এটি শরীরের ভেতরে বড় কোনো অসুখের সংকেতও হতে পারে। একজন রোগী তার অভিজ্ঞতা শেয়ার করেছিলেন—"প্রথমে ভেবেছিলাম হালকা কাশি, কিন্তু এক মাস ধরে থামছিল না। পরে টেলিমেডিসিনে ডাক্তারের সাথে কথা বলতেই জানা গেল এটি অ্যালার্জির কারণে।"</p>
+                <p>শুকনো কাশি শুধু বিরক্তিকর নয়, অনেক সময় এটি শরীরের ভেতরে বড় কোনো অসুখের সংকেতও হতে পারে। একজন রোগী তার অভিজ্ঞতা শেয়ার করেছিলেন—"প্রথমে ভেবেছিলাম হালকা কাশি, কিন্তু এক মাস ধরে থামছিল না। পরে <a href="https://www.romanulislam.com/online-doctor-bd " style="color: #0ea5a5; font-weight: 500;">টেলিমেডিসিনে</a> ডাক্তারের সাথে কথা বলতেই জানা গেল এটি অ্যালার্জির কারণে।"</p>
                 
                 <p>এভাবেই একটি সাধারণ কাশি কখনও জীবনে অস্বস্তি, দুর্বলতা এমনকি গুরুতর রোগের লক্ষণও হতে পারে। আসুন আমরা বিস্তারিতভাবে শুকনো কাশির গল্পটা জেনে নেই।</p>
                 
                 <div class="highlight">
-                    <p><strong>দ্রুত সংক্ষেপ:</strong> এই ব্লগ পোস্টে আপনি যা শিখবেন: শুকনো কাশির কারণ ও লক্ষণ, শুকনো কাশি থেকে মুক্তির ঘরোয়া উপায়, কখন ডাক্তারের সাহায্য নেবেন এবং কীভাবে টেলিমেডিসিনের মাধ্যমে ঘরে বসে চিকিৎসা নেবেন।</p>
+                    <p><strong>দ্রুত সংক্ষেপ:</strong> এই ব্লগ পোস্টে আপনি যা শিখবেন: শুকনো কাশির কারণ ও লক্ষণ, শুকনো কাশি থেকে মুক্তির ঘরোয়া উপায়, কখন ডাক্তারের সাহায্য নেবেন এবং কীভাবে <a href="https://www.romanulislam.com/online-doctor-bd " style="color: #0c7a7a; font-weight: 500;">টেলিমেডিসিনের</a> মাধ্যমে ঘরে বসে চিকিৎসা নেবেন।</p>
                 </div>
             </div>
         </div>
@@ -839,7 +940,7 @@
                     <li>প্রচুর পানি ও ফলের রস পান করুন</li>
                     <li>ধুলোবালি থেকে দূরে থাকুন</li>
                     <li>অ্যালার্জির উৎস এড়িয়ে চলুন</li>
-                    <li>প্রয়োজনে টেলিমেডিসিনে ডাক্তারের সাথে যোগাযোগ করুন—নিজে থেকে ওষুধ খাবেন না</li>
+                    <li>প্রয়োজনে <a href="https://www.romanulislam.com/online-doctor-bd " style="color: #0ea5a5; font-weight: 500;">টেলিমেডিসিনে</a> ডাক্তারের সাথে যোগাযোগ করুন—নিজে থেকে ওষুধ খাবেন না</li>
                 </ul>
             </div>
         </div>
@@ -868,7 +969,7 @@
         <div class="container">
             <h2 class="section-title">শুকনো কাশি প্রতিরোধের উপায়</h2>
             <div class="card">
-                <p>প্রতিরোধই সেরা। নিয়মিত হাত ধোয়া, ভ্যাকসিন নেয়া (ফ্লু ভ্যাকসিন), স্বাস্থ্যকর খাবার খাওয়া। অ্যালার্জি থাকলে অ্যান্টি-হিস্টামিন নিন। ঘর পরিষ্কার রাখুন, এয়ার পিউরিফায়ার ব্যবহার করুন। ধূমপান এড়ান। ইমিউনিটি বাড়াতে ব্যায়াম করুন।</p>
+                <p>প্রতিরোধই সেরা। নিয়মিত হাত ধোয়া, ভ্যাকসিন নেয়া (ফ্লু ভ্যাকসিন), স্বাস্থ্যকর খাবার খাওয়া। অ্যালার্জি থাকলে অ্যান্টি-হিস্টামিন নিন। ঘর পরিষ্কার রাখুন, এয়ার পিউরিফায়ার ব্যবহার করুন। ধূমপান এড়ান। ইমিউনিটি বাড়াতে ব্যায়াম করুন। <a href="https://www.romanulislam.com/" style="color: #0ea5a5; font-weight: 500;">আমাদের ওয়েবসাইটে</a> স্বাস্থ্যকর জীবনযাপন সম্পর্কে আরও টিপস পাবেন।</p>
             </div>
         </div>
     </section>
@@ -886,6 +987,52 @@
                     <li>দ্রুত ওজন কমে যাওয়া</li>
                     <li>তীব্র জ্বর</li>
                 </ul>
+                <p>এই ধরনের লক্ষণ দেখা দিলে <a href="https://www.romanulislam.com/online-doctor-bd " style="color: #0ea5a5; font-weight: 500;">অনলাইন ডাক্তার পরামর্শ</a> নিতে পারেন বা সরাসরি হাসপাতালে যেতে পারেন।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author Box Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="author-box">
+                <h3>লেখক পরিচিতি</h3>
+                <p>
+                    <strong>ডা. রোমানুল ইসলাম</strong> স্বাস্থ্য বিষয়ক তথ্যভিত্তিক কনটেন্ট প্রস্তুতকারক।
+                    এই লেখাগুলো সাধারণ স্বাস্থ্য সচেতনতার উদ্দেশ্যে প্রকাশিত।
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Medical Review Notice -->
+    <section class="content-section">
+        <div class="container">
+            <div class="medical-review">
+                <p>
+                    এই আর্টিকেলটি চিকিৎসা পরামর্শের বিকল্প নয়।
+                    ব্যক্তিগত সমস্যার জন্য অবশ্যই চিকিৎসকের সঙ্গে পরামর্শ করুন।
+                    বিস্তারিত জানতে <a href="https://www.romanulislam.com/disclaimer">ডিসক্লেইমার</a> দেখুন।
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Articles Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="related-articles">
+                <h3>সম্পর্কিত আর্টিকেল</h3>
+                <ul>
+                    <li><a href="https://www.romanulislam.com/blog/hemoptysis">কফের সাথে রক্ত: স্বাভাবিক নাকি বিপজ্জনক?</a></li>
+                    <li><a href="https://www.romanulislam.com/blog/nasal-congestion">নাকের সর্দি: কারণ, লক্ষণ, প্রতিকারের ঘরোয়া উপায়</a></li>
+                </ul>
+
+                <p>
+                    এই আর্টিকেলটি <a href="https://www.romanulislam.com/category/ent">নাক, কান ও গলা (ENT) স্বাস্থ্য সমস্যা</a> বিভাগের অন্তর্ভুক্ত।
+                </p>
+
+                <p><a href="https://www.romanulislam.com/blog ">সব ব্লগ দেখুন</a></p>
             </div>
         </div>
     </section>
@@ -964,7 +1111,7 @@
 
                 <div class="faq-item">
                     <div class="faq-question">প্রশ্ন ৮: শুকনো কাশি হলে দুধ খাওয়া যাবে কি? <span>+</span></div>
-                    <div class="faq-answer">উত্তর: দুধ কাশির জন্য ক্ষতিকর নয়। তবে কারও যদি দুধ খেলে শ্লেষ্মা বাড়ে или গলা খসখস করে, তাহলে সাময়িকভাবে দুধ এড়িয়ে চলা ভালো।</div>
+                    <div class="faq-answer">উত্তর: দুধ কাশির জন্য ক্ষতিকর নয়। তবে কারও যদি দুধ খেলে শ্লেষ্মা বাড়ে বা গলা খসখস করে, তাহলে সাময়িকভাবে দুধ এড়িয়ে চলা ভালো।</div>
                 </div>
 
                 <div class="faq-item">
@@ -979,7 +1126,7 @@
 
                 <div class="faq-item">
                     <div class="faq-question">প্রশ্ন ১১: শুকনো কাশিতে ঠান্ডা পানি বা ঠান্ডা খাবার এড়ানো উচিত কি? <span>+</span></div>
-                    <div class="faq-answer">উত্তর: হ্যাঁ। ঠান্ডা পানি или ঠান্ডা খাবার গলার জ্বালা বাড়িয়ে কাশি দীর্ঘস্থায়ী করতে পারে।</div>
+                    <div class="faq-answer">উত্তর: হ্যাঁ। ঠান্ডা পানি বা ঠান্ডা খাবার গলার জ্বালা বাড়িয়ে কাশি দীর্ঘস্থায়ী করতে পারে।</div>
                 </div>
 
                 <div class="faq-item">
