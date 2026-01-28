@@ -16,7 +16,7 @@
       "@type": "BlogPosting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.romanulislam.com/blog/epilepsy.html"
+        "@id": "https://www.romanulislam.com/blog/epilepsy "
       },
       "headline": "মৃগী রোগ কি সারানো যায়? সত্য জানলে বদলাবে জীবন",
       "description": "মৃগী রোগ নিয়ে ভয় নয়, সমাধান চাই। মৃগী রোগের কারণ, লক্ষণ, চিকিৎসা ও মুক্তির উপায় জানুন এবং টেলিমেডিসিনে সহজে পরামর্শ নিন।",
@@ -140,12 +140,12 @@
           "name": "মৃগী রোগে ঘুম কম হলে কি খিঁচুনি বাড়ে?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "হ্যাঁ, ঘুমের অভাব খिँচুনি বাড়ায়। তাই মৃগী রোগীর প্রতিদিন পর্যাপ্ত ঘুম নিশ্চিত করা জরুরি।"
+            "text": "হ্যাঁ, ঘুমের অভাব খিঁচুনি বাড়ায়। তাই মৃগী রোগীর প্রতিদিন পর্যাপ্ত ঘুম নিশ্চিত করা জরুরি।"
           }
         },
         {
           "@type": "Question",
-          "name": "মৃগী রোগের ওষুধে কি পার্শ্বপ্রতিক্রিয়া থাকে?",
+          "name": "মৃগী রোগের ওষুধে কি পার্শ্বপ্রতিক্রিয়া থাকে?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "কিছু রোগীর মাথা ঘোরা, ক্লান্তি, ওজন পরিবর্তন বা মেজাজের পরিবর্তন হতে পারে। তবে ডাক্তারের ফলোআপে এসব নিয়ন্ত্রণযোগ্য।"
@@ -655,6 +655,121 @@
             border-radius: 50%;
         }
         
+        /* Related Articles Styles */
+        .related-articles {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 60px 0 40px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .related-articles h3 {
+            color: #0c7a7a;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            border-bottom: 2px solid #e0f7fa;
+            padding-bottom: 10px;
+        }
+        
+        .related-articles ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 25px;
+        }
+        
+        .related-articles ul li {
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .related-articles ul li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .related-articles ul li a {
+            color: #0c7a7a;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            display: block;
+            padding: 8px 0;
+        }
+        
+        .related-articles ul li a:hover {
+            color: #ff7043;
+            text-decoration: underline;
+        }
+        
+        .related-articles p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        
+        .related-articles a {
+            color: #0ea5a5;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-articles a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Author Box Styles */
+        .author-box {
+            background: #e0f7fa;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 40px 0 30px;
+            border-left: 4px solid #0ea5a5;
+        }
+        
+        .author-box h3 {
+            color: #0c7a7a;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        .author-box p {
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+        
+        .author-box strong {
+            color: #0c7a7a;
+            font-size: 1.1rem;
+        }
+        
+        /* Medical Review Styles */
+        .medical-review {
+            background: #fff8e1;
+            border: 1px solid #ffd54f;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+            color: #5d4037;
+        }
+        
+        .medical-review p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        
+        .medical-review a {
+            color: #0c7a7a;
+            font-weight: 500;
+            text-decoration: underline;
+        }
+        
+        .medical-review a:hover {
+            color: #ff7043;
+        }
+        
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
@@ -684,6 +799,10 @@
                 bottom: 20px;
                 right: 20px;
             }
+            
+            .related-articles, .author-box, .medical-review {
+                padding: 20px;
+            }
         }
     </style>
 </head>
@@ -697,10 +816,10 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="https://www.romanulislam.com/index.html">হোম</a></li>
-                        <li><a href="https://www.romanulislam.com/online-doctor-bd.html">সেবা</a></li>
-                        <li><a href="https://www.romanulislam.com/reviews.html">রিভিউ</a></li>
-                        <li><a href="https://www.romanulislam.com/contact.html">যোগাযোগ</a></li>
+                        <li><a href="https://www.romanulislam.com/">হোম</a></li>
+                        <li><a href="https://www.romanulislam.com/online-doctor-bd ">সেবা</a></li>
+                        <li><a href="https://www.romanulislam.com/reviews ">রিভিউ</a></li>
+                        <li><a href="https://www.romanulislam.com/contact ">যোগাযোগ</a></li>
                     </ul>
                 </nav>
             </div>
@@ -711,7 +830,7 @@
     <section class="hero">
         <div class="container">
             <h1>মৃগী রোগ কি সারানো যায়? সত্য জানলে বদলাবে জীবন</h1>
-            <p>মৃগী রোগ নিয়ে ভয় নয়, সমাধান চাই। মৃগী রোগের কারণ, লক্ষণ, চিকিৎসা ও মুক্তির উপায় জানুন এবং টেলিমেডিসিনে সহজে পরামর্শ নিন।</p>
+            <p>মৃগী রোগ নিয়ে ভয় নয়, সমাধান চাই। মৃগী রোগের কারণ, লক্ষণ, চিকিৎসা ও মুক্তির উপায় জানুন এবং <a href="https://www.romanulislam.com/online-doctor-bd" style="color: #e0f7fa; text-decoration: underline;">টেলিমেডিসিনে</a> সহজে পরামর্শ নিন।</p>
             <a href="https://wa.me/8801826589958?text=স্যার, আমি একটি অ্যাপয়ন্টমেন্ট বুক করতে চাই" target="_blank" aria-label="WhatsApp Chat" class="cta-button">ডাক্তারের সাথে পরামর্শ করুন</a>
         </div>
     </section>
@@ -723,7 +842,7 @@
             <div class="card">
                 <p>একজন তরুণী কলেজ ছাত্রী। পরীক্ষার হলেই হঠাৎ পড়ে গিয়ে শরীর কাঁপতে থাকে, সবাই ভয় পায়। পরে জানা গেল—সে মৃগী রোগে আক্রান্ত। সমাজে লজ্জা, ভয়, ভুল ধারণা—সব মিলে তার জীবন অন্ধকার হয়ে উঠছিল। কিন্তু সঠিক চিকিৎসা শুরু করার পর ধীরে ধীরে সব কিছু স্বাভাবিক হলো। আজ সে পড়াশোনা করছে, স্বপ্ন দেখছে, আত্মবিশ্বাসে এগিয়ে যাচ্ছে।</p>
                 
-                <p>এই গল্প শুধু একজনের নয়—বিশ্বজুড়ে কোটি কোটি মানুষ মৃগী রোগ নিয়ে প্রতিদিন লড়াই করছে। কিন্তু সুখবর হলো—মৃগী কোনো অভিশাপ নয়, বরং এটি নিয়ন্ত্রণযোগ্য একটি চিকিৎসাযোগ্য রোগ।</p>
+                <p>এই গল্প শুধু একজনের নয়—বিশ্বজুড়ে কোটি কোটি মানুষ মৃগী রোগ নিয়ে প্রতিদিন লড়াই করছে। কিন্তু সুখবর হলো—মৃগী কোনো অভিশাপ নয়, বরং এটি নিয়ন্ত্রণযোগ্য একটি চিকিৎসাযোগ্য রোগ। <a href="https://www.romanulislam.com/">প্রধান পেজে</a> আরও স্বাস্থ্য টিপস দেখুন।</p>
                 
                 <div class="highlight">
                     <p><strong>দ্রুত সংক্ষেপ:</strong> এই ব্লগ পোস্টে আপনি যা শিখবেন: মৃগী রোগের আসল চেহারা, কেন হয় ও কিভাবে চিনবেন, প্রাথমিক চিকিৎসা ও আধুনিক থেরাপি, জীবনযাপন, ব্যায়াম ও খাদ্যাভ্যাস, টেলিমেডিসিনের মাধ্যমে সহজ সমাধান।</p>
@@ -804,6 +923,7 @@
                     <li><strong>শল্যচিকিৎসা (সার্জারি):</strong> কিছু ক্ষেত্রে শল্যচিকিৎসা কার্যকর</li>
                     <li><strong>বিশেষ থেরাপি:</strong> সময়মতো চিকিৎসা শুরু করলে রোগী স্কুল, অফিস, এমনকি খেলাধুলাও করতে পারে</li>
                 </ul>
+                <p><a href="https://www.romanulislam.com/online-doctor-bd">অনলাইন পরামর্শ</a> নিয়ে শুরু করুন সঠিক চিকিৎসা।</p>
             </div>
         </div>
     </section>
@@ -929,7 +1049,7 @@
         <div class="container">
             <h2 class="section-title">মৃগী রোগে সামাজিক ভয় ও বাস্তবতা</h2>
             <div class="card">
-                <p>আমাদের সমাজে এখনো মৃগীকে "অপমানের" রোগ হিসেবে দেখা হয়। স্কুলে ভর্তি হতে বাধা, চাকরিতে বৈষম্য, বিয়েতে সমস্যা—এসব বাস্তবতা রোগীকে কষ্ট দেয়। কিন্তু সচেতনতা বাড়লে এই ভুল ধারণা দূর করা সম্ভব। পৃথিবীর অনেক বিখ্যাত বিজ্ঞানী, শিল্পী, এমনকি রাষ্ট্রনায়কও মৃগী নিয়ে সফল জীবন কাটিয়েছেন।</p>
+                <p>আমাদের সমাজে এখনো মৃগীকে "অপমানের" রোগ হিসেবে দেখা হয়। স্কুলে ভর্তি হতে বাধা, চাকরিতে বৈষম্য, বিয়েতে সমস্যা—এসব বাস্তবতা রোগীকে কষ্ট দেয়। কিন্তু সচেতনতা বাড়লে এই ভুল ধারণা দূর করা সম্ভব। পৃথিবীর অনেক বিখ্যাত বিজ্ঞানী, শিল্পী, এমনকি রাষ্ট্রনায়কও মৃগী নিয়ে সফল জীবন কাটিয়েছেন। <a href="https://www.romanulislam.com/">আমাদের ওয়েবসাইটে</a> আরও স্বাস্থ্য সম্পর্কিত তথ্য পাওয়া যাবে।</p>
             </div>
         </div>
     </section>
@@ -939,7 +1059,52 @@
         <div class="container">
             <h2 class="section-title">কখন ডাক্তারের সাহায্য নেবেন?</h2>
             <div class="card">
-                <p>প্রথমবার খিঁচুনি হলে, খিঁচুনি ৫ মিনিটের বেশি স্থায়ী হলে, বারবার খিঁচুনি হলে, গর্ভাবস্থায় খিঁচুনি হলে, ওষুধ খাওয়ার পরও খিঁচুনি হলে অবশ্যই ডাক্তারের পরামর্শ নিন। শিশু, বয়স্ক বা ক্রনিক রোগীদের ক্ষেত্রে তাড়াতাড়ি চিকিৎসা শুরু করা জরুরি।</p>
+                <p>প্রথমবার খিঁচুনি হলে, খিঁচুনি ৫ মিনিটের বেশি স্থায়ী হলে, বারবার খিঁচুনি হলে, গর্ভাবস্থায় খিঁচুনি হলে, ওষুধ খাওয়ার পরও খিঁচুনি হলে অবশ্যই ডাক্তারের পরামর্শ নিন। শিশু, বয়স্ক বা ক্রনিক রোগীদের ক্ষেত্রে তাড়াতাড়ি চিকিৎসা শুরু করা জরুরি। <a href="https://www.romanulislam.com/online-doctor-bd">টেলিমেডিসিন পরামর্শ</a> নিতে পারেন এখনই।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author Box Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="author-box">
+                <h3>লেখক পরিচিতি</h3>
+                <p>
+                    <strong>ডা. রোমানুল ইসলাম</strong> স্বাস্থ্য বিষয়ক তথ্যভিত্তিক কনটেন্ট প্রস্তুতকারক।
+                    এই লেখাগুলো সাধারণ স্বাস্থ্য সচেতনতার উদ্দেশ্যে প্রকাশিত।
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Medical Review Notice -->
+    <section class="content-section">
+        <div class="container">
+            <div class="medical-review">
+                <p>
+                    এই আর্টিকেলটি চিকিৎসা পরামর্শের বিকল্প নয়।
+                    ব্যক্তিগত সমস্যার জন্য অবশ্যই চিকিৎসকের সঙ্গে পরামর্শ করুন।
+                    বিস্তারিত জানতে <a href="https://www.romanulislam.com/disclaimer">ডিসক্লেইমার</a> দেখুন।
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Articles Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="related-articles">
+                <h3>সম্পর্কিত আর্টিকেল</h3>
+                <ul>
+                    <li><a href="https://www.romanulislam.com/blog/headache">প্রচণ্ড মাথা ব্যথা কেন হয়?</a></li>
+                    <li><a href="https://www.romanulislam.com/blog/numbness">হাত-পা ঝিনঝিন কি বিপদজনক?</a></li>
+                </ul>
+
+                <p>
+                    এই আর্টিকেলটি <a href="https://www.romanulislam.com/category/neuro">স্নায়ু ও মস্তিষ্কের সমস্যা</a> বিভাগের অন্তর্ভুক্ত।
+                </p>
+
+                <p><a href="https://www.romanulislam.com/blog ">সব ব্লগ দেখুন</a></p>
             </div>
         </div>
     </section>
@@ -964,7 +1129,7 @@
                 
                 <div class="benefit-card">
                     <h3>সাশ্রয়ী মূল্য</h3>
-                    <p>সাশ্রয়ী মূল্যে মানসম্মত চिकিৎসা সেবা গ্রহণ করুন</p>
+                    <p>সাশ্রয়ী মূল্যে মানসম্মত চিকিৎসা সেবা গ্রহণ করুন</p>
                 </div>
                 
                 <div class="benefit-card">
@@ -1087,7 +1252,7 @@
                 </div>
 
                 <div class="faq-item">
-                    <div class="faq-question">প্রশ্ন ২২: মৃগী রোগে কি গরমে फिट বেশি হয়? <span>+</span></div>
+                    <div class="faq-question">প্রশ্ন ২২: মৃগী রোগে কি গরমে ফিট বেশি হয়? <span>+</span></div>
                     <div class="faq-answer">উত্তর: হ্যাঁ, অতিরিক্ত গরম, পানিশূন্যতা ও ক্লান্তি অনেক রোগীর ক্ষেত্রে ফিটের ঝুঁকি বাড়ায়।</div>
                 </div>
 
@@ -1154,7 +1319,7 @@
                 <div class="footer-section">
                     <h3>দরকারী লিংক</h3>
                     <ul>
-                        <li><a href="https://romanulislam.com/index">হোম</a></li>
+                        <li><a href="https://romanulislam.com/">হোম</a></li>
                         <li><a href="https://romanulislam.com/online-doctor-bd">সেবা</a></li>
                         <li><a href="https://romanulislam.com/blog">ব্লগ</a></li>
                         <li><a href="https://romanulislam.com/reviews">রিভিউ</a></li>
