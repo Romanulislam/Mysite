@@ -92,7 +92,7 @@
           "name": "বদ হজম কি একদিনেই সেরে যায়?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "হালকা বদ হজম কয়েক ঘণ্টা или একদিনে ভালো হয়ে যেতে পারে। তবে ঘন ঘন হলে ডাক্তার দেখানো জরুরি।"
+            "text": "হালকা বদ হজম কয়েক ঘণ্টা বা একদিনে ভালো হয়ে যেতে পারে। তবে ঘন ঘন হলে ডাক্তার দেখানো জরুরি।"
           }
         },
         {
@@ -574,6 +574,93 @@
             font-size: 1.3rem;
         }
         
+        /* New Styles for Added Sections */
+        .author-box {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 40px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            border-left: 5px solid #0ea5a5;
+        }
+        
+        .author-box h3 {
+            color: #0c7a7a;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .medical-review {
+            background: #fff8e1;
+            border: 2px solid #ffd54f;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+            font-size: 0.95rem;
+        }
+        
+        .medical-review a {
+            color: #0c7a7a;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        .medical-review a:hover {
+            text-decoration: underline;
+        }
+        
+        .related-articles {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 40px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .related-articles h3 {
+            color: #0c7a7a;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #e0f7fa;
+            padding-bottom: 10px;
+        }
+        
+        .related-articles ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+        
+        .related-articles li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .related-articles li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #0ea5a5;
+            font-weight: bold;
+        }
+        
+        .related-articles a {
+            color: #0c7a7a;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-articles a:hover {
+            color: #f4511e;
+            text-decoration: underline;
+        }
+        
+        .related-articles p {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        
         footer {
             background: #0c7a7a;
             color: white;
@@ -723,11 +810,14 @@
             <div class="card">
                 <p>হ্যালো, প্রিয় পাঠকগণ! আজ আমরা একটা খুব সাধারণ কিন্তু অস্বস্তিকর সমস্যা নিয়ে কথা বলব – "বদ হজম"। এটা এমন একটা অবস্থা যা আমাদের দৈনন্দিন জীবনকে ব্যাহত করে। কল্পনা করুন, আপনি একটা গুরুত্বপূর্ণ মিটিংয়ে যাচ্ছেন, কিন্তু পেট ভারী লাগা, ঢেকুর ওঠা, অস্বস্তি—এই অভিজ্ঞতা আমাদের প্রায় সবার জীবনেই একাধিকবার হয়েছে।</p>
                 
-                <p>এই ব্লগ পোস্টে আমরা বিস্তারিত আলোচনা করব বদ হজমের কারণ, লক্ষণ, প্রতিরোধ এবং চিকিৎসা নিয়ে। বিশেষ করে, আমরা ফোকাস করব "বদ হজমের ঘরোয়া উপায়", "খাদ্যাভ্যাস পরিবর্তন" এবং "কখন ডাক্তারের কাছে যাবেন" এই টপিকগুলোতে। এছাড়া, আমরা জানাব কীভাবে আমাদের টেলিমেডিসিন সার্ভিসের মাধ্যমে আপনি ঘরে বসে বিশেষজ্ঞ ডাক্তারের সাথে কথা বলে এই সমস্যা থেকে সহজেই মুক্তি পেতে পারেন।</p>
+                <p>এই ব্লগ পোস্টে আমরা বিস্তারিত আলোচনা করব বদ হজমের কারণ, লক্ষণ, প্রতিরোধ এবং চিকিৎসা নিয়ে। বিশেষ করে, আমরা ফোকাস করব "বদ হজমের ঘরোয়া উপায়", "খাদ্যাভ্যাস পরিবর্তন" এবং "কখন ডাক্তারের কাছে যাবেন" এই টপিকগুলোতে। এছাড়া, আমরা জানাব কীভাবে <a href="https://www.romanulislam.com/online-doctor-bd.html" style="color:#0c7a7a; font-weight:600;">আমাদের টেলিমেডিসিন সার্ভিসের</a> মাধ্যমে আপনি ঘরে বসে বিশেষজ্ঞ ডাক্তারের সাথে কথা বলে এই সমস্যা থেকে সহজেই মুক্তি পেতে পারেন।</p>
                 
                 <div class="highlight">
                     <p><strong>দ্রুত সংক্ষেপ:</strong> এই ব্লগ পোস্টে আপনি যা শিখবেন: বদ হজমের কারণ ও লক্ষণ, বদ হজমের ঘরোয়া উপায়, খাদ্যাভ্যাস পরিবর্তন, কখন ডাক্তারের সাহায্য নেবেন এবং কীভাবে টেলিমেডিসিনের মাধ্যমে ঘরে বসে চিকিৎসা নেবেন।</p>
                 </div>
+
+                <!-- Added Internal Link -->
+                <p>আরও স্বাস্থ্য টিপসের জন্য <a href="https://www.romanulislam.com/" style="color:#0c7a7a; font-weight:600;">আমাদের মূল ওয়েবসাইট</a> দেখুন।</p>
             </div>
         </div>
     </section>
@@ -750,6 +840,9 @@
                     <li><strong>ধূমপান ও মদ্যপান:</strong> পাকস্থলীর আস্তরণ ক্ষতিগ্রস্ত হয়</li>
                     <li><strong>কিছু ওষুধ:</strong> যেমন ব্যথানাশক ওষুধ বা অ্যান্টিবায়োটিক</li>
                 </ul>
+
+                <!-- Added Internal Link -->
+                <p>এই ধরনের সমস্যার জন্য আপনি <a href="https://www.romanulislam.com/online-doctor-bd.html" style="color:#0c7a7a; font-weight:600;">অনলাইন টেলিমেডিসিন সেবা</a> এর মাধ্যমে পরামর্শ নিতে পারেন।</p>
             </div>
         </div>
     </section>
@@ -823,6 +916,9 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Added Internal Link -->
+            <p style="margin-top: 20px;">আরও স্বাস্থ্য সংক্রান্ত তথ্যের জন্য <a href="https://www.romanulislam.com/" style="color:#0c7a7a; font-weight:600;">আমাদের হোমপেজ</a> দেখুন।</p>
         </div>
     </section>
 
@@ -850,6 +946,9 @@
                     <li>অতিরিক্ত টক ফল</li>
                     <li>চকলেট</li>
                 </ul>
+
+                <!-- Added Internal Link -->
+                <p>খাদ্যাভ্যাস সম্পর্কে বিশেষজ্ঞ পরামর্শের জন্য <a href="https://www.romanulislam.com/online-doctor-bd.html" style="color:#0c7a7a; font-weight:600;">আমাদের টেলিমেডিসিন সেবা</a> ব্যবহার করুন।</p>
             </div>
         </div>
     </section>
@@ -879,8 +978,47 @@
         <div class="container">
             <h2 class="section-title">কখন ডাক্তারের সাহায্য নেবেন?</h2>
             <div class="card">
-                <p>যদি লক্ষণ কয়েক সপ্তাহের বেশি থাকে, বারবার বমি হয়, রক্তবমি বা রক্তমিশ্রিত মল হয়, তীব্র ব্যথা হয় বা ওজন কমে যায়—তাহলে অবশ্যই ডাক্তারের পরামর্শ নিন। শিশু, বয়স্ক বা ক্রনিক রোগীদের ক্ষেত্রে তাড়াতাড়ি ডাক্তারের কাছে যাওয়া উচিত।</p>
+                <p>যদি লক্ষণ কয়েক সপ্তাহের বেশি থাকে, বারবার বমি হয়, রক্তবমি বা রক্তমিশ্রিত মল হয়, তীব্র ব্যথা হয় বা ওজন কমে যায়—তাহলে অবশ্যই ডাক্তারের পরামর্শ নিন। শিশু, বয়স্ক বা ক্রনিক রোগীদের ক্ষেত্রে তাড়াতাড়ি ডাক্তারের কাছে যাওয়া উচিত। <a href="https://www.romanulislam.com/online-doctor-bd.html" style="color:#0c7a7a; font-weight:600;">আমাদের অনলাইন টেলিমেডিসিন সেবা</a> এর মাধ্যমে আপনি ঘরে বসেই বিশেষজ্ঞ ডাক্তারের পরামর্শ নিতে পারেন।</p>
             </div>
+        </div>
+    </section>
+
+    <!-- Author Box -->
+    <section class="author-box">
+        <div class="container">
+            <h3>লেখক পরিচিতি</h3>
+            <p>
+                <strong>ডা. রোমানুল ইসলাম</strong> স্বাস্থ্য বিষয়ক তথ্যভিত্তিক কনটেন্ট প্রস্তুতকারক।
+                এই লেখাগুলো সাধারণ স্বাস্থ্য সচেতনতার উদ্দেশ্যে প্রকাশিত।
+            </p>
+        </div>
+    </section>
+
+    <!-- Medical Review Notice -->
+    <section class="medical-review">
+        <div class="container">
+            <p>
+                এই আর্টিকেলটি চিকিৎসা পরামর্শের বিকল্প নয়।
+                ব্যক্তিগত সমস্যার জন্য অবশ্যই চিকিৎসকের সঙ্গে পরামর্শ করুন।
+                বিস্তারিত জানতে <a href="https://www.romanulislam.com/disclaimer">ডিসক্লেইমার</a> দেখুন।
+            </p>
+        </div>
+    </section>
+
+    <!-- Related Articles -->
+    <section class="related-articles">
+        <div class="container">
+            <h3>সম্পর্কিত আর্টিকেল</h3>
+            <ul>
+                <li><a href="https://www.romanulislam.com/blog/lose-weight">ভাত না খেলে ওজন কমে? অবিশ্বাস্য সত্য জানুন আজই</a></li>
+                <li><a href="https://www.romanulislam.com/blog/suppresses-appetite">অতিরিক্ত ক্ষুধা কি বিপজ্জনক? ক্ষুধা কমানোর শক্তিশালী উপায় জানুন</a></li>
+            </ul>
+
+            <p>
+                এই আর্টিকেলটি <a href="https://www.romanulislam.com/category/gastro-liver">পেট, লিভার ও পরিপাকতন্ত্রের স্বাস্থ্য সমস্যা</a> বিভাগের অন্তর্ভুক্ত।
+            </p>
+
+            <p><a href="https://www.romanulislam.com/blog.html">সব ব্লগ দেখুন</a></p>
         </div>
     </section>
 
@@ -998,7 +1136,7 @@
 
                 <div class="faq-item">
                     <div class="faq-question">প্রশ্ন ১৬: বদ হজম হলে কোন খাবার সবচেয়ে বেশি এড়িয়ে চলতে হবে? <span>+</span></div>
-                    <div class="faq-answer">উত্তর: অতিরিক্ত ঝাল-মশলা, তেলে ভাজা খাবার, কার্বনেটেড ড্রিংক스, কফি, চকলেট ও অতিরিক্ত তৈলাক্ত খাবার এড়িয়ে চলা উচিত।</div>
+                    <div class="faq-answer">উত্তর: অতিরিক্ত ঝাল-মশলা, তেলে ভাজা খাবার, কার্বনেটেড ড্রিংকস, কফি, চকলেট ও অতিরিক্ত তৈলাক্ত খাবার এড়িয়ে চলা উচিত।</div>
                 </div>
 
                 <div class="faq-item">
@@ -1033,7 +1171,7 @@
 
                 <div class="faq-item">
                     <div class="faq-question">প্রশ্ন ২৩: বদ হজম কি কখনো হার্টের রোগের মতো মনে হতে পারে? <span>+</span></div>
-                    <div class="faq-answer">উত্তর: হ্যাঁ, বুকের জ্বালাপোড়া বা ব্যথা কখনো হার্ট অ্যাটাকের মতো মনে হতে পারে। তাই নিশ্চিত না হলে অবশ্যই ডাক্তার দেখানো জরুরি。</div>
+                    <div class="faq-answer">উত্তর: হ্যাঁ, বুকের জ্বালাপোড়া বা ব্যথা কখনো হার্ট অ্যাটাকের মতো মনে হতে পারে। তাই নিশ্চিত না হলে অবশ্যই ডাক্তার দেখানো জরুরি।</div>
                 </div>
 
                 <div class="faq-item">
