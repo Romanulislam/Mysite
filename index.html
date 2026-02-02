@@ -24,7 +24,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <!-- Inline critical CSS -->
   <style>
-    /* Critical CSS extracted from nasal-congestion  and optimized */
     * {
       margin: 0;
       padding: 0;
@@ -85,15 +84,16 @@
       color: #e0f7fa;
     }
     
-    /* Hero Section */
+    /* Hero Section - Updated */
     .hero {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
       padding: 60px 0;
-      background: linear-gradient(rgba(14, 165, 165, 0.8), rgba(14, 165, 165, 0.9));
+      background: linear-gradient(rgba(14, 165, 165, 0.9), rgba(12, 122, 122, 0.95));
       color: white;
+      text-align: center;
     }
     
     .hero > div {
@@ -103,20 +103,255 @@
     }
     
     .hero .title {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin-bottom: 15px;
+      line-height: 1.3;
     }
     
     .hero .subtitle {
-      font-size: 1.2rem;
-      margin-bottom: 25px;
+      font-size: 1.4rem;
+      margin-bottom: 30px;
+      opacity: 0.95;
     }
     
+    .hero-cta {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    
+    .btn {
+      display: inline-block;
+      background-color: #ff7043;
+      color: white;
+      padding: 16px 35px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      text-align: center;
+      min-width: 220px;
+    }
+    
+    .btn:hover {
+      background-color: #f4511e;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .btn.secondary {
+      background: transparent;
+      border: 2px solid white;
+    }
+    
+    .btn.secondary:hover {
+      background: white;
+      color: #0c7a7a;
+    }
+    
+    /* Trust Section - New */
+    .trust-section {
+      background: white;
+      padding: 40px 0;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+    
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+    
+    .trust-item {
+      padding: 20px;
+    }
+    
+    .trust-icon {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      display: block;
+    }
+    
+    .trust-item h3 {
+      color: #0c7a7a;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+    
+    /* How It Works - New */
+    .how-it-works {
+      padding: 80px 0;
+      background-color: #f0f9f9;
+    }
+    
+    .section-title {
+      text-align: center;
+      color: #0c7a7a;
+      margin-bottom: 50px;
+      font-size: 2.2rem;
+    }
+    
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+    
+    .step {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    
+    .step:hover {
+      transform: translateY(-10px);
+    }
+    
+    .step-number {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      background: #0ea5a5;
+      color: white;
+      border-radius: 50%;
+      line-height: 50px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    
+    .step h3 {
+      color: #0c7a7a;
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+    }
+    
+    /* Services Section - Updated */
+    .services-section {
+      padding: 80px 0;
+      background: white;
+    }
+    
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+    
+    .service-card {
+      background: #f8fdfd;
+      padding: 30px;
+      border-radius: 12px;
+      border-left: 5px solid #0ea5a5;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+    }
+    
+    .service-card:hover {
+      background: white;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      transform: translateY(-5px);
+    }
+    
+    .service-card h3 {
+      color: #0c7a7a;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    /* Reviews Section - New */
+    .reviews-section {
+      padding: 80px 0;
+      background-color: #f0f9f9;
+    }
+    
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    
+    .review-card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+      position: relative;
+    }
+    
+    .review-card:before {
+      content: '"';
+      font-size: 5rem;
+      color: #0ea5a5;
+      opacity: 0.2;
+      position: absolute;
+      top: 10px;
+      left: 20px;
+    }
+    
+    .review-text {
+      font-style: italic;
+      margin-bottom: 20px;
+      line-height: 1.8;
+    }
+    
+    .reviewer {
+      color: #0c7a7a;
+      font-weight: 600;
+    }
+    
+    /* Legal Section - New */
+    .legal-section {
+      padding: 40px 0;
+      background: white;
+      border-top: 1px solid #e0e0e0;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    
+    /* Final CTA - New */
+    .final-cta {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #0ea5a5 0%, #0c7a7a 100%);
+      color: white;
+      text-align: center;
+    }
+    
+    .final-cta h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    
+    .final-cta p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      opacity: 0.9;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    /* Existing sections (keep original styles with slight adjustments) */
     .badgelist {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin-bottom: 25px;
+      margin: 25px 0;
+      justify-content: center;
     }
     
     .badge {
@@ -126,38 +361,6 @@
       font-size: 0.9rem;
     }
     
-    .cta {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-    
-    .btn {
-      display: inline-block;
-      background-color: #ff7043;
-      color: white;
-      padding: 14px 30px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: all 0.3s ease;
-    }
-    
-    .btn:hover {
-      background-color: #f4511e;
-      transform: translateY(-3px);
-    }
-    
-    .btn.outline {
-      background: transparent;
-      border: 2px solid white;
-    }
-    
-    .btn.outline:hover {
-      background: white;
-      color: #0c7a7a;
-    }
-    
     .kv {
       max-width: 100%;
       height: auto;
@@ -165,7 +368,6 @@
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
     
-    /* Section Styles */
     .section {
       padding: 60px 0;
     }
@@ -189,16 +391,6 @@
       font-size: 1.6rem;
     }
     
-    .card ul {
-      padding-left: 20px;
-      margin-bottom: 15px;
-    }
-    
-    .card ul li {
-      margin-bottom: 10px;
-    }
-    
-    /* New sections styles */
     .category-section, .article-section {
       background-color: #f0f9f9;
     }
@@ -214,50 +406,9 @@
       font-size: 2rem;
     }
     
-    .category-section ul, .article-section ul {
-      list-style: none;
-      padding-left: 0;
-      display: grid;
-      gap: 15px;
-    }
-    
-    .category-section ul {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-    
-    .article-section ul {
-      grid-template-columns: 1fr;
-    }
-    
-    .category-section li, .article-section li {
-      background: white;
-      padding: 15px 20px;
-      border-radius: 8px;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    
-    .category-section li:hover, .article-section li:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-    
-    .category-section a, .article-section a {
-      color: #0c7a7a;
-      text-decoration: none;
-      font-weight: 600;
-      display: block;
-      transition: color 0.3s ease;
-    }
-    
-    .category-section a:hover, .article-section a:hover {
-      color: #ff7043;
-      text-decoration: underline;
-    }
-    
     /* Footer Styles */
     .site-footer {
-      background: #0c7a7a;
+      background: #0a5f5f;
       color: white;
       padding: 50px 0 20px;
     }
@@ -368,23 +519,29 @@
       }
       
       .hero .title {
-        font-size: 2rem;
+        font-size: 2.2rem;
       }
       
-      .cta {
-        justify-content: center;
+      .hero .subtitle {
+        font-size: 1.2rem;
       }
       
       .btn {
-        padding: 12px 25px;
+        min-width: 100%;
+        margin-bottom: 15px;
       }
       
-      .category-section ul {
-        grid-template-columns: 1fr;
+      .hero-cta {
+        flex-direction: column;
+        gap: 15px;
       }
       
-      .category-section h2, .article-section h2 {
-        font-size: 1.6rem;
+      .section-title {
+        font-size: 1.8rem;
+      }
+      
+      .final-cta h2 {
+        font-size: 2rem;
       }
       
       .whatsapp-float {
@@ -416,18 +573,12 @@
 </header>
 <main id="main">
 
+<!-- Updated Hero Section -->
 <section class="hero">
   <div>
-    <h1 class="title">ডাক্তার মোহাম্মদ রোমানুল ইসলাম</h1>
-    <h2>🚨রেজিস্টার্ড চিকিৎসক ও সনোলজিস্ট🚨</h2>
-    <ul>
-      <li>🏅এমবিবিএস (চট্টগ্রাম মেডিকেল কলেজ)</li>
-      <li>🏅বিসিএস (স্বাস্থ্য ক্যাডার)</li>
-      <li>🏅এফসিপিএস পার্ট ২ (মেডিসিন)</li>
-      <li>🏅এমসিজিপি (বিজিএইচআরআই)</li>
-      <li>🏅সিএমইউ (আল্ট্রাসনোগ্রাফি)</li>
-      <li>রেজিস্ট্রেশন নাম্বারঃ 129438</li>
-    </ul>
+    <h1 class="title">বাংলাদেশে অনলাইন ডাক্তারের পরামর্শ নিন</h1>
+    <h2 class="subtitle">লাইসেন্সপ্রাপ্ত এমবিবিএস ডাক্তারের সাথে কল বা হোয়াটসঅ্যাপে কথা বলুন।<br>ঘরে বসেই দ্রুত, নিরাপদ ও সাশ্রয়ী চিকিৎসা সেবা নিন।</h2>
+    
     <div class="badgelist">
       <span class="badge">💊মেডিসিন</span>
       <span class="badge">💊বাত-ব্যথা</span>
@@ -440,17 +591,148 @@
       <span class="badge">💊চর্ম ও যৌন রোগ</span>
       <span class="badge">💊মা ও শিশু রোগের অভিজ্ঞ</span>
     </div>
-    <p class="subtitle">২৪/৭ ঘরে বসেই পরামর্শ — WhatsApp-এ সরাসরি যোগাযোগ।</p>
-    <div class="cta">
-      <a class="btn" href="https://wa.me/8801826589958" target="_blank" rel="noopener">WhatsApp-এ কথা বলুন</a>
-      <a class="btn outline" href="/online-doctor-bd ">সেবাসমূহ দেখুন</a>
+    
+    <div class="hero-cta">
+      <a class="btn" href="https://wa.me/8801826589958" target="_blank" rel="noopener">এখনই ডাক্তারের সাথে কথা বলুন</a>
+      <a class="btn secondary" href="tel:+8801826589958">ডাক্তারের সাথে কল করুন</a>
     </div>
   </div>
   <div>
-    <img class="kv" src="https://www.romanulislam.com/assets/images/profile-placeholder.webp" alt="ডা. রোমানুল ইসলাম (প্লেসহোল্ডার ছবি)" width="400" height="400" loading="lazy" />
+    <img class="kv" src="https://www.romanulislam.com/assets/images/profile-placeholder.webp" alt="ডা. রোমানুল ইসলাম" width="400" height="400" loading="lazy" />
   </div>
 </section>
 
+<!-- New Trust Section -->
+<section class="trust-section">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <span class="trust-icon">🏥</span>
+        <h3>বিএমডিসি নিবন্ধিত</h3>
+        <p>রেজিস্ট্রেশন নং: 129438</p>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">⏱️</span>
+        <h3>৫+ বছরের অভিজ্ঞতা</h3>
+        <p>চট্টগ্রাম মেডিকেল কলেজ</p>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">👨‍👩‍👧‍👦</span>
+        <h3>১০০০+ রোগী</h3>
+        <p>সেবা প্রদান করা হয়েছে</p>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">🔒</span>
+        <h3>১০০% গোপনীয়</h3>
+        <p>ও নিরাপদ সেবা</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- New How It Works Section -->
+<section class="how-it-works">
+  <div class="container">
+    <h2 class="section-title">অনলাইন ডাক্তারের পরামর্শ কীভাবে কাজ করে</h2>
+    
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-number">১</div>
+        <h3>বুকিং করুন</h3>
+        <p>হোয়াটসঅ্যাপে মেসেজ দিন অথবা ফোন করুন</p>
+      </div>
+      
+      <div class="step">
+        <div class="step-number">২</div>
+        <h3>ডাক্তারের সাথে কথা বলুন</h3>
+        <p>লাইসেন্সপ্রাপ্ত এমবিবিএস ডাক্তার আপনার সমস্যা শুনবেন</p>
+      </div>
+      
+      <div class="step">
+        <div class="step-number">৩</div>
+        <h3>প্রেসক্রিপশন নিন</h3>
+        <p>অনলাইনে প্রেসক্রিপশন ও প্রয়োজনীয় নির্দেশনা পাবেন</p>
+      </div>
+    </div>
+    
+    <div style="text-align: center;">
+      <a class="btn" href="https://wa.me/8801826589958" target="_blank" rel="noopener">অনলাইন পরামর্শ শুরু করুন</a>
+    </div>
+  </div>
+</section>
+
+<!-- New Services Section -->
+<section class="services-section">
+  <div class="container">
+    <h2 class="section-title">আমাদের টেলিমেডিসিন সেবাসমূহ</h2>
+    
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>🏥 সাধারণ রোগের চিকিৎসা</h3>
+        <p>জ্বর, সর্দি-কাশি, মাথাব্যথা, পেটের সমস্যা, ইনফেকশন ইত্যাদির চিকিৎসা</p>
+      </div>
+      
+      <div class="service-card">
+        <h3>🧠 মানসিক স্বাস্থ্য</h3>
+        <p>দুশ্চিন্তা, হতাশা, ঘুমের সমস্যা, স্ট্রেস ম্যানেজমেন্ট</p>
+      </div>
+      
+      <div class="service-card">
+        <h3>🩺 দীর্ঘমেয়াদী রোগ</h3>
+        <p>ডায়াবেটিস, উচ্চ রক্তচাপ, থাইরয়েড, অ্যাসথেমা ম্যানেজমেন্ট</p>
+      </div>
+      
+      <div class="service-card">
+        <h3>🌿 চর্ম ও এলার্জি</h3>
+        <p>চর্মরোগ, এলার্জি, একজিমা, ফাঙ্গাল ইনফেকশন</p>
+      </div>
+      
+      <div class="service-card">
+        <h3>❤️ যৌন স্বাস্থ্য</h3>
+        <p>যৌন রোগ, প্রজনন স্বাস্থ্য, সম্পর্ক বিষয়ক সমস্যা</p>
+      </div>
+      
+      <div class="service-card">
+        <h3>👶 মা ও শিশুর স্বাস্থ্য</h3>
+        <p>গর্ভাবস্থা পরামর্শ, শিশুর স্বাস্থ্য, টিকা নির্দেশনা</p>
+      </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 30px;">
+      <a class="btn" href="https://wa.me/8801826589958" target="_blank" rel="noopener">আপনার সমস্যার জন্য ডাক্তারের সাথে কথা বলুন</a>
+    </div>
+  </div>
+</section>
+
+<!-- New Reviews Section -->
+<section class="reviews-section">
+  <div class="container">
+    <h2 class="section-title">রোগীরা আমাদের সম্পর্কে যা বলেন</h2>
+    
+    <div class="reviews-grid">
+      <div class="review-card">
+        <p class="review-text">"ডাক্তার খুব মনোযোগ দিয়ে আমার সমস্যা শুনেছেন। অনলাইনে প্রেসক্রিপশন পেয়েছি। সময় বাঁচাতে সাহায্য করেছে।"</p>
+        <p class="reviewer">- রহিমা আক্তার, ঢাকা</p>
+      </div>
+      
+      <div class="review-card">
+        <p class="review-text">"হাসপাতালে যাওয়ার দরকার হয়নি। ঘরে বসেই চিকিৎসা পেয়েছি। বিশেষ করে গ্রামে থাকা মানুষের জন্য খুব উপকারী সেবা।"</p>
+        <p class="reviewer">- জাহিদ হাসান, চট্টগ্রাম</p>
+      </div>
+      
+      <div class="review-card">
+        <p class="review-text">"বাংলাদেশের জন্য খুব ভালো একটি অনলাইন ডাক্তার সেবা। মধ্যরাতেও ডাক্তার স্যার রিপ্লাই দিয়েছেন।"</p>
+        <p class="reviewer">- সুমাইয়া ইসলাম, সিলেট</p>
+      </div>
+    </div>
+    
+    <div style="text-align: center;">
+      <a href="reviews " style="color: #0c7a7a; font-weight: 600; text-decoration: none; border-bottom: 2px solid #0c7a7a; padding-bottom: 3px;">সব মতামত দেখুন →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Original About Section (Keep as is) -->
 <section class="section">
   <div class="container">
     <div class="grid">
@@ -484,7 +766,14 @@
   </div>
 </section>
 
-<!-- Section A: Categories -->
+<!-- New Legal Section -->
+<section class="legal-section">
+  <div class="container">
+    <p><strong>আইনগত ও নিরাপত্তা তথ্য:</strong> এই সেবা লাইসেন্সপ্রাপ্ত এমবিবিএস ডাক্তার দ্বারা প্রদান করা হয়। বাংলাদেশের টেলিমেডিসিন নির্দেশিকা অনুসরণ করে অনলাইন প্রেসক্রিপশন দেওয়া হয়। রোগীর সকল তথ্য সম্পূর্ণ গোপন রাখা হয়।</p>
+  </div>
+</section>
+
+<!-- Original Category Section -->
 <section class="section category-section">
   <div class="container">
     <h2>স্বাস্থ্য বিভাগসমূহ</h2>
@@ -501,7 +790,7 @@
   </div>
 </section>
 
-<!-- Section B: Core articles -->
+<!-- Original Article Section -->
 <section class="section article-section">
   <div class="container">
     <h2>জনপ্রিয় স্বাস্থ্য আর্টিকেল</h2>
@@ -515,6 +804,15 @@
       <li><a href="https://www.romanulislam.com/blog/knee-pain ">হাটুর জয়েন্টে ব্যথা নিয়ে ভুগছেন? সত্যিই ভয়ংকর নাকি সহজ সমাধান আছে?</a></li>
       <li><a href="https://www.romanulislam.com/blog/lose-weight ">ভাত না খেলে ওজন কমে? অবিশ্বাস্য সত্য জানুন আজই</a></li>
     </ul>
+  </div>
+</section>
+
+<!-- New Final CTA Section -->
+<section class="final-cta">
+  <div class="container">
+    <h2>এখনই ডাক্তারের প্রয়োজন?</h2>
+    <p>ঘরে বসেই অনলাইন ডাক্তারের পরামর্শ নিন। সময় ও খরচ দুটোই বাঁচান। লাইসেন্সপ্রাপ্ত চিকিৎসকের সাথে সরাসরি কথা বলুন।</p>
+    <a class="btn" href="https://wa.me/8801826589958" target="_blank" rel="noopener">এখনই ডাক্তারের সাথে কথা বলুন</a>
   </div>
 </section>
 
@@ -557,15 +855,15 @@
       <div>
         <h3>লিংক</h3>
         <ul>
-                        <li><a href="https://romanulislam.com/index">হোম</a></li>
-                        <li><a href="https://romanulislam.com/online-doctor-bd">সেবা</a></li>
-                        <li><a href="https://romanulislam.com/blog">ব্লগ</a></li>
-                        <li><a href="https://romanulislam.com/reviews">রিভিউ</a></li>
-                        <li><a href="https://romanulislam.com/contact">যোগাযোগ</a></li>
-                        <li><a href="https://romanulislam.com/disclaimer">Disclaimer</a></li>
-                        <li><a href="https://www.romanulislam.com/about">About</a></li>
-                        <li><a href="https://www.romanulislam.com/privacy-policy">Privacy Policy</a></li>
-                    </ul>
+          <li><a href="https://romanulislam.com/index">হোম</a></li>
+          <li><a href="https://romanulislam.com/online-doctor-bd">সেবা</a></li>
+          <li><a href="https://romanulislam.com/blog">ব্লগ</a></li>
+          <li><a href="https://romanulislam.com/reviews">রিভিউ</a></li>
+          <li><a href="https://romanulislam.com/contact">যোগাযোগ</a></li>
+          <li><a href="https://romanulislam.com/disclaimer">Disclaimer</a></li>
+          <li><a href="https://www.romanulislam.com/about">About</a></li>
+          <li><a href="https://www.romanulislam.com/privacy-policy">Privacy Policy</a></li>
+        </ul>
       </div>
     </div>
     <p class="copyright">© <span id="year"></span> Dr. Romanul Islam. All rights reserved.</p>
@@ -609,7 +907,7 @@
     }, 1000);
   }
 </script>
-    <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S8DEQ62FVN"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
