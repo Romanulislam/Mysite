@@ -16,7 +16,7 @@
       "@type": "BlogPosting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.romanulislam.com/blog/psoriasis.html"
+        "@id": "https://www.romanulislam.com/blog/psoriasis "
       },
       "headline": "সোরিয়াসিস: কারণ, লক্ষণ, চিকিৎসা ও খাদ্য তালিকা",
       "description": "সোরিয়াসিস এর কারণ, লক্ষণ, চিকিৎসা ও খাদ্য তালিকা নিয়ে সম্পূর্ণ গাইড",
@@ -654,6 +654,111 @@
             height: auto;
             border-radius: 50%;
         }
+
+        /* New Styles for Related Articles, Author Box, and Medical Review */
+        .related-articles {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 40px 0;
+            border-left: 5px solid #0ea5a5;
+        }
+
+        .related-articles h3 {
+            color: #0c7a7a;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+        }
+
+        .related-articles ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+
+        .related-articles ul li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .related-articles ul li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #0ea5a5;
+            font-weight: bold;
+        }
+
+        .related-articles ul li a {
+            color: #0c7a7a;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .related-articles ul li a:hover {
+            color: #ff7043;
+            text-decoration: underline;
+        }
+
+        .related-articles p {
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        .author-box {
+            background-color: #e0f7fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border: 1px solid #0ea5a5;
+        }
+
+        .author-box h3 {
+            color: #0c7a7a;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .author-box p {
+            line-height: 1.7;
+        }
+
+        .medical-review {
+            background-color: #fff3e0;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border: 1px solid #ff7043;
+        }
+
+        .medical-review p {
+            line-height: 1.7;
+            color: #333;
+        }
+
+        .medical-review a {
+            color: #0c7a7a;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .medical-review a:hover {
+            text-decoration: underline;
+        }
+
+        .internal-link {
+            color: #0c7a7a;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .internal-link:hover {
+            color: #ff7043;
+            text-decoration: underline;
+        }
         
         @media (max-width: 768px) {
             .header-content {
@@ -684,6 +789,12 @@
                 bottom: 20px;
                 right: 20px;
             }
+
+            .related-articles,
+            .author-box,
+            .medical-review {
+                padding: 20px;
+            }
         }
     </style>
 </head>
@@ -697,10 +808,10 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="https://www.romanulislam.com/index.html">হোম</a></li>
-                        <li><a href="https://www.romanulislam.com/online-doctor-bd.html">সেবা</a></li>
-                        <li><a href="https://www.romanulislam.com/reviews.html">রিভিউ</a></li>
-                        <li><a href="https://www.romanulislam.com/contact.html">যোগাযোগ</a></li>
+                        <li><a href="https://www.romanulislam.com/index ">হোম</a></li>
+                        <li><a href="https://www.romanulislam.com/online-doctor-bd ">সেবা</a></li>
+                        <li><a href="https://www.romanulislam.com/reviews ">রিভিউ</a></li>
+                        <li><a href="https://www.romanulislam.com/contact ">যোগাযোগ</a></li>
                     </ul>
                 </nav>
             </div>
@@ -725,10 +836,10 @@
                 
                 <p>এই রোগ শুধুমাত্র ত্বকের নয়, বরং জীবনযাত্রার মানকেও মারাত্মকভাবে প্রভাবিত করে। মানুষজন সামাজিকভাবে অস্বস্তিতে ভোগেন, আত্মবিশ্বাস কমে যায় এবং অনেক সময় মানসিক চাপও বেড়ে যায়।</p>
                 
-                <p>এই লেখায় আমরা সোরিয়াসিস সম্পর্কে বিস্তারিত জানবো — <strong>এটি কি, কেন হয়, লক্ষণ, চিকিৎসা, খাদ্য তালিকা ও প্রতিরোধে করণীয়</strong>। পাশাপাশি আমরা দেখব, কীভাবে টেলিমেডিসিন সেবার মাধ্যমে বাড়িতে বসেই কার্যকর চিকিৎসা নেওয়া সম্ভব।</p>
+                <p>এই লেখায় আমরা সোরিয়াসিস সম্পর্কে বিস্তারিত জানবো — <strong>এটি কি, কেন হয়, লক্ষণ, চিকিৎসা, খাদ্য তালিকা ও প্রতিরোধে করণীয়</strong>। পাশাপাশি আমরা দেখব, কীভাবে <a href="https://www.romanulislam.com/online-doctor-bd" class="internal-link">টেলিমেডিসিন সেবা</a>র মাধ্যমে বাড়িতে বসেই কার্যকর চিকিৎসা নেওয়া সম্ভব।</p>
                 
                 <div class="highlight">
-                    <p><strong>দ্রুত সংক্ষেপ:</strong> এই ব্লগ পোস্টে আপনি যা শিখবেন: সোরিয়াসিসের কারণ ও লক্ষণ, চিকিৎসার উপায়, খাদ্য তালিকা, কখন ডাক্তারের সাহায্য নেবেন এবং কীভাবে টেলিমেডিসিনের মাধ্যমে ঘরে বসে চিকিৎসা নেবেন।</p>
+                    <p><strong>দ্রুত সংক্ষেপ:</strong> এই ব্লগ পোস্টে আপনি যা শিখবেন: সোরিয়াসিসের কারণ ও লক্ষণ, চিকিৎসার উপায়, খাদ্য তালিকা, কখন ডাক্তারের সাহায্য নেবেন এবং কীভাবে <a href="https://www.romanulislam.com/online-doctor-bd" class="internal-link">টেলিমেডিসিন</a> এর মাধ্যমে ঘরে বসে চিকিৎসা নেবেন।</p>
                 </div>
             </div>
         </div>
@@ -741,7 +852,7 @@
             <div class="card">
                 <p>সোরিয়াসিস একটি <strong>ক্রনিক (দীর্ঘস্থায়ী) অটোইমিউন ত্বকের রোগ</strong>। এ রোগে আমাদের ত্বকের কোষ স্বাভাবিকের চেয়ে অনেক দ্রুত বৃদ্ধি পায়। ফলে ত্বকে পুরু খোসার মতো স্তর তৈরি হয়, লালচে দাগ দেখা দেয় এবং অতিরিক্ত শুষ্কতা তৈরি হয়।</p>
                 
-                <p>এটি সংক্রামক নয়, তবে <strong>দীর্ঘস্থায়ী</strong> হওয়ার কারণে রোগীকে দীর্ঘ সময় ভোগান্তিতে ফেলে। সঠিক চিকিৎসা ছাড়া সোরিয়াসিস পুরোপুরি নিরাময়যোগ্য নয়, তবে নিয়ন্ত্রণে রাখা সম্ভব।</p>
+                <p>এটি সংক্রামক নয়, তবে <strong>দীর্ঘস্থায়ী</strong> হওয়ার কারণে রোগীকে দীর্ঘ সময় ভোগান্তিতে ফেলে। সঠিক চিকিৎসা ছাড়া সোরিয়াসিস পুরোপুরি নিরাময়যোগ্য নয়, তবে নিয়ন্ত্রণে রাখা সম্ভব। স্বাস্থ্য সম্পর্কিত আরও তথ্যের জন্য <a href="https://www.romanulislam.com/" class="internal-link">আমাদের ওয়েবসাইট</a> ভিজিট করুন।</p>
             </div>
         </div>
     </section>
@@ -760,6 +871,7 @@
                     <li><strong>পরিবেশগত প্রভাব</strong> – ধূমপান, মদ্যপান, মানসিক চাপ, সংক্রমণ, কিছু ওষুধ সোরিয়াসিসের ঝুঁকি বাড়ায়</li>
                     <li><strong>আবহাওয়া</strong> – শীতকালে এটি বাড়ে, কারণ শুষ্কতা ত্বককে আরও খারাপ করে তোলে</li>
                 </ul>
+                <p>এই সমস্যাগুলোর জন্য সঠিক চিকিৎসা পেতে <a href="https://www.romanulislam.com/" class="internal-link">আমাদের হোমপেজ</a> থেকে বিস্তারিত জানতে পারেন অথবা সরাসরি <a href="https://www.romanulislam.com/online-doctor-bd" class="internal-link">টেলিমেডিসিন সেবা</a> নিতে পারেন।</p>
             </div>
         </div>
     </section>
@@ -792,7 +904,7 @@
                 
                 <h3>সোরিয়াসিসের প্রধান ধরনসমূহ</h3>
                 <ul>
-                    <li><strong>Plaque Psoriasis</strong> – সবচেয়ে সাধারণ, ত্বকে খোসা জमে সাদা স্তর তৈরি হয়</li>
+                    <li><strong>Plaque Psoriasis</strong> – সবচেয়ে সাধারণ, ত্বকে খোসা জমে সাদা স্তর তৈরি হয়</li>
                     <li><strong>Guttate Psoriasis</strong> – হঠাৎ ছোট ছোট লালচে দাগ হয়</li>
                     <li><strong>Inverse Psoriasis</strong> – কুঁচকি, বগল বা শরীরের ভাঁজে দেখা যায়</li>
                     <li><strong>Pustular Psoriasis</strong> – ফুসকুড়ির মতো পুঁজ ভরা দাগ তৈরি হয়</li>
@@ -816,6 +928,7 @@
                     <li><strong>ওরাল ওষুধ</strong> – মেথোট্রেক্সেট, সাইক্লোস্পোরিন ইত্যাদি</li>
                     <li><strong>বায়োলজিক থেরাপি</strong> – নতুন প্রজন্মের ইঞ্জেকশন জাতীয় ওষুধ</li>
                 </ul>
+                <p>কোনো ক্রনিক সমস্যা থাকলে <a href="https://www.romanulislam.com/online-doctor-bd" class="internal-link">টেলিমেডিসিন সেবা</a> নিতে পারেন।</p>
             </div>
         </div>
     </section>
@@ -902,6 +1015,7 @@
                     <li>পর্যাপ্ত পানি পান করুন</li>
                     <li>ধূমপান ও অ্যালকোহল এড়িয়ে চলুন</li>
                 </ul>
+                <p>স্বাস্থ্য সম্পর্কিত আরও তথ্যের জন্য <a href="https://www.romanulislam.com/" class="internal-link">আমাদের ওয়েবসাইট</a> ভিজিট করুন।</p>
             </div>
         </div>
     </section>
@@ -919,6 +1033,9 @@
                     <li>ঘরোয়া চিকিৎসায় উন্নতি না হয়</li>
                     <li>ত্বকে সংক্রমণের লক্ষণ দেখা দেয়</li>
                 </ul>
+                <div class="highlight">
+                    <p><strong>দ্রষ্টব্য:</strong> এ ধরনের লক্ষণ থাকলে দ্রুত <a href="https://www.romanulislam.com/online-doctor-bd" class="internal-link">টেলিমেডিসিন সেবা</a> বা বিশেষজ্ঞ ডাক্তারের সাথে যোগাযোগ করা উচিত।</p>
+                </div>
             </div>
         </div>
     </section>
@@ -943,13 +1060,58 @@
                 
                 <div class="benefit-card">
                     <h3>সাশ্রয়ী মূল্য</h3>
-                    <p>সাশ্রয়ী মূল্যে মানসম্মত চिकিৎসা সেবা গ্রহণ করুন</p>
+                    <p>সাশ্রয়ী মূল্যে মানসম্মত চিকিৎসা সেবা গ্রহণ করুন</p>
                 </div>
                 
                 <div class="benefit-card">
                     <h3>ডিজিটাল প্রেসক্রিপশন</h3>
                     <p>অনলাইনেই প্রেসক্রিপশন পান এবং ওষুধ অর্ডার করুন</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author Box Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="author-box">
+                <h3>লেখক পরিচিতি</h3>
+                <p>
+                    <strong>ডা. রোমানুল ইসলাম</strong> স্বাস্থ্য বিষয়ক তথ্যভিত্তিক কনটেন্ট প্রস্তুতকারক।
+                    এই লেখাগুলো সাধারণ স্বাস্থ্য সচেতনতার উদ্দেশ্যে প্রকাশিত।
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Medical Review Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="medical-review">
+                <p>
+                    এই আর্টিকেলটি চিকিৎসা পরামর্শের বিকল্প নয়।
+                    ব্যক্তিগত সমস্যার জন্য অবশ্যই চিকিৎসকের সঙ্গে পরামর্শ করুন।
+                    বিস্তারিত জানতে <a href="https://www.romanulislam.com/disclaimer">ডিসক্লেইমার</a> দেখুন।
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Articles Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="related-articles">
+                <h3>সম্পর্কিত আর্টিকেল</h3>
+                <ul>
+                    <li><a href="https://www.romanulislam.com/blog/ringworm">দাদ: কারণ, লক্ষণ, চিকিৎসা ও প্রতিকার </a></li>
+                    <li><a href="https://www.romanulislam.com/blog/scabies">স্ক্যাবিস কি আপনার জীবন দুর্বিষহ করছে? </a></li>
+                </ul>
+
+                <p>
+                    এই আর্টিকেলটি <a href="https://www.romanulislam.com/category/skin-problem">ত্বক ও চুলের সমস্যা</a> বিভাগের অন্তর্ভুক্ত।
+                </p>
+
+                <p><a href="https://www.romanulislam.com/blog ">সব ব্লগ দেখুন</a></p>
             </div>
         </div>
     </section>
@@ -1027,7 +1189,7 @@
 
                 <div class="faq-item">
                     <div class="faq-question">প্রশ্ন ১৪: সোরিয়াসিসের জন্য কোন খাবার ভালো? <span>+</span></div>
-                    <div class="faq-answer">উত্তর: ওমেগা-৩ সমৃদ্ধ মাছ, সবুজ শакসবজি ও ফলমূল, ব্রাউন রাইস বা পূর্ণ শস্য, পর্যাপ্ত পানি।</div>
+                    <div class="faq-answer">উত্তর: ওমেগা-৩ সমৃদ্ধ মাছ, সবুজ শাকসবজি ও ফলমূল, ব্রাউন রাইস বা পূর্ণ শস্য, পর্যাপ্ত পানি।</div>
                 </div>
 
                 <div class="faq-item">
