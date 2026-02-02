@@ -16,7 +16,7 @@
       "@type": "BlogPosting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.romanulislam.com/blog/stress.html"
+        "@id": "https://www.romanulislam.com/blog/stress "
       },
       "headline": "টেনশন কি ক্ষতিকর? জেনে নিন সেরা ঘরোয়া উপায়!",
       "description": "টেনশন কমানো ও নিয়ন্ত্রণের কার্যকর ঘরোয়া উপায় জানুন। হঠাৎ চাপ বা অস্থিরতা কমানোর সহজ কৌশল এখানে পড়ুন।",
@@ -655,6 +655,137 @@
             border-radius: 50%;
         }
         
+        /* New styles for Trust Phase */
+        .related-articles {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 40px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .related-articles h3 {
+            color: #0c7a7a;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .related-articles h3:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #0ea5a5;
+            margin: 10px auto 20px;
+            border-radius: 2px;
+        }
+
+        .related-articles ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 25px;
+        }
+
+        .related-articles ul li {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .related-articles ul li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .related-articles ul li a {
+            color: #0c7a7a;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            display: block;
+            padding: 10px 15px;
+            border-radius: 8px;
+            background: #f8fdff;
+        }
+
+        .related-articles ul li a:hover {
+            color: #ff7043;
+            background: #e0f7fa;
+        }
+
+        .related-articles p {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .related-articles p a {
+            color: #0ea5a5;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .related-articles p a:hover {
+            text-decoration: underline;
+        }
+
+        .author-box {
+            background: #e0f7fa;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 30px 0;
+            border-left: 4px solid #0ea5a5;
+        }
+
+        .author-box h3 {
+            color: #0c7a7a;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .author-box p {
+            margin-bottom: 10px;
+        }
+
+        .medical-review {
+            background: #fff8e1;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 30px 0;
+            border: 2px solid #ffd54f;
+            text-align: center;
+        }
+
+        .medical-review p {
+            color: #5d4037;
+            font-weight: 500;
+        }
+
+        .medical-review a {
+            color: #0ea5a5;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .medical-review a:hover {
+            text-decoration: underline;
+        }
+
+        /* Internal link styling */
+        .internal-link {
+            color: #0ea5a5;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .internal-link:hover {
+            color: #ff7043;
+            text-decoration: underline;
+        }
+        
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
@@ -684,6 +815,11 @@
                 bottom: 20px;
                 right: 20px;
             }
+
+            .related-articles ul li a {
+                padding: 8px 12px;
+                font-size: 0.95rem;
+            }
         }
     </style>
 </head>
@@ -697,10 +833,10 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="https://www.romanulislam.com/index.html">হোম</a></li>
-                        <li><a href="https://www.romanulislam.com/online-doctor-bd.html">সেবা</a></li>
-                        <li><a href="https://www.romanulislam.com/reviews.html">রিভিউ</a></li>
-                        <li><a href="https://www.romanulislam.com/contact.html">যোগাযোগ</a></li>
+                        <li><a href="https://www.romanulislam.com/index ">হোম</a></li>
+                        <li><a href="https://www.romanulislam.com/online-doctor-bd ">সেবা</a></li>
+                        <li><a href="https://www.romanulislam.com/reviews ">রিভিউ</a></li>
+                        <li><a href="https://www.romanulislam.com/contact ">যোগাযোগ</a></li>
                     </ul>
                 </nav>
             </div>
@@ -735,7 +871,7 @@
         <div class="container">
             <h2 class="section-title">টেনশন কি?</h2>
             <div class="card">
-                <p>টেনশন হলো মানসিক চাপ বা উদ্বেগের অনুভূতি। এটি তখন তৈরি হয় যখন আমরা কোনো পরিস্থিতি বা সমস্যার সঙ্গে মানসিকভাবে খাপ খাইয়ে নিতে পারি না। শরীর এবং মন উভয়ই প্রতিক্রিয়ায় আসে—হৃদস্পন্দন দ্রুত হয়, শরীর শক্ত হয়ে যায়, মাথায় চিন্তার ঢেউ উঠে, এবং ঘুম বা হজম প্রভাবিত হয়।</p>
+                <p>টেনশন হলো মানসিক চাপ বা উদ্বেগের অনুভূতি। এটি তখন তৈরি হয় যখন আমরা কোনো পরিস্থিতি বা সমস্যার সঙ্গে মানসিকভাবে খাপ খাইয়ে নিতে পারি না। শরীর এবং মন উভয়ই প্রতিক্রিয়ায় আসে—হৃদস্পন্দন দ্রুত হয়, শরীর শক্ত হয়ে যায়, মাথায় চিন্তার ঢেউ উঠে, এবং ঘুম বা হজম প্রভাবিত হয়। <a href="https://www.romanulislam.com/" class="internal-link">আমাদের ওয়েবসাইটের হোমপেজে</a> মানসিক স্বাস্থ্য সম্পর্কিত আরও গাইডলাইন পাওয়া যাবে।</p>
             </div>
         </div>
     </section>
@@ -769,6 +905,7 @@
                     <li><strong>সামাজিক চাপ:</strong> বন্ধু-বান্ধব, সোশ্যাল মিডিয়ার প্রভাব বা সমাজের প্রত্যাশা।</li>
                     <li><strong>অত্যধিক তথ্যের চাপ:</strong> নিউজ, ইন্টারনেট বা মেসেজের অতিরিক্ত প্রবাহ।</li>
                 </ul>
+                <p>আপনি যদি এই ধরনের টেনশন নিয়ে চিন্তিত হন, তাহলে <a href="https://www.romanulislam.com/online-doctor-bd" class="internal-link">আমাদের অনলাইন ডাক্তার সার্ভিস</a> এর মাধ্যমে বিশেষজ্ঞ পরামর্শ নিতে পারেন।</p>
             </div>
         </div>
     </section>
@@ -792,6 +929,7 @@
                 <ul>
                     <li>উচ্চ রক্তচাপ, হাই কোলেস্টেরল, ডায়াবেটিস, হৃৎপিণ্ডের সমস্যা এবং ইমিউন সিস্টেম দুর্বল হওয়া</li>
                 </ul>
+                <p>এই ধরনের লক্ষণ দেখা দিলে <a href="https://www.romanulislam.com/" class="internal-link">আমাদের হোমপেজে</a> অন্যান্য স্বাস্থ্য গাইডলাইন পড়তে পারেন।</p>
             </div>
         </div>
     </section>
@@ -809,7 +947,7 @@
                     <li>স্নায়ুতন্ত্র দুর্বল করে</li>
                     <li>মস্তিষ্কের স্মৃতিশক্তি ও মনোযোগ কমায়</li>
                 </ul>
-                <p>এই কারণে টেনশনকে হালকা ভাবে নেওয়া ঠিক নয়।</p>
+                <p>এই কারণে টেনশনকে হালকা ভাবে নেওয়া ঠিক নয়। প্রয়োজন হলে <a href="https://www.romanulislam.com/online-doctor-bd" class="internal-link">আমাদের টেলিমেডিসিন সার্ভিস</a> এর মাধ্যমে বিশেষজ্ঞের পরামর্শ নিন।</p>
             </div>
         </div>
     </section>
@@ -875,6 +1013,7 @@
                     <li><strong>দারুচিনি ও কফি সীমিত ব্যবহার:</strong> অতিরিক্ত কফি উদ্বেগ বাড়ায়</li>
                     <li><strong>ফলমূল:</strong> ভিটামিন সি ও অ্যান্টিঅক্সিডেন্ট সমৃদ্ধ ফলে মানসিক চাপ কমে</li>
                 </ul>
+                <p>আরও স্বাস্থ্যকর খাদ্যাভ্যাস সম্পর্কিত টিপস <a href="https://www.romanulislam.com/" class="internal-link">আমাদের হোমপেজে</a> পাওয়া যাবে।</p>
             </div>
         </div>
     </section>
@@ -891,6 +1030,52 @@
                     <li>ধ্যান, ব্যায়াম ও সুস্থ খাদ্যাভ্যাস বজায় রাখুন</li>
                     <li>প্রয়োজনে বন্ধু বা পেশাদারকে সমস্যার কথা বলুন</li>
                 </ul>
+                <p>টেনশন নিয়ন্ত্রণে সহায়তা প্রয়োজন হলে <a href="https://www.romanulislam.com/online-doctor-bd" class="internal-link">আমাদের অনলাইন ডাক্তার সার্ভিস</a> এর মাধ্যমে বিশেষজ্ঞ পরামর্শ নিন।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author Box -->
+    <section class="content-section">
+        <div class="container">
+            <div class="author-box">
+                <h3>লেখক পরিচিতি</h3>
+                <p>
+                    <strong>ডা. রোমানুল ইসলাম</strong> স্বাস্থ্য বিষয়ক তথ্যভিত্তিক কনটেন্ট প্রস্তুতকারক।
+                    এই লেখাগুলো সাধারণ স্বাস্থ্য সচেতনতার উদ্দেশ্যে প্রকাশিত।
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Medical Review Notice -->
+    <section class="content-section">
+        <div class="container">
+            <div class="medical-review">
+                <p>
+                    এই আর্টিকেলটি চিকিৎসা পরামর্শের বিকল্প নয়।
+                    ব্যক্তিগত সমস্যার জন্য অবশ্যই চিকিৎসকের সঙ্গে পরামর্শ করুন।
+                    বিস্তারিত জানতে <a href="https://www.romanulislam.com/disclaimer">ডিসক্লেইমার</a> দেখুন।
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Articles -->
+    <section class="content-section">
+        <div class="container">
+            <div class="related-articles">
+                <h3>সম্পর্কিত আর্টিকেল</h3>
+                <ul>
+                    <li><a href="https://www.romanulislam.com/blog/tremor">শরীর কাঁপা কি বিপদজনক লক্ষণ?</a></li>
+                    <li><a href="https://www.romanulislam.com/blog/anger">রাগ কি নষ্ট করছে আপনার জীবন?</a></li>
+                </ul>
+
+                <p>
+                    এই আর্টিকেলটি <a href="https://www.romanulislam.com/category/mental-health">মানসিক স্বাস্থ্য সমস্যা</a> বিভাগের অন্তর্ভুক্ত।
+                </p>
+
+                <p><a href="https://www.romanulislam.com/blog ">সব ব্লগ দেখুন</a></p>
             </div>
         </div>
     </section>
@@ -900,7 +1085,7 @@
         <div class="container">
             <h2 class="section-title">উপসংহার</h2>
             <div class="card">
-                <p>টেনশন এখন শুধু মানসিক সমস্যা নয়, এটি শরীর ও মনের সুস্থতার জন্য বড় হুমকি। তবে সচেতন জীবনধারা, ব্যায়াম, স্বাস্থ্যকর খাদ্যাভ্যাস, পর্যাপ্ত ঘুম এবং প্রয়োজনীয় সহায়তা নিলে টেনশন নিয়ন্ত্রণ করা সম্ভব। আপনার জীবনকে চাপমুক্ত, শান্তিপূর্ণ ও সুস্থ রাখতে আজই কিছু ছোট ছোট পরিবর্তন শুরু করুন।</p>
+                <p>টেনশন এখন শুধু মানসিক সমস্যা নয়, এটি শরীর ও মনের সুস্থতার জন্য বড় হুমকি। তবে সচেতন জীবনধারা, ব্যায়াম, স্বাস্থ্যকর খাদ্যাভ্যাস, পর্যাপ্ত ঘুম এবং প্রয়োজনীয় সহায়তা নিলে টেনশন নিয়ন্ত্রণ করা সম্ভব। আপনার জীবনকে চাপমুক্ত, শান্তিপূর্ণ ও সুস্থ রাখতে আজই কিছু ছোট ছোট পরিবর্তন শুরু করুন। <a href="https://www.romanulislam.com/" class="internal-link">আমাদের ওয়েবসাইটে</a> আরও স্বাস্থ্য টিপস পড়তে পারেন।</p>
             </div>
         </div>
     </section>
