@@ -16,7 +16,7 @@
       "@type": "BlogPosting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.romanulislam.com/blog/vertigo.html"
+        "@id": "https://www.romanulislam.com/blog/vertigo "
       },
       "headline": "হঠাৎ মাথা ঘোরা কি বিপদের লক্ষণ? জেনে নিন সমাধান",
       "description": "হঠাৎ মাথা ঘোরা হলে কী করবেন? মাথা ঘোরা এর কারণ, লক্ষণ ও প্রতিকার নিয়ে বিস্তারিত জেনে নিন",
@@ -140,7 +140,7 @@
           "name": "মাথা ঘোরা কি মানসিক চাপ বা স্ট্রেসের কারণে হয়?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "হ্যাঁ, দীর্ঘদিনের স্ট্রেস বা উদ্বেগ রক্তচاپ ও স্নায়ুর উপর প্রভাব ফেলে, ফলে মাথা ঘোরা দেখা দিতে পারে।"
+            "text": "হ্যাঁ, দীর্ঘদিনের স্ট্রেস বা উদ্বেগ রক্তচাপ ও স্নায়ুর উপর প্রভাব ফেলে, ফলে মাথা ঘোরা দেখা দিতে পারে।"
           }
         },
         {
@@ -655,6 +655,116 @@
             border-radius: 50%;
         }
         
+        /* New Styles for Related Articles, Author Box, Medical Review */
+        .related-articles {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 40px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .related-articles h3 {
+            color: #0c7a7a;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+        }
+        
+        .related-articles ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+        
+        .related-articles ul li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .related-articles ul li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #0ea5a5;
+        }
+        
+        .related-articles ul li a {
+            color: #0c7a7a;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-articles ul li a:hover {
+            color: #f4511e;
+            text-decoration: underline;
+        }
+        
+        .related-articles p {
+            margin-bottom: 15px;
+        }
+        
+        .related-articles p a {
+            color: #0ea5a5;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .related-articles p a:hover {
+            text-decoration: underline;
+        }
+        
+        .author-box {
+            background: #e0f7fa;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 40px 0;
+            border-left: 5px solid #0ea5a5;
+        }
+        
+        .author-box h3 {
+            color: #0c7a7a;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        .author-box p {
+            margin-bottom: 10px;
+        }
+        
+        .medical-review {
+            background: #fff8e1;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 40px 0;
+            border: 1px solid #ffd54f;
+        }
+        
+        .medical-review p {
+            margin-bottom: 10px;
+            color: #5d4037;
+        }
+        
+        .medical-review a {
+            color: #0ea5a5;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .medical-review a:hover {
+            text-decoration: underline;
+        }
+        
+        .internal-link {
+            color: #0ea5a5;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .internal-link:hover {
+            text-decoration: underline;
+        }
+        
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
@@ -697,10 +807,10 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="https://www.romanulislam.com/index.html">হোম</a></li>
-                        <li><a href="https://www.romanulislam.com/online-doctor-bd.html">সেবা</a></li>
-                        <li><a href="https://www.romanulislam.com/reviews.html">রিভিউ</a></li>
-                        <li><a href="https://www.romanulislam.com/contact.html">যোগাযোগ</a></li>
+                        <li><a href="https://www.romanulislam.com/index ">হোম</a></li>
+                        <li><a href="https://www.romanulislam.com/online-doctor-bd ">সেবা</a></li>
+                        <li><a href="https://www.romanulislam.com/reviews ">রিভিউ</a></li>
+                        <li><a href="https://www.romanulislam.com/contact ">যোগাযোগ</a></li>
                     </ul>
                 </nav>
             </div>
@@ -728,6 +838,9 @@
                 <div class="highlight">
                     <p><strong>দ্রুত সংক্ষেপ:</strong> এই ব্লগ পোস্টে আপনি যা শিখবেন: মাথা ঘোরা কী এবং কেমন অনুভূতি হয়, মাথা ঘোরা কিসের লক্ষণ হতে পারে, ঘন ঘন মাথা ঘোরার সম্ভাব্য কারণ, হঠাৎ মাথা চক্কর দেওয়ার কারণ, মাথা ঘোরা ও দুর্বলতার সম্পর্ক, চোখে ঝাপসা দেখা বা বমি বমি ভাবের সাথে মাথা ঘোরা কেন হয়, মাথা ঘোরা কমানোর কার্যকর উপায়, মাথা ঘোরা হলে কি খাওয়া উচিত, জরুরি সময়ে কি করতে হবে এবং সর্বশেষে—টেলিমেডিসিন সেবার মাধ্যমে ঘরে বসে সঠিক চিকিৎসা নেওয়ার উপায়।</p>
                 </div>
+
+                <!-- Internal Links Added -->
+                <p>আপনি যদি <a href="https://www.romanulislam.com/" class="internal-link">ডা. রোমানুল ইসলামের অনলাইন স্বাস্থ্য সেবার মূল পেজ</a> দেখতে চান অথবা <a href="https://www.romanulislam.com/online-doctor-bd" class="internal-link">টেলিমেডিসিন সেবার বিস্তারিত তথ্য</a> জানতে চান, তবে লিংকগুলো দেখুন।</p>
             </div>
         </div>
     </section>
@@ -749,6 +862,8 @@
                     <li><strong>স্ট্রোক বা ব্রেনের সমস্যা:</strong> মস্তিষ্কে রক্ত সরবরাহ কমে গেলে</li>
                     <li><strong>হৃদরোগ:</strong> হার্টের সমস্যা থাকলে মাথা ঘোরা হতে পারে</li>
                 </ul>
+
+                <p>মাথা ঘোরার সমস্যা সমাধানে <a href="https://www.romanulislam.com/online-doctor-bd" class="internal-link">অনলাইন ডাক্তারের পরামর্শ</a> নেওয়া যেতে পারে।</p>
             </div>
         </div>
     </section>
@@ -822,6 +937,8 @@
                     </div>
                 </div>
             </div>
+
+            <p>ঘরোয়া চিকিৎসার পাশাপাশি <a href="https://www.romanulislam.com/" class="internal-link">প্রধান পেজ থেকে অন্যান্য স্বাস্থ্য টিপস</a> জানতে পারেন।</p>
         </div>
     </section>
 
@@ -841,6 +958,8 @@
                     <li><strong>কারো সাহায্য নিন:</strong> একা থাকলে কারো সাহায্য নিন</li>
                     <li><strong>জরুরি চিকিৎসা:</strong> যদি কয়েক মিনিটেও না সারে তবে ডাক্তার দেখান</li>
                 </ul>
+
+                <p>জরুরি পরিস্থিতিতে <a href="https://www.romanulislam.com/online-doctor-bd" class="internal-link">অনলাইন ডাক্তারের সাথে যোগাযোগ</a> করতে পারেন।</p>
             </div>
         </div>
     </section>
@@ -871,6 +990,7 @@
             <h2 class="section-title">মাথা ঘোরা প্রতিরোধের উপায়</h2>
             <div class="card">
                 <p>প্রতিরোধই সেরা। নিয়মিত হাত ধোয়া, স্বাস্থ্যকর খাবার খাওয়া, পর্যাপ্ত পানি পান করা। রক্তচাপ এবং ডায়াবেটিস নিয়ন্ত্রণে রাখুন। অতিরিক্ত গরম বা ভিড় এড়িয়ে চলুন। ধীরে ধীরে উঠবোস করুন। ইমিউনিটি বাড়াতে ব্যায়াম করুন।</p>
+                <p>স্বাস্থ্য সম্পর্কে আরও তথ্যের জন্য <a href="https://www.romanulislam.com/" class="internal-link">মূল ওয়েবসাইট</a> ভিজিট করুন।</p>
             </div>
         </div>
     </section>
@@ -881,6 +1001,7 @@
             <h2 class="section-title">কখন ডাক্তারের সাহায্য নেবেন?</h2>
             <div class="card">
                 <p>যদি মাথা ঘোরা বারবার হয়, উচ্চ জ্বর, হাত-পা অবশ হয়ে যায়, কথা জড়িয়ে যায় বা বুক ব্যথা হয় – তাহলে অবশ্যই। শিশু, বয়স্ক বা ক্রনিক রোগীদের ক্ষেত্রে তাড়াতাড়ি।</p>
+                <p>ডাক্তারের পরামর্শের জন্য <a href="https://www.romanulislam.com/online-doctor-bd" class="internal-link">টেলিমেডিসিন সেবা</a> ব্যবহার করতে পারেন।</p>
             </div>
         </div>
     </section>
@@ -922,6 +1043,7 @@
             <h2 class="section-title">সচরাচর জিজ্ঞাসিত প্রশ্নাবলী</h2>
             
             <div class="faq-container">
+                <!-- FAQ items remain exactly the same as original -->
                 <div class="faq-item">
                     <div class="faq-question">প্রশ্ন ১: সারাদিন কাজ করার পর মাথা ঘোরা কেন হয়? <span>+</span></div>
                     <div class="faq-answer">উত্তর: অনেক সময় সারাদিন খাটাখাটনি, শরীরে পানির ঘাটতি বা কম খাওয়া-দাওয়ার কারণে মাথা ঘোরে। শরীর ক্লান্ত হলে রক্তচাপ ও ব্লাড সুগার কমে যায়, তাই এই সমস্যা দেখা দিতে পারে।</div>
@@ -929,7 +1051,7 @@
                 
                 <div class="faq-item">
                     <div class="faq-question">প্রশ্ন ২: সকালে ঘুম থেকে উঠেই মাথা ঘোরার কারণ কী? <span>+</span></div>
-                    <div class="faq-answer">উত্তর: ঘুম থেকে উঠেই হঠাৎ দাঁড়ালে রক্তচাপ নিচে নেমে যায়। একে Orthostatic Hypotension বলে। এছাড়া রাতে পানি কম খাওয়া или পর্যাপ্ত ঘুম না হলে এমনটা হতে পারে।</div>
+                    <div class="faq-answer">উত্তর: ঘুম থেকে উঠেই হঠাৎ দাঁড়ালে রক্তচাপ নিচে নেমে যায়। একে Orthostatic Hypotension বলে। এছাড়া রাতে পানি কম খাওয়া বা পর্যাপ্ত ঘুম না হলে এমনটা হতে পারে।</div>
                 </div>
                 
                 <div class="faq-item">
@@ -1049,7 +1171,7 @@
 
                 <div class="faq-item">
                     <div class="faq-question">প্রশ্ন ২৬: মাথা ঘোরা কি দীর্ঘদিন ধরে থাকতে পারে? <span>+</span></div>
-                    <div class="faq-answer">উত্তর: যদি কানের রোগ, স্নায়ুর সমস্যা বা দীর্ঘস্থায়ী প্রেসারজনিত কারণ থাকে তবে মাথা ঘোরা দীर्घদিন থাকতে পারে।</div>
+                    <div class="faq-answer">উত্তর: যদি কানের রোগ, স্নায়ুর সমস্যা বা দীর্ঘস্থায়ী প্রেসারজনিত কারণ থাকে তবে মাথা ঘোরা দীর্ঘদিন থাকতে পারে।</div>
                 </div>
 
                 <div class="faq-item">
@@ -1072,6 +1194,39 @@
                     <div class="faq-answer">উত্তর: যদি মাথা ঘোরা সাথে হাত-পা অবশ হয়ে যায়, কথা জড়িয়ে যায়, বুক ব্যথা বা বমি হয়—তাহলে দেরি না করে দ্রুত ডাক্তারের কাছে যেতে হবে।</div>
                 </div>
             </div>
+
+            <!-- Author Box -->
+            <section class="author-box">
+                <h3>লেখক পরিচিতি</h3>
+                <p>
+                    <strong>ডা. রোমানুল ইসলাম</strong> স্বাস্থ্য বিষয়ক তথ্যভিত্তিক কনটেন্ট প্রস্তুতকারক।
+                    এই লেখাগুলো সাধারণ স্বাস্থ্য সচেতনতার উদ্দেশ্যে প্রকাশিত।
+                </p>
+            </section>
+
+            <!-- Medical Review Notice -->
+            <section class="medical-review">
+                <p>
+                    এই আর্টিকেলটি চিকিৎসা পরামর্শের বিকল্প নয়।
+                    ব্যক্তিগত সমস্যার জন্য অবশ্যই চিকিৎসকের সঙ্গে পরামর্শ করুন।
+                    বিস্তারিত জানতে <a href="https://www.romanulislam.com/disclaimer">ডিসক্লেইমার</a> দেখুন।
+                </p>
+            </section>
+
+            <!-- Related Articles -->
+            <section class="related-articles">
+                <h3>সম্পর্কিত আর্টিকেল</h3>
+                <ul>
+                    <li><a href="https://www.romanulislam.com/blog/blurred-vision">চোখে ঝাপসা দেখা কি বিপজ্জনক?</a></li>
+                    <li><a href="https://www.romanulislam.com/blog/burning-sensation">হাত পা জ্বালাপোড়া: কেন হয়?</a></li>
+                </ul>
+
+                <p>
+                    এই আর্টিকেলটি <a href="https://www.romanulislam.com/category/neuro">স্নায়ু ও মস্তিষ্কের স্বাস্থ্য সমস্যা</a> বিভাগের অন্তর্ভুক্ত।
+                </p>
+
+                <p><a href="https://www.romanulislam.com/blog ">সব ব্লগ দেখুন</a></p>
+            </section>
         </div>
     </section>
 
