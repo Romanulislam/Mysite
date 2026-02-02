@@ -16,7 +16,7 @@
       "@type": "BlogPosting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.romanulislam.com/blog/polyuria.html"
+        "@id": "https://www.romanulislam.com/blog/polyuria "
       },
       "headline": "ঘন ঘন প্রস্রাবের লুকানো কারণ কি? জানুন সত্য",
       "description": "বারবার প্রস্রাব হওয়ার কারণ বুঝে সঠিক প্রতিকার নিন। ঘন ঘন প্রস্রাব দূর করার ঘরোয়া উপায়, খাবার ও চিকিৎসা এখনই জেনে নিন।",
@@ -654,6 +654,111 @@
             height: auto;
             border-radius: 50%;
         }
+
+        /* New Styles for Related Articles, Author Box, and Medical Review */
+        .related-articles {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 40px 0;
+            border-left: 5px solid #0ea5a5;
+        }
+
+        .related-articles h3 {
+            color: #0c7a7a;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+        }
+
+        .related-articles ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+
+        .related-articles ul li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .related-articles ul li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #0ea5a5;
+            font-weight: bold;
+        }
+
+        .related-articles ul li a {
+            color: #0c7a7a;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .related-articles ul li a:hover {
+            color: #ff7043;
+            text-decoration: underline;
+        }
+
+        .related-articles p {
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        .author-box {
+            background-color: #e0f7fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border: 1px solid #0ea5a5;
+        }
+
+        .author-box h3 {
+            color: #0c7a7a;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .author-box p {
+            line-height: 1.7;
+        }
+
+        .medical-review {
+            background-color: #fff3e0;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border: 1px solid #ff7043;
+        }
+
+        .medical-review p {
+            line-height: 1.7;
+            color: #333;
+        }
+
+        .medical-review a {
+            color: #0c7a7a;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .medical-review a:hover {
+            text-decoration: underline;
+        }
+
+        .internal-link {
+            color: #0c7a7a;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .internal-link:hover {
+            color: #ff7043;
+            text-decoration: underline;
+        }
         
         @media (max-width: 768px) {
             .header-content {
@@ -684,6 +789,12 @@
                 bottom: 20px;
                 right: 20px;
             }
+
+            .related-articles,
+            .author-box,
+            .medical-review {
+                padding: 20px;
+            }
         }
     </style>
 </head>
@@ -697,10 +808,10 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="https://www.romanulislam.com/index.html">হোম</a></li>
-                        <li><a href="https://www.romanulislam.com/online-doctor-bd.html">সেবা</a></li>
-                        <li><a href="https://www.romanulislam.com/reviews.html">রিভিউ</a></li>
-                        <li><a href="https://www.romanulislam.com/contact.html">যোগাযোগ</a></li>
+                        <li><a href="https://www.romanulislam.com/index ">হোম</a></li>
+                        <li><a href="https://www.romanulislam.com/online-doctor-bd ">সেবা</a></li>
+                        <li><a href="https://www.romanulislam.com/reviews ">রিভিউ</a></li>
+                        <li><a href="https://www.romanulislam.com/contact ">যোগাযোগ</a></li>
                     </ul>
                 </nav>
             </div>
@@ -726,7 +837,7 @@
                 <p>ভাবুন তো—রাতের গভীরে আপনি ঘুমিয়ে আছেন, হঠাৎ বারবার টয়লেটে যেতে হচ্ছে। দিনের বেলায় অফিসে বা বাসায় কথোপকথনের মাঝেই উঠে যেতে হচ্ছে বাথরুমে। এ অবস্থাটি শুধু শরীর নয়, মানসিকভাবেও ভীষণ চাপ তৈরি করে। আজ আমরা জানব ঘন ঘন প্রস্রাবের কারণ, প্রতিকার এবং প্রয়োজনীয় জীবনধারার পরিবর্তন নিয়ে বিস্তারিত তথ্য।</p>
                 
                 <div class="highlight">
-                    <p><strong>দ্রুত সংক্ষেপ:</strong> এই ব্লগ পোস্টে আপনি যা শিখবেন: ঘন ঘন প্রস্রাবের কারণ, প্রতিকার, ঘরোয়া উপায়, কখন ডাক্তারের সাহায্য নেবেন এবং কীভাবে টেলিমেডিসিনের মাধ্যমে ঘরে বসে চিকিৎসা নেবেন।</p>
+                    <p><strong>দ্রুত সংক্ষেপ:</strong> এই ব্লগ পোস্টে আপনি যা শিখবেন: ঘন ঘন প্রস্রাবের কারণ, প্রতিকার, ঘরোয়া উপায়, কখন ডাক্তারের সাহায্য নেবেন এবং কীভাবে <a href="https://www.romanulislam.com/online-doctor-bd" class="internal-link">টেলিমেডিসিন</a> এর মাধ্যমে ঘরে বসে চিকিৎসা নেবেন।</p>
                 </div>
             </div>
         </div>
@@ -759,6 +870,7 @@
                     <li><strong>কিডনি রোগ:</strong> কিডনির কার্যক্ষমতা কমে গেলে প্রস্রাবের পরিমাণ বেড়ে যেতে পারে।</li>
                     <li><strong>ওষুধের পার্শ্বপ্রতিক্রিয়া:</strong> যেমন উচ্চ রক্তচাপ কমানোর ওষুধ (ডাইইউরেটিক) প্রস্রাবের পরিমাণ বাড়ায়।</li>
                 </ul>
+                <p>এই সমস্যাগুলোর জন্য সঠিক চিকিৎসা পেতে <a href="https://www.romanulislam.com/" class="internal-link">আমাদের হোমপেজ</a> থেকে বিস্তারিত জানতে পারেন অথবা সরাসরি <a href="https://www.romanulislam.com/online-doctor-bd" class="internal-link">টেলিমেডিসিন সেবা</a> নিতে পারেন।</p>
             </div>
         </div>
     </section>
@@ -859,7 +971,7 @@
                     <li><strong>তুলসী + মধু:</strong> মূত্রনালি পরিষ্কার রাখতে কার্যকর।</li>
                 </ul>
                 <div class="highlight">
-                    <p><strong>দ্রষ্টব্য:</strong> এসব ভেষজ চিকিৎসা শুধুমাত্র সহায়ক, চূড়ান্ত সমাধান নয়।</p>
+                    <p><strong>দ্রষ্টব্য:</strong> এসব ভেষজ চিকিৎসা শুধুমাত্র সহায়ক, চূড়ান্ত সমাধান নয়। কোনো ক্রনিক সমস্যা থাকলে <a href="https://www.romanulislam.com/online-doctor-bd" class="internal-link">টেলিমেডিসিন সেবা</a> নিতে পারেন।</p>
                 </div>
             </div>
         </div>
@@ -878,7 +990,7 @@
                     <li>রাতের ঘুম বারবার ভেঙে গেলে</li>
                 </ul>
                 <div class="highlight">
-                    <p><strong>দ্রষ্টব্য:</strong> এ ধরনের লক্ষণ থাকলে দ্রুত টেলিমেডিসিন সেবা বা বিশেষজ্ঞ ডাক্তারের সাথে যোগাযোগ করা উচিত।</p>
+                    <p><strong>দ্রষ্টব্য:</strong> এ ধরনের লক্ষণ থাকলে দ্রুত <a href="https://www.romanulislam.com/online-doctor-bd" class="internal-link">টেলিমেডিসিন সেবা</a> বা বিশেষজ্ঞ ডাক্তারের সাথে যোগাযোগ করা উচিত।</p>
                 </div>
             </div>
         </div>
@@ -896,6 +1008,7 @@
                     <li>ধূমপান ও অ্যালকোহল এড়িয়ে চলুন।</li>
                     <li>নিয়মিত স্বাস্থ্য পরীক্ষা করুন।</li>
                 </ul>
+                <p>স্বাস্থ্য সম্পর্কিত আরও তথ্যের জন্য <a href="https://www.romanulislam.com/" class="internal-link">আমাদের ওয়েবসাইট</a> ভিজিট করুন।</p>
             </div>
         </div>
     </section>
@@ -905,7 +1018,7 @@
         <div class="container">
             <h2 class="section-title">গল্পের ছোঁয়া</h2>
             <div class="card">
-                <p>রুবিনা আপা (৩৮) অফিসে বারবার বাথরুমে যেতে গিয়ে সহকর্মীদের সামনে অস্বস্তিতে পড়তেন। প্রথমে তিনি ভেবেছিলেন এটা সামান্য সমস্যা, কিন্তু ধীরে ধীরে রাতেও ঘন ঘন প্রস্রাব হওয়া শুরু হলো। শেষমেশ তিনি আমাদের টেলিমেডিসিন সেবায় যোগাযোগ করেন। পরীক্ষার পর জানা গেল তার মূত্রনালি সংক্রমণ (UTI) হয়েছে। মাত্র এক সপ্তাহের ওষুধে তিনি পুরোপুরি সুস্থ হয়ে ওঠেন।</p>
+                <p>রুবিনা আপা (৩৮) অফিসে বারবার বাথরুমে যেতে গিয়ে সহকর্মীদের সামনে অস্বস্তিতে পড়তেন। প্রথমে তিনি ভেবেছিলেন এটা সামান্য সমস্যা, কিন্তু ধীরে ধীরে রাতেও ঘন ঘন প্রস্রাব হওয়া শুরু হলো। শেষমেশ তিনি আমাদের <a href="https://www.romanulislam.com/online-doctor-bd" class="internal-link">টেলিমেডিসিন সেবা</a>য় যোগাযোগ করেন। পরীক্ষার পর জানা গেল তার মূত্রনালি সংক্রমণ (UTI) হয়েছে। মাত্র এক সপ্তাহের ওষুধে তিনি পুরোপুরি সুস্থ হয়ে ওঠেন।</p>
                 <p>এই গল্পটি আমাদের মনে করিয়ে দেয়—প্রতিটি সমস্যার সমাধান আছে, শুধু সময়মতো পদক্ষেপ নেওয়া দরকার।</p>
             </div>
         </div>
@@ -938,6 +1051,51 @@
                     <h3>ডিজিটাল প্রেসক্রিপশন</h3>
                     <p>অনলাইনেই প্রেসক্রিপশন পান এবং ওষুধ অর্ডার করুন</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author Box Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="author-box">
+                <h3>লেখক পরিচিতি</h3>
+                <p>
+                    <strong>ডা. রোমানুল ইসলাম</strong> স্বাস্থ্য বিষয়ক তথ্যভিত্তিক কনটেন্ট প্রস্তুতকারক।
+                    এই লেখাগুলো সাধারণ স্বাস্থ্য সচেতনতার উদ্দেশ্যে প্রকাশিত।
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Medical Review Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="medical-review">
+                <p>
+                    এই আর্টিকেলটি চিকিৎসা পরামর্শের বিকল্প নয়।
+                    ব্যক্তিগত সমস্যার জন্য অবশ্যই চিকিৎসকের সঙ্গে পরামর্শ করুন।
+                    বিস্তারিত জানতে <a href="https://www.romanulislam.com/disclaimer">ডিসক্লেইমার</a> দেখুন।
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Articles Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="related-articles">
+                <h3>সম্পর্কিত আর্টিকেল</h3>
+                <ul>
+                    <li><a href="https://www.romanulislam.com/blog/premature-ejaculation">দ্রুত বীর্য পাতের স্থায়ী সমাধান কি সম্ভব?</a></li>
+                    <li><a href="https://www.romanulislam.com/blog/smelly-urine">প্রস্রাবে গন্ধ: এটি কি বিপজ্জনক?</a></li>
+                </ul>
+
+                <p>
+                    এই আর্টিকেলটি <a href="https://www.romanulislam.com/category/sex-and-urology">যৌন ও মুত্রনালীর স্বাস্থ্য সমস্যা</a> বিভাগের অন্তর্ভুক্ত।
+                </p>
+
+                <p><a href="https://www.romanulislam.com/blog ">সব ব্লগ দেখুন</a></p>
             </div>
         </div>
     </section>
