@@ -16,7 +16,7 @@
       "@type": "BlogPosting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.romanulislam.com/blog/weakness.html"
+        "@id": "https://www.romanulislam.com/blog/weakness "
       },
       "headline": "শরীরের দুর্বলতা কি বিপজ্জনক? কারণ ও সমাধান জানুন এখনই!",
       "description": "দুর্বলতা কেন হয়, কোন ভিটামিনের অভাবে হয় ও সমাধান কীভাবে সম্ভব জানুন। টেলিমেডিসিনের মাধ্যমে দুর্বলতা চিকিৎসা নিন সহজেই।",
@@ -655,6 +655,93 @@
             border-radius: 50%;
         }
         
+        /* New styles for related articles, author box, and medical review */
+        .related-articles {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 40px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .related-articles h3 {
+            color: #0c7a7a;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            border-bottom: 2px solid #e0f7fa;
+            padding-bottom: 10px;
+        }
+        
+        .related-articles ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .related-articles ul li {
+            margin-bottom: 10px;
+            list-style-type: disc;
+        }
+        
+        .related-articles a {
+            color: #0ea5a5;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .related-articles a:hover {
+            color: #0c7a7a;
+            text-decoration: underline;
+        }
+        
+        .related-articles p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        .author-box {
+            background: #e0f7fa;
+            border-left: 4px solid #0ea5a5;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 40px 0;
+        }
+        
+        .author-box h3 {
+            color: #0c7a7a;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        .author-box p {
+            color: #333;
+            line-height: 1.7;
+        }
+        
+        .medical-review {
+            background: #fff8e1;
+            border: 2px solid #ffd54f;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .medical-review p {
+            color: #5d4037;
+            font-weight: 500;
+            line-height: 1.7;
+        }
+        
+        .medical-review a {
+            color: #0c7a7a;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        .medical-review a:hover {
+            text-decoration: underline;
+        }
+        
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
@@ -684,6 +771,11 @@
                 bottom: 20px;
                 right: 20px;
             }
+            
+            .related-articles, .author-box, .medical-review {
+                padding: 20px;
+                margin: 30px 0;
+            }
         }
     </style>
 </head>
@@ -697,10 +789,10 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="https://www.romanulislam.com/index.html">হোম</a></li>
-                        <li><a href="https://www.romanulislam.com/online-doctor-bd.html">সেবা</a></li>
-                        <li><a href="https://www.romanulislam.com/reviews.html">রিভিউ</a></li>
-                        <li><a href="https://www.romanulislam.com/contact.html">যোগাযোগ</a></li>
+                        <li><a href="https://www.romanulislam.com/index ">হোম</a></li>
+                        <li><a href="https://www.romanulislam.com/online-doctor-bd ">সেবা</a></li>
+                        <li><a href="https://www.romanulislam.com/reviews ">রিভিউ</a></li>
+                        <li><a href="https://www.romanulislam.com/contact ">যোগাযোগ</a></li>
                     </ul>
                 </nav>
             </div>
@@ -711,7 +803,7 @@
     <section class="hero">
         <div class="container">
             <h1>শরীরের দুর্বলতা: কারণ, লক্ষণ ও প্রতিকারের উপায়</h1>
-            <p>দুর্বলতা কেন হয়, কোন ভিটামিনের অভাবে হয় ও সমাধান কীভাবে সম্ভব জানুন। টেলিমেডিসিনের মাধ্যমে দুর্বলতা চিকিৎসা নিন সহজেই।</p>
+            <p>দুর্বলতা কেন হয়, কোন ভিটামিনের অভাবে হয় ও সমাধান কীভাবে সম্ভব জানুন। <a href="https://www.romanulislam.com/online-doctor-bd" style="color: #e0f7fa; font-weight: 600;">টেলিমেডিসিন</a> এর মাধ্যমে দুর্বলতা চিকিৎসা নিন সহজেই।</p>
             <a href="https://wa.me/8801826589958?text=স্যার, আমি একটি অ্যাপয়ন্টমেন্ট বুক করতে চাই" target="_blank" aria-label="WhatsApp Chat" class="cta-button">ডাক্তারের সাথে পরামর্শ করুন</a>
         </div>
     </section>
@@ -723,7 +815,7 @@
             <div class="card">
                 <p>আপনি কি কখনও ভেবেছেন, সকালে ঘুম থেকে উঠে স্বাভাবিক দিনের মতো কাজ শুরু করতে চান, কিন্তু শরীর সাড়া দিচ্ছে না? হাঁটাহাঁটি করতে গিয়েই হাঁপিয়ে যাচ্ছেন, মন কাজ করতে চায় কিন্তু শরীর টেনে নামাচ্ছে—এটাই হলো <strong>দুর্বলতা</strong>। শুধু শারীরিক নয়, মানসিক ও আবেগীয় দিক থেকেও দুর্বলতা একজন মানুষের জীবনে প্রভাব ফেলতে পারে।</p>
                 
-                <p>বাংলাদেশে প্রতিদিন অসংখ্য মানুষ <strong>দুর্বলতার সমস্যায় ভুগছেন</strong>। কেউ কাজের চাপ, কেউ অপুষ্টি, কেউ আবার লুকানো রোগের কারণে এ সমস্যায় পড়েন। কিন্তু এর সমাধান আছে—সচেতনতা, সঠিক পুষ্টি, আর প্রয়োজনে <strong>টেলিমেডিসিন সেবা</strong> ব্যবহার করে সহজ চিকিৎসা।</p>
+                <p>বাংলাদেশে প্রতিদিন অসংখ্য মানুষ <strong>দুর্বলতার সমস্যায় ভুগছেন</strong>। কেউ কাজের চাপ, কেউ অপুষ্টি, কেউ আবার লুকানো রোগের কারণে এ সমস্যায় পড়েন। কিন্তু এর সমাধান আছে—সচেতনতা, সঠিক পুষ্টি, আর প্রয়োজনে <a href="https://www.romanulislam.com/online-doctor-bd" style="color: #0ea5a5; font-weight: 600;">টেলিমেডিসিন সেবা</a> ব্যবহার করে সহজ চিকিৎসা।</p>
                 
                 <div class="highlight">
                     <p><strong>দ্রুত সংক্ষেপ:</strong> এই ব্লগ পোস্টে আপনি যা শিখবেন: দুর্বলতার কারণ ও লক্ষণ, কোন ভিটামিনের অভাবে দুর্বলতা হয়, দুর্বলতা কাটানোর উপায়, কখন ডাক্তারের সাহায্য নেবেন এবং কীভাবে টেলিমেডিসিনের মাধ্যমে ঘরে বসে চিকিৎসা নেবেন।</p>
@@ -753,7 +845,7 @@
         <div class="container">
             <h2 class="section-title">কোন ভিটামিনের অভাবে শরীর দুর্বল হয়?</h2>
             <div class="card">
-                <p>দুর্বলতার অন্যতম কারণ হলো <strong>ভিটামিনের ঘাটতি</strong>।</p>
+                <p>দুর্বলতার অন্যতম কারণ হলো <strong>ভিটামিনের ঘাটতি</strong>। <a href="https://www.romanulislam.com/" style="color: #0ea5a5; font-weight: 600;">ডা. রোমানুল ইসলামের</a> ওয়েবসাইটে অন্যান্য স্বাস্থ্য টিপসও পাবেন।</p>
                 
                 <h3>ভিটামিনের অভাবজনিত দুর্বলতা</h3>
                 <ul>
@@ -782,6 +874,7 @@
                     <li>শ্বাসকষ্ট</li>
                     <li>হৃদস্পন্দন বেড়ে যাওয়া</li>
                 </ul>
+                <p>এই লক্ষণগুলোর সাথে যদি দীর্ঘস্থায়ী দুর্বলতা থাকে, তাহলে <a href="https://www.romanulislam.com/online-doctor-bd" style="color: #0ea5a5; font-weight: 600;">অনলাইন ডাক্তার পরামর্শ</a> নেওয়া উচিত।</p>
             </div>
         </div>
     </section>
@@ -885,7 +978,7 @@
                 <ul>
                     <li><strong>ওষুধ চিকিৎসা:</strong> ভিটামিন সাপ্লিমেন্ট, আয়রন ট্যাবলেট ইত্যাদি।</li>
                     <li><strong>লাইফস্টাইল মডিফিকেশন:</strong> নিয়মিত রুটিন মেনে চলা।</li>
-                    <li><strong>টেলিমেডিসিন পরামর্শ:</strong> বাসায় বসেই ডাক্তার দেখানো ও প্রেসক্রিপশন পাওয়া যায়।</li>
+                    <li><strong>টেলিমেডিসিন পরামর্শ:</strong> <a href="https://www.romanulislam.com/online-doctor-bd" style="color: #0ea5a5; font-weight: 600;">বাসায় বসেই ডাক্তার দেখানো</a> ও প্রেসক্রিপশন পাওয়া যায়।</li>
                 </ul>
             </div>
         </div>
@@ -906,7 +999,7 @@
                     <li>হাত-পা অবশ হয়ে যাওয়া</li>
                 </ul>
                 
-                <p>এসব উপসর্গ থাকলে দেরি না করে ডাক্তার দেখানো উচিত।</p>
+                <p>এসব উপসর্গ থাকলে দেরি না করে <a href="https://www.romanulislam.com/" style="color: #0ea5a5; font-weight: 600;">ডাক্তার দেখানো</a> উচিত। আপনি <a href="https://www.romanulislam.com/online-doctor-bd" style="color: #0ea5a5; font-weight: 600;">টেলিমেডিসিন সেবা</a> এর মাধ্যমে বাসায় বসেই পরামর্শ নিতে পারেন।</p>
             </div>
         </div>
     </section>
@@ -935,7 +1028,52 @@
         <div class="container">
             <h2 class="section-title">একটি বাস্তব উদাহরণ</h2>
             <div class="card">
-                <p>রুবিনা নামের এক গৃহিণী কয়েক মাস ধরে <strong>শরীর দুর্বল লাগা, মাথা ঘোরা</strong> সমস্যায় ভুগছিলেন। টেলিমেডিসিনের মাধ্যমে অনলাইনে ডাক্তার দেখান। পরীক্ষার রিপোর্টে দেখা গেল তিনি আয়রন ঘাটতিজনিত অ্যানিমিয়ায় ভুগছেন। নিয়মিত ওষুধ, সুষম খাবার এবং পরামর্শ অনুযায়ী চলায় এখন তিনি স্বাভাবিক জীবনে ফিরেছেন।</p>
+                <p>রুবিনা নামের এক গৃহিণী কয়েক মাস ধরে <strong>শরীর দুর্বল লাগা, মাথা ঘোরা</strong> সমস্যায় ভুগছিলেন। <a href="https://www.romanulislam.com/online-doctor-bd" style="color: #0ea5a5; font-weight: 600;">টেলিমেডিসিন</a> এর মাধ্যমে অনলাইনে ডাক্তার দেখান। পরীক্ষার রিপোর্টে দেখা গেল তিনি আয়রন ঘাটতিজনিত অ্যানিমিয়ায় ভুগছেন। নিয়মিত ওষুধ, সুষম খাবার এবং পরামর্শ অনুযায়ী চলায় এখন তিনি স্বাভাবিক জীবনে ফিরেছেন।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author Box Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="author-box">
+                <h3>লেখক পরিচিতি</h3>
+                <p>
+                    <strong>ডা. রোমানুল ইসলাম</strong> স্বাস্থ্য বিষয়ক তথ্যভিত্তিক কনটেন্ট প্রস্তুতকারক।
+                    এই লেখাগুলো সাধারণ স্বাস্থ্য সচেতনতার উদ্দেশ্যে প্রকাশিত।
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Medical Review Notice -->
+    <section class="content-section">
+        <div class="container">
+            <div class="medical-review">
+                <p>
+                    এই আর্টিকেলটি চিকিৎসা পরামর্শের বিকল্প নয়।
+                    ব্যক্তিগত সমস্যার জন্য অবশ্যই চিকিৎসকের সঙ্গে পরামর্শ করুন।
+                    বিস্তারিত জানতে <a href="https://www.romanulislam.com/disclaimer">ডিসক্লেইমার</a> দেখুন।
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Articles Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="related-articles">
+                <h3>সম্পর্কিত আর্টিকেল</h3>
+                <ul>
+                    <li><a href="https://www.romanulislam.com/blog/weight-loss">হঠাৎ ওজন কমে যাওয়া বিপদজনক?</a></li>
+                    <li><a href="https://www.romanulislam.com/blog/back-pain">কোমর ব্যথা কি আপনার জীবন নষ্ট করছে?</a></li>
+                </ul>
+
+                <p>
+                    এই আর্টিকেলটি <a href="https://www.romanulislam.com/category/general-health">সাধারণ স্বাস্থ্য সমস্যা</a> বিভাগের অন্তর্ভুক্ত।
+                </p>
+
+                <p><a href="https://www.romanulislam.com/blog ">সব ব্লগ দেখুন</a></p>
             </div>
         </div>
     </section>
@@ -1019,7 +1157,7 @@
 
                 <div class="faq-item">
                     <div class="faq-question">প্রশ্ন ৯: দুর্বলতার সাথে মাথা ঘোরা কি সম্পর্কিত? <span>+</span></div>
-                    <div class="faq-answer">উত্তর: হ্যাঁ। দুর্বলতার কারণে রক্ত সঞ্চালন কম হলে मাথা ঘোরা বা দাঁড়িয়ে অস্থির লাগতে পারে।</div>
+                    <div class="faq-answer">উত্তর: হ্যাঁ। দুর্বলতার কারণে রক্ত সঞ্চালন কম হলে মাথা ঘোরা বা দাঁড়িয়ে অস্থির লাগতে পারে।</div>
                 </div>
 
                 <div class="faq-item">
