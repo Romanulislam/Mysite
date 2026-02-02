@@ -1,423 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  
-  <!-- Core Pages -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://www.romanulislam.com/</loc>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/online-doctor-bd </loc>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog </loc>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/reviews </loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/contact </loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/disclaimer</loc>
-    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
   </url>
 
-  <!-- Blog Posts (Auto-generated from your blog  content) -->
   <url>
-    <loc>https://www.romanulislam.com/blog/abdominal-distension </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/abdominal-pain </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/acidity </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/acne </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/allergy </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/anger </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/anorexia </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/attention </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/back-pain </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/blurred-vision </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/breathlessness </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/burning-sensation </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/chest-pain </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/chest-tightness </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/constipation </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/cough </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/dandruff </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/dementia </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/dengue </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/depression </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/dermatitis </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/diarrhoea </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/dry-cough </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/dry-skin </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/dry-throat </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/dysuria </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/earache </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/eczema </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/edema </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/epilepsy </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/erectile-dysfunction </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/fever </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/foot-pain </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/fracture </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/fungal-infection </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/hair-fall </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/hallucination </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/headache </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/hearing-loss </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/heartburn </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/hematuria </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/hemoptysis </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/high-pressure </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/hoarse-voice </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/hydrocele </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/hyperhidrosis </loc>
-    <priority>0.7</priority>
+    <loc>https://www.romanulislam.com/about.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
+
   <url>
-    <loc>https://www.romanulislam.com/blog/hypothermia </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/indigestion </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/insomnia </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/itching </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/itchy-eyes </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/knee-pain </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/knee-swelling </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/leg-cramps </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/leg-swelling </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/leukorrhea </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/lose-weight </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/low-pressure </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/melasma </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/memory </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/nasal-congestion </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/neck-pain </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/numbness </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/oliguria </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/pain-during-sex </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/palpitation </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/papule </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/paralysis </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/phobia </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/pigmentation </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/polyuria </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/premature-ejaculation </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/psoriasis </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/red-eye </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/ringworm </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/runny-nose </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/scabies </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/smelly-urine </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/sneezing </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/sputum </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/stress </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/stretch-marks </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/suppresses-appetite </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/telemedicineki </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/thin-skin </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/throat-pain </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/tinnitus </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/tremor </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/trigger-finger </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/unconsciousness </loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.romanulislam.com/blog/vaginal-dryness </loc>
-    <priority>0.7</priority>
+    <loc>https://www.romanulislam.com/online-doctor-bd.html</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
   </url>
+
   <url>
-    <loc>https://www.romanulislam.com/blog/vertigo </loc>
-    <priority>0.7</priority>
+    <loc>https://www.romanulislam.com/reviews.html</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
   </url>
+
   <url>
-    <loc>https://www.romanulislam.com/blog/vesicle </loc>
+    <loc>https://www.romanulislam.com/contact.html</loc>
     <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
   </url>
+
   <url>
-    <loc>https://www.romanulislam.com/blog/vitiligo </loc>
+    <loc>https://www.romanulislam.com/blog.html</loc>
     <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
   </url>
+
   <url>
-    <loc>https://www.romanulislam.com/blog/vomiting </loc>
-    <priority>0.7</priority>
+    <loc>https://www.romanulislam.com/privacy-policy.html</loc>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
   </url>
+
   <url>
-    <loc>https://www.romanulislam.com/blog/weakness </loc>
-    <priority>0.7</priority>
+    <loc>https://www.romanulislam.com/disclaimer.html</loc>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
   </url>
+
   <url>
-    <loc>https://www.romanulislam.com/blog/weight-loss </loc>
-    <priority>0.7</priority>
+    <loc>https://www.romanulislam.com/404.html</loc>
+    <priority>0.1</priority>
+    <changefreq>yearly</changefreq>
   </url>
 
 </urlset>
