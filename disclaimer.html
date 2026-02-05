@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="https://www.romanulislam.com/disclaimer">
     
+    <!-- Favicon from index.html -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='grad1' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%230ea5a5;stop-opacity:1'/><stop offset='100%' style='stop-color:%230c7a7a;stop-opacity:1'/></linearGradient></defs><circle cx='50' cy='50' r='45' fill='url(%23grad1)'/><path d='M35,35 L45,35 L45,45 L35,45 Z' fill='white'/><path d='M55,35 L65,35 L65,45 L55,45 Z' fill='white'/><path d='M40,55 L60,55 L60,65 L40,65 Z' fill='white'/><path d='M45,45 L55,45 L55,55 L45,55 Z' fill='white'/><path d='M40,45 L45,45 L45,50 L40,50 Z' fill='white'/><path d='M55,45 L60,45 L60,50 L55,50 Z' fill='white'/><path d='M45,50 L55,50 L55,55 L45,55 Z' fill='white'/></svg>">
+
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='grad1' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%230ea5a5;stop-opacity:1'/><stop offset='100%' style='stop-color:%230c7a7a;stop-opacity:1'/></linearGradient></defs><circle cx='50' cy='50' r='45' fill='url(%23grad1)'/><path d='M35,35 L45,35 L45,45 L35,45 Z' fill='white'/><path d='M55,35 L65,35 L65,45 L55,45 Z' fill='white'/><path d='M40,55 L60,55 L60,65 L40,65 Z' fill='white'/><path d='M45,45 L55,45 L55,55 L45,55 Z' fill='white'/><path d='M40,45 L45,45 L45,50 L40,50 Z' fill='white'/><path d='M55,45 L60,45 L60,50 L55,50 Z' fill='white'/><path d='M45,50 L55,50 L55,55 L45,55 Z' fill='white'/></svg>">
+
+    <meta name="apple-mobile-web-app-title" content="ডা. রোমানুল ইসলাম">
+    
     <title>ডিসক্লেইমার | ডা. রোমানুল ইসলাম - স্বাস্থ্য বিষয়ক টিপস এবং আপডেট</title>
     <meta name="description" content="romanulislam.com ওয়েবসাইটের স্বাস্থ্য বিষয়ক তথ্য শুধুমাত্র সাধারণ তথ্য ও শিক্ষামূলক উদ্দেশ্যে প্রকাশিত। এটি কোনো চিকিৎসা পরামর্শের বিকল্প নয়।">
     <meta name="keywords" content="ডিসক্লেইমার, স্বাস্থ্য তথ্য, চিকিৎসা পরামর্শ, স্বাস্থ্য সচেতনতা, ডা. রোমানুল ইসলাম">
@@ -22,86 +29,96 @@
     <meta name="twitter:title" content="ডিসক্লেইমার | ডা. রোমানুল ইসলাম - স্বাস্থ্য বিষয়ক টিপস এবং আপডেট">
     <meta name="twitter:description" content="romanulislam.com ওয়েবসাইটের স্বাস্থ্য বিষয়ক তথ্য শুধুমাত্র সাধারণ তথ্য ও শিক্ষামূলক উদ্দেশ্যে প্রকাশিত। এটি কোনো চিকিৎসা পরামর্শের বিকল্প নয়。">
     
+    <!-- Fonts from index.html -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Noto Sans Bengali', 'Inter', sans-serif;
         }
         
         body {
-            background-color: #f5f7fa;
-            color: #333;
-            line-height: 1.6;
+            background-color: #f8fcfc;
+            color: #1e293b;
+            line-height: 1.7;
             overflow-x: hidden;
             width: 100%;
         }
         
         .container {
+            width: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 15px;
-            width: 100%;
+            padding: 0 20px;
         }
         
-        header {
+        /* Updated Header from index.html */
+        .site-header {
             background: linear-gradient(135deg, #0ea5a5 0%, #0c7a7a 100%);
             color: white;
             padding: 15px 0;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            width: 100%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         
-        .header-content {
+        .nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
+        }
+        
+        .brand {
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }
         
         .logo {
-            font-size: 20px;
-            font-weight: 700;
             display: flex;
             align-items: center;
-        }
-        
-        .logo span {
-            margin-right: 8px;
-            font-size: 24px;
-        }
-        
-        nav {
-            width: 100%;
-            margin-top: 15px;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-            flex-wrap: wrap;
             justify-content: center;
+            width: 42px;
+            height: 42px;
+            background: white;
+            border-radius: 50%;
+            padding: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
         }
         
-        nav ul li {
-            margin: 5px 10px;
+        .logo-icon {
+            font-size: 22px;
+            color: #0c7a7a;
         }
         
-        nav ul li a {
+        .site-header nav {
+            display: flex;
+        }
+        
+        .site-header nav a {
             color: white;
             text-decoration: none;
+            margin-left: 25px;
             font-weight: 500;
             transition: all 0.3s ease;
-            padding: 5px 10px;
-            border-radius: 4px;
-            font-size: 15px;
-            display: block;
+            padding: 8px 12px;
+            border-radius: 6px;
         }
         
-        nav ul li a:hover, nav ul li a:focus {
+        .site-header nav a:hover {
             color: #0c7a7a;
             background-color: white;
+            transform: translateY(-2px);
         }
         
         .hero {
@@ -236,84 +253,94 @@
         }
         
         footer {
-            background: #0c7a7a;
+            background: #0a5f5f;
             color: white;
-            padding: 40px 0 20px;
+            padding: 60px 0 20px;
             width: 100%;
         }
         
-        .footer-content {
+        .footer-grid {
             display: grid;
-            grid-template-columns: 1fr;
-            gap: 25px;
-            margin-bottom: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
         }
         
-        .footer-section h3 {
-            font-size: 1.3rem;
-            margin-bottom: 15px;
+        .site-footer h4 {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
             position: relative;
-            padding-bottom: 8px;
+            padding-bottom: 15px;
         }
         
-        .footer-section h3:after {
+        .site-footer h4:after {
             content: '';
             position: absolute;
             left: 0;
             bottom: 0;
-            width: 40px;
-            height: 2px;
+            width: 50px;
+            height: 3px;
             background: #0ea5a5;
         }
         
-        .footer-section p, .footer-section li {
+        .site-footer p, .site-footer li {
             margin-bottom: 8px;
             font-size: 15px;
         }
         
-        .footer-section a {
+        .site-footer a {
             color: #e0f7fa;
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: all 0.3s ease;
+            display: inline-block;
+            padding: 5px 0;
         }
         
-        .footer-section a:hover, .footer-section a:focus {
+        .site-footer a:hover {
             color: white;
-            text-decoration: underline;
+            transform: translateX(5px);
         }
         
         .copyright {
             text-align: center;
-            padding-top: 20px;
+            padding-top: 30px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 14px;
+            font-size: 0.9rem;
+            opacity: 0.8;
         }
         
-        /* WhatsApp Floating Button */
+        /* WhatsApp Floating Button - Updated from index.html */
         .whatsapp-float {
             position: fixed;
-            width: 60px;
-            height: 60px;
+            width: 70px;
+            height: 70px;
             bottom: 40px;
             right: 40px;
-            border-radius: 50px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-            z-index: 100;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: all 0.3s ease;
+            transition: all 0.4s ease;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
         }
         
         .whatsapp-float:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            transform: scale(1.1) rotate(10deg);
+            box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
         }
         
-        .whatsapp-float img {
-            width: 100%;
-            height: auto;
-            border-radius: 50%;
+        .whatsapp-icon {
+            font-size: 36px;
+            color: white;
         }
         
         /* Breadcrumb */
@@ -335,43 +362,92 @@
             color: #083a3a;
         }
         
-        /* Media Queries for Larger Screens */
-        @media (min-width: 480px) {
-            .logo {
-                font-size: 22px;
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .nav {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+            
+            .site-header nav {
+                width: 100%;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            
+            .site-header nav a {
+                margin: 5px;
+                padding: 8px 15px;
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 8px;
+            }
+            
+            .hero {
+                padding: 40px 0;
             }
             
             .hero h1 {
-                font-size: 2rem;
+                font-size: 1.5rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .content-section {
+                padding: 30px 0;
             }
             
             .section-title {
-                font-size: 2rem;
+                font-size: 1.5rem;
+            }
+            
+            .disclaimer-content {
+                padding: 25px 20px;
             }
             
             .disclaimer-content h1 {
-                font-size: 2.2rem;
+                font-size: 1.8rem;
+            }
+            
+            .disclaimer-content h2 {
+                font-size: 1.3rem;
+            }
+            
+            .whatsapp-float {
+                width: 60px;
+                height: 60px;
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .whatsapp-icon {
+                font-size: 30px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .brand {
+                font-size: 20px;
+            }
+            
+            .logo {
+                width: 36px;
+                height: 36px;
+            }
+            
+            .logo-icon {
+                font-size: 18px;
+            }
+            
+            .hero h1 {
+                font-size: 1.3rem;
             }
         }
         
         @media (min-width: 768px) {
-            .header-content {
-                flex-wrap: nowrap;
-            }
-            
-            nav {
-                width: auto;
-                margin-top: 0;
-            }
-            
-            nav ul {
-                justify-content: flex-end;
-            }
-            
-            .logo {
-                font-size: 24px;
-            }
-            
             .hero {
                 padding: 60px 0;
             }
@@ -393,70 +469,30 @@
                 font-size: 2.2rem;
             }
             
-            .footer-content {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 30px;
-            }
-            
-            .whatsapp-float {
-                width: 50px;
-                height: 50px;
-                bottom: 20px;
-                right: 20px;
-            }
-        }
-        
-        @media (min-width: 992px) {
-            .footer-content {
+            .footer-grid {
                 grid-template-columns: repeat(3, 1fr);
-            }
-            
-            .container {
-                padding: 0 20px;
-            }
-        }
-        
-        @media (max-width: 767px) {
-            html, body {
-                overflow-x: hidden;
-            }
-            
-            .container {
-                padding: 0 15px;
-            }
-            
-            .disclaimer-content {
-                padding: 25px 20px;
-            }
-            
-            .disclaimer-content h1 {
-                font-size: 1.8rem;
-            }
-            
-            .disclaimer-content h2 {
-                font-size: 1.3rem;
+                gap: 30px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <div class="header-content">
+    <!-- Updated Header from index.html -->
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="https://www.romanulislam.com/index">
                 <div class="logo">
-                    <span>👨‍⚕️</span> ডা. রোমানুল ইসলাম
+                    <span class="logo-icon">🩺</span>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="https://www.romanulislam.com/index ">হোম</a></li>
-                        <li><a href="https://www.romanulislam.com/online-doctor-bd ">সেবা</a></li>
-                        <li><a href="https://www.romanulislam.com/blog">ব্লগ</a></li>
-                        <li><a href="https://www.romanulislam.com/reviews ">রিভিউ</a></li>
-                        <li><a href="https://www.romanulislam.com/contact ">যোগাযোগ</a></li>
-                    </ul>
-                </nav>
-            </div>
+                <span>ডা. রোমানুল ইসলাম</span>
+            </a>
+            <nav>
+                <a href="https://www.romanulislam.com/online-doctor-bd">সেবা</a>
+                <a href="https://www.romanulislam.com/blog">ব্লগ</a>
+                <a href="https://www.romanulislam.com/reviews">রিভিউ</a>
+                <a href="https://www.romanulislam.com/about">আমার সম্পর্কে</a>
+                <a href="https://www.romanulislam.com/contact">যোগাযোগ</a>
+            </nav>
         </div>
     </header>
 
@@ -471,7 +507,7 @@
     <!-- Breadcrumb -->
     <div class="container">
         <div class="breadcrumb">
-            <a href="https://www.romanulislam.com/index ">হোম</a> &gt; <span>ডিসক্লেইমার</span>
+            <a href="https://www.romanulislam.com/index">হোম</a> &gt; <span>ডিসক্লেইমার</span>
         </div>
     </div>
 
@@ -542,48 +578,46 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <!-- Footer - Updated to match index.html style -->
+    <footer class="site-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>ডা. রোমানুল ইসলাম</h3>
-                    <p>২৪/৭ ঘরে বসে ডাক্তারের পরামর্শ --- Best Online Doctor BD</p>
-                    <p>টেলিমেডিসিন সেবার মাধ্যমে যেকোনো সময়, যেকোনো স্থান থেকে বিশেষজ্ঞ চিকিৎসা পরামর্শ নিন।</p>
+            <div class="footer-grid">
+                <div>
+                    <h4>ডা. রোমানুল ইসলাম</h4>
+                    <p>২৪/৭ ঘরে বসে ডাক্তারের পরামর্শ</p>
+                    <p>বাংলাদেশের লাইসেন্সপ্রাপ্ত টেলিমেডিসিন সেবা</p>
+                    <p>বিএমডিসি নিবন্ধন নং: ১২৯৪৩৮</p>
                 </div>
-                
-                <div class="footer-section">
-                    <h3>দ্রুত যোগাযোগ</h3>
+                <div>
+                    <h4>সরাসরি যোগাযোগ</h4>
                     <ul>
-                        <li>WhatsApp: <a href="https://wa.me/8801826589958">+8801826589958</a></li>
-                        <li>Email: <a href="mailto:roman@romanulislam.com">roman@romanulislam.com</a></li>
+                        <li><a href="https://wa.me/8801826589958" rel="noopener" target="_blank">WhatsApp: +8801826589958</a></li>
+                        <li><a href="tel:+8801826589958">ফোন: +8801826589958</a></li>
+                        <li><a href="mailto:roman@romanulislam.com">ইমেইল: roman@romanulislam.com</a></li>
+                        <li>সেবা সময়: সকাল ৭টা - রাত ১টা</li>
                     </ul>
                 </div>
-                
-                <div class="footer-section">
-                    <h3>দরকারী লিংক</h3>
+                <div>
+                    <h4>গুরুত্বপূর্ণ লিংক</h4>
                     <ul>
-                        <li><a href="https://romanulislam.com/index">হোম</a></li>
-                        <li><a href="https://romanulislam.com/online-doctor-bd">সেবা</a></li>
-                        <li><a href="https://romanulislam.com/blog">ব্লগ</a></li>
-                        <li><a href="https://romanulislam.com/reviews">রিভিউ</a></li>
-                        <li><a href="https://romanulislam.com/contact">যোগাযোগ</a></li>
-                        <li><a href="https://romanulislam.com/disclaimer">Disclaimer</a></li>
-                        <li><a href="https://www.romanulislam.com/about">About</a></li>
-                        <li><a href="https://www.romanulislam.com/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="https://www.romanulislam.com/index">হোমপেজ</a></li>
+                        <li><a href="https://www.romanulislam.com/online-doctor-bd">টেলিমেডিসিন সেবা</a></li>
+                        <li><a href="https://www.romanulislam.com/blog">স্বাস্থ্য ব্লগ</a></li>
+                        <li><a href="https://www.romanulislam.com/about">ডাক্তারের প্রোফাইল</a></li>
+                        <li><a href="https://www.romanulislam.com/reviews">রোগীদের রিভিউ</a></li>
+                        <li><a href="https://www.romanulislam.com/contact">যোগাযোগ</a></li>
+                        <li><a href="https://www.romanulislam.com/disclaimer">ডিসক্লেইমার</a></li>
+                        <li><a href="https://www.romanulislam.com/privacy-policy">গোপনীয়তা নীতি</a></li>
                     </ul>
                 </div>
             </div>
-            
-            <div class="copyright">
-                <p>© ডা. রোমানুল ইসলাম। সকল স্বত্ব সংরক্ষিত।</p>
-            </div>
+            <p class="copyright">© ডা. রোমানুল ইসলাম - টেলিমেডিসিন সেবা। বিএমডিসি নিবন্ধন নং: ১২৯৪৩৮। সকল স্বত্ব সংরক্ষিত।</p>
         </div>
     </footer>
 
-    <!-- WhatsApp Floating Button -->
-    <a class="whatsapp-float" href="https://wa.me/8801826589958" target="_blank" aria-label="WhatsApp Chat">
-        <img src="https://www.romanulislam.com/assets/images/whatsapp.gif" alt="WhatsApp" width="60" height="60" loading="lazy">
+    <!-- WhatsApp Floating Button - Updated from index.html -->
+    <a class="whatsapp-float" href="https://wa.me/8801826589958?text=স্যার, আমি টেলিমেডিসিন পরামর্শ নিতে চাই" target="_blank" rel="noopener" aria-label="WhatsApp-এ অনলাইন ডাক্তারের পরামর্শ নিন">
+        <span class="whatsapp-icon">💬</span>
     </a>
 </body>
 </html>
