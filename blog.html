@@ -12,21 +12,21 @@
 <meta name="apple-mobile-web-app-title" content="ডা. রোমানুল ইসলাম">
 <meta name="theme-color" content="#0ea5a5">
   
-  <title>ব্লগ | ডা. রোমানুল ইসলাম - স্বাস্থ্য বিষয়ক টিপস এবং আপডেট</title>
+  <title>স্বাস্থ্য ব্লগ | ডা. রোমানুল ইসলাম - ট্রাস্টেড টেলিমেডিসিন সার্ভিস</title>
   <meta name="description" content="ডা. রোমানুল ইসলাম-এর ব্লগে স্বাস্থ্য বিষয়ক টিপস, টেলিমেডিসিন এবং সাধারণ স্বাস্থ্য সমস্যার সমাধান জানুন।">
   <link rel="canonical" href="https://www.romanulislam.com/blog">
   
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="ব্লগ | ডা. রোমানুল ইসলাম - স্বাস্থ্য বিষয়ক টিপস এবং আপডেট">
-  <meta property="og:description" content="ডা. রোমানুল ইসলাম-এর ব্লগে স্বাস্থ্য বিষয়ক টিপস, টেলিমেডিসিন এবং সাধারণ স্বাস্থ্য সমস্যার সমাধান জানুন।">
+  <meta property="og:title" content="স্বাস্থ্য ব্লগ | ডা. রোমানুল ইসলাম">
+  <meta property="og:description" content="বাংলাদেশের লাইসেন্সপ্রাপ্ত এমবিবিএস ডাক্তারের স্বাস্থ্য ব্লগ। ঘরে বসে স্বাস্থ্য সম্পর্কিত প্রয়োজনীয় তথ্য এবং টিপস জানুন।">
   <meta property="og:url" content="https://www.romanulislam.com/blog">
   <meta property="og:image" content="https://www.romanulislam.com/assets/images/og-placeholder.png">
   
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="ব্লগ | ডা. রোমানুল ইসলাম - স্বাস্থ্য বিষয়ক টিপস এবং আপডেট">
-  <meta name="twitter:description" content="ডা. রোমানুল ইসলাম-এর ব্লগে স্বাস্থ্য বিষয়ক টিপস, টেলিমেডিসিন এবং সাধারণ স্বাস্থ্য সমস্যার সমাধান জানুন。">
+  <meta name="twitter:title" content="স্বাস্থ্য ব্লগ | ডা. রোমানুল ইসলাম">
+  <meta name="twitter:description" content="বাংলাদেশে ২৪/৭ টেলিমেডিসিন পরামর্শ। এমবিবিএস (চমেক), এফসিপিএস পার্ট-১ (মেডিসিন), এমসিজিপি (বিজিএইচআরআই), সিএমইউ (আল্ট্রাসনোগ্রাফি)।">
   <meta name="twitter:image" content="https://www.romanulislam.com/assets/images/og-placeholder.png">
   
   <!-- Preload critical resources -->
@@ -120,17 +120,17 @@
       transform: translateY(-2px);
     }
     
-    /* Blog Hero Section */
-    .blog-hero {
+    /* Hero Section - Blog */
+    .hero {
       background: linear-gradient(135deg, rgba(14, 165, 165, 0.95), rgba(12, 122, 122, 0.97));
       color: white;
-      padding: 60px 0;
-      text-align: center;
+      padding: 80px 0;
       position: relative;
       overflow: hidden;
+      text-align: center;
     }
     
-    .blog-hero:before {
+    .hero:before {
       content: '';
       position: absolute;
       top: 0;
@@ -143,51 +143,37 @@
       z-index: 1;
     }
     
-    .blog-hero h1 {
-      font-size: 3rem;
-      margin-bottom: 15px;
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    
+    .hero-title {
+      font-size: 3.2rem;
+      margin-bottom: 20px;
       line-height: 1.2;
-      position: relative;
-      z-index: 2;
     }
     
-    .blog-hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto;
+    .hero-tagline {
+      font-size: 1.4rem;
+      margin-bottom: 30px;
       opacity: 0.95;
-      position: relative;
-      z-index: 2;
+      line-height: 1.5;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
     }
     
-    /* Breadcrumb */
-    .breadcrumb {
-      padding: 20px 0;
-      font-size: 0.9rem;
-      color: #64748b;
-    }
-    
-    .breadcrumb a {
-      color: #0ea5a5;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    
-    .breadcrumb a:hover {
-      color: #0c7a7a;
-      text-decoration: underline;
-    }
-    
-    /* Blog Content Section */
+    /* Blog Content */
     .content-section {
-      padding: 60px 0;
+      padding: 80px 0;
     }
     
     .section-title {
       text-align: center;
       color: #0c7a7a;
-      margin-bottom: 40px;
-      font-size: 2.2rem;
+      margin-bottom: 60px;
+      font-size: 2.5rem;
       position: relative;
     }
     
@@ -197,104 +183,49 @@
       width: 100px;
       height: 5px;
       background: linear-gradient(to right, #0ea5a5, #ff7043);
-      margin: 15px auto;
+      margin: 20px auto;
       border-radius: 5px;
     }
     
-    /* Search Section */
-    .search-section {
-      background: white;
-      padding: 25px;
-      border-radius: 16px;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-      margin-bottom: 30px;
-      border-left: 4px solid #0ea5a5;
+    /* Category Sections */
+    .category-section {
+      margin-bottom: 80px;
     }
     
-    .search-container {
-      display: flex;
-      gap: 15px;
-      align-items: center;
-    }
-    
-    #search-input {
-      flex: 1;
-      padding: 15px 20px;
-      border: 2px solid #e6f7f7;
-      border-radius: 50px;
-      font-size: 16px;
-      outline: none;
-      transition: all 0.3s ease;
-      background: #f8fdfd;
-    }
-    
-    #search-input:focus {
-      border-color: #0ea5a5;
-      box-shadow: 0 0 0 3px rgba(14, 165, 165, 0.1);
-    }
-    
-    #search-button {
-      background: linear-gradient(135deg, #ff7043 0%, #f4511e 100%);
-      color: white;
-      border: none;
-      border-radius: 50px;
-      padding: 15px 30px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      font-size: 16px;
-    }
-    
-    #search-button:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 20px rgba(255, 112, 67, 0.3);
-    }
-    
-    /* Categories */
-    .categories {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin: 30px 0;
-      justify-content: center;
-    }
-    
-    .category-btn {
-      padding: 10px 20px;
-      background: white;
-      border: 2px solid #e6f7f7;
-      border-radius: 50px;
+    .category-title {
       color: #0c7a7a;
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 500;
-      transition: all 0.3s ease;
-      cursor: pointer;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+      border-bottom: 3px solid #0ea5a5;
+      display: flex;
+      align-items: center;
+      gap: 15px;
     }
     
-    .category-btn:hover, .category-btn.active {
-      background: linear-gradient(135deg, #0ea5a5, #0c7a7a);
-      color: white;
-      border-color: #0ea5a5;
-      transform: translateY(-2px);
+    .category-title .category-icon {
+      font-size: 2rem;
     }
     
-    /* Blog Grid */
     .blog-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-      gap: 30px;
-      margin-top: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 25px;
+      margin-bottom: 40px;
     }
     
     .blog-card {
-      background: white;
+      background: #f8fdfd;
       border-radius: 16px;
-      overflow: hidden;
+      padding: 30px;
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
       transition: all 0.4s ease;
       position: relative;
-      border-left: 4px solid #0ea5a5;
+      overflow: hidden;
+      border-left: 6px solid #0ea5a5;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
     }
     
     .blog-card:hover {
@@ -303,231 +234,87 @@
       border-left-color: #ff7043;
     }
     
-    .blog-card-content {
-      padding: 30px;
-    }
-    
-    .blog-card-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 15px;
-      font-size: 14px;
-      color: #64748b;
-    }
-    
-    .blog-card-title {
-      font-size: 1.4rem;
-      margin-bottom: 15px;
+    .blog-card h3 {
       color: #0c7a7a;
-      line-height: 1.4;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+      line-height: 1.5;
+      flex-grow: 1;
     }
     
-    .blog-card-title a {
+    .blog-card a {
       color: inherit;
       text-decoration: none;
+      display: block;
+      height: 100%;
     }
     
-    .blog-card-title a:hover {
+    .blog-card a:hover h3 {
       color: #ff7043;
     }
     
     .blog-card-excerpt {
-      color: #555;
+      color: #475569;
       margin-bottom: 20px;
       line-height: 1.6;
+      flex-grow: 1;
     }
     
-    .blog-card-footer {
+    .blog-card-meta {
+      color: #64748b;
+      font-size: 0.9rem;
+      margin-top: 15px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      margin-top: 20px;
+      gap: 10px;
     }
     
     .read-more {
       display: inline-block;
       background: linear-gradient(135deg, #0ea5a5, #0c7a7a);
       color: white;
-      padding: 12px 25px;
+      padding: 10px 20px;
       border-radius: 50px;
       text-decoration: none;
       font-weight: 600;
+      font-size: 0.9rem;
       transition: all 0.3s ease;
+      margin-top: 15px;
+      align-self: flex-start;
     }
     
     .read-more:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 20px rgba(14, 165, 165, 0.3);
+      background: linear-gradient(135deg, #0c7a7a, #0a5f5f);
+      transform: translateY(-2px);
     }
     
-    /* Blog Count */
-    .blog-count {
-      text-align: center;
-      color: #64748b;
-      margin-bottom: 20px;
-      font-size: 1rem;
+    /* Breadcrumb */
+    .breadcrumb {
+      background: #f0f9f9;
+      padding: 15px 0;
+      margin-bottom: 40px;
     }
     
-    /* Pagination */
-    .pagination {
+    .breadcrumb .container {
       display: flex;
-      justify-content: center;
-      margin-top: 40px;
+      align-items: center;
       gap: 10px;
+      font-size: 0.9rem;
     }
     
-    .pagination button {
-      padding: 10px 18px;
-      border: 2px solid #e6f7f7;
-      background: white;
-      color: #0c7a7a;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      font-weight: 600;
-    }
-    
-    .pagination button:hover:not(:disabled) {
-      background: linear-gradient(135deg, #0ea5a5, #0c7a7a);
-      color: white;
-      border-color: #0ea5a5;
-    }
-    
-    .pagination button.active {
-      background: linear-gradient(135deg, #0ea5a5, #0c7a7a);
-      color: white;
-      border-color: #0ea5a5;
-    }
-    
-    .pagination button:disabled {
-      opacity: 0.5;
-      cursor: not-allowed;
-    }
-    
-    /* No Results Message */
-    .no-results {
-      text-align: center;
-      padding: 60px;
-      color: #666;
-      font-size: 1.2rem;
-      grid-column: 1 / -1;
-    }
-    
-    /* Blog Index Section */
-    .blog-index-section {
-      background: #f8fdfd;
-      padding: 60px 0;
-      margin-top: 60px;
-      border-radius: 16px;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-    }
-    
-    .blog-index-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 15px;
-      margin-top: 20px;
-    }
-    
-    .blog-index-item {
-      padding: 15px 20px;
-      background: white;
-      border-radius: 8px;
-      border-left: 4px solid #0ea5a5;
-      transition: all 0.3s ease;
-    }
-    
-    .blog-index-item:hover {
-      background: #e0f7fa;
-      transform: translateX(5px);
-      border-left-color: #ff7043;
-    }
-    
-    .blog-index-item a {
-      color: #0c7a7a;
+    .breadcrumb a {
+      color: #0ea5a5;
       text-decoration: none;
-      font-size: 15px;
-      line-height: 1.4;
-      display: block;
+      transition: color 0.3s ease;
     }
     
-    .blog-index-item a:hover {
-      color: #ff7043;
-    }
-    
-    .index-toggle {
-      background: linear-gradient(135deg, #0ea5a5, #0c7a7a);
-      color: white;
-      border: none;
-      padding: 12px 30px;
-      border-radius: 50px;
-      cursor: pointer;
-      margin: 20px auto;
-      display: block;
-      transition: all 0.3s ease;
-      font-size: 16px;
-      font-weight: 600;
-    }
-    
-    .index-toggle:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 20px rgba(14, 165, 165, 0.3);
-    }
-    
-    /* Newsletter Section */
-    .newsletter-section {
-      background: linear-gradient(135deg, rgba(14, 165, 165, 0.95), rgba(12, 122, 122, 0.97));
-      color: white;
-      padding: 60px 0;
-      text-align: center;
-      border-radius: 16px;
-      margin: 60px 0;
-    }
-    
-    .newsletter-section h2 {
-      font-size: 2.2rem;
-      margin-bottom: 20px;
-    }
-    
-    .newsletter-section p {
-      font-size: 1.1rem;
-      max-width: 600px;
-      margin: 0 auto 30px;
-      opacity: 0.95;
-    }
-    
-    .newsletter-form {
-      max-width: 500px;
-      margin: 0 auto;
-      display: flex;
-      gap: 15px;
-    }
-    
-    .newsletter-form input {
-      flex: 1;
-      padding: 15px 20px;
-      border: none;
-      border-radius: 50px;
-      font-size: 16px;
-      outline: none;
-    }
-    
-    .newsletter-form button {
-      background: white;
+    .breadcrumb a:hover {
       color: #0c7a7a;
-      border: none;
-      border-radius: 50px;
-      padding: 15px 30px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      font-size: 16px;
+      text-decoration: underline;
     }
     
-    .newsletter-form button:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+    .breadcrumb span {
+      color: #64748b;
     }
     
     /* Footer Styles */
@@ -639,16 +426,12 @@
     
     /* Responsive styles */
     @media (max-width: 992px) {
-      .blog-hero h1 {
-        font-size: 2.5rem;
+      .hero-title {
+        font-size: 2.8rem;
       }
       
       .section-title {
-        font-size: 2rem;
-      }
-      
-      .blog-grid {
-        grid-template-columns: repeat(2, 1fr);
+        font-size: 2.2rem;
       }
     }
     
@@ -673,28 +456,24 @@
         border-radius: 8px;
       }
       
-      .blog-hero {
-        padding: 40px 0;
+      .hero {
+        padding: 60px 0;
       }
       
-      .blog-hero h1 {
-        font-size: 2rem;
+      .hero-title {
+        font-size: 2.2rem;
       }
       
-      .blog-hero p {
-        font-size: 1rem;
+      .hero-tagline {
+        font-size: 1.2rem;
+      }
+      
+      .section-title {
+        font-size: 1.8rem;
       }
       
       .blog-grid {
         grid-template-columns: 1fr;
-      }
-      
-      .search-container {
-        flex-direction: column;
-      }
-      
-      .newsletter-form {
-        flex-direction: column;
       }
       
       .whatsapp-float {
@@ -707,14 +486,10 @@
       .whatsapp-icon {
         font-size: 30px;
       }
-      
-      .blog-index-grid {
-        grid-template-columns: 1fr;
-      }
     }
     
     @media (max-width: 480px) {
-      .blog-hero h1 {
+      .hero-title {
         font-size: 1.8rem;
       }
       
@@ -722,22 +497,15 @@
         padding: 20px;
       }
       
-      .section-title {
-        font-size: 1.6rem;
+      .category-title {
+        font-size: 1.5rem;
       }
     }
   </style>
-  
-  <!-- Defer non-critical CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  </noscript>
 </head>
 <body>
 <div class="skip"><a href="#main">Skip to content</a></div>
 
-<!-- Header (Same as index.html) -->
 <header class="site-header">
   <div class="container nav">
     <a class="brand" href="https://www.romanulislam.com/index">
@@ -747,6 +515,7 @@
       <span>ডা. রোমানুল ইসলাম</span>
     </a>
     <nav>
+      <a href="https://www.romanulislam.com/index">হোম</a>
       <a href="https://www.romanulislam.com/online-doctor-bd">সেবা</a>
       <a href="https://www.romanulislam.com/blog">ব্লগ</a>
       <a href="https://www.romanulislam.com/reviews">রিভিউ</a>
@@ -758,79 +527,287 @@
 
 <main id="main">
 
-<!-- Blog Hero Section -->
-<section class="blog-hero">
-  <div class="container">
-    <h1>স্বাস্থ্য বিষয়ক ব্লগ</h1>
-    <p>ঘরে বসে স্বাস্থ্য সম্পর্কিত প্রয়োজনীয় তথ্য এবং টিপস জানুন। ৯৭+ ব্লগ পোস্ট থেকে আপনার প্রয়োজনীয় স্বাস্থ্য সমস্যার সমাধান খুঁজে নিন।</p>
-  </div>
-</section>
-
-<!-- Breadcrumb -->
-<div class="container">
+  <!-- Breadcrumb -->
   <div class="breadcrumb">
-    <a href="https://www.romanulislam.com/index">হোম</a> &gt; <span>ব্লগ</span>
+    <div class="container">
+      <a href="https://www.romanulislam.com/index">হোম</a>
+      <span>›</span>
+      <span>ব্লগ</span>
+    </div>
   </div>
-</div>
 
-<!-- Blog Section -->
-<section class="content-section">
-  <div class="container">
-    <h2 class="section-title">সাম্প্রতিক ব্লগ পোস্ট</h2>
-    
-    <!-- Search Section -->
-    <div class="search-section">
-      <div class="search-container">
-        <input type="text" id="search-input" placeholder="ব্লগ পোস্ট খুঁজুন...">
-        <button id="search-button">খুঁজুন</button>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">স্বাস্থ্য বিষয়ক ব্লগ</h1>
+        <p class="hero-tagline">ডা. রোমানুল ইসলামের স্বাস্থ্য ব্লগে স্বাগতম। এখানে আপনি পাবেন স্বাস্থ্য সচেতনতা, রোগ প্রতিরোধ ও চিকিৎসা সংক্রান্ত নানা তথ্য ও পরামর্শ।</p>
       </div>
     </div>
-    
-    <div class="categories" id="categories-container">
-      <!-- Categories will be generated by JavaScript -->
-    </div>
-    
-    <div class="blog-count" id="blog-count">মোট 97টি ব্লগ পোস্ট</div>
-    
-    <div class="blog-grid" id="blog-grid">
-      <!-- Blog posts will be generated by JavaScript -->
-    </div>
-    
-    <div class="pagination" id="pagination">
-      <!-- Pagination will be generated by JavaScript -->
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- BLOG INDEX SECTION -->
-<section class="blog-index-section">
-  <div class="container">
-    <h2 class="section-title">সমস্ত ব্লগ পোস্টের তালিকা</h2>
-    <p style="text-align: center; margin-bottom: 20px; color: #64748b; font-size: 1.1rem;">নিচের তালিকা থেকে সরাসরি আপনার পছন্দের ব্লগ পোস্টে যান</p>
-    
-    <button class="index-toggle" onclick="toggleBlogIndex()">সমস্ত পোস্ট দেখুন</button>
-    
-    <div class="blog-index-grid" id="blog-index-grid" style="display: none;">
-      <!-- Will be populated by JavaScript -->
+  <!-- Blog Content -->
+  <section class="content-section">
+    <div class="container">
+      <h2 class="section-title">বিষয়ভিত্তিক ব্লগ পোস্ট</h2>
+      
+      <!-- ত্বকের রোগ -->
+      <div class="category-section">
+        <h3 class="category-title">
+          <span class="category-icon">🌿</span>
+          ত্বকের রোগ
+        </h3>
+        <div class="blog-grid">
+          <div class="blog-card">
+            <a href="https://www.romanulislam.com/blog/acne">
+              <h3>ব্রণ: কারণ, লক্ষণ, চিকিৎসা ও প্রতিকার | সম্পূর্ণ গাইডলাইন</h3>
+              <p class="blog-card-excerpt">ব্রণ এর কারণ, লক্ষণ, চিকিৎসা ও প্রতিকার নিয়ে সম্পূর্ণ গাইড। এখনই অনলাইনে টেলিমেডিসিন সেবার মাধ্যমে ব্রণের সমাধান নিন।</p>
+              <div class="blog-card-meta">
+                <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
+              </div>
+              <span class="read-more">আরও পড়ুন</span>
+            </a>
+          </div>
+          
+          <div class="blog-card">
+            <a href="https://www.romanulislam.com/blog/allergy">
+              <h3>এলার্জি কি স্থায়ী? ভয়ংকর সত্য ও মুক্তির কার্যকর উপায়</h3>
+              <p class="blog-card-excerpt">এলার্জি কি আপনাকেও কষ্ট দিচ্ছে? ঘরে বসেই টেলিমেডিসিনে ডাক্তার দেখান। জানুন এলার্জি প্রতিরোধ ও কার্যকর চিকিৎসার উপায় আজই।</p>
+              <div class="blog-card-meta">
+                <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
+              </div>
+              <span class="read-more">আরও পড়ুন</span>
+            </a>
+          </div>
+          
+          <div class="blog-card">
+            <a href="https://www.romanulislam.com/blog/dandruff">
+              <h3>চিরতরে খুশকি দূর করবেন কীভাবে? সত্য জানুন আজই</h3>
+              <p class="blog-card-excerpt">খুশকি দূর করার কার্যকর ঘরোয়া ও চিকিৎসা উপায় জানুন। মাথায় খুশকি কেন হয় এবং সমাধান কীভাবে পাবেন, টেলিমেডিসিন সেবা থেকেও পরামর্শ নিন।</p>
+              <div class="blog-card-meta">
+                <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
+              </div>
+              <span class="read-more">আরও পড়ুন</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- পেট ও হজম -->
+      <div class="category-section">
+        <h3 class="category-title">
+          <span class="category-icon">🫀</span>
+          পেট ও হজম
+        </h3>
+        <div class="blog-grid">
+          <div class="blog-card">
+            <a href="https://www.romanulislam.com/blog/acidity">
+              <h3>গ্যাস্ট্রিক এবং অ্যাসিডিটির সমস্যা: কারণ, প্রতিকার ও জীবনযাপনের গাইড</h3>
+              <p class="blog-card-excerpt">গ্যাস্ট্রিক ও অ্যাসিডিটি কী, লক্ষণ, কারণ, চিকিৎসা, ঘরোয়া প্রতিকার এবং FAQ। ডা. রোমানুল ইসলামের সাথে অনলাইন চিকিৎসা পরামর্শ নিন।</p>
+              <div class="blog-card-meta">
+                <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
+              </div>
+              <span class="read-more">আরও পড়ুন</span>
+            </a>
+          </div>
+          
+          <div class="blog-card">
+            <a href="https://www.romanulislam.com/blog/abdominal-pain">
+              <h3>পেটে ব্যথা কি বিপদের লক্ষণ? সত্য জানলে অবাক হবেন!</h3>
+              <p class="blog-card-excerpt">পেটে ব্যথা কেন হয় ও কখন বিপজ্জনক হতে পারে জানুন। ঘরোয়া উপায়, করণীয় ও টেলিমেডিসিনে দ্রুত চিকিৎসা পেতে এখনই জানুন।</p>
+              <div class="blog-card-meta">
+                <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
+              </div>
+              <span class="read-more">আরও পড়ুন</span>
+            </a>
+          </div>
+          
+          <div class="blog-card">
+            <a href="https://www.romanulislam.com/blog/abdominal-distension">
+              <h3>হঠাৎ পেট ফোলা কি বিপজ্জনক? সত্য জানুন এখনই!</h3>
+              <p class="blog-card-excerpt">হঠাৎ বা দীর্ঘদিনের পেট ফোলা নিয়ে দুশ্চিন্তায় আছেন? কারণ, লক্ষণ ও করণীয় জেনে নিন এবং প্রয়োজনে অনলাইনে বিশেষজ্ঞ ডাক্তারের পরামর্শ নিন।</p>
+              <div class="blog-card-meta">
+                <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
+              </div>
+              <span class="read-more">আরও পড়ুন</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- মানসিক স্বাস্থ্য -->
+      <div class="category-section">
+        <h3 class="category-title">
+          <span class="category-icon">🧠</span>
+          মানসিক স্বাস্থ্য
+        </h3>
+        <div class="blog-grid">
+          <div class="blog-card">
+            <a href="https://www.romanulislam.com/blog/depression">
+              <h3>ডিপ্রেশন কি সারানো যায়? সত্যিকারের মুক্তির শক্তিশালী উপায়</h3>
+              <p class="blog-card-excerpt">ডিপ্রেশন নিয়ে ভুগছেন? জানুন ডিপ্রেশনের লক্ষণ, চিকিৎসা, ব্যায়াম ও ডিপ্রেশন থেকে মুক্তির উপায়। অনলাইনে টেলিমেডিসিনে পরামর্শ নিন আজই।</p>
+              <div class="blog-card-meta">
+                <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
+              </div>
+              <span class="read-more">আরও পড়ুন</span>
+            </a>
+          </div>
+          
+          <div class="blog-card">
+            <a href="https://www.romanulislam.com/blog/anger">
+              <h3>রাগ কি নষ্ট করছে আপনার জীবন? নিয়ন্ত্রণের শক্তিশালী উপায় জানুন</h3>
+              <p class="blog-card-excerpt">অতিরিক্ত রাগ দাম্পত্য, পরিবার ও স্বাস্থ্যের ক্ষতি করে। টেলিমেডিসিনের বিশেষজ্ঞদের সহায়তায় রাগ নিয়ন্ত্রণ ও সমাধান জানুন সহজ উপায়ে।</p>
+              <div class="blog-card-meta">
+                <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
+              </div>
+              <span class="read-more">আরও পড়ুন</span>
+            </a>
+          </div>
+          
+          <div class="blog-card">
+            <a href="https://www.romanulislam.com/blog/insomnia">
+              <h3>অনিদ্রা কি জীবন ধ্বংস করছে? ঘুম ফেরানোর শক্তিশালী সমাধান জানুন আজই</h3>
+              <p class="blog-card-excerpt">অনিদ্রা দূর করার কার্যকর উপায়, রাতে ঘুম না আসার কারণ ও চিকিৎসা নিয়ে বিস্তারিত জানুন। এখনই অনলাইনে ডাক্তারের পরামর্শ নিয়ে অনিদ্রা মোকাবিলা করুন।</p>
+              <div class="blog-card-meta">
+                <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
+              </div>
+              <span class="read-more">আরও পড়ুন</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- হাড় ও মাংসপেশি -->
+      <div class="category-section">
+        <h3 class="category-title">
+          <span class="category-icon">🦴</span>
+          হাড় ও মাংসপেশি
+        </h3>
+        <div class="blog-grid">
+          <div class="blog-card">
+            <a href="https://www.romanulislam.com/blog/back-pain">
+              <h3>কোমর ব্যথা কি আপনার জীবন নষ্ট করছে? কারণ, উপশম ও সমাধান</h3>
+              <p class="blog-card-excerpt">কোমর ব্যথা নিয়ে ভুগছেন? এখনই জানুন এর কারণ, প্রতিকার ও চিকিৎসার উপায়। অনলাইনে বিশেষজ্ঞ ডাক্তারের পরামর্শ নিন আজই।</p>
+              <div class="blog-card-meta">
+                <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
+              </div>
+              <span class="read-more">আরও পড়ুন</span>
+            </a>
+          </div>
+          
+          <div class="blog-card">
+            <a href="https://www.romanulislam.com/blog/knee-pain">
+              <h3>হাটুর জয়েন্টে ব্যথা নিয়ে ভুগছেন? সত্যিই ভয়ংকর নাকি সহজ সমাধান আছে?</h3>
+              <p class="blog-card-excerpt">হাটুর জয়েন্টে ব্যথার কারণ, ঘরোয়া চিকিৎসা, খাবার ও ব্যায়ামসহ টেলিমেডিসিনে দ্রুত চিকিৎসকের পরামর্শ পাওয়ার উপায়।</p>
+              <div class="blog-card-meta">
+                <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
+              </div>
+              <span class="read-more">আরও পড়ুন</span>
+            </a>
+          </div>
+          
+          <div class="blog-card">
+            <a href="https://www.romanulislam.com/blog/neck-pain">
+              <h3>ঘাড় ব্যথা কেন হয়? অবহেলা করলে হতে পারে বড় বিপদ!</h3>
+              <p class="blog-card-excerpt">ঘাড় ব্যথা কমানোর উপায়, কারণ ও প্রতিকার জানুন। সঠিক চিকিৎসা ও টেলিমেডিসিন সেবা নিয়ে ঘাড় ব্যথা থেকে মুক্তি পান সহজেই।</p>
+              <div class="blog-card-meta">
+                <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
+              </div>
+              <span class="read-more">আরও পড়ুন</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- এন্ডোক্রাইন ও মেটাবলিক -->
+      <div class="category-section">
+        <h3 class="category-title">
+          <span class="category-icon">⚖️</span>
+          এন্ডোক্রাইন ও মেটাবলিক
+        </h3>
+        <div class="blog-grid">
+          <div class="blog-card">
+            <a href="https://www.romanulislam.com/blog/high-pressure">
+              <h3>হঠাৎ হাই প্রেসার কি মারাত্মক? কারণ, সমাধান ও করণীয়</h3>
+              <p class="blog-card-excerpt">হঠাৎ হাই প্রেসার হলে করণীয়, লক্ষণ, খাদ্য তালিকা ও ঘরোয়া উপায় জানুন। টেলিমেডিসিনে বিশেষজ্ঞ ডাক্তার থেকে অনলাইনে সঠিক চিকিৎসা নিন এখনই।</p>
+              <div class="blog-card-meta">
+                <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
+              </div>
+              <span class="read-more">আরও পড়ুন</span>
+            </a>
+          </div>
+          
+          <div class="blog-card">
+            <a href="https://www.romanulislam.com/blog/low-pressure">
+              <h3>লো প্রেসার কি বিপজ্জনক? অবহেলা করলে মারাত্মক ক্ষতি!</h3>
+              <p class="blog-card-excerpt">হঠাৎ লো প্রেসার হলে করণীয়, ঘরোয়া উপায় ও চিকিৎসা জানুন। এখনই টেলিমেডিসিন সেবায় ডাক্তারদের সাথে পরামর্শ নিয়ে সুস্থ থাকুন।</p>
+              <div class="blog-card-meta">
+                <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
+              </div>
+              <span class="read-more">আরও পড়ুন</span>
+            </a>
+          </div>
+          
+          <div class="blog-card">
+            <a href="https://www.romanulislam.com/blog/weight-loss">
+              <h3>হঠাৎ ওজন কমে যাওয়া বিপদজনক? জানুন আসল কারণ ও প্রতিকার</h3>
+              <p class="blog-card-excerpt">ওজন কমে যাওয়া কেন হয়, এর ঝুঁকি, প্রতিকার ও চিকিৎসা জানুন। টেলিমেডিসিনের মাধ্যমে সহজেই ডাক্তার দেখান ও সঠিক পরামর্শ পান।</p>
+              <div class="blog-card-meta">
+                <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
+              </div>
+              <span class="read-more">আরও পড়ুন</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- শ্বাসনালী ও অ্যালার্জি -->
+      <div class="category-section">
+        <h3 class="category-title">
+          <span class="category-icon">🤧</span>
+          শ্বাসনালী ও অ্যালার্জি
+        </h3>
+        <div class="blog-grid">
+          <div class="blog-card">
+            <a href="https://www.romanulislam.com/blog/nasal-congestion">
+              <h3>নাক বন্ধ হলে কী করবেন: ঘরোয়া সমাধান ও চিকিৎসা</h3>
+              <p class="blog-card-excerpt">নাকের সর্দির কারণ, লক্ষণ, প্রতিকারের ঘরোয়া উপায় ও চিকিৎসা পরামর্শ। দ্রুত টেলিমেডিসিনে ডাক্তারের পরামর্শ নিয়ে সমস্যা সমাধান করুন।</p>
+              <div class="blog-card-meta">
+                <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
+              </div>
+              <span class="read-more">আরও পড়ুন</span>
+            </a>
+          </div>
+          
+          <div class="blog-card">
+            <a href="https://www.romanulislam.com/blog/breathlessness">
+              <h3>শ্বাসকষ্ট কেন হয়? বিপজ্জনক নাকি নিরাময় সম্ভব?</h3>
+              <p class="blog-card-excerpt">শ্বাসকষ্ট একটি সাধারণ কিন্তু কষ্টদায়ক সমস্যা। জানুন শ্বাসকষ্ট এর কারণ, চিকিৎসা, ঘরোয়া উপায় ও মুক্তির সমাধান।</p>
+              <div class="blog-card-meta">
+                <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
+              </div>
+              <span class="read-more">আরও পড়ুন</span>
+            </a>
+          </div>
+          
+          <div class="blog-card">
+            <a href="https://www.romanulislam.com/blog/cough">
+              <h3>রাতে কাশি: স্বাভাবিক নাকি বিপজ্জনক? | কারণ, লক্ষণ ও চিকিৎসা</h3>
+              <p class="blog-card-excerpt">রাতের কাশি বাড়ার কারণ ও কার্যকর প্রতিকার জানুন। দ্রুত টেলিমেডিসিনে ডাক্তার দেখিয়ে নিরাপদ সমাধান নিন।</p>
+              <div class="blog-card-meta">
+                <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
+              </div>
+              <span class="read-more">আরও পড়ুন</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      
     </div>
-  </div>
-</section>
-
-<!-- Newsletter Section -->
-<section class="newsletter-section">
-  <div class="container">
-    <h2>নিয়মিত স্বাস্থ্য টিপস পান</h2>
-    <p>আমাদের নিউজলেটারে সাবস্ক্রাইব করুন এবং নিয়মিত স্বাস্থ্য টিপস, আপডেট এবং বিশেষ অফার পান।</p>
-    <form class="newsletter-form">
-      <input type="email" placeholder="আপনার ইমেইল ঠিকানা" required>
-      <button type="submit">সাবস্ক্রাইব করুন</button>
-    </form>
-  </div>
-</section>
+  </section>
 
 </main>
 
-<!-- Footer (Same as index.html) -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -871,318 +848,29 @@
   <span class="whatsapp-icon">💬</span>
 </a>
 
-<!-- Hidden Sitemap for SEO -->
-<div style="display: none;" aria-hidden="true">
-  <h2>সমস্ত ব্লগ পোস্ট</h2>
-  <ul>
-    <!-- Same list of blog posts as before -->
-    <li><a href="https://www.romanulislam.com/blog/abdominal-distension">হঠাৎ পেট ফোলা কি বিপজ্জনক? সত্য জানুন এখনই!</a></li>
-    <li><a href="https://www.romanulislam.com/blog/abdominal-pain">পেটে ব্যথা কি বিপদের লক্ষণ? সত্য জানলে অবাক হবেন!</a></li>
-    <!-- ... (rest of the blog post links) ... -->
-  </ul>
-</div>
-
+<!-- JavaScript -->
 <script>
-  // COMPLETE blogPosts array with ALL 97 posts
-  const blogPosts = [
-    // ... (same blogPosts array as in the original file) ...
-    // Due to character limit, I'm keeping the array structure but you should copy the full array from your original file
-    // The array contains 97 blog post objects with title, excerpt, link, categories
-  ];
-
-  // Initialize page
+  // Set current year for copyright
   document.addEventListener('DOMContentLoaded', function() {
-    initializeBlogPage();
+    // Animation on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
     
-    // Set current year for copyright
-    document.getElementById('year').textContent = new Date().getFullYear();
-    
-    // Load AOS animation library asynchronously
-    function loadAOS() {
-      if (typeof AOS !== 'undefined') {
-        AOS.init({
-          duration: 800,
-          easing: 'ease-in-out',
-          once: true,
-          offset: 100
-        });
-      }
-    }
-    
-    if (window.requestIdleCallback) {
-      window.requestIdleCallback(function() {
-        var script = document.createElement('script');
-        script.src = 'https://unpkg.com/aos@2.3.4/dist/aos.js';
-        script.onload = loadAOS;
-        document.body.appendChild(script);
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+        }
       });
-    } else {
-      setTimeout(function() {
-        var script = document.createElement('script');
-        script.src = 'https://unpkg.com/aos@2.3.4/dist/aos.js';
-        script.onload = loadAOS;
-        document.body.appendChild(script);
-      }, 1000);
-    }
-  });
-
-  // Main initialization function
-  function initializeBlogPage() {
-    // State variables
-    let currentPage = 1;
-    const postsPerPage = 6;
-    let currentCategory = 'all';
-    let currentSearchTerm = '';
+    }, observerOptions);
     
-    // DOM elements
-    const blogGrid = document.getElementById('blog-grid');
-    const pagination = document.getElementById('pagination');
-    const blogCount = document.getElementById('blog-count');
-    const searchInput = document.getElementById('search-input');
-    const searchButton = document.getElementById('search-button');
-    const categoriesContainer = document.getElementById('categories-container');
-    
-    if (!blogGrid) return;
-    
-    // Generate categories from blogPosts
-    const categoryFrequency = {};
-    blogPosts.forEach(post => {
-      if (Array.isArray(post.categories)) {
-        post.categories.forEach(cat => {
-          if (cat) categoryFrequency[cat] = (categoryFrequency[cat] || 0) + 1;
-        });
-      }
+    // Observe elements
+    document.querySelectorAll('.blog-card').forEach(el => {
+      observer.observe(el);
     });
-    
-    const categories = Object.keys(categoryFrequency).sort((a, b) => 
-      categoryFrequency[b] - categoryFrequency[a]
-    );
-    
-    // Generate category buttons dynamically
-    if (categoriesContainer) {
-      categoriesContainer.innerHTML = '';
-      
-      // Add "All" button
-      const allBtn = document.createElement('button');
-      allBtn.className = 'category-btn active';
-      allBtn.dataset.category = 'all';
-      allBtn.textContent = 'সব বিষয়';
-      categoriesContainer.appendChild(allBtn);
-      
-      // Add category buttons
-      categories.forEach(cat => {
-        const btn = document.createElement('button');
-        btn.className = 'category-btn';
-        btn.dataset.category = cat;
-        btn.textContent = cat;
-        categoriesContainer.appendChild(btn);
-      });
-      
-      // Add event listeners to category buttons
-      categoriesContainer.addEventListener('click', function(e) {
-        const btn = e.target.closest('.category-btn');
-        if (!btn) return;
-        
-        // Update active button
-        categoriesContainer.querySelectorAll('.category-btn').forEach(b => 
-          b.classList.remove('active')
-        );
-        btn.classList.add('active');
-        
-        // Update state and display
-        currentCategory = btn.dataset.category;
-        currentPage = 1;
-        displayBlogPosts();
-      });
-    }
-    
-    // Search functionality
-    if (searchButton) {
-      searchButton.addEventListener('click', function() {
-        currentSearchTerm = searchInput ? searchInput.value.trim().toLowerCase() : '';
-        currentPage = 1;
-        displayBlogPosts();
-      });
-    }
-    
-    if (searchInput) {
-      searchInput.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter') {
-          currentSearchTerm = this.value.trim().toLowerCase();
-          currentPage = 1;
-          displayBlogPosts();
-        }
-      });
-    }
-    
-    // Filter blog posts based on current state
-    function filterBlogPosts() {
-      return blogPosts.filter(post => {
-        // Check category filter
-        const matchesCategory = currentCategory === 'all' || 
-          (Array.isArray(post.categories) && post.categories.includes(currentCategory));
-        
-        // Check search filter
-        const matchesSearch = !currentSearchTerm || 
-          (post.title && post.title.toLowerCase().includes(currentSearchTerm)) ||
-          (post.excerpt && post.excerpt.toLowerCase().includes(currentSearchTerm));
-        
-        return matchesCategory && matchesSearch;
-      });
-    }
-    
-    // Display blog posts with pagination
-    function displayBlogPosts() {
-      const filteredPosts = filterBlogPosts();
-      const totalPages = Math.max(1, Math.ceil(filteredPosts.length / postsPerPage));
-      
-      // Update blog count
-      if (blogCount) {
-        blogCount.textContent = `মোট ${filteredPosts.length}টি ব্লগ পোস্ট`;
-      }
-      
-      // Clear current grid
-      blogGrid.innerHTML = '';
-      
-      if (filteredPosts.length === 0) {
-        blogGrid.innerHTML = `
-          <div class="no-results">
-            দুঃখিত, আপনার অনুসন্ধানের সাথে মিলছে না এমন কোনো ব্লগ পোস্ট পাওয়া যায়নি।
-          </div>
-        `;
-        if (pagination) pagination.innerHTML = '';
-        return;
-      }
-      
-      // Adjust current page if needed
-      if (currentPage > totalPages) currentPage = totalPages;
-      
-      // Calculate posts to show
-      const startIndex = (currentPage - 1) * postsPerPage;
-      const endIndex = Math.min(startIndex + postsPerPage, filteredPosts.length);
-      const postsToShow = filteredPosts.slice(startIndex, endIndex);
-      
-      // Render posts
-      postsToShow.forEach(post => {
-        const blogCard = document.createElement('div');
-        blogCard.className = 'blog-card';
-        blogCard.innerHTML = `
-          <div class="blog-card-content">
-            <div class="blog-card-meta">
-              <span>${post.author || 'ডা. রোমানুল ইসলাম'}</span>
-            </div>
-            <h3 class="blog-card-title">
-              <a href="${post.link}">${post.title}</a>
-            </h3>
-            <p class="blog-card-excerpt">${post.excerpt || ''}</p>
-            <div class="blog-card-footer">
-              <a href="${post.link}" class="read-more">আরও পড়ুন</a>
-            </div>
-          </div>
-        `;
-        blogGrid.appendChild(blogCard);
-      });
-      
-      // Render pagination
-      renderPagination(totalPages);
-    }
-    
-    // Render pagination controls
-    function renderPagination(totalPages) {
-      if (!pagination) return;
-      
-      pagination.innerHTML = '';
-      
-      // Previous button
-      const prevBtn = document.createElement('button');
-      prevBtn.className = 'pagination-btn';
-      prevBtn.textContent = '← পূর্ববর্তী';
-      prevBtn.disabled = currentPage === 1;
-      prevBtn.addEventListener('click', function() {
-        if (currentPage > 1) {
-          currentPage--;
-          displayBlogPosts();
-        }
-      });
-      pagination.appendChild(prevBtn);
-      
-      // Page numbers
-      const range = 2;
-      const start = Math.max(1, currentPage - range);
-      const end = Math.min(totalPages, currentPage + range);
-      
-      for (let i = start; i <= end; i++) {
-        const pageBtn = document.createElement('button');
-        pageBtn.className = 'pagination-btn' + (i === currentPage ? ' active' : '');
-        pageBtn.textContent = i;
-        pageBtn.disabled = i === currentPage;
-        pageBtn.addEventListener('click', function() {
-          currentPage = i;
-          displayBlogPosts();
-        });
-        pagination.appendChild(pageBtn);
-      }
-      
-      // Next button
-      const nextBtn = document.createElement('button');
-      nextBtn.className = 'pagination-btn';
-      nextBtn.textContent = 'পরবর্তী →';
-      nextBtn.disabled = currentPage === totalPages;
-      nextBtn.addEventListener('click', function() {
-        if (currentPage < totalPages) {
-          currentPage++;
-          displayBlogPosts();
-        }
-      });
-      pagination.appendChild(nextBtn);
-    }
-    
-    // Generate blog index for toggle section
-    function generateBlogIndex() {
-      const indexGrid = document.getElementById('blog-index-grid');
-      if (!indexGrid) return;
-      
-      let indexHTML = '';
-      blogPosts.forEach(post => {
-        indexHTML += `
-          <div class="blog-index-item">
-            <a href="${post.link}">${post.title}</a>
-          </div>
-        `;
-      });
-      
-      indexGrid.innerHTML = indexHTML;
-    }
-    
-    // Initialize everything
-    generateBlogIndex();
-    displayBlogPosts();
-  }
-  
-  // Toggle blog index visibility
-  window.toggleBlogIndex = function() {
-    const indexGrid = document.getElementById('blog-index-grid');
-    const toggleBtn = document.querySelector('.index-toggle');
-    
-    if (!indexGrid || !toggleBtn) return;
-    
-    if (indexGrid.style.display === 'none') {
-      indexGrid.style.display = 'grid';
-      toggleBtn.textContent = 'তালিকা লুকান';
-    } else {
-      indexGrid.style.display = 'none';
-      toggleBtn.textContent = 'সমস্ত পোস্ট দেখুন';
-    }
-  };
-</script>
-
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-S8DEQ62FVN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-S8DEQ62FVN');
+  });
 </script>
 </body>
 </html>
