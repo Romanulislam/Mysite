@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon from index.html -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='grad1' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%230ea5a5;stop-opacity:1'/><stop offset='100%' style='stop-color:%230c7a7a;stop-opacity:1'/></linearGradient></defs><circle cx='50' cy='50' r='45' fill='url(%23grad1)'/><path d='M35,35 L45,35 L45,45 L35,45 Z' fill='white'/><path d='M55,35 L65,35 L65,45 L55,45 Z' fill='white'/><path d='M40,55 L60,55 L60,65 L40,65 Z' fill='white'/><path d='M45,45 L55,45 L55,55 L45,55 Z' fill='white'/><path d='M40,45 L45,45 L45,50 L40,50 Z' fill='white'/><path d='M55,45 L60,45 L60,50 L55,50 Z' fill='white'/><path d='M45,50 L55,50 L55,55 L45,55 Z' fill='white'/></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='grad1' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%230ea5a5;stop-opacity:1'/><stop offset='100%' style='stop-color:%230c7a7a;stop-opacity:1'/></linearGradient></defs><circle cx='50' cy='50' r='45' fill='url(%23grad1)'/><path d='M35,35 L45,35 L45,45 L35,45 Z' fill='white'/><path d='M55,35 L65,35 L65,45 L55,45 Z' fill='white'/><path d='M40,55 L60,55 L60,65 L40,65 Z' fill='white'/><path d='M45,45 L55,45 L55,55 L45,55 Z' fill='white'/><path d='M40,45 L45,45 L45,50 L40,50 Z' fill='white'/><path d='M55,45 L60,45 L60,50 L55,50 Z' fill='white'/><path d='M45,50 L55,50 L55,55 L45,55 Z' fill='white'/></svg>">
+    <meta name="apple-mobile-web-app-title" content="ডা. রোমানুল ইসলাম">
+    
     <link rel="canonical" href="https://www.romanulislam.com/contact">
     
     <title>টেলিমেডিসিনে যোগাযোগ | অনলাইন ডাক্তারের পরামর্শ - ডা. রোমানুল ইসলাম</title>
@@ -53,85 +59,99 @@
     }
     </script>
     
+    <!-- Fonts from index.html -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Noto Sans Bengali', 'Inter', sans-serif;
         }
         
         body {
             background-color: #f8fcfc;
             color: #1e293b;
-            line-height: 1.6;
+            line-height: 1.7;
             overflow-x: hidden;
             width: 100%;
         }
         
         .container {
+            width: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 15px;
-            width: 100%;
+            padding: 0 20px;
         }
         
-        /* Header */
-        header {
+        /* Updated Header from index.html */
+        .site-header {
             background: linear-gradient(135deg, #0ea5a5 0%, #0c7a7a 100%);
             color: white;
             padding: 15px 0;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-            width: 100%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         
-        .header-content {
+        .nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
+        }
+        
+        .brand {
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }
         
         .logo {
-            font-size: 20px;
-            font-weight: 700;
             display: flex;
             align-items: center;
-        }
-        
-        .logo span {
-            margin-right: 8px;
-            font-size: 24px;
-        }
-        
-        nav {
-            width: 100%;
-            margin-top: 15px;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-            flex-wrap: wrap;
             justify-content: center;
+            width: 42px;
+            height: 42px;
+            background: white;
+            border-radius: 50%;
+            padding: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
         }
         
-        nav ul li {
-            margin: 5px 10px;
+        .logo-icon {
+            font-size: 22px;
+            color: #0c7a7a;
         }
         
-        nav ul li a {
+        .site-header nav {
+            display: flex;
+        }
+        
+        .site-header nav a {
             color: white;
             text-decoration: none;
+            margin-left: 25px;
             font-weight: 500;
             transition: all 0.3s ease;
-            padding: 5px 10px;
-            border-radius: 4px;
-            font-size: 15px;
-            display: block;
+            padding: 8px 12px;
+            border-radius: 6px;
         }
         
-        nav ul li a:hover, nav ul li a:focus {
+        .site-header nav a:hover {
+            color: #0c7a7a;
+            background-color: white;
+            transform: translateY(-2px);
+        }
+        
+        .site-header nav a[aria-current="page"] {
             color: #0c7a7a;
             background-color: white;
         }
@@ -568,19 +588,6 @@
         
         /* Responsive Design */
         @media (min-width: 768px) {
-            .header-content {
-                flex-wrap: nowrap;
-            }
-            
-            nav {
-                width: auto;
-                margin-top: 0;
-            }
-            
-            nav ul {
-                justify-content: flex-end;
-            }
-            
             .hero h1 {
                 font-size: 2.8rem;
             }
@@ -602,6 +609,27 @@
         }
         
         @media (max-width: 767px) {
+            /* Updated header responsive from index.html */
+            .nav {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+            
+            .site-header nav {
+                width: 100%;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            
+            .site-header nav a {
+                margin: 5px;
+                padding: 8px 15px;
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 8px;
+            }
+            
             .reassurance-section, .service-clarification, 
             .doctor-identity, .chamber-section, .legal-notice {
                 padding: 25px;
@@ -626,24 +654,23 @@
     </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <div class="header-content">
+    <!-- Header from index.html -->
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="https://www.romanulislam.com/index">
                 <div class="logo">
-                    <span>👨‍⚕️</span> ডা. রোমানুল ইসলাম
+                    <span class="logo-icon">🩺</span>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="https://www.romanulislam.com/index">হোম</a></li>
-                        <li><a href="https://www.romanulislam.com/online-doctor-bd">সেবা</a></li>
-                        <li><a href="https://www.romanulislam.com/blog">ব্লগ</a></li>
-                        <li><a href="https://www.romanulislam.com/reviews">রিভিউ</a></li>
-                        <li><a href="https://www.romanulislam.com/about">আমার সম্পর্কে</a></li>
-                        <li><a href="https://www.romanulislam.com/contact" aria-current="page">যোগাযোগ</a></li>
-                    </ul>
-                </nav>
-            </div>
+                <span>ডা. রোমানুল ইসলাম</span>
+            </a>
+            <nav>
+                <a href="https://www.romanulislam.com/index">হোম</a>
+                <a href="https://www.romanulislam.com/online-doctor-bd">সেবা</a>
+                <a href="https://www.romanulislam.com/blog">ব্লগ</a>
+                <a href="https://www.romanulislam.com/reviews">রিভিউ</a>
+                <a href="https://www.romanulislam.com/about">আমার সম্পর্কে</a>
+                <a href="https://www.romanulislam.com/contact" aria-current="page">যোগাযোগ</a>
+            </nav>
         </div>
     </header>
 
