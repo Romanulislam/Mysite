@@ -8,49 +8,49 @@
   </url>
 
   <url>
-    <loc>https://www.romanulislam.com/about.html</loc>
+    <loc>https://www.romanulislam.com/about </loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.romanulislam.com/online-doctor-bd.html</loc>
+    <loc>https://www.romanulislam.com/online-doctor-bd </loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.romanulislam.com/reviews.html</loc>
+    <loc>https://www.romanulislam.com/reviews </loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.romanulislam.com/contact.html</loc>
+    <loc>https://www.romanulislam.com/contact </loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.romanulislam.com/blog.html</loc>
+    <loc>https://www.romanulislam.com/blog </loc>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.romanulislam.com/privacy-policy.html</loc>
+    <loc>https://www.romanulislam.com/privacy-policy </loc>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.romanulislam.com/disclaimer.html</loc>
+    <loc>https://www.romanulislam.com/disclaimer </loc>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.romanulislam.com/404.html</loc>
+    <loc>https://www.romanulislam.com/404 </loc>
     <priority>0.1</priority>
     <changefreq>yearly</changefreq>
   </url>
