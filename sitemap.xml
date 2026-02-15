@@ -49,10 +49,4 @@
     <changefreq>yearly</changefreq>
   </url>
 
-  <url>
-    <loc>https://www.romanulislam.com/404 </loc>
-    <priority>0.1</priority>
-    <changefreq>yearly</changefreq>
-  </url>
-
 </urlset>
