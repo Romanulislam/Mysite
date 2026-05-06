@@ -1,3 +1,5 @@
+Here is the updated HTML file with your new chambers added, a weekly schedule calendar, and live map locations included.
+```html
 <!DOCTYPE html>
 <html lang="bn">
 <head>
@@ -436,7 +438,7 @@
         }
         
         .map-container {
-            height: 300px;
+            height: 260px;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -447,6 +449,85 @@
             width: 100%;
             height: 100%;
             border: 0;
+        }
+        
+        /* Weekly Calendar Styles */
+        .weekly-calendar {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            margin-bottom: 40px;
+            overflow-x: auto;
+        }
+        
+        .calendar-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+        }
+        
+        .calendar-table th {
+            background: #0ea5a5;
+            color: white;
+            padding: 14px 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            border: 1px solid #1ba5a5;
+        }
+        
+        .calendar-table td {
+            border: 1px solid #e2e8f0;
+            padding: 14px 8px;
+            vertical-align: top;
+            background-color: #fefefe;
+        }
+        
+        .chamber-slot {
+            margin-bottom: 12px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #cbd5e1;
+        }
+        
+        .chamber-slot:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .chamber-name {
+            font-weight: 700;
+            color: #0c7a7a;
+            display: block;
+            font-size: 0.9rem;
+        }
+        
+        .chamber-time {
+            font-size: 0.8rem;
+            color: #2d6a6a;
+            display: block;
+            margin-top: 4px;
+        }
+        
+        .empty-slot {
+            color: #94a3b8;
+            font-style: italic;
+            font-size: 0.85rem;
+            text-align: center;
+        }
+        
+        .calendar-note {
+            margin-top: 20px;
+            background: #f0fdf4;
+            padding: 12px 20px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            color: #166534;
+            border-left: 4px solid #22c55e;
         }
         
         /* Legal Notice */
@@ -609,7 +690,6 @@
         }
         
         @media (max-width: 767px) {
-            /* Updated header responsive from index.html */
             .nav {
                 flex-direction: column;
                 text-align: center;
@@ -631,7 +711,7 @@
             }
             
             .reassurance-section, .service-clarification, 
-            .doctor-identity, .chamber-section, .legal-notice {
+            .doctor-identity, .chamber-section, .legal-notice, .weekly-calendar {
                 padding: 25px;
             }
             
@@ -648,13 +728,18 @@
             }
             
             .map-container {
-                height: 250px;
+                height: 220px;
+            }
+            
+            .calendar-table th, .calendar-table td {
+                padding: 8px 4px;
+                font-size: 0.8rem;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header from index.html -->
+    <!-- Header -->
     <header class="site-header">
         <div class="container nav">
             <a class="brand" href="https://www.romanulislam.com/index">
@@ -674,7 +759,6 @@
         </div>
     </header>
 
-
     <!-- Breadcrumb -->
     <div class="container">
         <div class="breadcrumb">
@@ -682,9 +766,8 @@
         </div>
     </div>
 
-    <!-- Main Content -->
     <main class="container">
-        <!-- Section 1: Reassurance Intro -->
+        <!-- Reassurance Section -->
         <section class="reassurance-section">
             <h2 class="section-title">আপনার স্বাস্থ্য আমাদের অগ্রাধিকার</h2>
             <div class="reassurance-grid">
@@ -706,56 +789,90 @@
             </div>
         </section>
 
-        <!-- Section 2: Chamber Information -->
+        <!-- Chamber Section (Existing + New) -->
         <section class="chamber-section">
             <h2 class="section-title">সরাসরি পরামর্শের জন্য চেম্বার সমূহ</h2>
             <div class="chamber-grid">
+                <!-- Existing: Prime Health Care -->
                 <div class="chamber-card">
                     <h3>প্রাইম হেলথ কেয়ার - Prime Health Care</h3>
                     <p><strong>ঠিকানা:</strong> এ.এস.এম. জেদ্দা কমপ্লেক্স, (আল মদিনা ক্লাব এর ২য় তলা), কল্পলোক আবাসিকের বিপরীতে, পূর্ব বাকলিয়া, চট্টগ্রাম</p>
                     <p><strong>সময়সূচী:</strong> সোমবার, বুধবার ও শুক্রবারঃ সন্ধ্যা ৭:০০ টা থেকে রাত ১০:০০ টা</p>
                     <p><strong>সিরিয়ালের জন্য যোগাযোগঃ</strong> 01860613399, 01826589958</p>
-                    
                     <div class="map-container">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22488.738575682317!2d91.84594983816733!3d22.35265994599499!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad2700689303d9%3A0x9817fd42dec4b822!2z4Kaq4KeN4Kaw4Ka-4KaH4KauIOCmueCnh-CmsuCmpSDgppXgp4fgp5_gpr7gprAgLSBQcmltZSBIZWFsdGggQ2FyZQ!5e0!3m2!1sbn!2sbd!4v1757836147899!5m2!1sbn!2sbd" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade" 
-                            title="ডা. রোমানুল ইসলামের প্রাইম হেলথ কেয়ার চেম্বারের গুগল ম্যাপ লোকেশন"
-                            aria-label="ডা. রোমানুল ইসলামের প্রাইম হেলথ কেয়ার চেম্বারের গুগল ম্যাপ লোকেশন">
-                        </iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22488.738575682317!2d91.84594983816733!3d22.35265994599499!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad2700689303d9%3A0x9817fd42dec4b822!2z4Kaq4KeN4Kaw4Ka-4KaH4KauIOCmueCnh-CmsuCmpSDgppXgp4fgp5_gpr7gprAgLSBQcmltZSBIZWFsdGggQ2FyZQ!5e0!3m2!1sbn!2sbd!4v1757836147899!5m2!1sbn!2sbd" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="প্রাইম হেলথ কেয়ার ম্যাপ"></iframe>
                     </div>
                 </div>
                 
+                <!-- Existing: Messars Chowdhury Pharmacy -->
                 <div class="chamber-card">
                     <h3>মেসার্স চৌধুরী ফার্মেসী</h3>
                     <p><strong>ঠিকানা:</strong> মালঘর বাজার, আনোয়ারা, চট্টগ্রাম</p>
                     <p><strong>রোগী দেখার সময়সূচী:</strong> প্রতি শনিবার ও মঙ্গলবার বিকাল ৪ টা থেকে রাত ৮ টা</p>
-                    <p><strong>সিরিয়ালের জন্য যোগাযোগঃ</strong> 01829383741 </p>
-                    
+                    <p><strong>সিরিয়ালের জন্য যোগাযোগঃ</strong> 01829383741</p>
                     <div class="map-container">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3693.995404360385!2d91.92751047383686!3d22.202280946443942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad18eaa4cd41a3%3A0x33bc97cc7aef3fb5!2sMalghar%20Bazar!5e0!3m2!1sbn!2sbd!4v1770329935620!5m2!1sbn!2sbd"
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade" 
-                            title="ডা. রোমানুল ইসলামের মেসার্স চৌধুরী ফার্মেসী চেম্বারের গুগল ম্যাপ লোকেশন"
-                            aria-label="ডা. রোমানুল ইসলামের মেসার্স চৌধুরী ফার্মেসী চেম্বারের গুগল ম্যাপ লোকেশন">
-                        </iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3693.995404360385!2d91.92751047383686!3d22.202280946443942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad18eaa4cd41a3%3A0x33bc97cc7aef3fb5!2sMalghar%20Bazar!5e0!3m2!1sbn!2sbd!4v1770329935620!5m2!1sbn!2sbd" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="মেসার্স চৌধুরী ফার্মেসী ম্যাপ"></iframe>
+                    </div>
+                </div>
+
+                <!-- NEW: Check up diagnostic center -->
+                <div class="chamber-card">
+                    <h3>চেকআপ ডায়াগনস্টিক সেন্টার - Checkup Diagnostic Center</h3>
+                    <p><strong>ঠিকানা:</strong> চেকআপ ডায়াগনস্টিক, চট্টগ্রাম (ম্যাপে অবস্থান দেখুন)</p>
+                    <p><strong>সময়সূচী:</strong> রবিবার, মঙ্গলবার, বৃহস্পতিবার | বিকাল ৩ টা থেকে</p>
+                    <p><strong>সিরিয়ালের জন্য যোগাযোগঃ</strong> 01826589958, 01860613399</p>
+                    <div class="map-container">
+                        <iframe src="https://maps.google.com/maps?q=22.20967112167871,92.01156228835721&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="চেকআপ ডায়াগনস্টিক সেন্টার লোকেশন"></iframe>
+                    </div>
+                </div>
+
+                <!-- NEW: Popular diagnostic -->
+                <div class="chamber-card">
+                    <h3>পপুলার ডায়াগনস্টিক সেন্টার - Popular Diagnostic</h3>
+                    <p><strong>ঠিকানা:</strong> পপুলার ডায়াগনস্টিক সেন্টার, চট্টগ্রাম (ম্যাপে অবস্থান দেখুন)</p>
+                    <p><strong>সময়সূচী:</strong> রবিবার ও বৃহস্পতিবার | বিকাল ৪ টা থেকে</p>
+                    <p><strong>সিরিয়ালের জন্য যোগাযোগঃ</strong> 01826589958, 01829383741</p>
+                    <div class="map-container">
+                        <iframe src="https://maps.google.com/maps?q=22.21373303127696,92.02969266405323&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="পপুলার ডায়াগনস্টিক সেন্টার লোকেশন"></iframe>
                     </div>
                 </div>
             </div>
         </section>
 
-            <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>টেলিমেডিসিনে যোগাযোগ করুন</h1>
-            <p>লাইসেন্সপ্রাপ্ত এমবিবিএস ডাক্তারের সাথে অনলাইন স্বাস্থ্য পরামর্শের জন্য সরাসরি যোগাযোগ করুন।</p>
-            <p>আপনার গোপনীয়তা আমাদের সর্বোচ্চ অগ্রাধিকার এবং সমস্ত যোগাযোগ নিরাপদভাবে পরিচালিত হয়।</p>
-        </div>
-    </section>
+        <!-- Weekly Schedule Calendar for Non-Smart Patients -->
+        <section class="weekly-calendar">
+            <h2 class="section-title">সাপ্তাহিক চেম্বার সময়সূচী (সহজ বোঝার জন্য)</h2>
+            <div style="overflow-x: auto;">
+                <table class="calendar-table">
+                    <thead>
+                        <tr><th>দিন</th><th>চেম্বারের নাম ও সময়</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>রবিবার</strong></td><td><div class="chamber-slot"><span class="chamber-name">🏥 চেকআপ ডায়াগনস্টিক সেন্টার</span><span class="chamber-time">বিকাল ৩:০০ টা থেকে</span></div><div class="chamber-slot"><span class="chamber-name">🔬 পপুলার ডায়াগনস্টিক সেন্টার</span><span class="chamber-time">বিকাল ৪:০০ টা থেকে</span></div></td></tr>
+                        <tr><td><strong>সোমবার</strong></td><td><div class="chamber-slot"><span class="chamber-name">🩺 প্রাইম হেলথ কেয়ার</span><span class="chamber-time">সন্ধ্যা ৭:০০ - রাত ১০:০০</span></div></td></tr>
+                        <tr><td><strong>মঙ্গলবার</strong></td><td><div class="chamber-slot"><span class="chamber-name">💊 মেসার্স চৌধুরী ফার্মেসী</span><span class="chamber-time">বিকাল ৪:০০ - রাত ৮:০০</span></div><div class="chamber-slot"><span class="chamber-name">🏥 চেকআপ ডায়াগনস্টিক সেন্টার</span><span class="chamber-time">বিকাল ৩:০০ টা থেকে</span></div></td></tr>
+                        <tr><td><strong>বুধবার</strong></td><td><div class="chamber-slot"><span class="chamber-name">🩺 প্রাইম হেলথ কেয়ার</span><span class="chamber-time">সন্ধ্যা ৭:০০ - রাত ১০:০০</span></div></td></tr>
+                        <tr><td><strong>বৃহস্পতিবার</strong></td><td><div class="chamber-slot"><span class="chamber-name">🏥 চেকআপ ডায়াগনস্টিক সেন্টার</span><span class="chamber-time">বিকাল ৩:০০ টা থেকে</span></div><div class="chamber-slot"><span class="chamber-name">🔬 পপুলার ডায়াগনস্টিক সেন্টার</span><span class="chamber-time">বিকাল ৪:০০ টা থেকে</span></div></td></tr>
+                        <tr><td><strong>শুক্রবার</strong></td><td><div class="chamber-slot"><span class="chamber-name">🩺 প্রাইম হেলথ কেয়ার</span><span class="chamber-time">সন্ধ্যা ৭:০০ - রাত ১০:০০</span></div></td></tr>
+                        <tr><td><strong>শনিবার</strong></td><td><div class="chamber-slot"><span class="chamber-name">💊 মেসার্স চৌধুরী ফার্মেসী</span><span class="chamber-time">বিকাল ৪:০০ - রাত ৮:০০</span></div></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="calendar-note">
+                📌 দ্রষ্টব্য: উপরের সময়গুলো সিরিয়াল অনুযায়ী। সিরিয়াল সংরক্ষণের জন্য প্রতিটি চেম্বারের পাশে উল্লেখিত নম্বরে যোগাযোগ করুন। জরুরি প্রয়োজনে হোয়াটসঅ্যাপ ও ফোন কল পাওয়া যায় (সকাল ৭টা - রাত ১টা)।
+            </div>
+        </section>
 
-        <!-- Section 3: Primary Contact Methods -->
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>টেলিমেডিসিনে যোগাযোগ করুন</h1>
+                <p>লাইসেন্সপ্রাপ্ত এমবিবিএস ডাক্তারের সাথে অনলাইন স্বাস্থ্য পরামর্শের জন্য সরাসরি যোগাযোগ করুন।</p>
+                <p>আপনার গোপনীয়তা আমাদের সর্বোচ্চ অগ্রাধিকার এবং সমস্ত যোগাযোগ নিরাপদভাবে পরিচালিত হয়।</p>
+            </div>
+        </section>
+
+        <!-- Primary Contact Methods -->
         <section class="primary-contact-section">
             <div class="container">
                 <h2 class="section-title">সরাসরি যোগাযোগ করুন</h2>
@@ -764,71 +881,38 @@
                         <span class="contact-icon">💬</span>
                         <h3>WhatsApp-এ মেসেজ করুন</h3>
                         <p>সরাসরি WhatsApp-এ আপনার স্বাস্থ্য সমস্যা সম্পর্কে লিখুন এবং দ্রুত উত্তর পান।</p>
-                        <a class="whatsapp-btn" href="https://wa.me/8801826589958?text=স্যার, আমি অনলাইন ডাক্তারের পরামর্শ নিতে চাই" target="_blank" rel="noopener">
-                            WhatsApp-এ মেসেজ দিন
-                        </a>
+                        <a class="whatsapp-btn" href="https://wa.me/8801826589958?text=স্যার, আমি অনলাইন ডাক্তারের পরামর্শ নিতে চাই" target="_blank" rel="noopener">WhatsApp-এ মেসেজ দিন</a>
                     </div>
                     <div class="contact-option">
                         <span class="contact-icon">📞</span>
                         <h3>ফোনে কল করুন</h3>
                         <p>সরাসরি ফোনে কথা বলুন এবং তাৎক্ষণিক স্বাস্থ্য পরামর্শ নিন।</p>
-                        <a class="phone-btn" href="tel:+8801826589958">
-                            +8801826589958 এ কল করুন
-                        </a>
+                        <a class="phone-btn" href="tel:+8801826589958">+8801826589958 এ কল করুন</a>
                     </div>
                     <div class="contact-option">
                         <span class="contact-icon">📧</span>
                         <h3>ইমেইল করুন</h3>
                         <p>বিস্তারিত স্বাস্থ্য বিষয়ের জন্য ইমেইলের মাধ্যমে যোগাযোগ করুন।</p>
-                        <a class="phone-btn" href="mailto:roman@romanulislam.com">
-                            roman@romanulislam.com
-                        </a>
+                        <a class="phone-btn" href="mailto:roman@romanulislam.com">roman@romanulislam.com</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 4: Doctor Identity -->
+        <!-- Doctor Identity -->
         <section class="doctor-identity">
             <h2>ডাক্তারের পরিচয় ও যোগ্যতা</h2>
             <div class="doctor-info-grid">
-                <div class="doctor-info-item">
-                    <h3>পুরো নাম</h3>
-                    <p>ডাক্তার মোহাম্মদ রোমানুল ইসলাম</p>
-                </div>
-                <div class="doctor-info-item">
-                    <h3>যোগ্যতা</h3>
-                    <p>এমবিবিএস (চট্টগ্রাম মেডিকেল কলেজ)</p>
-                    <p>বিসিএস (স্বাস্থ্য ক্যাডার)</p>
-                    <p>এফসিপিএস পার্ট ২ (মেডিসিন)</p>
-                    <p>পিজিটি (শিশুরোগ)</p>
-                    <p>এমসিজিপি (ফ্যামিলি মেডিসিন)</p>
-                    <p>সিসিডি(ডায়াবেটিস)</p>
-                    <p>সিএমইউ (আল্ট্রাসনোগ্রাফি)</p>
-                    <p>এমএসিপি (আমেরিকা)</p>
-                    <p>মেডিকেল অফিসার </p>
-                    <p>চন্দনাইশ উপজেলা স্বাস্থ্য কমপ্লেক্</p>স
-                </div>
-                <div class="doctor-info-item">
-                    <h3>নিবন্ধন কর্তৃপক্ষ</h3>
-                    <p>বাংলাদেশ মেডিকেল এন্ড ডেন্টাল কাউন্সিল (বিএমডিসি)</p>
-                </div>
-                <div class="doctor-info-item">
-                    <h3>নিবন্ধন নম্বর</h3>
-                    <p>১২৯৪৩৮</p>
-                </div>
-                <div class="doctor-info-item">
-                    <h3>বিশেষায়িত ক্ষেত্র</h3>
-                    <p>অভ্যন্তরীণ রোগ, টেলিমেডিসিন, সাধারণ চিকিৎসা</p>
-                </div>
-                <div class="doctor-info-item">
-                    <h3>সেবা প্রদানের ধরন</h3>
-                    <p>অনলাইন টেলিমেডিসিন পরামর্শ প্রদানকারী</p>
-                </div>
+                <div class="doctor-info-item"><h3>পুরো নাম</h3><p>ডাক্তার মোহাম্মদ রোমানুল ইসলাম</p></div>
+                <div class="doctor-info-item"><h3>যোগ্যতা</h3><p>এমবিবিএস (চট্টগ্রাম মেডিকেল কলেজ)<br>বিসিএস (স্বাস্থ্য ক্যাডার)<br>এফসিপিএস পার্ট ২ (মেডিসিন)<br>পিজিটি (শিশুরোগ)<br>এমসিজিপি (ফ্যামিলি মেডিসিন)<br>সিসিডি(ডায়াবেটিস)<br>সিএমইউ (আল্ট্রাসনোগ্রাফি)<br>এমএসিপি (আমেরিকা)<br>মেডিকেল অফিসার, চন্দনাইশ উপজেলা স্বাস্থ্য কমপ্লেক্স</p></div>
+                <div class="doctor-info-item"><h3>নিবন্ধন কর্তৃপক্ষ</h3><p>বাংলাদেশ মেডিকেল এন্ড ডেন্টাল কাউন্সিল (বিএমডিসি)</p></div>
+                <div class="doctor-info-item"><h3>নিবন্ধন নম্বর</h3><p>১২৯৪৩৮</p></div>
+                <div class="doctor-info-item"><h3>বিশেষায়িত ক্ষেত্র</h3><p>অভ্যন্তরীণ রোগ, টেলিমেডিসিন, সাধারণ চিকিৎসা</p></div>
+                <div class="doctor-info-item"><h3>সেবা প্রদানের ধরন</h3><p>অনলাইন টেলিমেডিসিন পরামর্শ প্রদানকারী</p></div>
             </div>
         </section>
 
-        <!-- Section 5: Service Clarification -->
+        <!-- Service Clarification -->
         <section class="service-clarification">
             <h2>টেলিমেডিসিন সেবা কীভাবে কাজ করে</h2>
             <ul>
@@ -841,7 +925,7 @@
             </ul>
         </section>
 
-        <!-- Section 6: Legal & Safety Notice -->
+        <!-- Legal Notice -->
         <section class="legal-notice">
             <h3><span>⚠️</span> গুরুত্বপূর্ণ স্বাস্থ্য নির্দেশনা</h3>
             <ul>
@@ -859,40 +943,11 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>ডা. রোমানুল ইসলাম</h3>
-                    <p>বাংলাদেশের লাইসেন্সপ্রাপ্ত টেলিমেডিসিন পরামর্শ সেবা</p>
-                    <p>এমবিবিএস ডাক্তারের সাথে অনলাইনে সরাসরি স্বাস্থ্য পরামর্শ নিন।</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>সরাসরি যোগাযোগ</h3>
-                    <ul>
-                        <li><strong>WhatsApp:</strong> <a href="https://wa.me/8801826589958">+8801826589958</a></li>
-                        <li><strong>ফোন:</strong> <a href="tel:+8801826589958">+8801826589958</a></li>
-                        <li><strong>ইমেইল:</strong> <a href="mailto:roman@romanulislam.com">roman@romanulislam.com</a></li>
-                        <li><strong>সেবা সময়:</strong> সকাল ৭টা - রাত ১টা</li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>দরকারী লিংক</h3>
-                    <ul>
-                        <li><a href="https://www.romanulislam.com/index">হোমপেজ</a></li>
-                        <li><a href="https://www.romanulislam.com/online-doctor-bd">টেলিমেডিসিন সেবা</a></li>
-                        <li><a href="https://www.romanulislam.com/blog">স্বাস্থ্য ব্লগ</a></li>
-                        <li><a href="https://www.romanulislam.com/reviews">রোগীদের মতামত</a></li>
-                        <li><a href="https://www.romanulislam.com/about">ডাক্তারের প্রোফাইল</a></li>
-                        <li><a href="https://www.romanulislam.com/privacy-policy">গোপনীয়তা নীতি</a></li>
-                        <li><a href="https://www.romanulislam.com/disclaimer">ডিসক্লেইমার</a></li>
-                    </ul>
-                </div>
+                <div class="footer-section"><h3>ডা. রোমানুল ইসলাম</h3><p>বাংলাদেশের লাইসেন্সপ্রাপ্ত টেলিমেডিসিন পরামর্শ সেবা</p><p>এমবিবিএস ডাক্তারের সাথে অনলাইনে সরাসরি স্বাস্থ্য পরামর্শ নিন।</p></div>
+                <div class="footer-section"><h3>সরাসরি যোগাযোগ</h3><ul><li><strong>WhatsApp:</strong> <a href="https://wa.me/8801826589958">+8801826589958</a></li><li><strong>ফোন:</strong> <a href="tel:+8801826589958">+8801826589958</a></li><li><strong>ইমেইল:</strong> <a href="mailto:roman@romanulislam.com">roman@romanulislam.com</a></li><li><strong>সেবা সময়:</strong> সকাল ৭টা - রাত ১টা</li></ul></div>
+                <div class="footer-section"><h3>দরকারী লিংক</h3><ul><li><a href="https://www.romanulislam.com/index">হোমপেজ</a></li><li><a href="https://www.romanulislam.com/online-doctor-bd">টেলিমেডিসিন সেবা</a></li><li><a href="https://www.romanulislam.com/blog">স্বাস্থ্য ব্লগ</a></li><li><a href="https://www.romanulislam.com/reviews">রোগীদের মতামত</a></li><li><a href="https://www.romanulislam.com/about">ডাক্তারের প্রোফাইল</a></li><li><a href="https://www.romanulislam.com/privacy-policy">গোপনীয়তা নীতি</a></li><li><a href="https://www.romanulislam.com/disclaimer">ডিসক্লেইমার</a></li></ul></div>
             </div>
-            
-            <div class="copyright">
-                <p>© ২০২৪ ডা. রোমানুল ইসলাম - টেলিমেডিসিন সেবা। বিএমডিসি নিবন্ধন নং: ১২৯৪৩৮। সকল স্বত্ব সংরক্ষিত।</p>
-                <p>এই সেবাটি বাংলাদেশের টেলিমেডিসিন নির্দেশিকা অনুসারে প্রদান করা হয়।</p>
-            </div>
+            <div class="copyright"><p>© ২০২৪ ডা. রোমানুল ইসলাম - টেলিমেডিসিন সেবা। বিএমডিসি নিবন্ধন নং: ১২৯৪৩৮। সকল স্বত্ব সংরক্ষিত।</p><p>এই সেবাটি বাংলাদেশের টেলিমেডিসিন নির্দেশিকা অনুসারে প্রদান করা হয়।</p></div>
         </div>
     </footer>
 
@@ -902,3 +957,4 @@
     </a>
 </body>
 </html>
+```
