@@ -93,11 +93,11 @@
       padding: 0 20px;
     }
     
-    /* Header Styles (updated from index.html) */
+    /* Header - compact mobile friendly */
     .site-header {
       background: linear-gradient(135deg, #0ea5a5 0%, #0c7a7a 100%);
       color: white;
-      padding: 15px 0;
+      padding: 8px 0;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
       position: sticky;
       top: 0;
@@ -108,47 +108,54 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 4px;
     }
     
     .brand {
-      font-size: 24px;
+      font-size: 18px;
       font-weight: 700;
       color: white;
       text-decoration: none;
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 6px;
     }
     
     .logo {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 42px;
-      height: 42px;
+      width: 32px;
+      height: 32px;
       background: white;
       border-radius: 50%;
-      padding: 8px;
+      padding: 5px;
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+      flex-shrink: 0;
     }
     
     .logo-icon {
-      font-size: 22px;
+      font-size: 16px;
       color: #0c7a7a;
     }
     
     .site-header nav {
       display: flex;
+      flex-wrap: wrap;
+      gap: 2px;
     }
     
     .site-header nav a {
       color: white;
       text-decoration: none;
-      margin-left: 25px;
       font-weight: 500;
       transition: all 0.3s ease;
-      padding: 8px 12px;
+      padding: 4px 8px;
       border-radius: 6px;
+      font-size: 0.75rem;
+      background: rgba(255, 255, 255, 0.1);
+      white-space: nowrap;
     }
     
     .site-header nav a:hover {
@@ -161,20 +168,20 @@
     .hero {
       background: linear-gradient(rgba(14, 165, 165, 0.9), rgba(12, 122, 122, 0.95));
       color: white;
-      padding: 80px 0;
+      padding: 40px 0;
       text-align: center;
     }
     
     .hero h1 {
-      font-size: 2.8rem;
-      margin-bottom: 20px;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
       line-height: 1.3;
     }
     
     .hero p {
-      font-size: 1.3rem;
+      font-size: 1rem;
       max-width: 800px;
-      margin: 0 auto 40px;
+      margin: 0 auto 30px;
       opacity: 0.95;
     }
     
@@ -182,11 +189,11 @@
       display: inline-block;
       background-color: #ff7043;
       color: white;
-      padding: 16px 35px;
+      padding: 12px 28px;
       border-radius: 50px;
       text-decoration: none;
       font-weight: 600;
-      font-size: 1.1rem;
+      font-size: 1rem;
       transition: all 0.3s ease;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
@@ -199,37 +206,37 @@
     
     /* Section Styles */
     .section {
-      padding: 70px 0;
+      padding: 40px 0;
     }
     
     .section-title {
       text-align: center;
       color: #0c7a7a;
-      margin-bottom: 50px;
-      font-size: 2.2rem;
+      margin-bottom: 30px;
+      font-size: 1.6rem;
       position: relative;
     }
     
     .section-title:after {
       content: '';
       display: block;
-      width: 80px;
-      height: 4px;
+      width: 60px;
+      height: 3px;
       background: #0ea5a5;
-      margin: 15px auto;
+      margin: 12px auto;
       border-radius: 2px;
     }
     
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
     }
     
     .card {
       background: white;
       border-radius: 12px;
-      padding: 35px;
+      padding: 25px 20px;
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
       transition: transform 0.3s ease;
       border: 1px solid #e2e8f0;
@@ -242,106 +249,140 @@
     
     .card h2 {
       color: #0c7a7a;
-      margin-bottom: 25px;
-      font-size: 1.7rem;
-    }
-    
-    .card h3 {
-      color: #0c7a7a;
       margin-bottom: 20px;
       font-size: 1.4rem;
     }
     
+    .card h3 {
+      color: #0c7a7a;
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+    }
+    
     .card p {
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       line-height: 1.8;
+      font-size: 0.95rem;
     }
     
     .card ul, .card ol {
-      margin-bottom: 20px;
-      padding-left: 25px;
+      margin-bottom: 15px;
+      padding-left: 20px;
     }
     
     .card li {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       line-height: 1.6;
+      font-size: 0.95rem;
     }
     
     /* Problem Awareness Section */
     .problem-section {
       background: #f0f9f9;
       border-radius: 12px;
-      padding: 50px;
-      margin-bottom: 40px;
+      padding: 25px 20px;
+      margin-bottom: 30px;
     }
     
     .problem-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-      margin-top: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
     }
     
     .problem-item {
       background: white;
-      padding: 25px;
+      padding: 18px;
       border-radius: 10px;
       border-left: 4px solid #0ea5a5;
     }
     
+    .problem-item h3 {
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+    
+    .problem-item p {
+      font-size: 0.9rem;
+    }
+    
     /* Service Coverage Section */
     .service-category {
-      margin-bottom: 40px;
-      padding: 30px;
+      margin-bottom: 25px;
+      padding: 20px;
       background: #f8fafc;
       border-radius: 10px;
     }
     
     .service-category h3 {
       color: #0c7a7a;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       display: flex;
       align-items: center;
       gap: 10px;
+      font-size: 1.1rem;
     }
     
     .service-list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
     }
     
     .service-item {
       background: white;
-      padding: 20px;
+      padding: 14px 16px;
       border-radius: 8px;
       border-left: 3px solid #0ea5a5;
+    }
+    
+    .service-item p {
+      font-size: 0.9rem;
     }
     
     /* Credibility Section */
     .credibility-section {
       background: linear-gradient(135deg, #0ea5a5 0%, #0c7a7a 100%);
       color: white;
-      padding: 50px;
+      padding: 30px 20px;
       border-radius: 12px;
-      margin: 50px 0;
+      margin: 30px 0;
+    }
+    
+    .credibility-section .section-title {
+      color: white;
+    }
+    
+    .credibility-section .section-title:after {
+      background: #ffd166;
     }
     
     .credibility-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
     }
     
     .credibility-item {
       text-align: center;
-      padding: 25px;
+      padding: 15px;
     }
     
     .credibility-icon {
-      font-size: 3rem;
-      margin-bottom: 20px;
+      font-size: 2.5rem;
+      margin-bottom: 12px;
       display: block;
+    }
+    
+    .credibility-item h3 {
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+    
+    .credibility-item p {
+      font-size: 0.9rem;
+      opacity: 0.9;
     }
     
     /* FAQ Styles */
@@ -351,7 +392,7 @@
     }
     
     details {
-      margin-bottom: 20px;
+      margin-bottom: 12px;
       border-radius: 10px;
       overflow: hidden;
       box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
@@ -360,10 +401,10 @@
     summary {
       background: #0ea5a5;
       color: white;
-      padding: 20px 25px;
+      padding: 14px 18px;
       cursor: pointer;
       font-weight: 600;
-      font-size: 1.1rem;
+      font-size: 1rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -375,45 +416,56 @@
     
     details div {
       background: white;
-      padding: 25px;
+      padding: 18px;
       line-height: 1.7;
+      font-size: 0.95rem;
     }
     
     /* Medical Disclaimer */
     .disclaimer-section {
       background: #fff8f8;
       border: 2px solid #fed7d7;
-      padding: 35px;
+      padding: 20px;
       border-radius: 12px;
-      margin: 40px 0;
+      margin: 25px 0;
       border-left: 5px solid #e53e3e;
     }
     
     .disclaimer-section h3 {
       color: #c53030;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
+      font-size: 1.1rem;
+    }
+    
+    .disclaimer-section ul {
+      padding-left: 20px;
+    }
+    
+    .disclaimer-section li {
+      font-size: 0.9rem;
+      margin-bottom: 6px;
     }
     
     /* Footer Styles */
     .site-footer {
       background: #0a5f5f;
       color: white;
-      padding: 50px 0 20px;
+      padding: 35px 0 15px;
     }
     
     .footer-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      margin-bottom: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+      margin-bottom: 25px;
     }
     
     .site-footer h3 {
-      font-size: 1.4rem;
-      margin-bottom: 20px;
+      font-size: 1.2rem;
+      margin-bottom: 15px;
       position: relative;
       padding-bottom: 10px;
     }
@@ -423,7 +475,7 @@
       position: absolute;
       left: 0;
       bottom: 0;
-      width: 50px;
+      width: 40px;
       height: 2px;
       background: #0ea5a5;
     }
@@ -432,6 +484,7 @@
       color: #e0f7fa;
       text-decoration: none;
       transition: color 0.3s ease;
+      font-size: 0.9rem;
     }
     
     .site-footer a:hover {
@@ -439,19 +492,29 @@
       text-decoration: underline;
     }
     
-    .copyright {
-      text-align: center;
-      padding-top: 20px;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    .site-footer ul {
+      list-style: none;
+      padding: 0;
     }
     
-    /* WhatsApp Float (updated from index.html) */
+    .site-footer ul li {
+      padding: 3px 0;
+    }
+    
+    .copyright {
+      text-align: center;
+      padding-top: 15px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.8rem;
+    }
+    
+    /* WhatsApp Float */
     .whatsapp-float {
       position: fixed;
-      width: 70px;
-      height: 70px;
-      bottom: 40px;
-      right: 40px;
+      width: 55px;
+      height: 55px;
+      bottom: 25px;
+      right: 25px;
       border-radius: 50%;
       background: linear-gradient(135deg, #25D366, #128C7E);
       box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
@@ -474,9 +537,10 @@
       box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
     }
     
-    .whatsapp-icon {
-      font-size: 36px;
-      color: white;
+    .whatsapp-float img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
     }
     
     /* Skip link for accessibility */
@@ -502,67 +566,168 @@
     
     /* Responsive styles */
     @media (max-width: 768px) {
-      .nav {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
+      .site-header {
+        padding: 6px 0;
       }
       
-      .site-header nav {
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 0;
+      .brand {
+        font-size: 15px;
+        gap: 4px;
+      }
+      
+      .logo {
+        width: 26px;
+        height: 26px;
+        padding: 3px;
+      }
+      
+      .logo-icon {
+        font-size: 13px;
       }
       
       .site-header nav a {
-        margin: 5px;
-        padding: 8px 15px;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 8px;
+        font-size: 0.6rem;
+        padding: 3px 5px;
+        background: rgba(255, 255, 255, 0.12);
+      }
+      
+      .nav {
+        gap: 3px;
       }
       
       .hero {
-        padding: 60px 0;
+        padding: 30px 0;
       }
       
       .hero h1 {
-        font-size: 2.2rem;
+        font-size: 1.5rem;
       }
       
       .hero p {
-        font-size: 1.1rem;
+        font-size: 0.95rem;
       }
       
       .section-title {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
+        margin-bottom: 25px;
       }
       
-      .card, .problem-section, .service-category, .credibility-section {
-        padding: 25px;
+      .section-title:after {
+        width: 50px;
+        height: 3px;
+        margin: 10px auto;
+      }
+      
+      .card {
+        padding: 20px 16px;
+      }
+      
+      .card h2 {
+        font-size: 1.2rem;
+      }
+      
+      .card h3 {
+        font-size: 1.1rem;
+      }
+      
+      .problem-section {
+        padding: 20px 15px;
+      }
+      
+      .problem-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+      
+      .service-category {
+        padding: 15px;
+      }
+      
+      .service-list {
+        grid-template-columns: 1fr;
+      }
+      
+      .credibility-section {
+        padding: 25px 15px;
+        margin: 20px 0;
+      }
+      
+      .credibility-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
       }
       
       .cta-button {
-        padding: 14px 30px;
+        padding: 10px 22px;
+        font-size: 0.95rem;
       }
       
       .whatsapp-float {
-        width: 60px;
-        height: 60px;
-        bottom: 20px;
-        right: 20px;
+        width: 48px;
+        height: 48px;
+        bottom: 15px;
+        right: 15px;
       }
       
-      .whatsapp-icon {
-        font-size: 30px;
+      .whatsapp-float img {
+        width: 38px;
+        height: 38px;
+      }
+      
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .brand {
+        font-size: 13px;
+      }
+      
+      .site-header nav a {
+        font-size: 0.55rem;
+        padding: 2px 4px;
+      }
+      
+      .hero h1 {
+        font-size: 1.3rem;
+      }
+      
+      .hero p {
+        font-size: 0.85rem;
+      }
+      
+      .problem-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .credibility-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+      
+      .card {
+        padding: 16px 12px;
+      }
+      
+      .service-category {
+        padding: 12px;
+      }
+      
+      .disclaimer-section {
+        padding: 15px;
       }
     }
   </style>
 </head>
 <body>
 
-<!-- Updated Header from index.html -->
+<!-- Header - compact mobile friendly -->
 <header class="site-header">
   <div class="container nav">
     <a class="brand" href="https://www.romanulislam.com/index">
@@ -704,7 +869,7 @@
         </div>
       </div>
       
-      <div style="margin-top: 30px; padding: 25px; background: #f0f9f9; border-radius: 10px;">
+      <div style="margin-top: 25px; padding: 20px; background: #f0f9f9; border-radius: 10px;">
         <h3>সেবা ফি কাঠামো (স্পষ্ট ও স্বচ্ছ)</h3>
         <ul>
           <li><strong>প্রাথমিক পরামর্শ:</strong> সম্পূর্ণ বিনামূল্যে</li>
@@ -835,7 +1000,7 @@
 <!-- Section 7: Why Choose Our Online Doctor Service -->
 <section class="credibility-section">
   <div class="container">
-    <h2 class="section-title" style="color: white;">কেন আমাদের অনলাইন ডাক্তার সেবা বেছে নেবেন?</h2>
+    <h2 class="section-title">কেন আমাদের অনলাইন ডাক্তার সেবা বেছে নেবেন?</h2>
     
     <div class="credibility-grid">
       <div class="credibility-item">
@@ -865,7 +1030,7 @@
   </div>
 </section>
 
-<!-- Section 8: Doctor Credibility & Medical Responsibility (E-E-A-T CORE) -->
+<!-- Section 8: Doctor Credibility & Medical Responsibility -->
 <section class="section">
   <div class="container">
     <div class="card">
@@ -895,19 +1060,19 @@
         </ul>
       </div>
       
-      <p style="margin-top: 25px; font-style: italic; color: #64748b;">
+      <p style="margin-top: 20px; font-style: italic; color: #64748b;">
         "চিকিৎসা হল বিজ্ঞান ও সহানুভূতির সমন্বয়। অনলাইন পরামর্শের মাধ্যমে আমি সেই সহানুভূতি ও বিজ্ঞানভিত্তিক চিকিৎসা পৌঁছে দেওয়ার চেষ্টা করি।"
       </p>
     </div>
   </div>
 </section>
 
-<!-- Section 9: FAQ SECTION (Very Large & Detailed) -->
+<!-- Section 9: FAQ SECTION -->
 <section class="section">
   <div class="container">
     <div class="card">
       <h2 class="section-title">সাধারণ প্রশ্ন ও উত্তর (FAQ)</h2>
-      <p style="text-align: center; margin-bottom: 40px; color: #475569;">অনলাইন ডাক্তার পরামর্শ সম্পর্কে রোগীদের সাধারণ প্রশ্নগুলোর উত্তর</p>
+      <p style="text-align: center; margin-bottom: 30px; color: #475569; font-size: 0.95rem;">অনলাইন ডাক্তার পরামর্শ সম্পর্কে রোগীদের সাধারণ প্রশ্নগুলোর উত্তর</p>
       
       <div class="faq-container">
         <details>
@@ -1023,20 +1188,20 @@
   </div>
 </section>
 
-<!-- Section 10: Call-to-Action (Soft, Trust-Based) -->
-<section class="section" style="background: linear-gradient(135deg, #0ea5a5 0%, #0c7a7a 100%); color: white; padding: 80px 0; border-radius: 12px;">
+<!-- Section 10: Call-to-Action -->
+<section class="section" style="background: linear-gradient(135deg, #0ea5a5 0%, #0c7a7a 100%); color: white; padding: 50px 0; border-radius: 12px; margin: 0 20px;">
   <div class="container">
     <h2 class="section-title" style="color: white;">আপনার স্বাস্থ্য নিয়ে কথা বলুন</h2>
-    <p style="text-align: center; max-width: 800px; margin: 0 auto 40px; font-size: 1.2rem; opacity: 0.95;">স্বাস্থ্য সমস্যা নিয়ে একা চিন্তা করার প্রয়োজন নেই। একজন পেশাদার ডাক্তারের সাথে আলোচনা করুন, সঠিক নির্দেশনা নিন এবং সচেতন সিদ্ধান্ত নিন।</p>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto 30px; font-size: 1.05rem; opacity: 0.95;">স্বাস্থ্য সমস্যা নিয়ে একা চিন্তা করার প্রয়োজন নেই। একজন পেশাদার ডাক্তারের সাথে আলোচনা করুন, সঠিক নির্দেশনা নিন এবং সচেতন সিদ্ধান্ত নিন।</p>
     
     <div style="text-align: center;">
-      <a href="https://wa.me/8801826589958?text=স্বাস্থ্য সমস্যা নিয়ে পরামর্শ চাই" class="cta-button" target="_blank" rel="noopener" style="background: white; color: #0c7a7a; font-size: 1.1rem;">ডাক্তারের সাথে কথা বলুন</a>
-      <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">অথবা ফোন করুন: <a href="tel:+8801826589958" style="color: white; text-decoration: underline;">+8801826589958</a></p>
+      <a href="https://wa.me/8801826589958?text=স্বাস্থ্য সমস্যা নিয়ে পরামর্শ চাই" class="cta-button" target="_blank" rel="noopener" style="background: white; color: #0c7a7a; font-size: 1rem;">ডাক্তারের সাথে কথা বলুন</a>
+      <p style="margin-top: 15px; font-size: 0.85rem; opacity: 0.8;">অথবা ফোন করুন: <a href="tel:+8801826589958" style="color: white; text-decoration: underline;">+8801826589958</a></p>
     </div>
     
-    <div style="margin-top: 50px; text-align: center;">
-      <p>আরও অভিজ্ঞতা জানতে দেখুন <a href="https://www.romanulislam.com/reviews" style="color: #e0f7fa; text-decoration: underline; font-weight: 500;">রোগীদের অভিজ্ঞতা</a></p>
-      <p style="margin-top: 10px;">সরাসরি যোগাযোগের জন্য: <a href="https://www.romanulislam.com/contact" style="color: #e0f7fa; text-decoration: underline; font-weight: 500;">ডাক্তারের সাথে যোগাযোগ করুন</a></p>
+    <div style="margin-top: 30px; text-align: center;">
+      <p style="font-size: 0.95rem;">আরও অভিজ্ঞতা জানতে দেখুন <a href="https://www.romanulislam.com/reviews" style="color: #e0f7fa; text-decoration: underline; font-weight: 500;">রোগীদের অভিজ্ঞতা</a></p>
+      <p style="margin-top: 8px; font-size: 0.95rem;">সরাসরি যোগাযোগের জন্য: <a href="https://www.romanulislam.com/contact" style="color: #e0f7fa; text-decoration: underline; font-weight: 500;">ডাক্তারের সাথে যোগাযোগ করুন</a></p>
     </div>
   </div>
 </section>
@@ -1052,7 +1217,7 @@
       "name": "অনলাইন ডাক্তার পরামর্শ কি নিরাপদ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "হ্যাঁ, অনলাইন ডাক্তার পরামর্শ সম্পূর্ণ নিরাপদ। আপনার সমস্ত স্বাস্থ্য তথ্য কঠোর গোপনীয়তায় সংরক্ষণ করা হয়। আমরা ডেটা সুরক্ষা ও প্রাইভেসির সর্বোচ্চ মান বজায় রাখি।"
+        "text": "হ্যাঁ, অনলাইন ডাক্তার পরামর্শ সম্পূর্ণ নিরাপদ। আপনার সমস্ত স্বাস্থ্য তথ্য কঠোর গোপনীয়তায় সংরক্ষণ করা হয়।"
       }
     },
     {
@@ -1060,7 +1225,7 @@
       "name": "অনলাইন ডাক্তার থেকে প্রেসক্রিপশন পাওয়া যাবে কি?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "হ্যাঁ, প্রয়োজনীয় ক্ষেত্রে অনলাইন প্রেসক্রিপশন প্রদান করা হয়। তবে এটি শুধুমাত্র সাধারণ ও মাঝারি ধরনের স্বাস্থ্য সমস্যার জন্য। প্রেসক্রিপশন WhatsApp বা ইমেইলের মাধ্যমে পাঠানো হয়।"
+        "text": "হ্যাঁ, প্রয়োজনীয় ক্ষেত্রে অনলাইন প্রেসক্রিপশন প্রদান করা হয়। তবে এটি শুধুমাত্র সাধারণ ও মাঝারি ধরনের স্বাস্থ্য সমস্যার জন্য।"
       }
     },
     {
@@ -1084,6 +1249,7 @@
 </script>
 
 </main>
+
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -1114,24 +1280,20 @@
       </div>
     </div>
     <p class="copyright">© ২০২৪ ডা. রোমানুল ইসলাম - টেলিমেডিসিন সেবা। বিএমডিসি নিবন্ধন নং: ১২৯৪৩৮। সকল স্বত্ব সংরক্ষিত।</p>
-    <p style="text-align: center; font-size: 13px; margin-top: 10px; opacity: 0.8;">এই সেবাটি বাংলাদেশের টেলিমেডিসিন নির্দেশিকা অনুসারে প্রদান করা হয়।</p>
+    <p style="text-align: center; font-size: 12px; margin-top: 8px; opacity: 0.8;">এই সেবাটি বাংলাদেশের টেলিমেডিসিন নির্দেশিকা অনুসারে প্রদান করা হয়।</p>
   </div>
 </footer>
 
-    <!-- WhatsApp Floating Button -->
-    <a class="whatsapp-float" href="https://wa.me/8801826589958?text=স্যার, আমি একটি অ্যাপয়ন্টমেন্ট বুক করতে চাই" target="_blank" aria-label="WhatsApp Chat">
-        <img src="https://www.romanulislam.com/assets/images/whatsapp.gif" alt="WhatsApp" width="60" height="60" loading="lazy">
-    </a>
+<!-- WhatsApp Floating Button -->
+<a class="whatsapp-float" href="https://wa.me/8801826589958?text=স্যার, আমি একটি অ্যাপয়ন্টমেন্ট বুক করতে চাই" target="_blank" aria-label="WhatsApp Chat">
+  <img src="https://www.romanulislam.com/assets/images/whatsapp.gif" alt="WhatsApp" width="60" height="60" loading="lazy">
+</a>
 
 <script>
-  // Set current year for copyright
-  document.getElementById('year').textContent = new Date().getFullYear();
-  
   // FAQ accordion functionality
   document.querySelectorAll('details').forEach((detail) => {
     detail.addEventListener('toggle', (event) => {
       if (detail.open) {
-        // Close other open details (optional)
         document.querySelectorAll('details').forEach((otherDetail) => {
           if (otherDetail !== detail && otherDetail.open) {
             otherDetail.open = false;
