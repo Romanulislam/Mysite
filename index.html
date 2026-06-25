@@ -63,7 +63,7 @@
     .site-header {
       background: linear-gradient(135deg, #0ea5a5 0%, #0c7a7a 100%);
       color: white;
-      padding: 15px 0;
+      padding: 10px 0; /* reduced from 15px */
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
       position: sticky;
       top: 0;
@@ -77,29 +77,29 @@
     }
     
     .brand {
-      font-size: 24px;
+      font-size: 20px; /* slightly reduced */
       font-weight: 700;
       color: white;
       text-decoration: none;
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 8px; /* reduced from 12px */
     }
     
     .logo {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 42px;
-      height: 42px;
+      width: 36px; /* reduced from 42px */
+      height: 36px;
       background: white;
       border-radius: 50%;
-      padding: 8px;
+      padding: 6px;
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
     }
     
     .logo-icon {
-      font-size: 22px;
+      font-size: 18px; /* reduced from 22px */
       color: #0c7a7a;
     }
     
@@ -110,11 +110,12 @@
     .site-header nav a {
       color: white;
       text-decoration: none;
-      margin-left: 25px;
+      margin-left: 15px; /* reduced from 25px */
       font-weight: 500;
       transition: all 0.3s ease;
-      padding: 8px 12px;
+      padding: 6px 10px; /* reduced from 8px 12px */
       border-radius: 6px;
+      font-size: 0.9rem; /* slightly smaller */
     }
     
     .site-header nav a:hover {
@@ -127,7 +128,7 @@
     .hero {
       background: linear-gradient(135deg, rgba(14, 165, 165, 0.95), rgba(12, 122, 122, 0.97));
       color: white;
-      padding: 80px 0;
+      padding: 60px 0; /* reduced from 80px */
       position: relative;
       overflow: hidden;
     }
@@ -161,17 +162,17 @@
     }
     
     .hero-hook {
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: 600;
       color: #e0f7fa;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       letter-spacing: 0.5px;
       text-transform: uppercase;
     }
     
     .hero-title {
-      font-size: 3.2rem;
-      margin-bottom: 20px;
+      font-size: 2.8rem; /* slightly reduced */
+      margin-bottom: 15px;
       line-height: 1.2;
     }
     
@@ -194,8 +195,8 @@
     }
     
     .hero-tagline {
-      font-size: 1.4rem;
-      margin-bottom: 30px;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
       opacity: 0.95;
       line-height: 1.5;
     }
@@ -204,15 +205,15 @@
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
     
     .hero-badge {
       background: rgba(255, 255, 255, 0.15);
       backdrop-filter: blur(10px);
-      padding: 12px 20px;
+      padding: 10px 16px;
       border-radius: 50px;
-      font-size: 1rem;
+      font-size: 0.9rem;
       border: 1px solid rgba(255, 255, 255, 0.2);
       transition: all 0.3s ease;
     }
@@ -224,7 +225,7 @@
     
     .hero-cta {
       display: flex;
-      gap: 20px;
+      gap: 15px;
       flex-wrap: wrap;
     }
     
@@ -235,11 +236,11 @@
       gap: 10px;
       background: linear-gradient(135deg, #ff7043 0%, #f4511e 100%);
       color: white;
-      padding: 18px 35px;
+      padding: 14px 28px;
       border-radius: 50px;
       text-decoration: none;
       font-weight: 700;
-      font-size: 1.1rem;
+      font-size: 1rem;
       transition: all 0.4s ease;
       box-shadow: 0 6px 20px rgba(255, 112, 67, 0.3);
       border: none;
@@ -280,19 +281,19 @@
     /* Trust Section */
     .trust-section {
       background: white;
-      padding: 60px 0;
+      padding: 50px 0; /* reduced from 60px */
       box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
     }
     
     .trust-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* adjusted */
+      gap: 25px;
     }
     
     .trust-item {
       text-align: center;
-      padding: 30px;
+      padding: 25px;
       background: #f8fdfd;
       border-radius: 16px;
       border: 2px solid #e6f7f7;
@@ -306,51 +307,51 @@
     }
     
     .trust-icon {
-      font-size: 3rem;
-      margin-bottom: 20px;
+      font-size: 2.5rem;
+      margin-bottom: 15px;
       display: block;
     }
     
     .trust-item h3 {
       color: #0c7a7a;
-      margin-bottom: 10px;
-      font-size: 1.3rem;
+      margin-bottom: 8px;
+      font-size: 1.2rem;
     }
     
     /* How It Works Section */
     .how-it-works {
-      padding: 80px 0;
+      padding: 60px 0; /* reduced from 80px */
       background: linear-gradient(135deg, #f0f9f9 0%, #e6f7f7 100%);
     }
     
     .section-title {
       text-align: center;
       color: #0c7a7a;
-      margin-bottom: 60px;
-      font-size: 2.5rem;
+      margin-bottom: 40px;
+      font-size: 2.2rem; /* reduced from 2.5rem */
       position: relative;
     }
     
     .section-title:after {
       content: '';
       display: block;
-      width: 100px;
-      height: 5px;
+      width: 80px;
+      height: 4px;
       background: linear-gradient(to right, #0ea5a5, #ff7043);
-      margin: 20px auto;
+      margin: 15px auto;
       border-radius: 5px;
     }
     
     .steps-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 40px;
-      margin-bottom: 60px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
     }
     
     .step {
       background: white;
-      padding: 40px;
+      padding: 30px;
       border-radius: 20px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
       text-align: center;
@@ -378,38 +379,38 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
       background: linear-gradient(135deg, #0ea5a5, #0c7a7a);
       color: white;
       border-radius: 50%;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       font-weight: bold;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
     
     .step h3 {
       color: #0c7a7a;
-      margin-bottom: 20px;
-      font-size: 1.5rem;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
     }
     
     /* Services Section */
     .services-section {
-      padding: 80px 0;
+      padding: 60px 0;
       background: white;
     }
     
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 30px;
-      margin-bottom: 50px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-bottom: 40px;
     }
     
     .service-card {
       background: #f8fdfd;
-      padding: 35px;
+      padding: 30px;
       border-radius: 16px;
       border-left: 6px solid #0ea5a5;
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
@@ -441,36 +442,36 @@
     }
     
     .service-icon {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
+      font-size: 2rem;
+      margin-bottom: 15px;
       display: block;
     }
     
     .service-card h3 {
       color: #0c7a7a;
-      margin-bottom: 15px;
-      font-size: 1.4rem;
+      margin-bottom: 12px;
+      font-size: 1.3rem;
       position: relative;
       z-index: 2;
     }
     
     /* Category Section - Redesigned */
     .category-section {
-      padding: 80px 0;
+      padding: 60px 0;
       background: linear-gradient(135deg, #f0f9f9 0%, #e6f7f7 100%);
     }
     
     .category-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-      margin-top: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
     }
     
     .category-card {
       background: white;
       border-radius: 16px;
-      padding: 30px;
+      padding: 25px;
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
       text-align: center;
       transition: all 0.4s ease;
@@ -496,8 +497,8 @@
     }
     
     .category-icon {
-      font-size: 3rem;
-      margin-bottom: 20px;
+      font-size: 2.5rem;
+      margin-bottom: 15px;
       display: block;
     }
     
@@ -505,7 +506,7 @@
       color: #0c7a7a;
       text-decoration: none;
       font-weight: 700;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       display: block;
       transition: color 0.3s ease;
       position: relative;
@@ -518,21 +519,21 @@
     
     /* Article Section - Redesigned */
     .article-section {
-      padding: 80px 0;
+      padding: 60px 0;
       background: white;
     }
     
     .article-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
     }
     
     .article-card {
       background: #f8fdfd;
       border-radius: 16px;
-      padding: 30px;
+      padding: 25px;
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
       transition: all 0.4s ease;
       position: relative;
@@ -548,8 +549,8 @@
     
     .article-card h3 {
       color: #0c7a7a;
-      margin-bottom: 15px;
-      font-size: 1.3rem;
+      margin-bottom: 12px;
+      font-size: 1.2rem;
       line-height: 1.5;
     }
     
@@ -565,8 +566,8 @@
     
     .article-meta {
       color: #64748b;
-      font-size: 0.9rem;
-      margin-top: 15px;
+      font-size: 0.85rem;
+      margin-top: 12px;
       display: flex;
       align-items: center;
       gap: 10px;
@@ -574,20 +575,20 @@
     
     /* Reviews Section */
     .reviews-section {
-      padding: 80px 0;
+      padding: 60px 0;
       background: linear-gradient(135deg, #f0f9f9 0%, #e6f7f7 100%);
     }
     
     .reviews-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 30px;
-      margin-bottom: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-bottom: 30px;
     }
     
     .review-card {
       background: white;
-      padding: 35px;
+      padding: 30px;
       border-radius: 16px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
       position: relative;
@@ -595,7 +596,7 @@
     
     .review-card:before {
       content: '"';
-      font-size: 6rem;
+      font-size: 5rem;
       color: #0ea5a5;
       opacity: 0.1;
       position: absolute;
@@ -606,7 +607,7 @@
     
     .review-text {
       font-style: italic;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
       line-height: 1.8;
       position: relative;
       z-index: 2;
@@ -622,42 +623,43 @@
     
     /* Doctor Profile Section */
     .doctor-section {
-      padding: 80px 0;
+      padding: 60px 0;
       background: linear-gradient(135deg, #0ea5a5 0%, #0c7a7a 100%);
       color: white;
     }
     
     .doctor-content {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 50px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
       align-items: center;
     }
     
     .doctor-info h2 {
-      font-size: 2.5rem;
-      margin-bottom: 25px;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
       line-height: 1.3;
     }
     
     .doctor-qualifications {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
-      margin: 30px 0;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin: 25px 0;
     }
     
     .qualification {
       background: rgba(255, 255, 255, 0.1);
-      padding: 15px;
+      padding: 12px;
       border-radius: 10px;
       backdrop-filter: blur(10px);
       border: 1px solid rgba(255, 255, 255, 0.2);
+      font-size: 0.95rem;
     }
     
     /* Final CTA */
     .final-cta {
-      padding: 100px 0;
+      padding: 70px 0;
       background: linear-gradient(135deg, rgba(14, 165, 165, 0.9), rgba(12, 122, 122, 0.95));
       color: white;
       text-align: center;
@@ -679,15 +681,15 @@
     }
     
     .final-cta h2 {
-      font-size: 3rem;
-      margin-bottom: 20px;
+      font-size: 2.5rem;
+      margin-bottom: 15px;
       position: relative;
       z-index: 2;
     }
     
     .final-cta p {
-      font-size: 1.3rem;
-      margin-bottom: 40px;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
       max-width: 600px;
       margin-left: auto;
       margin-right: auto;
@@ -700,21 +702,21 @@
     .site-footer {
       background: #0a5f5f;
       color: white;
-      padding: 60px 0 20px;
+      padding: 50px 0 20px;
     }
     
     .footer-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 40px;
-      margin-bottom: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-bottom: 30px;
     }
     
     .site-footer h4 {
-      font-size: 1.5rem;
-      margin-bottom: 25px;
+      font-size: 1.3rem;
+      margin-bottom: 20px;
       position: relative;
-      padding-bottom: 15px;
+      padding-bottom: 12px;
     }
     
     .site-footer h4:after {
@@ -722,7 +724,7 @@
       position: absolute;
       left: 0;
       bottom: 0;
-      width: 50px;
+      width: 40px;
       height: 3px;
       background: #0ea5a5;
     }
@@ -732,7 +734,8 @@
       text-decoration: none;
       transition: all 0.3s ease;
       display: inline-block;
-      padding: 5px 0;
+      padding: 4px 0;
+      font-size: 0.95rem;
     }
     
     .site-footer a:hover {
@@ -742,19 +745,19 @@
     
     .copyright {
       text-align: center;
-      padding-top: 30px;
+      padding-top: 25px;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       opacity: 0.8;
     }
     
     /* WhatsApp Float */
     .whatsapp-float {
       position: fixed;
-      width: 70px;
-      height: 70px;
-      bottom: 40px;
-      right: 40px;
+      width: 60px;
+      height: 60px;
+      bottom: 30px;
+      right: 30px;
       border-radius: 50%;
       background: linear-gradient(135deg, #25D366, #128C7E);
       box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
@@ -778,7 +781,7 @@
     }
     
     .whatsapp-icon {
-      font-size: 36px;
+      font-size: 30px;
       color: white;
     }
     
@@ -806,107 +809,214 @@
     /* Responsive styles */
     @media (max-width: 992px) {
       .hero-title {
-        font-size: 2.8rem;
+        font-size: 2.4rem;
       }
       
       .section-title {
-        font-size: 2.2rem;
+        font-size: 2rem;
       }
       
       .final-cta h2 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
       }
     }
     
     @media (max-width: 768px) {
+      .site-header {
+        padding: 6px 0; /* even smaller on mobile */
+      }
+      
       .nav {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
+        flex-direction: row; /* keep row on mobile for compactness */
+        flex-wrap: wrap;
+        gap: 6px;
+        justify-content: space-between;
+      }
+      
+      .brand {
+        font-size: 16px;
+        gap: 4px;
+      }
+      
+      .logo {
+        width: 28px;
+        height: 28px;
+        padding: 4px;
+      }
+      
+      .logo-icon {
+        font-size: 14px;
       }
       
       .site-header nav {
-        width: 100%;
-        justify-content: center;
+        width: auto;
+        justify-content: flex-end;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 4px;
       }
       
       .site-header nav a {
-        margin: 5px;
-        padding: 8px 15px;
+        margin: 0;
+        padding: 4px 8px;
+        font-size: 0.7rem;
         background: rgba(255, 255, 255, 0.1);
-        border-radius: 8px;
+        border-radius: 6px;
+        white-space: nowrap;
       }
       
       .hero {
-        padding: 60px 0;
+        padding: 40px 0;
       }
       
       .hero-title {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
       }
       
       .hero-tagline {
-        font-size: 1.2rem;
+        font-size: 1rem;
+      }
+      
+      .hero-badge {
+        padding: 6px 12px;
+        font-size: 0.75rem;
       }
       
       .hero-cta {
         flex-direction: column;
-        align-items: center;
-        gap: 15px;
+        align-items: stretch;
+        gap: 10px;
       }
       
       .btn {
         width: 100%;
-        max-width: 300px;
+        max-width: 100%;
         justify-content: center;
+        padding: 12px 20px;
+        font-size: 0.95rem;
       }
       
       .section-title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+      }
+      
+      .section-title:after {
+        width: 60px;
+        height: 3px;
+        margin: 10px auto;
       }
       
       .category-grid, .article-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+      }
+      
+      .category-card {
+        padding: 16px;
+      }
+      
+      .category-icon {
+        font-size: 2rem;
+        margin-bottom: 8px;
+      }
+      
+      .category-card a {
+        font-size: 0.9rem;
       }
       
       .whatsapp-float {
-        width: 60px;
-        height: 60px;
-        bottom: 20px;
-        right: 20px;
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
       }
       
       .whatsapp-icon {
-        font-size: 30px;
+        font-size: 26px;
       }
       
       .final-cta {
-        padding: 70px 0;
+        padding: 50px 0;
       }
       
       .final-cta h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
       }
       
       .final-cta p {
-        font-size: 1.1rem;
+        font-size: 1rem;
+      }
+      
+      .doctor-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      
+      .doctor-info h2 {
+        font-size: 1.8rem;
+      }
+      
+      .doctor-qualifications {
+        grid-template-columns: 1fr 1fr;
+      }
+      
+      .qualification {
+        font-size: 0.85rem;
+        padding: 10px;
+      }
+      
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
       }
     }
     
     @media (max-width: 480px) {
+      .site-header nav a {
+        font-size: 0.6rem;
+        padding: 3px 6px;
+      }
+      
+      .brand {
+        font-size: 14px;
+      }
+      
       .hero-title {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
       }
       
       .hero-badge {
-        padding: 10px 15px;
-        font-size: 0.9rem;
+        font-size: 0.65rem;
+        padding: 4px 10px;
       }
       
       .step, .service-card, .review-card {
-        padding: 25px;
+        padding: 20px;
+      }
+      
+      .category-grid, .article-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+      
+      .category-card {
+        padding: 12px;
+      }
+      
+      .category-icon {
+        font-size: 1.8rem;
+      }
+      
+      .category-card a {
+        font-size: 0.8rem;
+      }
+      
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+      
+      .doctor-qualifications {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -1107,7 +1217,7 @@
 <section class="category-section">
   <div class="container">
     <h2 class="section-title">স্বাস্থ্য বিভাগসমূহ</h2>
-    <p style="text-align: center; max-width: 700px; margin: 0 auto 20px; color: #475569; font-size: 1.1rem;">বিভিন্ন স্বাস্থ্য সমস্যা অনুযায়ী বিশেষায়িত বিভাগ থেকে প্রয়োজনীয় তথ্য ও পরামর্শ পান</p>
+    <p style="text-align: center; max-width: 700px; margin: 0 auto 15px; color: #475569; font-size: 1rem;">বিভিন্ন স্বাস্থ্য সমস্যা অনুযায়ী বিশেষায়িত বিভাগ থেকে প্রয়োজনীয় তথ্য ও পরামর্শ পান</p>
     
     <div class="category-grid">
       <div class="category-card">
@@ -1157,7 +1267,7 @@
 <section class="article-section">
   <div class="container">
     <h2 class="section-title">জনপ্রিয় স্বাস্থ্য আর্টিকেল</h2>
-    <p style="text-align: center; max-width: 700px; margin: 0 auto 20px; color: #475569; font-size: 1.1rem;">স্বাস্থ্যবিষয়ক গুরুত্বপূর্ণ তথ্য ও টিপস নিয়ে আমাদের বিশেষ আর্টিকেলসমূহ</p>
+    <p style="text-align: center; max-width: 700px; margin: 0 auto 15px; color: #475569; font-size: 1rem;">স্বাস্থ্যবিষয়ক গুরুত্বপূর্ণ তথ্য ও টিপস নিয়ে আমাদের বিশেষ আর্টিকেলসমূহ</p>
     
     <div class="article-grid">
       <div class="article-card">
@@ -1221,7 +1331,7 @@
 <section class="reviews-section">
   <div class="container">
     <h2 class="section-title">রোগীদের অভিজ্ঞতা</h2>
-    <p style="text-align: center; max-width: 700px; margin: 0 auto 20px; color: #475569; font-size: 1.1rem;">আমাদের টেলিমেডিসিন সেবা নেওয়া রোগীদের বাস্তব অভিজ্ঞতা</p>
+    <p style="text-align: center; max-width: 700px; margin: 0 auto 15px; color: #475569; font-size: 1rem;">আমাদের টেলিমেডিসিন সেবা নেওয়া রোগীদের বাস্তব অভিজ্ঞতা</p>
     
     <div class="reviews-grid">
       <div class="review-card">
@@ -1240,7 +1350,7 @@
       </div>
     </div>
     
-    <div style="text-align: center; margin-top: 40px;">
+    <div style="text-align: center; margin-top: 30px;">
       <a class="btn" href="reviews">সমস্ত রিভিউ দেখুন</a>
     </div>
   </div>
@@ -1251,10 +1361,10 @@
   <div class="container">
     <h2>এখনই ডাক্তারের প্রয়োজন?</h2>
     <p>ঘরে বসেই অনলাইন ডাক্তারের পরামর্শ নিন। সময় ও খরচ দুটোই বাঁচান। লাইসেন্সপ্রাপ্ত চিকিৎসকের সাথে সরাসরি কথা বলুন।</p>
-    <a class="btn" href="https://wa.me/8801826589958" target="_blank" rel="noopener" style="background: white; color: #0c7a7a; font-size: 1.2rem; padding: 20px 40px;">
+    <a class="btn" href="https://wa.me/8801826589958" target="_blank" rel="noopener" style="background: white; color: #0c7a7a; font-size: 1.1rem; padding: 16px 35px;">
       <span>💬</span> WhatsApp-এ এখনই পরামর্শ নিন
     </a>
-    <p style="margin-top: 25px; font-size: 1rem; opacity: 0.9;">অথবা কল করুন: <a href="tel:+8801826589958" style="color: #ffd166; text-decoration: underline;">+8801826589958</a></p>
+    <p style="margin-top: 20px; font-size: 0.95rem; opacity: 0.9;">অথবা কল করুন: <a href="tel:+8801826589958" style="color: #ffd166; text-decoration: underline;">+8801826589958</a></p>
   </div>
 </section>
 
@@ -1322,7 +1432,7 @@
 
     <!-- WhatsApp Floating Button -->
     <a class="whatsapp-float" href="https://wa.me/8801826589958?text=স্যার, আমি একটি অ্যাপয়ন্টমেন্ট বুক করতে চাই" target="_blank" aria-label="WhatsApp Chat">
-        <img src="https://www.romanulislam.com/assets/images/whatsapp.gif" alt="WhatsApp" width="60" height="60" loading="lazy">
+        <img src="https://www.romanulislam.com/assets/images/whatsapp.gif" alt="WhatsApp" width="50" height="50" loading="lazy" style="width:50px;height:50px;">
     </a>
 
 <!-- JavaScript -->
