@@ -34,7 +34,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   
-  <!-- Inline critical CSS -->
   <style>
     * {
       margin: 0;
@@ -56,11 +55,11 @@
       padding: 0 20px;
     }
     
-    /* Header Styles with Logo */
+    /* Header - compact mobile friendly */
     .site-header {
       background: linear-gradient(135deg, #0ea5a5 0%, #0c7a7a 100%);
       color: white;
-      padding: 15px 0;
+      padding: 8px 0;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
       position: sticky;
       top: 0;
@@ -71,47 +70,54 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 4px;
     }
     
     .brand {
-      font-size: 24px;
+      font-size: 18px;
       font-weight: 700;
       color: white;
       text-decoration: none;
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 6px;
     }
     
     .logo {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 42px;
-      height: 42px;
+      width: 32px;
+      height: 32px;
       background: white;
       border-radius: 50%;
-      padding: 8px;
+      padding: 5px;
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+      flex-shrink: 0;
     }
     
     .logo-icon {
-      font-size: 22px;
+      font-size: 16px;
       color: #0c7a7a;
     }
     
     .site-header nav {
       display: flex;
+      flex-wrap: wrap;
+      gap: 2px;
     }
     
     .site-header nav a {
       color: white;
       text-decoration: none;
-      margin-left: 25px;
       font-weight: 500;
       transition: all 0.3s ease;
-      padding: 8px 12px;
+      padding: 4px 8px;
       border-radius: 6px;
+      font-size: 0.75rem;
+      background: rgba(255, 255, 255, 0.1);
+      white-space: nowrap;
     }
     
     .site-header nav a:hover {
@@ -124,7 +130,7 @@
     .hero {
       background: linear-gradient(135deg, rgba(14, 165, 165, 0.95), rgba(12, 122, 122, 0.97));
       color: white;
-      padding: 80px 0;
+      padding: 40px 0;
       position: relative;
       overflow: hidden;
       text-align: center;
@@ -149,14 +155,14 @@
     }
     
     .hero-title {
-      font-size: 3.2rem;
-      margin-bottom: 20px;
+      font-size: 2.2rem;
+      margin-bottom: 10px;
       line-height: 1.2;
     }
     
     .hero-tagline {
-      font-size: 1.4rem;
-      margin-bottom: 30px;
+      font-size: 1.1rem;
+      margin-bottom: 0;
       opacity: 0.95;
       line-height: 1.5;
       max-width: 800px;
@@ -166,39 +172,39 @@
     
     /* Blog Content */
     .content-section {
-      padding: 80px 0;
+      padding: 50px 0;
     }
     
     .section-title {
       text-align: center;
       color: #0c7a7a;
-      margin-bottom: 60px;
-      font-size: 2.5rem;
+      margin-bottom: 40px;
+      font-size: 2rem;
       position: relative;
     }
     
     .section-title:after {
       content: '';
       display: block;
-      width: 100px;
-      height: 5px;
+      width: 80px;
+      height: 4px;
       background: linear-gradient(to right, #0ea5a5, #ff7043);
-      margin: 20px auto;
+      margin: 15px auto;
       border-radius: 5px;
     }
     
     /* Blog Grid */
     .blog-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      gap: 25px;
-      margin-bottom: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
     }
     
     .blog-card {
       background: #f8fdfd;
       border-radius: 16px;
-      padding: 30px;
+      padding: 25px;
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
       transition: all 0.4s ease;
       position: relative;
@@ -217,8 +223,8 @@
     
     .blog-card h3 {
       color: #0c7a7a;
-      margin-bottom: 15px;
-      font-size: 1.3rem;
+      margin-bottom: 12px;
+      font-size: 1.2rem;
       line-height: 1.5;
       flex-grow: 1;
     }
@@ -236,15 +242,16 @@
     
     .blog-card-excerpt {
       color: #475569;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       line-height: 1.6;
       flex-grow: 1;
+      font-size: 0.95rem;
     }
     
     .blog-card-meta {
       color: #64748b;
-      font-size: 0.9rem;
-      margin-top: 15px;
+      font-size: 0.85rem;
+      margin-top: 12px;
       display: flex;
       align-items: center;
       gap: 10px;
@@ -254,13 +261,13 @@
       display: inline-block;
       background: linear-gradient(135deg, #0ea5a5, #0c7a7a);
       color: white;
-      padding: 10px 20px;
+      padding: 8px 18px;
       border-radius: 50px;
       text-decoration: none;
       font-weight: 600;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       transition: all 0.3s ease;
-      margin-top: 15px;
+      margin-top: 12px;
       align-self: flex-start;
     }
     
@@ -272,15 +279,14 @@
     /* Breadcrumb */
     .breadcrumb {
       background: #f0f9f9;
-      padding: 15px 0;
-      margin-bottom: 40px;
+      padding: 12px 0;
     }
     
     .breadcrumb .container {
       display: flex;
       align-items: center;
       gap: 10px;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
     
     .breadcrumb a {
@@ -298,25 +304,25 @@
       color: #64748b;
     }
     
-    /* Footer Styles */
+    /* Footer */
     .site-footer {
       background: #0a5f5f;
       color: white;
-      padding: 60px 0 20px;
+      padding: 40px 0 20px;
     }
     
     .footer-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 40px;
-      margin-bottom: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-bottom: 30px;
     }
     
     .site-footer h4 {
-      font-size: 1.5rem;
-      margin-bottom: 25px;
+      font-size: 1.2rem;
+      margin-bottom: 18px;
       position: relative;
-      padding-bottom: 15px;
+      padding-bottom: 12px;
     }
     
     .site-footer h4:after {
@@ -324,7 +330,7 @@
       position: absolute;
       left: 0;
       bottom: 0;
-      width: 50px;
+      width: 40px;
       height: 3px;
       background: #0ea5a5;
     }
@@ -334,7 +340,8 @@
       text-decoration: none;
       transition: all 0.3s ease;
       display: inline-block;
-      padding: 5px 0;
+      padding: 4px 0;
+      font-size: 0.9rem;
     }
     
     .site-footer a:hover {
@@ -342,21 +349,30 @@
       transform: translateX(5px);
     }
     
+    .site-footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .site-footer ul li {
+      padding: 2px 0;
+    }
+    
     .copyright {
       text-align: center;
-      padding-top: 30px;
+      padding-top: 20px;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       opacity: 0.8;
     }
     
     /* WhatsApp Float */
     .whatsapp-float {
       position: fixed;
-      width: 70px;
-      height: 70px;
-      bottom: 40px;
-      right: 40px;
+      width: 55px;
+      height: 55px;
+      bottom: 25px;
+      right: 25px;
       border-radius: 50%;
       background: linear-gradient(135deg, #25D366, #128C7E);
       box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
@@ -379,12 +395,13 @@
       box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
     }
     
-    .whatsapp-icon {
-      font-size: 36px;
-      color: white;
+    .whatsapp-float img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
     }
     
-    /* Skip link for accessibility */
+    /* Skip link */
     .skip a {
       position: absolute;
       left: -10000px;
@@ -405,77 +422,124 @@
       border-radius: 5px;
     }
     
-    /* Responsive styles */
-    @media (max-width: 992px) {
-      .hero-title {
-        font-size: 2.8rem;
-      }
-      
-      .section-title {
-        font-size: 2.2rem;
-      }
-    }
-    
+    /* Responsive */
     @media (max-width: 768px) {
-      .nav {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
+      .site-header {
+        padding: 6px 0;
       }
       
-      .site-header nav {
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
+      .brand {
+        font-size: 15px;
+        gap: 4px;
+      }
+      
+      .logo {
+        width: 26px;
+        height: 26px;
+        padding: 3px;
+      }
+      
+      .logo-icon {
+        font-size: 13px;
       }
       
       .site-header nav a {
-        margin: 5px;
-        padding: 8px 15px;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 8px;
+        font-size: 0.6rem;
+        padding: 3px 5px;
+        background: rgba(255, 255, 255, 0.12);
+      }
+      
+      .nav {
+        gap: 3px;
       }
       
       .hero {
-        padding: 60px 0;
+        padding: 30px 0;
       }
       
       .hero-title {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
       }
       
       .hero-tagline {
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
       
       .section-title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+      }
+      
+      .section-title:after {
+        width: 60px;
+        height: 3px;
+        margin: 10px auto;
       }
       
       .blog-grid {
         grid-template-columns: 1fr;
-      }
-      
-      .whatsapp-float {
-        width: 60px;
-        height: 60px;
-        bottom: 20px;
-        right: 20px;
-      }
-      
-      .whatsapp-icon {
-        font-size: 30px;
-      }
-    }
-    
-    @media (max-width: 480px) {
-      .hero-title {
-        font-size: 1.8rem;
+        gap: 16px;
       }
       
       .blog-card {
         padding: 20px;
+      }
+      
+      .blog-card h3 {
+        font-size: 1.1rem;
+      }
+      
+      .whatsapp-float {
+        width: 48px;
+        height: 48px;
+        bottom: 15px;
+        right: 15px;
+      }
+      
+      .whatsapp-float img {
+        width: 38px;
+        height: 38px;
+      }
+      
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .brand {
+        font-size: 13px;
+      }
+      
+      .site-header nav a {
+        font-size: 0.55rem;
+        padding: 2px 4px;
+      }
+      
+      .hero-title {
+        font-size: 1.5rem;
+      }
+      
+      .hero-tagline {
+        font-size: 0.9rem;
+      }
+      
+      .blog-card {
+        padding: 16px;
+      }
+      
+      .blog-card h3 {
+        font-size: 1rem;
+      }
+      
+      .blog-card-excerpt {
+        font-size: 0.85rem;
+      }
+      
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
       }
     }
   </style>
@@ -526,12 +590,12 @@
   <!-- Blog Content -->
   <section class="content-section">
     <div class="container">
-      <h2 class="section-title">সকল ব্লগ পোস্ট </h2>
+      <h2 class="section-title">সকল ব্লগ পোস্ট</h2>
       
       <div class="blog-grid">
         <!-- Post 1 -->
         <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/abdominal-distension ">
+          <a href="https://www.romanulislam.com/blog/abdominal-distension">
             <h3>হঠাৎ পেট ফোলা কি বিপজ্জনক? সত্য জানুন এখনই!</h3>
             <p class="blog-card-excerpt">হঠাৎ বা দীর্ঘদিনের পেট ফোলা নিয়ে দুশ্চিন্তায় আছেন? কারণ, লক্ষণ ও করণীয় জেনে নিন এবং প্রয়োজনে অনলাইনে বিশেষজ্ঞ ডাক্তারের পরামর্শ নিন</p>
             <div class="blog-card-meta">
@@ -543,7 +607,7 @@
         
         <!-- Post 2 -->
         <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/abdominal-pain ">
+          <a href="https://www.romanulislam.com/blog/abdominal-pain">
             <h3>পেটে ব্যথা কি বিপদের লক্ষণ? সত্য জানলে অবাক হবেন!</h3>
             <p class="blog-card-excerpt">পেটে ব্যথা কেন হয় ও কখন বিপজ্জনক হতে পারে জানুন। ঘরোয়া উপায়, করণীয় ও টেলিমেডিসিনে দ্রুত চিকিৎসা পেতে এখনই জানুন।</p>
             <div class="blog-card-meta">
@@ -555,7 +619,7 @@
         
         <!-- Post 3 -->
         <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/acidity ">
+          <a href="https://www.romanulislam.com/blog/acidity">
             <h3>গ্যাস্ট্রিক এবং অ্যাসিডিটির সমস্যা: কারণ, প্রতিকার ও জীবনযাপনের গল্প</h3>
             <p class="blog-card-excerpt">গ্যাস্ট্রিক ও অ্যাসিডিটি কী, লক্ষণ, কারণ, চিকিৎসা, ঘরোয়া প্রতিকার এবং FAQ। ডা. রোমানুল ইসলামের সাথে অনলাইন চিকিৎসা পরামর্শ নিন।</p>
             <div class="blog-card-meta">
@@ -567,7 +631,7 @@
         
         <!-- Post 4 -->
         <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/acne ">
+          <a href="https://www.romanulislam.com/blog/acne">
             <h3>ব্রণ: কারণ, লক্ষণ, চিকিৎসা ও প্রতিকার | সম্পূর্ণ গাইডলাইন</h3>
             <p class="blog-card-excerpt">ব্রণ এর কারণ, লক্ষণ, চিকিৎসা ও প্রতিকার নিয়ে সম্পূর্ণ গাইড। এখনই অনলাইনে টেলিমেডিসিন সেবার মাধ্যমে ব্রণের সমাধান নিন।</p>
             <div class="blog-card-meta">
@@ -579,7 +643,7 @@
         
         <!-- Post 5 -->
         <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/allergy ">
+          <a href="https://www.romanulislam.com/blog/allergy">
             <h3>এলার্জি কি স্থায়ী? ভয়ংকর সত্য ও মুক্তির কার্যকর উপায়</h3>
             <p class="blog-card-excerpt">এলার্জি কি আপনাকেও কষ্ট দিচ্ছে? ঘরে বসেই টেলিমেডিসিনে ডাক্তার দেখান। জানুন এলার্জি প্রতিরোধ ও কার্যকর চিকিৎসার উপায় আজই।</p>
             <div class="blog-card-meta">
@@ -591,7 +655,7 @@
         
         <!-- Post 6 -->
         <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/anger ">
+          <a href="https://www.romanulislam.com/blog/anger">
             <h3>রাগ কি নষ্ট করছে আপনার জীবন? নিয়ন্ত্রণের শক্তিশালী উপায় জানুন</h3>
             <p class="blog-card-excerpt">অতিরিক্ত রাগ দাম্পত্য, পরিবার ও স্বাস্থ্যের ক্ষতি করে। টেলিমেডিসিনের বিশেষজ্ঞদের সহায়তায় রাগ নিয়ন্ত্রণ ও সমাধান জানুন সহজ উপায়ে।</p>
             <div class="blog-card-meta">
@@ -603,7 +667,7 @@
         
         <!-- Post 7 -->
         <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/anorexia ">
+          <a href="https://www.romanulislam.com/blog/anorexia">
             <h3>ক্ষুধামন্দা কি মারাত্মক সমস্যা? সহজ সমাধান জানুন আজই</h3>
             <p class="blog-card-excerpt">ক্ষুধামন্দা দূর করার কার্যকর উপায় জানতে চান? সঠিক খাবার, ভিটামিন ও চিকিৎসকের পরামর্শে ক্ষুধামন্দা থেকে মুক্তির পথ খুঁজে নিন আজই।</p>
             <div class="blog-card-meta">
@@ -615,7 +679,7 @@
         
         <!-- Post 8 -->
         <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/attention ">
+          <a href="https://www.romanulislam.com/blog/attention">
             <h3>মনোযোগ কমে যাচ্ছে? জানুন শক্তিশালী উপায় ও সমাধান!</h3>
             <p class="blog-card-excerpt">পড়াশোনা, কাজ বা দৈনন্দিন জীবনে মনোযোগ বাড়াতে চান? টেলিমেডিসিনের সহায়তায় জানুন মনোযোগ বৃদ্ধির কার্যকর সমাধান ও প্রাকৃতিক উপায়।</p>
             <div class="blog-card-meta">
@@ -627,7 +691,7 @@
         
         <!-- Post 9 -->
         <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/back-pain ">
+          <a href="https://www.romanulislam.com/blog/back-pain">
             <h3>কোমর ব্যথা কি আপনার জীবন নষ্ট করছে? কারণ, উপশম ও সমাধান</h3>
             <p class="blog-card-excerpt">কোমর ব্যথা নিয়ে ভুগছেন? এখনই জানুন এর কারণ, প্রতিকার ও চিকিৎসার উপায়। অনলাইনে বিশেষজ্ঞ ডাক্তারের পরামর্শ নিন আজই।</p>
             <div class="blog-card-meta">
@@ -638,1065 +702,6 @@
         </div>
         
         <!-- Post 10 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/blurred-vision ">
-            <h3>চোখে ঝাপসা দেখা কি বিপজ্জনক? কারণ, প্রতিকার ও সমাধান</h3>
-            <p class="blog-card-excerpt">চোখে ঝাপসা হলে অবহেলা নয়। জানুন চোখে ঝাপসা দেখার কারণ, প্রতিকার ও দৃষ্টি বৃদ্ধির উপায়। টেলিমেডিসিনে দ্রুত চিকিৎসা পান।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 11 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/breathlessness ">
-            <h3>শ্বাসকষ্ট কেন হয়? বিপজ্জনক নাকি নিরাময় সম্ভব?</h3>
-            <p class="blog-card-excerpt">শ্বাসকষ্ট একটি সাধারণ কিন্তু কষ্টদায়ক সমস্যা। জানুন শ্বাসকষ্ট এর কারণ, চিকিৎসা, ঘরোয়া উপায় ও মুক্তির সমাধান</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 12 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/burning-sensation ">
-            <h3>হাত পা জ্বালাপোড়া: কেন হয়? মুক্তির সহজ ও কার্যকর উপায়</h3>
-            <p class="blog-card-excerpt">হাত পা জ্বালাপোড়া কষ্টদায়ক সমস্যা? কারণ, ভিটামিন ঘাটতি ও প্রমাণিত সমাধান নিয়ে জানুন। হাত পা জ্বালাপোড়া কমাতে টেলিমেডিসিন সহায়তা নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 13 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/chest-pain ">
-            <h3>বুকে ব্যথা কি হার্ট অ্যাটাকের সংকেত? সত্য জানুন আজই!</h3>
-            <p class="blog-card-excerpt">বুকে ব্যথা কেন হয়, কি খাওয়া উচিত ও ঘরোয়া উপায় জানুন। টেলিমেডিসিনে এখনই ডাক্তারের পরামর্শ নিন বুকে ব্যথা কমাতে।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 14 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/chest-tightness ">
-            <h3>বুকের মাঝখানে চাপ: মারাত্মক নাকি সামান্য ব্যথা?</h3>
-            <p class="blog-card-excerpt">বুকের মাঝখানে চাপ অবহেলা করা বিপজ্জনক হতে পারে। জানুন কারণ, উপসর্গ ও করণীয়, এখনই অনলাইনে ডাক্তারের সাথে পরামর্শ নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 15 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/constipation ">
-            <h3>কোষ্ঠকাঠিন্যে ভুগছেন? বিপদ কতটা গুরুতর জানেন কি?</h3>
-            <p class="blog-card-excerpt">কোষ্ঠকাঠিন্য কেবল অস্বস্তি নয়, এটি মারাত্মক রোগের কারণ হতে পারে। এখনই জানুন প্রতিকার ও করণীয় এবং টেলিমেডিসিনে বিশেষজ্ঞের পরামর্শ নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 16 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/cough ">
-            <h3>রাতে কাশি: স্বাভাবিক নাকি বিপজ্জনক? | কারণ, লক্ষণ ও চিকিৎসা</h3>
-            <p class="blog-card-excerpt">রাতের কাশি বাড়ার কারণ ও কার্যকর প্রতিকার জানুন। দ্রুত টেলিমেডিসিনে ডাক্তার দেখিয়ে নিরাপদ সমাধান নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 17 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/dandruff ">
-            <h3>চিরতরে খুশকি দূর করবেন কীভাবে? সত্য জানুন আজই</h3>
-            <p class="blog-card-excerpt">খুশকি দূর করার কার্যকর ঘরোয়া ও চিকিৎসা উপায় জানুন। মাথায় খুশকি কেন হয় এবং সমাধান কীভাবে পাবেন, টেলিমেডিসিন সেবা থেকেও পরামর্শ নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 18 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/dementia ">
-            <h3>ভয়ঙ্কর ভুলে যাওয়া রোগ: কি সত্যিই প্রতিকার আছে?</h3>
-            <p class="blog-card-excerpt">ভুলে যাওয়া রোগ কি বিপজ্জনক? জানুন কারণ, লক্ষণ ও প্রতিকার। টেলিমেডিসিন পরামর্শ নিয়ে আজই ভুলে যাওয়া সমস্যার সমাধান শুরু করুন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 19 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/dengue ">
-            <h3>ডেঙ্গু জ্বর: লক্ষণ, চিকিৎসা, খাবার ও প্রতিরোধের সম্পূর্ণ গাইড</h3>
-            <p class="blog-card-excerpt">ডেঙ্গু জ্বরের লক্ষণ, চিকিৎসা, প্লাটিলেট বাড়ানোর খাবার, ঘরোয়া প্রতিকার ও প্রতিরোধের উপায় সম্পর্কে সম্পূর্ণ তথ্য</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 20 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/depression ">
-            <h3>ডিপ্রেশন কি সারানো যায়? সত্যিকারের মুক্তির শক্তিশালী উপায়</h3>
-            <p class="blog-card-excerpt">ডিপ্রেশন নিয়ে ভুগছেন? জানুন ডিপ্রেশনের লক্ষণ, চিকিৎসা, ব্যায়াম ও ডিপ্রেশন থেকে মুক্তির উপায়। অনলাইনে টেলিমেডিসিনে পরামর্শ নিন আজই।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 21 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/dermatitis ">
-            <h3>ডার্মাটাইটিস কি সারানো সম্ভব? ভয়ংকর সত্য জানুন!</h3>
-            <p class="blog-card-excerpt">ডার্মাটাইটিসের দাগ ও চুলকানি দূর করতে চান? সঠিক চিকিৎসা ও টেলিমেডিসিন পরামর্শে ডার্মাটাইটিস নিয়ন্ত্রণ এখন সহজ।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 22 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/diarrhoea ">
-            <h3>পাতলা পায়খানা কেন হয়? ডায়রিয়ার বিপজ্জনক সত্য ও সমাধান</h3>
-            <p class="blog-card-excerpt">ডায়রিয়া হলে কী করবেন? এখনই টেলিমেডিসিনে অভিজ্ঞ ডাক্তারের সাথে যুক্ত হয়ে সঠিক চিকিৎসা নিন। ডায়রিয়া চিকিৎসায় দ্রুত পদক্ষেপ নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 23 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/dry-cough ">
-            <h3>শুকনো কাশি কি বিপদজনক? অবহেলা করলে ক্ষতি হতে পারে!</h3>
-            <p class="blog-card-excerpt">শুকনো কাশি কেন হয়, কিভাবে মুক্তি পাবেন এবং চিকিৎসা দরকার কবে—জানুন। টেলিমেডিসিনে এখনই ডাক্তার দেখিয়ে শুকনো কাশি থেকে সমাধান নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 24 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/dry-skin ">
-            <h3>শুষ্ক ত্বক কি আপনার সৌন্দর্যের শত্রু? জানুন সমাধান ও শক্তিশালী যত্নের কৌশল</h3>
-            <p class="blog-card-excerpt">শুষ্ক ত্বক এখনই কমাতে চান? ঘরোয়া উপায়, সঠিক ফেসওয়াস, সাবান, খাবার ও ভিটামিনসহ সহজ যত্নে নরম মসৃণ ত্বক পেতে আমাদের গাইড পড়ুন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 25 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/dry-throat ">
-            <h3>গলা শুকিয়ে যাওয়া: হঠাৎ হলে কি বিপদ? কারণ ও প্রতিকার</h3>
-            <p class="blog-card-excerpt">গলা শুকিয়ে যাওয়া কেবল অস্বস্তি নয়, কখনও গুরুতর সমস্যার সংকেত হতে পারে। আজই জানুন কারণ, প্রতিকার ও চিকিৎসা পরামর্শ।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 26 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/dysuria ">
-            <h3>প্রস্রাবে জ্বালাপোড়া কেন হয়? অবাক করা কারণ ও প্রতিকার!</h3>
-            <p class="blog-card-excerpt">প্রস্রাবে জ্বালাপোড়া সমস্যা দূর করার কার্যকরী ঘরোয়া ও চিকিৎসা উপায় জানুন। গর্ভবতী ও সাধারণ মানুষ উভয়ের জন্য কার্যকর পরামর্শ।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 27 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/earache ">
-            <h3>কানে ব্যথা কেন হয়? বিপজ্জনক নাকি সাধারণ সমস্যা?</h3>
-            <p class="blog-card-excerpt">কানে ব্যথা নিয়ে চিন্তিত? জানুন কানে ব্যথার কারণ, ঘরোয়া উপায় ও চিকিৎসা। কানে ব্যথা উপশমে টেলিমেডিসিনে ডাক্তার দেখান সহজেই।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 28 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/eczema ">
-            <h3>একজিমা: কারণ, লক্ষণ, প্রতিকার এবং সুস্থ জীবনের গল্প</h3>
-            <p class="blog-card-excerpt">একজিমা কী, লক্ষণ, কারণ, চিকিৎসা, ঘরোয়া প্রতিকার এবং FAQ। ডা. রোমানুল ইসলামের সাথে অনলাইন চিকিৎসা পরামর্শ নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 29 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/edema ">
-            <h3>শরীরে পানি আসা কি বিপদজনক? জানুন আসল কারণ ও সমাধান</h3>
-            <p class="blog-card-excerpt">শরীরে পানি আসা এর প্রকৃত কারণ, লক্ষণ ও চিকিৎসা জেনে নিন। টেলিমেডিসিনে অভিজ্ঞ ডাক্তারের পরামর্শ নিন এখনই, সঠিক সমাধানের জন্য।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 30 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/epilepsy ">
-            <h3>মৃগী রোগ কি সারানো যায়? সত্য জানলে বদলাবে জীবন</h3>
-            <p class="blog-card-excerpt">মৃগী রোগ নিয়ে ভয় নয়, সমাধান চাই। মৃগী রোগের কারণ, লক্ষণ, চিকিৎসা ও মুক্তির উপায় জানুন এবং টেলিমেডিসিনে সহজে পরামর্শ নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 31 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/erectile-dysfunction ">
-            <h3>ইরেকটাইল ডিসফাংশন কি সারানো সম্ভব? পুরুষদের জন্য সমাধান</h3>
-            <p class="blog-card-excerpt">ইরেকটাইল ডিসফাংশন এর কারণ, লক্ষণ, ব্যায়াম ও সর্বশেষ চিকিৎসা নিয়ে বিস্তারিত জানুন। এখনই টেলিমেডিসিনে সমাধান পান।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 32 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/fever ">
-            <h3>জ্বর কি বিপজ্জনক? কারণ, উপসর্গ ও মুক্তির উপায় জানুন</h3>
-            <p class="blog-card-excerpt">জ্বর নিয়ে দুশ্চিন্তায় আছেন? জানুন জ্বরের কারণ, লক্ষণ ও চিকিৎসা। এখনই টেলিমেডিসিনে ডাক্তার দেখান ও ঘরে বসেই জ্বরের সঠিক সমাধান পান।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 33 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/foot-pain ">
-            <h3>পায়ের গোড়ালি ব্যথা: কি কারণে হয় এবং কিভাবে কমানো যায়?</h3>
-            <p class="blog-card-excerpt">পায়ের গোড়ালি ব্যথা দ্রুত কমানোর কার্যকর উপায়, ঘরোয়া চিকিৎসা এবং ব্যায়ামের পরামর্শ নিয়ে বিস্তারিত গাইড</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 34 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/fracture ">
-            <h3>হাড় ভাঙ্গা: কারণ, লক্ষণ, প্রতিকার ও ঘরোয়া উপায়</h3>
-            <p class="blog-card-excerpt">হাড় ভাঙ্গার প্রাথমিক চিকিৎসা, দ্রুত সুস্থ হওয়ার ঘরোয়া উপায় এবং হাড় জোড়া লাগার প্রক্রিয়া সম্পর্কে সম্পূর্ণ তথ্য</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 35 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/fungal-infection ">
-            <h3>ফাঙ্গাল ইনফেকশন কি ভয়ঙ্কর? দ্রুত মুক্তির উপায় জানুন!</h3>
-            <p class="blog-card-excerpt">ফাঙ্গাল ইনফেকশন নিয়ে সমস্যায় আছেন? ঘরে বসে টেলিমেডিসিনে ডাক্তার দেখান। জানুন কারণ, লক্ষণ ও কার্যকর চিকিৎসার উপায়।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 36 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/hair-fall ">
-            <h3>চুল পড়া কি থামানো সম্ভব? জানুন শক্তিশালী সমাধান</h3>
-            <p class="blog-card-excerpt">চুল পড়া কমাতে ও নতুন চুল গজাতে কার্যকর উপায় খুঁজছেন? এখানে জানুন চুল পড়ার কারণ, প্রতিকার ও চিকিৎসা নিয়ে ভরসাযোগ্য সমাধান।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 37 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/hallucination ">
-            <h3>হ্যালুসিনেশন কি ভয়ংকর? সত্য জানলে বদলাবে জীবন</h3>
-            <p class="blog-card-excerpt">হ্যালুসিনেশন কী, কেন হয়, লক্ষণ ও বাঁচার উপায় জানুন। অনলাইন ডাক্তারের পরামর্শে হ্যালুসিনেশন নিয়ন্ত্রণে আনুন এখনই সহজে।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 38 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/headache ">
-            <h3>প্রচণ্ড মাথা ব্যথা কেন হয়? বিপদজনক নাকি সাধারণ সমস্যা?</h3>
-            <p class="blog-card-excerpt">মাথা ব্যথা কমানোর কার্যকর উপায় খুঁজছেন? জানুন মাথা ব্যথা কেন হয়, এর প্রাথমিক চিকিৎসা ও করণীয় সম্পর্কে বিস্তারিত তথ্য।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 39 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/hearing-loss ">
-            <h3>কানে কম শোনা: কারণ, প্রতিকার ও দ্রুত সমাধান</h3>
-            <p class="blog-card-excerpt">কানে কম শোনার কারণ, লক্ষণ, প্রতিকারের ঘরোয়া উপায়, আধুনিক চিকিৎসা ও কানে শোনার মেশিন সম্পর্কে বিস্তারিত তথ্য</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 40 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/heartburn ">
-            <h3>বুক জ্বালাপোড়া কেন হয়? লুকানো সত্য ও সমাধান জানুন আজই!</h3>
-            <p class="blog-card-excerpt">বুক জ্বালাপোড়া অনেকের দৈনন্দিন সমস্যা। এখনই জানুন বুক জ্বালাপোড়া কমানোর উপায় ও চিকিৎসা নিয়ে টেলিমেডিসিন সার্ভিসের মাধ্যমে সঠিক সমাধান।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 41 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/hematuria ">
-            <h3>প্রস্রাবের সাথে রক্ত কেন আসে? বিপজ্জনক নাকি নিরাময়যোগ্য?</h3>
-            <p class="blog-card-excerpt">প্রস্রাবের সাথে রক্ত দেখা গেলে অবহেলা নয়। জানুন কারণ, করণীয় ও চিকিৎসা পদ্ধতি। টেলিমেডিসিনের মাধ্যমে নিরাপদ সমাধান নিন এখনই।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 42 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/hemoptysis ">
-            <h3>কফের সাথে রক্ত: স্বাভাবিক নাকি বিপজ্জনক? | কারণ, লক্ষণ ও চিকিৎসা</h3>
-            <p class="blog-card-excerpt">কফের সাথে রক্ত আসার কারণ, লক্ষণ, প্রতিকার এবং কখন ডাক্তার দেখাবেন। টেলিমেডিসিনের মাধ্যমে বিশেষজ্ঞ ডাক্তারের পরামর্শ নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 43 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/high-pressure ">
-            <h3>হঠাৎ হাই প্রেসার কি মারাত্মক? কারণ, সমাধান ও করণীয়</h3>
-            <p class="blog-card-excerpt">হঠাৎ হাই প্রেসার হলে করণীয়, লক্ষণ, খাদ্য তালিকা ও ঘরোয়া উপায় জানুন। টেলিমেডিসিনে বিশেষজ্ঞ ডাক্তার থেকে অনলাইনে সঠিক চিকিৎসা নিন এখনই।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 44 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/hoarse-voice ">
-            <h3>গলা ভাঙ্গা কি বিপজ্জনক? দ্রুত আরোগ্যের শক্তিশালী উপায় জানুন!</h3>
-            <p class="blog-card-excerpt">গলা ভাঙ্গা দূর করার ঘরোয়া ও চিকিৎসা উপায় জানুন। গলার আওয়াজ ফেরাতে প্রমাণিত কৌশল ও টেলিমেডিসিনে বিশেষজ্ঞের সহায়তা নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 45 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/hydrocele ">
-            <h3>অন্ডকোষ ফুলে যাওয়া কি বিপজ্জনক? সত্য জানুন আজই</h3>
-            <p class="blog-card-excerpt">অন্ডকোষ ফুলে যাওয়া অবহেলা করলে বড় সমস্যায় রূপ নিতে পারে। সঠিক কারণ, প্রতিকার ও চিকিৎসা জানুন এবং এখনই বিশেষজ্ঞ ডাক্তারের সাথে পরামর্শ নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 46 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/hyperhidrosis ">
-            <h3>অতিরিক্ত ঘাম কেন হয়? চমকপ্রদ কারণ ও সমাধান জানুন</h3>
-            <p class="blog-card-excerpt">অতিরিক্ত ঘামের কারণ, লক্ষণ, প্রতিকারের ঘরোয়া উপায় ও চিকিৎসা সম্পর্কে বিস্তারিত জানুন</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 47 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/hypothermia ">
-            <h3>শরীর ঠান্ডা হয়ে যাওয়া কি বিপদজনক? এখনই জানুন সমাধান</h3>
-            <p class="blog-card-excerpt">শরীর ঠান্ডা হয়ে যাওয়া কেন হয় ও করণীয় জানুন। বিশেষজ্ঞ টেলিমেডিসিন সেবা নিয়ে ঘরে বসেই চিকিৎসা নিন এখনই।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 48 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/indigestion ">
-            <h3>বদ হজমে ভুগছেন? বিপদ এড়াতে এখনই জানুন করণীয়</h3>
-            <p class="blog-card-excerpt">বদ হজম থেকে মুক্তি চান? সহজ উপায়, খাদ্যাভ্যাস পরিবর্তন ও টেলিমেডিসিন সেবার মাধ্যমে এখনই জেনে নিন বদ হজম কমানোর কার্যকর সমাধান</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 49 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/insomnia ">
-            <h3>অনিদ্রা কি জীবন ধ্বংস করছে? ঘুম ফেরানোর শক্তিশালী সমাধান জানুন আজই</h3>
-            <p class="blog-card-excerpt">অনিদ্রা দূর করার কার্যকর উপায়, রাতে ঘুম না আসার কারণ ও চিকিৎসা নিয়ে বিস্তারিত জানুন। এখনই অনলাইনে ডাক্তারের পরামর্শ নিয়ে অনিদ্রা মোকাবিলা করুন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 50 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/itching ">
-            <h3>চুলকানি কি রোগের লক্ষণ? বিপজ্জনক না সাধারণ সমস্যা?</h3>
-            <p class="blog-card-excerpt">সারা শরীরে চুলকানি হলে অবহেলা করবেন না। চুলকানি কেন হয়, করণীয় কী এবং দ্রুত সমাধান পেতে টেলিমেডিসিনে পরামর্শ নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 51 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/itchy-eyes ">
-            <h3>চোখ চুলকানো কি বিপজ্জনক? জানুন কারণ, ক্ষতি ও সমাধান</h3>
-            <p class="blog-card-excerpt">চোখ চুলকানো সমস্যায় ভুগছেন? চোখ চুলকানোর কারণ, ক্ষতি ও প্রতিকার জানুন এবং আমাদের টেলিমেডিসিন সেবার মাধ্যমে তাৎক্ষণিক পরামর্শ নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 52 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/knee-pain ">
-            <h3>হাটুর জয়েন্টে ব্যথা নিয়ে ভুগছেন? সত্যিই ভয়ংকর নাকি সহজ সমাধান আছে?</h3>
-            <p class="blog-card-excerpt">হাটুর জয়েন্টে ব্যথার কারণ, ঘরোয়া চিকিৎসা, খাবার ও ব্যায়ামসহ টেলিমেডিসিনে দ্রুত চিকিৎসকের পরামর্শ পাওয়ার উপায়।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 53 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/knee-swelling ">
-            <h3>হাটু ফোলা কেন হয়? ভয়ংকর ভুল ও আসল প্রতিকার জানুন আজই</h3>
-            <p class="blog-card-excerpt">হাটু ফোলা অনেক সময় অবহেলা করলে বড় সমস্যা হতে পারে। টেলিমেডিসিনে ডাক্তার দেখিয়ে এখনই হাটু ফোলা কমানোর সঠিক সমাধান নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 54 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/leg-cramps ">
-            <h3>পায়ের পেশিতে টান কি বিপদজনক? জানুন সমাধান ও প্রতিকার</h3>
-            <p class="blog-card-excerpt">হঠাৎ পেশিতে টান হলে কী করবেন? কেন হয় ও কিভাবে প্রতিকার করবেন জানুন। টেলিমেডিসিনের মাধ্যমে ঘরে বসেই সমাধান নিন আজই।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 55 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/leg-swelling ">
-            <h3>হঠাৎ পা ফোলা কেন? জানুন ভয়ঙ্কর কারণ ও সমাধান</h3>
-            <p class="blog-card-excerpt">পা ফোলা কেবল সাধারণ সমস্যা নয়, বড় রোগের সতর্ক সংকেতও হতে পারে। টেলিমেডিসিনে এখনই জেনে নিন পা ফোলা কমানোর উপায় ও চিকিৎসা।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 56 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/leukorrhea ">
-            <h3>সাদা স্রাব বেশি হচ্ছে? বিপজ্জনক নাকি স্বাভাবিক লক্ষণ?</h3>
-            <p class="blog-card-excerpt">সাদা স্রাব কেন হয়, কখন স্বাভাবিক আর কখন বিপজ্জনক—সব জানুন। অতিরিক্ত সাদা স্রাব হলে করণীয় ও চিকিৎসার জন্য এখনই পরামর্শ নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 57 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/lose-weight ">
-            <h3>ভাত না খেলে ওজন কমে? অবিশ্বাস্য সত্য জানুন আজই</h3>
-            <p class="blog-card-excerpt">সঠিক ডায়েট চার্ট ও ব্যায়ামের মাধ্যমে স্বাস্থ্যকরভাবে ওজন কমানো সম্ভব। ভাত বা রুটি খেলে কি ওজন কমে? জানুন সব তথ্য এক জায়গায়।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 58 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/low-pressure ">
-            <h3>লো প্রেসার কি বিপজ্জনক? অবহেলা করলে মারাত্মক ক্ষতি!</h3>
-            <p class="blog-card-excerpt">হঠাৎ লো প্রেসার হলে করণীয়, ঘরোয়া উপায় ও চিকিৎসা জানুন। এখনই টেলিমেডিসিন সেবায় ডাক্তারদের সাথে পরামর্শ নিয়ে সুস্থ থাকুন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 59 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/melasma ">
-            <h3>মেছতা কি স্থায়ী? মুখের কালো দাগের ভয়ংকর সত্য</h3>
-            <p class="blog-card-excerpt">মেছতা দূর করার উপায়, প্রাকৃতিক চিকিৎসা ও বিশেষজ্ঞ পরামর্শ। ঘরে বসেই টেলিমেডিসিনে পরামর্শ নিন আজই।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 60 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/memory ">
-            <h3>স্মৃতিশক্তি দুর্বল? মস্তিষ্ক তীক্ষ্ণ করার চমকপ্রদ উপায় জানুন</h3>
-            <p class="blog-card-excerpt">স্মৃতিশক্তি বাড়াতে চান? ঘরোয়া উপায়, খাবার, ব্যায়াম ও বৈজ্ঞানিক কৌশল জেনে নিন। এখনই স্মৃতিশক্তি উন্নত করার সহজ সমাধান পড়ুন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 61 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/nasal-congestion ">
-            <h3>নাক বন্ধ হলে কী করবেন: ঘরোয়া সমাধান ও চিকিৎসা</h3>
-            <p class="blog-card-excerpt">নাকের সর্দির কারণ, লক্ষণ, প্রতিকারের ঘরোয়া উপায় ও চিকিৎসা পরামর্শ। দ্রুত টেলিমেডিসিনে ডাক্তারের পরামর্শ নিয়ে সমস্যা সমাধান করুন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 62 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/neck-pain ">
-            <h3>ঘাড় ব্যথা কেন হয়? অবহেলা করলে হতে পারে বড় বিপদ!</h3>
-            <p class="blog-card-excerpt">ঘাড় ব্যথা কমানোর উপায়, কারণ ও প্রতিকার জানুন। সঠিক চিকিৎসা ও টেলিমেডিসিন সেবা নিয়ে ঘাড় ব্যথা থেকে মুক্তি পান সহজেই।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 63 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/numbness ">
-            <h3>হাত-পা ঝিনঝিন কি বিপদজনক? জেনে নিন সমাধান ও সঠিক প্রতিকার</h3>
-            <p class="blog-card-excerpt">হাত-পা ঝিনঝিন হলে অবহেলা নয়! ঝিনঝিন এর কারণ, ভিটামিন ঘাটতি, ব্যায়াম ও প্রতিকার জেনে নিন সহজ সমাধান টেলিমেডিসিন সেবার মাধ্যমে।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 64 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/oliguria ">
-            <h3>প্রস্রাব কম হলে কি মারাত্মক সমস্যা? এখনই জানুন সমাধান</h3>
-            <p class="blog-card-excerpt">প্রস্রাব কম হলে বিপদ হতে পারে! জেনে নিন কারণ, প্রতিকার ও করণীয়। সময়মতো চিকিৎসা পেলে এই সমস্যার কার্যকর সমাধান সম্ভব।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 65 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/pain-during-sex ">
-            <h3>সহবাসের সময় ব্যথা কি স্বাভাবিক নাকি বিপদজনক? জানুন সত্য</h3>
-            <p class="blog-card-excerpt">সহবাসের সময় ব্যথা হলে দেরি না করে সঠিক কারণ ও চিকিৎসা জানুন। টেলিমেডিসিনে এখনই ডাক্তার দেখান গোপনীয়ভাবে।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 66 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/palpitation ">
-            <h3>বুক ধড়ফড় হঠাৎ কেন হয়? বিপজ্জনক নাকি সাময়িক?</h3>
-            <p class="blog-card-excerpt">বুক ধড়ফড় সমস্যার কারণ, লক্ষণ ও করণীয় জানুন। টেলিমেডিসিন সেবা নিয়ে দ্রুত বুক ধড়ফড় থেকে মুক্তি পান সহজে।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 67 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/papule ">
-            <h3>ফুসকুড়ি কি বিপদজনক? সত্য জানলে অবাক হবেন!</h3>
-            <p class="blog-card-excerpt">শরীরে বা মুখে ফুসকুড়ি হলে দেরি না করে চিকিৎসা নিন। জানুন ফুসকুড়ি কেন হয়, করণীয় ও ফুসকুড়ি কমানোর উপায় – এখনই পড়ুন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 68 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/paralysis ">
-            <h3>হাত-পা অবশ কেন হয়? চরম প্রতিকার জানুন এখনই!</h3>
-            <p class="blog-card-excerpt">হাত পা অবশ হওয়া স্বাভাবিক নয়। অবশ প্রতিকার, চিকিৎসা এবং করণীয় জানুন, দ্রুত শক্তি ফিরিয়ে আনুন। টেলিমেডিসিন সহায়তায় এখনই সমাধান।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 69 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/phobia ">
-            <h3>অতিরিক্ত ভয় কি বিপজ্জনক? মানসিক ভয় দূর করার কার্যকর উপায়</h3>
-            <p class="blog-card-excerpt">অতিরিক্ত ভয় আপনার জীবনে বাধা হতে পারে। জানুন কিভাবে মানসিক ভয় ও ফোবিয়া দূর করবেন এবং সুস্থ জীবনের পথে এগিয়ে যাবেন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 70 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/pigmentation ">
-            <h3>মুখের কালো দাগ কি চিরদিন থাকবে? পিগমেন্টেশন এর সত্য</h3>
-            <p class="blog-card-excerpt">পিগমেন্টেশন দূর করার কার্যকর উপায় ও চিকিৎসা এখন হাতের মুঠোয়। আমাদের টেলিমেডিসিন সার্ভিসে অনলাইনে ডাক্তার দেখিয়ে সমাধান নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 71 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/polyuria ">
-            <h3>ঘন ঘন প্রস্রাবের লুকানো কারণ কি? জানুন সত্য</h3>
-            <p class="blog-card-excerpt">বারবার প্রস্রাব হওয়ার কারণ বুঝে সঠিক প্রতিকার নিন। ঘন ঘন প্রস্রাব দূর করার ঘরোয়া উপায়, খাবার ও চিকিৎসা এখনই জেনে নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 72 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/premature-ejaculation ">
-            <h3>দ্রুত বীর্য পাতের স্থায়ী সমাধান কি সম্ভব? সত্য জানুন</h3>
-            <p class="blog-card-excerpt">দ্রুত বীর্য পাত অনেক পুরুষের জীবনে দুশ্চিন্তার কারণ। টেলিমেডিসিনে বিশেষজ্ঞ চিকিৎসকের পরামর্শে এর কার্যকর ও স্থায়ী সমাধান সম্ভব।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 73 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/psoriasis ">
-            <h3>সোরিয়াসিস: কারণ, লক্ষণ, চিকিৎসা ও খাদ্য তালিকা</h3>
-            <p class="blog-card-excerpt">সোরিয়াসিস এর কারণ, লক্ষণ, চিকিৎসা ও খাদ্য তালিকা নিয়ে সম্পূর্ণ গাইড। এখনই অনলাইনে টেলিমেডিসিন সেবার মাধ্যমে সোরিয়াসিসের সমাধান নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 74 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/red-eye ">
-            <h3>চোখ লাল হওয়া কি বিপজ্জনক? আসল কারণ ও সমাধান জানুন!</h3>
-            <p class="blog-card-excerpt">চোখ লাল সমস্যা কি সাধারণ নাকি গুরুতর? চোখ লাল কমানোর কারণ, প্রতিকার, ঘরোয়া উপায় ও ড্রপ সম্পর্কে জানুন এবং চোখের সঠিক যত্ন নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 75 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/ringworm ">
-            <h3>দাদ: কারণ, লক্ষণ, চিকিৎসা ও প্রতিকার</h3>
-            <p class="blog-card-excerpt">দাদ এর কারণ, লক্ষণ, চিকিৎসা ও প্রতিকার নিয়ে সম্পূর্ণ গাইড। এখনই অনলাইনে টেলিমেডিসিন সেবার মাধ্যমে দাদের সমাধান নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 76 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/runny-nose ">
-            <h3>নাক দিয়ে পানি পড়া: স্বাভাবিক না কি বিপজ্জনক? | কারণ ও প্রতিকার</h3>
-            <p class="blog-card-excerpt">জানুন নাক দিয়ে পানি পড়ার কারণ, লক্ষণ এবং ঘরোয়া প্রতিকার। দ্রুত টেলিমেডিসিনে ডাক্তারের পরামর্শ নিয়ে সমস্যা সমাধান করুন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 77 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/scabies ">
-            <h3>স্ক্যাবিস কি আপনার জীবন দুর্বিষহ করছে? জেনে নিন মুক্তির সহজ সমাধান!</h3>
-            <p class="blog-card-excerpt">স্ক্যাবিস থেকে মুক্তির উপায়, লক্ষণ ও ঘরোয়া চিকিৎসা নিয়ে সম্পূর্ণ গাইড। এখনই টেলিমেডিসিনে পরামর্শ নিয়ে স্ক্যাবিসের কার্যকর সমাধান নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 78 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/smelly-urine ">
-            <h3>প্রস্রাবে গন্ধ: এটি কি বিপজ্জনক? আসল কারণ ও কার্যকর প্রতিকার</h3>
-            <p class="blog-card-excerpt">প্রস্রাবে গন্ধ নিয়ে চিন্তিত? জানুন এর আসল কারণ, স্বাস্থ্যঝুঁকি ও ঘরোয়া প্রতিকার। অনলাইনে বিশেষজ্ঞের পরামর্শ নিয়ে সমাধান পান সহজে।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 79 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/sneezing ">
-            <h3>হাঁচি: সাধারণ নাকি গুরুতর সংকেত? | কারণ, লক্ষণ ও প্রতিকার</h3>
-            <p class="blog-card-excerpt">অতিরিক্ত হাঁচি কখনই অবহেলা করবেন না। জানুন কারণ, লক্ষণ ও ঘরোয়া সমাধান। এখনই অনলাইনে ডাক্তারের পরামর্শ নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 80 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/sputum ">
-            <h3>বুকে কফ জমে কষ্ট? ঘরোয়া ও মেডিকেল সমাধান জানুন</h3>
-            <p class="blog-card-excerpt">বুকে কফ জমে শ্বাসকষ্ট? এখনই জানুন ঘরোয়া উপায় ও চিকিৎসকের সাহায্য নেওয়ার সময়। বুকে কফ সমস্যার কার্যকর সমাধান পেতে পড়ুন বিস্তারিত।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 81 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/stress ">
-            <h3>টেনশন কি ক্ষতিকর? জেনে নিন সেরা ঘরোয়া উপায়!</h3>
-            <p class="blog-card-excerpt">টেনশন কমানো ও নিয়ন্ত্রণের কার্যকর ঘরোয়া উপায় জানুন। হঠাৎ চাপ বা অস্থিরতা কমানোর সহজ কৌশল এখানে পড়ুন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 82 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/stretch-marks ">
-            <h3>শরীরের ফাটা দাগ চিরতরে যাবে? সত্য জানুন আজই!</h3>
-            <p class="blog-card-excerpt">শরীরের ফাটা দাগ দূর করতে চান? ঘরোয়া ও আধুনিক চিকিৎসায় কিভাবে ফাটা দাগ কমানো যায় জেনে নিন। আপনার আত্মবিশ্বাস ফিরিয়ে আনুন আজই।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 83 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/suppresses-appetite ">
-            <h3>অতিরিক্ত ক্ষুধা কি বিপজ্জনক? ক্ষুধা কমানোর শক্তিশালী উপায় জানুন</h3>
-            <p class="blog-card-excerpt">অতিরিক্ত ক্ষুধা নিয়ন্ত্রণে রাখুন সহজে। টেলিমেডিসিনে বিশেষজ্ঞ ডাক্তারের পরামর্শ নিয়ে ক্ষুধা কমানো ও সুস্থ জীবনের পথ এখন হাতের নাগালে।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 84 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/telemedicineki ">
-            <h3>টেলিমেডিসিন: ডিজিটাল স্বাস্থ্যসেবার এক নতুন যুগ</h3>
-            <p class="blog-card-excerpt">টেলিমেডিসিন কী, কিভাবে কাজ করে, সুবিধা, সীমাবদ্ধতা ও FAQ। ডা. রোমানুল ইসলামের সাথে অনলাইন চিকিৎসা পরামর্শ নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 85 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/thin-skin ">
-            <h3>ত্বক পাতলা কেন হয়? ভয়াবহ কারণ ও সমাধান জানুন এখনই!</h3>
-            <p class="blog-card-excerpt">ত্বক পাতলা সমস্যায় ভুগছেন? জানুন ত্বক পাতলা হওয়ার কারণ, করণীয় ও প্রাকৃতিক উপায়। টেলিমেডিসিনে ডাক্তারের পরামর্শ নিন আজই।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 86 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/throat-pain ">
-            <h3>গলা ব্যথা? জানুন সহজ ও কার্যকর উপায় যেভাবে তাড়াতাড়ি মুক্তি পাবেন</h3>
-            <p class="blog-card-excerpt">গলা ব্যথা এড়াতে এবং দ্রুত আরাম পেতে কার্যকর ঘরোয়া এবং চিকিৎসা উপায় সম্পর্কে জানুন। আপনার স্বস্তির জন্য এখনই পদক্ষেপ নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 87 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/tinnitus ">
-            <h3>টিনিটাস কি সারবে? কানে ঝিঁ ঝিঁ শব্দ দূর করার কার্যকর উপায় জানুন</h3>
-            <p class="blog-card-excerpt">কানে ঝিঁ ঝিঁ শব্দ বা টিনিটাসে ভুগছেন? টিনিটাস এর কারণ, লক্ষণ ও চিকিৎসা নিয়ে জানুন এবং টেলিমেডিসিনের মাধ্যমে টিনিটাসের সমাধান পান সহজেই।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 88 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/tremor ">
-            <h3>শরীর কাঁপা কি বিপদজনক লক্ষণ? জানুন আসল সত্য এখনই</h3>
-            <p class="blog-card-excerpt">শরীর কাঁপা কেন হয়, এর কারণ, সমাধান ও চিকিৎসা সম্পর্কে জানুন। টেলিমেডিসিনের মাধ্যমে দ্রুত সঠিক পরামর্শ পেতে এখনই যোগাযোগ করুন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 89 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/trigger-finger ">
-            <h3>ট্রিগার ফিঙ্গার: হাতের আঙ্গুল বেঁকে যাওয়ার ভয়ঙ্কর কারণ কি?</h3>
-            <p class="blog-card-excerpt">ট্রিগার ফিঙ্গার সমস্যার পুরো বিশ্লেষণ। হাতের আঙ্গুল বেঁকে গেলে করণীয়, ব্যায়াম ও চিকিৎসা নিয়ে বিস্তারিত তথ্য পেতে পড়ুন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 90 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/unconsciousness ">
-            <h3>অজ্ঞান কেন হয়? জানুন সতর্কতার সব শক্তিশালী উপায়!</h3>
-            <p class="blog-card-excerpt">অজ্ঞান হওয়ার কারণ, লক্ষণ এবং প্রাথমিক চিকিৎসা। দ্রুত সতর্কতা নিন এবং অজ্ঞান হওয়া রোধে ঘরোয়া উপায় জানুন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 91 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/vaginal-dryness ">
-            <h3>যোনির শুষ্কতা? শিখুন কার্যকর সমাধান ও প্রতিকার!</h3>
-            <p class="blog-card-excerpt">যোনির শুষ্কতা দূর করার সহজ ও কার্যকর উপায় নিয়ে জানুন। ঘরোয়া প্রতিকার, চিকিৎসা ও গর্ভাবস্থায় যত্নের বিস্তারিত গাইড।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 92 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/vertigo ">
-            <h3>হঠাৎ মাথা ঘোরা কি বিপদের লক্ষণ? জেনে নিন সমাধান</h3>
-            <p class="blog-card-excerpt">হঠাৎ মাথা ঘোরা হলে কী করবেন? মাথা ঘোরা এর কারণ, লক্ষণ ও প্রতিকার নিয়ে বিস্তারিত জেনে নিন। অনলাইনে ডাক্তার পরামর্শ পেতে এখনই ক্লিক করুন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 93 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/vesicle ">
-            <h3>শরীরে হঠাৎ ছোট গুটি? ভয় না সতর্কবার্তা! জানুন সত্য</h3>
-            <p class="blog-card-excerpt">শরীরে হঠাৎ ছোট গুটি হলে চিন্তা করবেন না। সঠিক কারণ ও করণীয় জানতে পড়ুন আমাদের বিস্তারিত গাইড। ছোট গুটি নিয়ে টেলিমেডিসিন সাপোর্ট পান।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 94 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/vitiligo ">
-            <h3>শ্বেতী রোগ: কারণ, লক্ষণ, চিকিৎসা ও প্রাকৃতিক উপায় | ভিটিলিগো</h3>
-            <p class="blog-card-excerpt">শ্বেতী রোগ বা ভিটিলিগো সম্পর্কে সম্পূর্ণ তথ্য: কারণ, লক্ষণ, চিকিৎসা, প্রাকৃতিক উপায় ও বিশেষজ্ঞ পরামর্শ</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 95 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/vomiting ">
-            <h3>হঠাৎ বমি হলে কি করবেন? ভয়ংকর কারণ ও সমাধান জানুন</h3>
-            <p class="blog-card-excerpt">বমি হলে সঠিক করণীয় জানুন। হঠাৎ বমি, বারবার বমি বা খাবারের পর বমি বমি ভাব হলে টেলিমেডিসিনের মাধ্যমে দ্রুত সমাধান নিন।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 96 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/weakness ">
-            <h3>শরীরের দুর্বলতা কি বিপজ্জনক? কারণ ও সমাধান জানুন এখনই!</h3>
-            <p class="blog-card-excerpt">দুর্বলতা কেন হয়, কোন ভিটামিনের অভাবে হয় ও সমাধান কীভাবে সম্ভব জানুন। টেলিমেডিসিনের মাধ্যমে দুর্বলতা চিকিৎসা নিন সহজেই।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-        
-        <!-- Post 97 -->
-        <div class="blog-card">
-          <a href="https://www.romanulislam.com/blog/weight-loss ">
-            <h3>হঠাৎ ওজন কমে যাওয়া বিপদজনক? জানুন আসল কারণ ও প্রতিকার</h3>
-            <p class="blog-card-excerpt">ওজন কমে যাওয়া কেন হয়, এর ঝুঁকি, প্রতিকার ও চিকিৎসা জানুন। টেলিমেডিসিনের মাধ্যমে সহজেই ডাক্তার দেখান ও সঠিক পরামর্শ পান।</p>
-            <div class="blog-card-meta">
-              <span>👨‍⚕️ ডা. রোমানুল ইসলাম</span>
-            </div>
-            <span class="read-more">আরও পড়ুন</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-          <!-- Post 98 -->
         <div class="blog-card">
           <a href="https://www.romanulislam.com/blog/Measles">
             <h3>হাম (Measles): ভুল ধারণা নয়, সঠিক সুরক্ষা জানুন</h3>
@@ -1748,12 +753,12 @@
   </div>
 </footer>
 
-    <!-- WhatsApp Floating Button -->
-    <a class="whatsapp-float" href="https://wa.me/8801826589958?text=স্যার, আমি একটি অ্যাপয়ন্টমেন্ট বুক করতে চাই" target="_blank" aria-label="WhatsApp Chat">
-        <img src="https://www.romanulislam.com/assets/images/whatsapp.gif" alt="WhatsApp" width="60" height="60" loading="lazy">
-    </a>
+<!-- WhatsApp Floating Button -->
+<a class="whatsapp-float" href="https://wa.me/8801826589958?text=স্যার, আমি একটি অ্যাপয়ন্টমেন্ট বুক করতে চাই" target="_blank" aria-label="WhatsApp Chat">
+  <img src="https://www.romanulislam.com/assets/images/whatsapp.gif" alt="WhatsApp" width="60" height="60" loading="lazy">
+</a>
 
-              <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S8DEQ62FVN"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -1762,12 +767,8 @@
   gtag('config', 'G-S8DEQ62FVN');
 </script>
 
-
-<!-- JavaScript -->
 <script>
-  // Set current year for copyright
   document.addEventListener('DOMContentLoaded', function() {
-    // Animation on scroll
     const observerOptions = {
       threshold: 0.1,
       rootMargin: '0px 0px -50px 0px'
@@ -1781,7 +782,6 @@
       });
     }, observerOptions);
     
-    // Observe elements
     document.querySelectorAll('.blog-card').forEach(el => {
       observer.observe(el);
     });
