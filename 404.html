@@ -48,11 +48,11 @@
             min-height: 100vh;
         }
         
-        /* Updated Header Styles to match index.html */
+        /* Updated Header - compact mobile friendly */
         .site-header {
             background: linear-gradient(135deg, #0ea5a5 0%, #0c7a7a 100%);
             color: white;
-            padding: 15px 0;
+            padding: 8px 0;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
@@ -70,47 +70,54 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            gap: 4px;
         }
         
         .brand {
-            font-size: 24px;
+            font-size: 18px;
             font-weight: 700;
             color: white;
             text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 6px;
         }
         
         .logo {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 42px;
-            height: 42px;
+            width: 32px;
+            height: 32px;
             background: white;
             border-radius: 50%;
-            padding: 8px;
+            padding: 5px;
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+            flex-shrink: 0;
         }
         
         .logo-icon {
-            font-size: 22px;
+            font-size: 16px;
             color: #0c7a7a;
         }
         
         .site-header nav {
             display: flex;
+            flex-wrap: wrap;
+            gap: 2px;
         }
         
         .site-header nav a {
             color: white;
             text-decoration: none;
-            margin-left: 25px;
             font-weight: 500;
             transition: all 0.3s ease;
-            padding: 8px 12px;
+            padding: 4px 8px;
             border-radius: 6px;
+            font-size: 0.75rem;
+            background: rgba(255, 255, 255, 0.1);
+            white-space: nowrap;
         }
         
         .site-header nav a:hover {
@@ -121,7 +128,7 @@
         
         /* Error Section */
         .error-section {
-            padding: 80px 0;
+            padding: 60px 0;
             width: 100%;
             flex: 1;
             display: flex;
@@ -130,7 +137,7 @@
         
         .error-content {
             background: white;
-            padding: 60px 40px;
+            padding: 40px 30px;
             border-radius: 15px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             max-width: 800px;
@@ -139,9 +146,9 @@
         }
         
         .error-icon {
-            font-size: 5rem;
+            font-size: 4rem;
             color: #ff6b6b;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             animation: pulse 2s infinite;
         }
         
@@ -153,14 +160,14 @@
         
         .error-title {
             color: #0c7a7a;
-            margin-bottom: 20px;
-            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-size: 2rem;
         }
         
         .error-message {
             color: #444;
-            margin-bottom: 30px;
-            font-size: 1.2rem;
+            margin-bottom: 25px;
+            font-size: 1.1rem;
             line-height: 1.8;
         }
         
@@ -183,16 +190,16 @@
             gap: 10px;
             background: linear-gradient(135deg, #0ea5a5 0%, #0c7a7a 100%);
             color: white;
-            padding: 14px 32px;
+            padding: 12px 28px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 1rem;
             transition: all 0.4s ease;
             box-shadow: 0 6px 20px rgba(14, 165, 165, 0.3);
             border: none;
             cursor: pointer;
-            margin-top: 20px;
+            margin-top: 15px;
         }
         
         .home-button:hover, .home-button:focus {
@@ -202,27 +209,27 @@
         }
         
         .quick-links {
-            margin-top: 40px;
-            padding-top: 30px;
+            margin-top: 30px;
+            padding-top: 25px;
             border-top: 1px solid #eaeaea;
         }
         
         .quick-links h3 {
             color: #0c7a7a;
-            margin-bottom: 20px;
-            font-size: 1.4rem;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
         }
         
         .link-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+            margin-top: 15px;
         }
         
         .link-item {
             background: #f8fafc;
-            padding: 15px;
+            padding: 12px;
             border-radius: 8px;
             border-left: 3px solid #0ea5a5;
             transition: all 0.3s ease;
@@ -238,31 +245,32 @@
             text-decoration: none;
             font-weight: 500;
             display: block;
+            font-size: 0.95rem;
         }
         
         .link-item a:hover, .link-item a:focus {
             color: #0ea5a5;
         }
         
-        /* Updated Footer to match index.html */
+        /* Footer */
         .site-footer {
             background: #0a5f5f;
             color: white;
-            padding: 40px 0 20px;
+            padding: 35px 0 20px;
             width: 100%;
             margin-top: auto;
         }
         
         .footer-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-bottom: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-bottom: 25px;
         }
         
         .site-footer h4 {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
             position: relative;
             padding-bottom: 10px;
         }
@@ -272,7 +280,7 @@
             position: absolute;
             left: 0;
             bottom: 0;
-            width: 50px;
+            width: 40px;
             height: 3px;
             background: #0ea5a5;
         }
@@ -282,7 +290,8 @@
             text-decoration: none;
             transition: all 0.3s ease;
             display: inline-block;
-            padding: 5px 0;
+            padding: 4px 0;
+            font-size: 0.9rem;
         }
         
         .site-footer a:hover {
@@ -290,21 +299,30 @@
             transform: translateX(5px);
         }
         
+        .site-footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .site-footer ul li {
+            padding: 2px 0;
+        }
+        
         .copyright {
             text-align: center;
             padding-top: 20px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             opacity: 0.8;
         }
         
-        /* WhatsApp Float - Updated to match index.html */
+        /* WhatsApp Float */
         .whatsapp-float {
             position: fixed;
-            width: 70px;
-            height: 70px;
-            bottom: 40px;
-            right: 40px;
+            width: 55px;
+            height: 55px;
+            bottom: 25px;
+            right: 25px;
             border-radius: 50%;
             background: linear-gradient(135deg, #25D366, #128C7E);
             box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
@@ -327,47 +345,61 @@
             box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
         }
         
-        .whatsapp-icon {
-            font-size: 36px;
-            color: white;
+        .whatsapp-float img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
         }
         
-        /* Responsive styles */
+        /* Responsive */
         @media (max-width: 768px) {
-            .nav {
-                flex-direction: column;
-                text-align: center;
-                gap: 20px;
+            .site-header {
+                padding: 6px 0;
             }
             
-            .site-header nav {
-                width: 100%;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 10px;
+            .brand {
+                font-size: 15px;
+                gap: 4px;
+            }
+            
+            .logo {
+                width: 26px;
+                height: 26px;
+                padding: 3px;
+            }
+            
+            .logo-icon {
+                font-size: 13px;
             }
             
             .site-header nav a {
-                margin: 5px;
-                padding: 8px 15px;
-                background: rgba(255, 255, 255, 0.1);
-                border-radius: 8px;
+                font-size: 0.6rem;
+                padding: 3px 5px;
+                background: rgba(255, 255, 255, 0.12);
+            }
+            
+            .nav {
+                gap: 3px;
             }
             
             .error-section {
-                padding: 60px 0;
+                padding: 40px 0;
             }
             
             .error-content {
-                padding: 40px 25px;
+                padding: 30px 20px;
+            }
+            
+            .error-icon {
+                font-size: 3.5rem;
             }
             
             .error-title {
-                font-size: 2.2rem;
+                font-size: 1.6rem;
             }
             
             .error-message {
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
             
             .link-grid {
@@ -375,43 +407,63 @@
             }
             
             .whatsapp-float {
-                width: 60px;
-                height: 60px;
-                bottom: 20px;
-                right: 20px;
+                width: 48px;
+                height: 48px;
+                bottom: 15px;
+                right: 15px;
             }
             
-            .whatsapp-icon {
-                font-size: 30px;
+            .whatsapp-float img {
+                width: 38px;
+                height: 38px;
             }
             
             .footer-grid {
-                grid-template-columns: 1fr;
-                gap: 25px;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
             }
         }
         
         @media (max-width: 480px) {
             .brand {
-                font-size: 20px;
+                font-size: 13px;
+            }
+            
+            .site-header nav a {
+                font-size: 0.55rem;
+                padding: 2px 4px;
             }
             
             .error-icon {
-                font-size: 4rem;
+                font-size: 3rem;
             }
             
             .error-title {
-                font-size: 1.8rem;
+                font-size: 1.4rem;
             }
             
             .link-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+            
+            .link-item {
+                padding: 10px;
+            }
+            
+            .link-item a {
+                font-size: 0.85rem;
+            }
+            
+            .footer-grid {
                 grid-template-columns: 1fr;
+                gap: 15px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Updated Header from index.html -->
+    <!-- Updated Header - compact mobile friendly -->
     <header class="site-header">
         <div class="container nav">
             <a class="brand" href="index">
@@ -467,7 +519,7 @@
         </div>
     </section>
 
-    <!-- Updated Footer to match index.html -->
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
@@ -508,16 +560,14 @@
         <img src="https://www.romanulislam.com/assets/images/whatsapp.gif" alt="WhatsApp" width="60" height="60" loading="lazy">
     </a>
 
-      </script>
-            <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-S8DEQ62FVN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-S8DEQ62FVN');
-</script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S8DEQ62FVN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-S8DEQ62FVN');
+    </script>
     
-    </a>
 </body>
 </html>
