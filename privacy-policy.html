@@ -34,7 +34,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   
-  <!-- Inline critical CSS -->
   <style>
     * {
       margin: 0;
@@ -56,11 +55,11 @@
       padding: 0 20px;
     }
     
-    /* Header Styles with Logo */
+    /* Header - compact mobile friendly */
     .site-header {
       background: linear-gradient(135deg, #0ea5a5 0%, #0c7a7a 100%);
       color: white;
-      padding: 15px 0;
+      padding: 8px 0;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
       position: sticky;
       top: 0;
@@ -71,47 +70,54 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 4px;
     }
     
     .brand {
-      font-size: 24px;
+      font-size: 18px;
       font-weight: 700;
       color: white;
       text-decoration: none;
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 6px;
     }
     
     .logo {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 42px;
-      height: 42px;
+      width: 32px;
+      height: 32px;
       background: white;
       border-radius: 50%;
-      padding: 8px;
+      padding: 5px;
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+      flex-shrink: 0;
     }
     
     .logo-icon {
-      font-size: 22px;
+      font-size: 16px;
       color: #0c7a7a;
     }
     
     .site-header nav {
       display: flex;
+      flex-wrap: wrap;
+      gap: 2px;
     }
     
     .site-header nav a {
       color: white;
       text-decoration: none;
-      margin-left: 25px;
       font-weight: 500;
       transition: all 0.3s ease;
-      padding: 8px 12px;
+      padding: 4px 8px;
       border-radius: 6px;
+      font-size: 0.75rem;
+      background: rgba(255, 255, 255, 0.1);
+      white-space: nowrap;
     }
     
     .site-header nav a:hover {
@@ -124,7 +130,7 @@
     .hero {
       background: linear-gradient(135deg, rgba(14, 165, 165, 0.95), rgba(12, 122, 122, 0.97));
       color: white;
-      padding: 60px 0;
+      padding: 35px 0;
       text-align: center;
       position: relative;
       overflow: hidden;
@@ -144,15 +150,15 @@
     }
     
     .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 15px;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
       line-height: 1.2;
       position: relative;
       z-index: 2;
     }
     
     .hero p {
-      font-size: 1.2rem;
+      font-size: 1rem;
       max-width: 700px;
       margin: 0 auto;
       opacity: 0.95;
@@ -162,8 +168,8 @@
     
     /* Breadcrumb */
     .breadcrumb {
-      padding: 20px 0;
-      font-size: 0.95rem;
+      padding: 12px 0;
+      font-size: 0.85rem;
       color: #64748b;
     }
     
@@ -180,31 +186,31 @@
     
     /* Content Section */
     .content-section {
-      padding: 60px 0;
+      padding: 35px 0;
     }
     
     .section-title {
       text-align: center;
       color: #0c7a7a;
-      margin-bottom: 40px;
-      font-size: 2.2rem;
+      margin-bottom: 30px;
+      font-size: 1.6rem;
       position: relative;
     }
     
     .section-title:after {
       content: '';
       display: block;
-      width: 100px;
-      height: 5px;
+      width: 60px;
+      height: 3px;
       background: linear-gradient(to right, #0ea5a5, #ff7043);
-      margin: 15px auto;
+      margin: 12px auto;
       border-radius: 5px;
     }
     
     /* Privacy Content */
     .privacy-content {
       background: white;
-      padding: 50px;
+      padding: 30px 25px;
       border-radius: 16px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
       max-width: 900px;
@@ -214,42 +220,43 @@
     
     .privacy-content h1 {
       color: #0c7a7a;
-      margin-bottom: 30px;
-      font-size: 2.5rem;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
       text-align: center;
-      padding-bottom: 20px;
+      padding-bottom: 15px;
       border-bottom: 3px solid #e6f7f7;
     }
     
     .privacy-content h2 {
       color: #0c7a7a;
-      margin: 40px 0 20px;
-      font-size: 1.6rem;
-      padding-left: 20px;
+      margin: 30px 0 15px;
+      font-size: 1.3rem;
+      padding-left: 15px;
       border-left: 4px solid #0ea5a5;
     }
     
     .privacy-content h3 {
       color: #1e293b;
-      margin: 30px 0 15px;
-      font-size: 1.3rem;
-    }
-    
-    .privacy-content p {
-      margin-bottom: 25px;
-      color: #475569;
-      line-height: 1.8;
+      margin: 20px 0 12px;
       font-size: 1.1rem;
     }
     
+    .privacy-content p {
+      margin-bottom: 18px;
+      color: #475569;
+      line-height: 1.8;
+      font-size: 0.95rem;
+    }
+    
     .privacy-content ul, .privacy-content ol {
-      margin: 20px 0 25px 30px;
+      margin: 15px 0 20px 25px;
       color: #475569;
     }
     
     .privacy-content li {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       line-height: 1.7;
+      font-size: 0.95rem;
     }
     
     .privacy-content strong {
@@ -261,26 +268,32 @@
     .info-box {
       background: #f8fdfd;
       border-radius: 12px;
-      padding: 30px;
-      margin: 30px 0;
+      padding: 20px;
+      margin: 20px 0;
       border: 2px solid #e6f7f7;
       border-left: 6px solid #0ea5a5;
     }
     
     .info-box h3 {
       color: #0c7a7a;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
+      font-size: 1.1rem;
+    }
+    
+    .info-box p {
+      font-size: 0.95rem;
+      margin-bottom: 0;
     }
     
     .security-box {
       background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
       border: 2px solid #4caf50;
       border-radius: 12px;
-      padding: 30px;
-      margin: 40px 0;
+      padding: 20px;
+      margin: 25px 0;
       position: relative;
       overflow: hidden;
     }
@@ -297,18 +310,32 @@
     
     .security-box h3 {
       color: #2e7d32;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
+      font-size: 1.1rem;
+    }
+    
+    .security-box p {
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+    
+    .security-box ul {
+      margin: 10px 0 0 20px;
+    }
+    
+    .security-box li {
+      font-size: 0.9rem;
     }
     
     .note-box {
       background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
       border: 2px solid #2196f3;
       border-radius: 12px;
-      padding: 30px;
-      margin: 40px 0;
+      padding: 20px;
+      margin: 25px 0;
       position: relative;
       overflow: hidden;
     }
@@ -325,17 +352,23 @@
     
     .note-box h3 {
       color: #0d47a1;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
+      font-size: 1.1rem;
+    }
+    
+    .note-box p {
+      font-size: 0.95rem;
+      margin-bottom: 0;
     }
     
     .update-box {
       background: #f5f5f5;
       border-radius: 12px;
-      padding: 25px;
-      margin-top: 40px;
+      padding: 18px;
+      margin-top: 30px;
       text-align: center;
       border-top: 3px solid #0ea5a5;
     }
@@ -343,23 +376,23 @@
     .update-box p {
       color: #666;
       margin-bottom: 0;
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
     
     /* Contact Info */
     .contact-info {
       background: linear-gradient(135deg, rgba(14, 165, 165, 0.1), rgba(12, 122, 122, 0.05));
       border-radius: 12px;
-      padding: 30px;
-      margin: 40px 0;
+      padding: 20px;
+      margin: 30px 0;
       text-align: center;
     }
     
     .contact-info p {
       color: #0c7a7a;
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: 600;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
     
     .contact-info a {
@@ -374,25 +407,25 @@
       text-decoration: underline;
     }
     
-    /* Footer Styles */
+    /* Footer */
     .site-footer {
       background: #0a5f5f;
       color: white;
-      padding: 60px 0 20px;
+      padding: 35px 0 15px;
     }
     
     .footer-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 40px;
-      margin-bottom: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+      margin-bottom: 25px;
     }
     
     .site-footer h4 {
-      font-size: 1.5rem;
-      margin-bottom: 25px;
+      font-size: 1.2rem;
+      margin-bottom: 18px;
       position: relative;
-      padding-bottom: 15px;
+      padding-bottom: 12px;
     }
     
     .site-footer h4:after {
@@ -400,7 +433,7 @@
       position: absolute;
       left: 0;
       bottom: 0;
-      width: 50px;
+      width: 40px;
       height: 3px;
       background: #0ea5a5;
     }
@@ -410,7 +443,8 @@
       text-decoration: none;
       transition: all 0.3s ease;
       display: inline-block;
-      padding: 5px 0;
+      padding: 4px 0;
+      font-size: 0.9rem;
     }
     
     .site-footer a:hover {
@@ -418,21 +452,30 @@
       transform: translateX(5px);
     }
     
+    .site-footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .site-footer ul li {
+      padding: 2px 0;
+    }
+    
     .copyright {
       text-align: center;
-      padding-top: 30px;
+      padding-top: 20px;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       opacity: 0.8;
     }
     
     /* WhatsApp Float */
     .whatsapp-float {
       position: fixed;
-      width: 70px;
-      height: 70px;
-      bottom: 40px;
-      right: 40px;
+      width: 55px;
+      height: 55px;
+      bottom: 25px;
+      right: 25px;
       border-radius: 50%;
       background: linear-gradient(135deg, #25D366, #128C7E);
       box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
@@ -455,9 +498,10 @@
       box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
     }
     
-    .whatsapp-icon {
-      font-size: 36px;
-      color: white;
+    .whatsapp-float img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
     }
     
     /* Skip link for accessibility */
@@ -481,107 +525,144 @@
       border-radius: 5px;
     }
     
-    /* Responsive styles */
-    @media (max-width: 992px) {
-      .hero h1 {
-        font-size: 2.5rem;
-      }
-      
-      .section-title {
-        font-size: 2rem;
-      }
-      
-      .privacy-content h1 {
-        font-size: 2.2rem;
-      }
-    }
-    
+    /* Responsive */
     @media (max-width: 768px) {
-      .nav {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
+      .site-header {
+        padding: 6px 0;
       }
       
-      .site-header nav {
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
+      .brand {
+        font-size: 15px;
+        gap: 4px;
+      }
+      
+      .logo {
+        width: 26px;
+        height: 26px;
+        padding: 3px;
+      }
+      
+      .logo-icon {
+        font-size: 13px;
       }
       
       .site-header nav a {
-        margin: 5px;
-        padding: 8px 15px;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 8px;
+        font-size: 0.6rem;
+        padding: 3px 5px;
+        background: rgba(255, 255, 255, 0.12);
+      }
+      
+      .nav {
+        gap: 3px;
       }
       
       .hero {
-        padding: 40px 0;
+        padding: 25px 0;
       }
       
       .hero h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
       
       .hero p {
-        font-size: 1rem;
+        font-size: 0.9rem;
       }
       
       .privacy-content {
-        padding: 30px 20px;
+        padding: 20px 15px;
       }
       
       .privacy-content h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
       }
       
       .privacy-content h2 {
-        font-size: 1.4rem;
+        font-size: 1.15rem;
+        padding-left: 12px;
+      }
+      
+      .privacy-content p {
+        font-size: 0.9rem;
+      }
+      
+      .privacy-content li {
+        font-size: 0.9rem;
+      }
+      
+      .info-box, .security-box, .note-box {
+        padding: 15px;
       }
       
       .whatsapp-float {
-        width: 60px;
-        height: 60px;
-        bottom: 20px;
-        right: 20px;
+        width: 48px;
+        height: 48px;
+        bottom: 15px;
+        right: 15px;
       }
       
-      .whatsapp-icon {
-        font-size: 30px;
+      .whatsapp-float img {
+        width: 38px;
+        height: 38px;
+      }
+      
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
       }
     }
     
     @media (max-width: 480px) {
+      .brand {
+        font-size: 13px;
+      }
+      
+      .site-header nav a {
+        font-size: 0.55rem;
+        padding: 2px 4px;
+      }
+      
       .hero h1 {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
+      }
+      
+      .hero p {
+        font-size: 0.85rem;
       }
       
       .privacy-content {
-        padding: 25px 15px;
+        padding: 15px 12px;
+        border-left-width: 4px;
       }
       
       .privacy-content h1 {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
+        padding-bottom: 10px;
       }
       
       .privacy-content h2 {
-        font-size: 1.2rem;
+        font-size: 1.05rem;
+        padding-left: 10px;
+      }
+      
+      .privacy-content ul, .privacy-content ol {
+        margin: 10px 0 15px 18px;
+      }
+      
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+      
+      .contact-info {
+        padding: 15px;
       }
     }
   </style>
-  
-  <!-- Defer non-critical CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-  </noscript>
 </head>
 <body>
 <div class="skip"><a href="#main">Skip to content</a></div>
 
-<!-- Header (Same as index.html) -->
+<!-- Header - compact mobile friendly -->
 <header class="site-header">
   <div class="container nav">
     <a class="brand" href="https://www.romanulislam.com/index">
@@ -746,7 +827,7 @@
 
 </main>
 
-<!-- Footer (Same as index.html) -->
+<!-- Footer -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -782,45 +863,10 @@
   </div>
 </footer>
 
-    <!-- WhatsApp Floating Button -->
-    <a class="whatsapp-float" href="https://wa.me/8801826589958?text=স্যার, আমি একটি অ্যাপয়ন্টমেন্ট বুক করতে চাই" target="_blank" aria-label="WhatsApp Chat">
-        <img src="https://www.romanulislam.com/assets/images/whatsapp.gif" alt="WhatsApp" width="60" height="60" loading="lazy">
-    </a>
-
-<script>
-  // Set current year for copyright
-  document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('year').textContent = new Date().getFullYear();
-    
-    // Load AOS animation library asynchronously
-    function loadAOS() {
-      if (typeof AOS !== 'undefined') {
-        AOS.init({
-          duration: 800,
-          easing: 'ease-in-out',
-          once: true,
-          offset: 100
-        });
-      }
-    }
-    
-    if (window.requestIdleCallback) {
-      window.requestIdleCallback(function() {
-        var script = document.createElement('script');
-        script.src = 'https://unpkg.com/aos@2.3.4/dist/aos.js';
-        script.onload = loadAOS;
-        document.body.appendChild(script);
-      });
-    } else {
-      setTimeout(function() {
-        var script = document.createElement('script');
-        script.src = 'https://unpkg.com/aos@2.3.4/dist/aos.js';
-        script.onload = loadAOS;
-        document.body.appendChild(script);
-      }, 1000);
-    }
-  });
-</script>
+<!-- WhatsApp Floating Button -->
+<a class="whatsapp-float" href="https://wa.me/8801826589958?text=স্যার, আমি একটি অ্যাপয়ন্টমেন্ট বুক করতে চাই" target="_blank" aria-label="WhatsApp Chat">
+  <img src="https://www.romanulislam.com/assets/images/whatsapp.gif" alt="WhatsApp" width="60" height="60" loading="lazy">
+</a>
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S8DEQ62FVN"></script>
