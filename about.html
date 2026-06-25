@@ -50,11 +50,11 @@
             padding: 0 20px;
         }
         
-        /* Header from index.html */
+        /* Header - optimized for mobile */
         .site-header {
             background: linear-gradient(135deg, #0ea5a5 0%, #0c7a7a 100%);
             color: white;
-            padding: 15px 0;
+            padding: 8px 0;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
@@ -65,47 +65,54 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            gap: 4px;
         }
         
         .brand {
-            font-size: 24px;
+            font-size: 18px;
             font-weight: 700;
             color: white;
             text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 6px;
         }
         
         .logo {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 42px;
-            height: 42px;
+            width: 32px;
+            height: 32px;
             background: white;
             border-radius: 50%;
-            padding: 8px;
+            padding: 5px;
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+            flex-shrink: 0;
         }
         
         .logo-icon {
-            font-size: 22px;
+            font-size: 16px;
             color: #0c7a7a;
         }
         
         .site-header nav {
             display: flex;
+            flex-wrap: wrap;
+            gap: 2px;
         }
         
         .site-header nav a {
             color: white;
             text-decoration: none;
-            margin-left: 25px;
             font-weight: 500;
             transition: all 0.3s ease;
-            padding: 8px 12px;
+            padding: 4px 8px;
             border-radius: 6px;
+            font-size: 0.75rem;
+            background: rgba(255, 255, 255, 0.1);
+            white-space: nowrap;
         }
         
         .site-header nav a:hover {
@@ -114,11 +121,11 @@
             transform: translateY(-2px);
         }
         
-        /* Hero Section from index.html */
+        /* Hero Section */
         .hero {
             background: linear-gradient(135deg, rgba(14, 165, 165, 0.95), rgba(12, 122, 122, 0.97));
             color: white;
-            padding: 80px 0;
+            padding: 40px 0;
             position: relative;
             overflow: hidden;
         }
@@ -137,66 +144,58 @@
         }
         
         .hero-content {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
             position: relative;
             z-index: 2;
+            text-align: center;
         }
         
         .hero-title {
-            font-size: 3.2rem;
-            margin-bottom: 20px;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
             line-height: 1.2;
         }
         
-        .hero-title .highlight {
-            color: #ffd166;
-            position: relative;
-            display: inline-block;
-        }
-        
         .hero-tagline {
-            font-size: 1.4rem;
-            margin-bottom: 30px;
+            font-size: 1.1rem;
+            margin-bottom: 0;
             opacity: 0.95;
             line-height: 1.5;
         }
         
-        /* About Doctor Section - Updated from index.html doctor-section */
+        /* About Doctor Section */
         .about-doctor-section {
-            padding: 80px 0;
+            padding: 50px 0;
             background: linear-gradient(135deg, #0ea5a5 0%, #0c7a7a 100%);
             color: white;
         }
         
         .doctor-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 50px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
             align-items: center;
         }
         
         .doctor-info h2 {
-            font-size: 2.5rem;
-            margin-bottom: 25px;
+            font-size: 2rem;
+            margin-bottom: 20px;
             line-height: 1.3;
         }
         
         .doctor-qualifications {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin: 30px 0;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
         }
         
         .qualification {
             background: rgba(255, 255, 255, 0.1);
-            padding: 15px;
+            padding: 12px;
             border-radius: 10px;
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.95rem;
         }
         
         .doctor-image {
@@ -207,33 +206,33 @@
             border: 8px solid rgba(255, 255, 255, 0.1);
         }
         
-        /* About Content Section */
+        /* Content Section */
         .content-section {
-            padding: 80px 0;
+            padding: 50px 0;
             background: white;
         }
         
         .section-title {
             text-align: center;
             color: #0c7a7a;
-            margin-bottom: 60px;
-            font-size: 2.5rem;
+            margin-bottom: 40px;
+            font-size: 2rem;
             position: relative;
         }
         
         .section-title:after {
             content: '';
             display: block;
-            width: 100px;
-            height: 5px;
+            width: 80px;
+            height: 4px;
             background: linear-gradient(to right, #0ea5a5, #ff7043);
-            margin: 20px auto;
+            margin: 15px auto;
             border-radius: 5px;
         }
         
         .about-content {
             background: white;
-            padding: 50px;
+            padding: 30px;
             border-radius: 16px;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
             max-width: 1000px;
@@ -242,24 +241,24 @@
         
         .about-content h1 {
             color: #0c7a7a;
-            margin-bottom: 30px;
-            font-size: 2rem;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
             text-align: center;
         }
         
         .about-content h2 {
             color: #0c7a7a;
-            margin: 35px 0 20px;
-            font-size: 1.8rem;
+            margin: 30px 0 15px;
+            font-size: 1.5rem;
             border-left: 6px solid #0ea5a5;
-            padding-left: 20px;
+            padding-left: 15px;
         }
         
         .about-content p {
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             color: #475569;
             line-height: 1.8;
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
         
         .about-content strong {
@@ -278,21 +277,31 @@
             text-decoration: underline;
         }
         
+        .about-content ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            color: #475569;
+        }
+        
+        .about-content ul li {
+            margin-bottom: 8px;
+        }
+        
         .mission-box {
             background: linear-gradient(135deg, #e6f7f7 0%, #d4f2f2 100%);
             border-radius: 16px;
-            padding: 35px;
-            margin: 40px 0;
+            padding: 25px;
+            margin: 30px 0;
             border-left: 6px solid #0ea5a5;
         }
         
         .mission-box h3 {
             color: #0c7a7a;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             display: flex;
             align-items: center;
-            gap: 15px;
-            font-size: 1.5rem;
+            gap: 12px;
+            font-size: 1.3rem;
         }
         
         .mission-box p {
@@ -304,43 +313,63 @@
             background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
             border: 2px solid #ffd54f;
             border-radius: 16px;
-            padding: 35px;
-            margin: 40px 0;
+            padding: 25px;
+            margin: 30px 0;
         }
         
         .disclaimer-box h3 {
             color: #ff8f00;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             display: flex;
             align-items: center;
-            gap: 15px;
-            font-size: 1.5rem;
+            gap: 12px;
+            font-size: 1.3rem;
         }
         
         .disclaimer-box p {
             color: #5d4037;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
         
-        /* Footer from index.html */
+        /* Breadcrumb */
+        .breadcrumb {
+            padding: 15px 0;
+            font-size: 0.9rem;
+            color: #64748b;
+            width: 100%;
+        }
+        
+        .breadcrumb a {
+            color: #0ea5a5;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .breadcrumb a:hover {
+            color: #0c7a7a;
+            text-decoration: underline;
+        }
+        
+        /* Footer */
         .site-footer {
             background: #0a5f5f;
             color: white;
-            padding: 60px 0 20px;
+            padding: 40px 0 20px;
         }
         
         .footer-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
         }
         
         .site-footer h4 {
-            font-size: 1.5rem;
-            margin-bottom: 25px;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
             position: relative;
-            padding-bottom: 15px;
+            padding-bottom: 12px;
         }
         
         .site-footer h4:after {
@@ -348,7 +377,7 @@
             position: absolute;
             left: 0;
             bottom: 0;
-            width: 50px;
+            width: 40px;
             height: 3px;
             background: #0ea5a5;
         }
@@ -358,7 +387,8 @@
             text-decoration: none;
             transition: all 0.3s ease;
             display: inline-block;
-            padding: 5px 0;
+            padding: 4px 0;
+            font-size: 0.9rem;
         }
         
         .site-footer a:hover {
@@ -366,21 +396,30 @@
             transform: translateX(5px);
         }
         
+        .site-footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .site-footer ul li {
+            padding: 2px 0;
+        }
+        
         .copyright {
             text-align: center;
-            padding-top: 30px;
+            padding-top: 25px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             opacity: 0.8;
         }
         
-        /* WhatsApp Float from index.html */
+        /* WhatsApp Float */
         .whatsapp-float {
             position: fixed;
-            width: 70px;
-            height: 70px;
-            bottom: 40px;
-            right: 40px;
+            width: 55px;
+            height: 55px;
+            bottom: 25px;
+            right: 25px;
             border-radius: 50%;
             background: linear-gradient(135deg, #25D366, #128C7E);
             box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
@@ -403,134 +442,154 @@
             box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
         }
         
-        .whatsapp-icon {
-            font-size: 36px;
-            color: white;
+        .whatsapp-float img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
         }
         
-        /* Breadcrumb */
-        .breadcrumb {
-            padding: 20px 0;
-            font-size: 1rem;
-            color: #64748b;
-            width: 100%;
-        }
-        
-        .breadcrumb a {
-            color: #0ea5a5;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-        
-        .breadcrumb a:hover {
-            color: #0c7a7a;
-            text-decoration: underline;
-        }
-        
-        /* Responsive styles */
-        @media (max-width: 992px) {
-            .hero-title {
-                font-size: 2.8rem;
-            }
-            
-            .section-title {
-                font-size: 2.2rem;
-            }
-            
-            .doctor-info h2 {
-                font-size: 2.2rem;
-            }
-        }
-        
+        /* Responsive */
         @media (max-width: 768px) {
-            .nav {
-                flex-direction: column;
-                text-align: center;
-                gap: 20px;
+            .site-header {
+                padding: 6px 0;
             }
             
-            .site-header nav {
-                width: 100%;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 10px;
+            .brand {
+                font-size: 15px;
+                gap: 4px;
+            }
+            
+            .logo {
+                width: 26px;
+                height: 26px;
+                padding: 3px;
+            }
+            
+            .logo-icon {
+                font-size: 13px;
             }
             
             .site-header nav a {
-                margin: 5px;
-                padding: 8px 15px;
-                background: rgba(255, 255, 255, 0.1);
-                border-radius: 8px;
+                font-size: 0.6rem;
+                padding: 3px 5px;
+                background: rgba(255, 255, 255, 0.12);
+            }
+            
+            .nav {
+                gap: 3px;
             }
             
             .hero {
-                padding: 60px 0;
+                padding: 30px 0;
             }
             
             .hero-title {
-                font-size: 2.2rem;
+                font-size: 1.8rem;
             }
             
             .hero-tagline {
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
             
             .section-title {
-                font-size: 1.8rem;
+                font-size: 1.6rem;
+                margin-bottom: 30px;
+            }
+            
+            .section-title:after {
+                width: 60px;
+                height: 3px;
+                margin: 10px auto;
             }
             
             .about-content {
-                padding: 30px 20px;
+                padding: 20px 15px;
             }
             
             .about-content h1 {
-                font-size: 1.8rem;
-            }
-            
-            .about-content h2 {
                 font-size: 1.5rem;
             }
             
-            .whatsapp-float {
-                width: 60px;
-                height: 60px;
-                bottom: 20px;
-                right: 20px;
+            .about-content h2 {
+                font-size: 1.3rem;
+                padding-left: 12px;
             }
             
-            .whatsapp-icon {
-                font-size: 30px;
+            .about-doctor-section {
+                padding: 35px 0;
+            }
+            
+            .doctor-info h2 {
+                font-size: 1.6rem;
+            }
+            
+            .doctor-qualifications {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .qualification {
+                font-size: 0.85rem;
+                padding: 10px;
+            }
+            
+            .doctor-content {
+                gap: 20px;
+            }
+            
+            .mission-box, .disclaimer-box {
+                padding: 20px;
+            }
+            
+            .mission-box h3, .disclaimer-box h3 {
+                font-size: 1.1rem;
+            }
+            
+            .whatsapp-float {
+                width: 48px;
+                height: 48px;
+                bottom: 15px;
+                right: 15px;
+            }
+            
+            .whatsapp-float img {
+                width: 38px;
+                height: 38px;
             }
             
             .footer-grid {
-                grid-template-columns: 1fr;
-                gap: 30px;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
             }
         }
         
         @media (max-width: 480px) {
             .brand {
-                font-size: 20px;
+                font-size: 13px;
+            }
+            
+            .site-header nav a {
+                font-size: 0.55rem;
+                padding: 2px 4px;
             }
             
             .hero-title {
-                font-size: 1.8rem;
+                font-size: 1.5rem;
             }
             
             .doctor-qualifications {
                 grid-template-columns: 1fr;
             }
             
-            .mission-box, .disclaimer-box {
-                padding: 25px;
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
             }
         }
     </style>
 </head>
 <body>
     
-    <!-- Updated Header from index.html -->
+    <!-- Updated Header - compact mobile friendly -->
     <header class="site-header">
         <div class="container nav">
             <a class="brand" href="https://www.romanulislam.com/index">
@@ -554,10 +613,8 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <div>
-                    <h1 class="hero-title">আমার সম্পর্কে</h1>
-                    <p class="hero-tagline">ডা. রোমানুল ইসলাম এবং টেলিমেডিসিন সেবা সম্পর্কে বিস্তারিত জানুন</p>
-                </div>
+                <h1 class="hero-title">আমার সম্পর্কে</h1>
+                <p class="hero-tagline">ডা. রোমানুল ইসলাম এবং টেলিমেডিসিন সেবা সম্পর্কে বিস্তারিত জানুন</p>
             </div>
         </div>
     </section>
@@ -569,7 +626,7 @@
         </div>
     </div>
 
-    <!-- About Doctor Section (from index.html) -->
+    <!-- About Doctor Section -->
     <section class="about-doctor-section">
         <div class="container">
             <div class="doctor-content">
@@ -614,12 +671,12 @@
                 <p>
                     আমাদের টেলিমেডিসিন সেবার মাধ্যমে আপনি ঘরে বসেই একজন লাইসেন্সপ্রাপ্ত ডাক্তারের পরামর্শ নিতে পারবেন। এই সেবার মাধ্যমে:
                 </p>
-                <ul style="margin-left: 20px; margin-bottom: 25px; color: #475569;">
-                    <li style="margin-bottom: 10px;">🚗 ভ্রমণের সময় ও খরচ বাঁচে</li>
-                    <li style="margin-bottom: 10px;">🏥 হাসপাতালের ভিড় এড়ানো যায়</li>
-                    <li style="margin-bottom: 10px;">⏱️ যেকোনো সময় পরামর্শ নেওয়া যায়</li>
-                    <li style="margin-bottom: 10px;">🔒 সম্পূর্ণ গোপনীয়তা বজায় থাকে</li>
-                    <li style="margin-bottom: 10px;">💊 সঠিক প্রেসক্রিপশন ও জীবনযাপনের পরামর্শ পাওয়া যায়</li>
+                <ul>
+                    <li>🚗 ভ্রমণের সময় ও খরচ বাঁচে</li>
+                    <li>🏥 হাসপাতালের ভিড় এড়ানো যায়</li>
+                    <li>⏱️ যেকোনো সময় পরামর্শ নেওয়া যায়</li>
+                    <li>🔒 সম্পূর্ণ গোপনীয়তা বজায় থাকে</li>
+                    <li>💊 সঠিক প্রেসক্রিপশন ও জীবনযাপনের পরামর্শ পাওয়া যায়</li>
                 </ul>
                 
                 <div class="disclaimer-box">
@@ -636,14 +693,14 @@
                 <p>
                     যেকোনো স্বাস্থ্য সমস্যার জন্য আপনি সরাসরি WhatsApp-এ যোগাযোগ করতে পারেন। আমি সাধারণত ৩০ মিনিটের মধ্যে আপনার বার্তার উত্তর দিয়ে থাকি। জরুরি ক্ষেত্রে সরাসরি ফোনে কল করতে পারেন।
                 </p>
-                <p style="text-align: center; margin-top: 40px; font-style: italic; color: #0c7a7a; font-size: 1.2rem;">
+                <p style="text-align: center; margin-top: 30px; font-style: italic; color: #0c7a7a; font-size: 1.1rem;">
                     আপনার সুস্বাস্থ্য কামনা করে - ডা. রোমানুল ইসলাম
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Updated Footer from index.html -->
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
@@ -684,16 +741,14 @@
         <img src="https://www.romanulislam.com/assets/images/whatsapp.gif" alt="WhatsApp" width="60" height="60" loading="lazy">
     </a>
 
-          </script>
-            <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-S8DEQ62FVN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-S8DEQ62FVN');
-</script>
-        
-    </a>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S8DEQ62FVN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-S8DEQ62FVN');
+    </script>
+    
 </body>
 </html>
