@@ -27,7 +27,7 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ডিসক্লেইমার | ডা. রোমানুল ইসলাম - স্বাস্থ্য বিষয়ক টিপস এবং আপডেট">
-    <meta name="twitter:description" content="romanulislam.com ওয়েবসাইটের স্বাস্থ্য বিষয়ক তথ্য শুধুমাত্র সাধারণ তথ্য ও শিক্ষামূলক উদ্দেশ্যে প্রকাশিত। এটি কোনো চিকিৎসা পরামর্শের বিকল্প নয়。">
+    <meta name="twitter:description" content="romanulislam.com ওয়েবসাইটের স্বাস্থ্য বিষয়ক তথ্য শুধুমাত্র সাধারণ তথ্য ও শিক্ষামূলক উদ্দেশ্যে প্রকাশিত। এটি কোনো চিকিৎসা পরামর্শের বিকল্প নয়।">
     
     <!-- Fonts from index.html -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,11 +57,11 @@
             padding: 0 20px;
         }
         
-        /* Updated Header from index.html */
+        /* Header - compact mobile friendly */
         .site-header {
             background: linear-gradient(135deg, #0ea5a5 0%, #0c7a7a 100%);
             color: white;
-            padding: 15px 0;
+            padding: 8px 0;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
@@ -72,47 +72,54 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            gap: 4px;
         }
         
         .brand {
-            font-size: 24px;
+            font-size: 18px;
             font-weight: 700;
             color: white;
             text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 6px;
         }
         
         .logo {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 42px;
-            height: 42px;
+            width: 32px;
+            height: 32px;
             background: white;
             border-radius: 50%;
-            padding: 8px;
+            padding: 5px;
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+            flex-shrink: 0;
         }
         
         .logo-icon {
-            font-size: 22px;
+            font-size: 16px;
             color: #0c7a7a;
         }
         
         .site-header nav {
             display: flex;
+            flex-wrap: wrap;
+            gap: 2px;
         }
         
         .site-header nav a {
             color: white;
             text-decoration: none;
-            margin-left: 25px;
             font-weight: 500;
             transition: all 0.3s ease;
-            padding: 8px 12px;
+            padding: 4px 8px;
             border-radius: 6px;
+            font-size: 0.75rem;
+            background: rgba(255, 255, 255, 0.1);
+            white-space: nowrap;
         }
         
         .site-header nav a:hover {
@@ -125,35 +132,35 @@
             background: linear-gradient(rgba(14, 165, 165, 0.8), rgba(14, 165, 165, 0.9)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect fill="%230ea5a5" width="100" height="100"/><path fill="%230c7a7a" d="M0 0L100 100M100 0L0 100" stroke-width="0.5"/></svg>');
             background-size: cover;
             color: white;
-            padding: 40px 0;
+            padding: 30px 0;
             text-align: center;
             width: 100%;
         }
         
         .hero h1 {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
             padding: 0 10px;
         }
         
         .hero p {
-            font-size: 1rem;
+            font-size: 0.95rem;
             max-width: 100%;
-            margin: 0 auto 20px;
+            margin: 0 auto;
             padding: 0 15px;
         }
         
         .content-section {
-            padding: 40px 0;
+            padding: 30px 0;
             width: 100%;
         }
         
         .section-title {
             text-align: center;
             color: #0c7a7a;
-            margin-bottom: 30px;
-            font-size: 1.8rem;
+            margin-bottom: 25px;
+            font-size: 1.5rem;
             position: relative;
             padding: 0 10px;
         }
@@ -161,16 +168,16 @@
         .section-title:after {
             content: '';
             display: block;
-            width: 60px;
-            height: 4px;
+            width: 50px;
+            height: 3px;
             background: #0ea5a5;
-            margin: 15px auto;
+            margin: 12px auto;
             border-radius: 2px;
         }
         
         .disclaimer-content {
             background: white;
-            padding: 40px;
+            padding: 25px 20px;
             border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
             max-width: 900px;
@@ -179,26 +186,26 @@
         
         .disclaimer-content h1 {
             color: #0c7a7a;
-            margin-bottom: 25px;
-            font-size: 2rem;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
             text-align: center;
             border-bottom: 2px solid #e0f7fa;
-            padding-bottom: 15px;
+            padding-bottom: 12px;
         }
         
         .disclaimer-content h2 {
             color: #0c7a7a;
-            margin: 30px 0 15px;
-            font-size: 1.5rem;
-            padding-left: 15px;
+            margin: 25px 0 12px;
+            font-size: 1.2rem;
+            padding-left: 12px;
             border-left: 4px solid #0ea5a5;
         }
         
         .disclaimer-content p {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             color: #444;
             line-height: 1.8;
-            font-size: 1.05rem;
+            font-size: 0.95rem;
         }
         
         .disclaimer-content strong {
@@ -209,39 +216,51 @@
             background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
             border: 2px solid #ff9800;
             border-radius: 10px;
-            padding: 25px;
-            margin: 30px 0;
+            padding: 18px 16px;
+            margin: 20px 0;
         }
         
         .warning-box h3 {
             color: #e65100;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
+            font-size: 1.1rem;
+        }
+        
+        .warning-box p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
         }
         
         .important-box {
             background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
             border: 2px solid #4caf50;
             border-radius: 10px;
-            padding: 25px;
-            margin: 30px 0;
+            padding: 18px 16px;
+            margin: 20px 0;
         }
         
         .important-box h3 {
             color: #2e7d32;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
+            font-size: 1.1rem;
+        }
+        
+        .important-box p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
         }
         
         .disclaimer-note {
             background: #f5f5f5;
             border-radius: 8px;
-            padding: 20px;
-            margin-top: 30px;
+            padding: 16px;
+            margin-top: 25px;
             text-align: center;
             border-top: 3px solid #0ea5a5;
         }
@@ -250,27 +269,48 @@
             color: #666;
             margin-bottom: 0;
             font-style: italic;
+            font-size: 0.9rem;
         }
         
+        /* Breadcrumb */
+        .breadcrumb {
+            padding: 12px 0;
+            font-size: 0.85rem;
+            color: #444;
+            width: 100%;
+        }
+        
+        .breadcrumb a {
+            color: #0a5c5c;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+            color: #083a3a;
+        }
+        
+        /* Footer */
         footer {
             background: #0a5f5f;
             color: white;
-            padding: 60px 0 20px;
+            padding: 35px 0 15px;
             width: 100%;
         }
         
         .footer-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-bottom: 25px;
         }
         
         .site-footer h4 {
-            font-size: 1.5rem;
-            margin-bottom: 25px;
+            font-size: 1.2rem;
+            margin-bottom: 18px;
             position: relative;
-            padding-bottom: 15px;
+            padding-bottom: 12px;
         }
         
         .site-footer h4:after {
@@ -278,14 +318,14 @@
             position: absolute;
             left: 0;
             bottom: 0;
-            width: 50px;
+            width: 40px;
             height: 3px;
             background: #0ea5a5;
         }
         
         .site-footer p, .site-footer li {
-            margin-bottom: 8px;
-            font-size: 15px;
+            margin-bottom: 6px;
+            font-size: 0.9rem;
         }
         
         .site-footer a {
@@ -293,7 +333,7 @@
             text-decoration: none;
             transition: all 0.3s ease;
             display: inline-block;
-            padding: 5px 0;
+            padding: 4px 0;
         }
         
         .site-footer a:hover {
@@ -301,21 +341,30 @@
             transform: translateX(5px);
         }
         
+        .site-footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .site-footer ul li {
+            padding: 2px 0;
+        }
+        
         .copyright {
             text-align: center;
-            padding-top: 30px;
+            padding-top: 20px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             opacity: 0.8;
         }
         
-        /* WhatsApp Floating Button - Updated from index.html */
+        /* WhatsApp Float */
         .whatsapp-float {
             position: fixed;
-            width: 70px;
-            height: 70px;
-            bottom: 40px;
-            right: 40px;
+            width: 55px;
+            height: 55px;
+            bottom: 25px;
+            right: 25px;
             border-radius: 50%;
             background: linear-gradient(135deg, #25D366, #128C7E);
             box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
@@ -338,146 +387,146 @@
             box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
         }
         
-        .whatsapp-icon {
-            font-size: 36px;
-            color: white;
+        .whatsapp-float img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
         }
         
-        /* Breadcrumb */
-        .breadcrumb {
-            padding: 15px 0;
-            font-size: 0.9rem;
-            color: #444;
-            width: 100%;
-        }
-        
-        .breadcrumb a {
-            color: #0a5c5c;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        .breadcrumb a:hover, .breadcrumb a:focus {
-            text-decoration: underline;
-            color: #083a3a;
-        }
-        
-        /* Responsive styles */
+        /* Responsive */
         @media (max-width: 768px) {
-            .nav {
-                flex-direction: column;
-                text-align: center;
-                gap: 20px;
+            .site-header {
+                padding: 6px 0;
             }
             
-            .site-header nav {
-                width: 100%;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 10px;
+            .brand {
+                font-size: 15px;
+                gap: 4px;
+            }
+            
+            .logo {
+                width: 26px;
+                height: 26px;
+                padding: 3px;
+            }
+            
+            .logo-icon {
+                font-size: 13px;
             }
             
             .site-header nav a {
-                margin: 5px;
-                padding: 8px 15px;
-                background: rgba(255, 255, 255, 0.1);
-                border-radius: 8px;
+                font-size: 0.6rem;
+                padding: 3px 5px;
+                background: rgba(255, 255, 255, 0.12);
+            }
+            
+            .nav {
+                gap: 3px;
             }
             
             .hero {
-                padding: 40px 0;
+                padding: 25px 0;
             }
             
             .hero h1 {
-                font-size: 1.5rem;
-            }
-            
-            .hero p {
-                font-size: 1rem;
-            }
-            
-            .content-section {
-                padding: 30px 0;
-            }
-            
-            .section-title {
-                font-size: 1.5rem;
-            }
-            
-            .disclaimer-content {
-                padding: 25px 20px;
-            }
-            
-            .disclaimer-content h1 {
-                font-size: 1.8rem;
-            }
-            
-            .disclaimer-content h2 {
                 font-size: 1.3rem;
             }
             
-            .whatsapp-float {
-                width: 60px;
-                height: 60px;
-                bottom: 20px;
-                right: 20px;
+            .hero p {
+                font-size: 0.85rem;
             }
             
-            .whatsapp-icon {
-                font-size: 30px;
+            .content-section {
+                padding: 25px 0;
+            }
+            
+            .section-title {
+                font-size: 1.3rem;
+            }
+            
+            .disclaimer-content {
+                padding: 20px 15px;
+            }
+            
+            .disclaimer-content h1 {
+                font-size: 1.4rem;
+            }
+            
+            .disclaimer-content h2 {
+                font-size: 1.1rem;
+                padding-left: 10px;
+            }
+            
+            .disclaimer-content p {
+                font-size: 0.9rem;
+            }
+            
+            .warning-box, .important-box {
+                padding: 14px 12px;
+                margin: 15px 0;
+            }
+            
+            .warning-box h3, .important-box h3 {
+                font-size: 1rem;
+            }
+            
+            .whatsapp-float {
+                width: 48px;
+                height: 48px;
+                bottom: 15px;
+                right: 15px;
+            }
+            
+            .whatsapp-float img {
+                width: 38px;
+                height: 38px;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
             }
         }
         
         @media (max-width: 480px) {
             .brand {
-                font-size: 20px;
+                font-size: 13px;
             }
             
-            .logo {
-                width: 36px;
-                height: 36px;
-            }
-            
-            .logo-icon {
-                font-size: 18px;
+            .site-header nav a {
+                font-size: 0.55rem;
+                padding: 2px 4px;
             }
             
             .hero h1 {
-                font-size: 1.3rem;
-            }
-        }
-        
-        @media (min-width: 768px) {
-            .hero {
-                padding: 60px 0;
-            }
-            
-            .hero h1 {
-                font-size: 2.5rem;
+                font-size: 1.1rem;
             }
             
             .hero p {
+                font-size: 0.8rem;
+            }
+            
+            .disclaimer-content {
+                padding: 15px 12px;
+            }
+            
+            .disclaimer-content h1 {
                 font-size: 1.2rem;
-                max-width: 800px;
             }
             
-            .content-section {
-                padding: 60px 0;
-            }
-            
-            .section-title {
-                font-size: 2.2rem;
+            .disclaimer-content h2 {
+                font-size: 1rem;
             }
             
             .footer-grid {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 30px;
+                grid-template-columns: 1fr;
+                gap: 15px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Updated Header from index.html -->
+    <!-- Header - compact mobile friendly -->
     <header class="site-header">
         <div class="container nav">
             <a class="brand" href="https://www.romanulislam.com/index">
@@ -578,7 +627,7 @@
         </div>
     </section>
 
-    <!-- Footer - Updated to match index.html style -->
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
@@ -620,14 +669,14 @@
         <img src="https://www.romanulislam.com/assets/images/whatsapp.gif" alt="WhatsApp" width="60" height="60" loading="lazy">
     </a>
 
-                <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-S8DEQ62FVN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-S8DEQ62FVN');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S8DEQ62FVN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-S8DEQ62FVN');
+    </script>
     
 </body>
 </html>
