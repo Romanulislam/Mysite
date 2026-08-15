@@ -873,7 +873,7 @@ src="https://www.facebook.com/tr?id=2313434906139548&ev=PageView&noscript=1"
    class="cta-button"
    target="_blank"
    rel="noopener"
-   onclick="fbq('track', 'Contact');">
+   onclick="trackWhatsAppClick(this.href); return false;">
     WhatsApp-এ ৳৩০০ কনসালটেশন শুরু করুন
 </a>
 
@@ -1187,7 +1187,7 @@ src="https://www.facebook.com/tr?id=2313434906139548&ev=PageView&noscript=1"
                   class="cta-button"
                    target="_blank"
                    rel="noopener"
-                   onclick="fbq('track', 'Contact');">
+                   onclick="trackWhatsAppClick(this.href); return false;">
                      WhatsApp-এ ৳৩০০ কনসালটেশন শুরু করুন
                 </a>
                 </div>
@@ -1414,7 +1414,7 @@ src="https://www.facebook.com/tr?id=2313434906139548&ev=PageView&noscript=1"
    href="https://wa.me/8801826589958?text=অনলাইন%20ডাক্তার%20পরামর্শ%20নিতে%20চাই"
    target="_blank"
    aria-label="WhatsApp Chat"
-   onclick="fbq('track', 'Contact');">
+   onclick="trackWhatsAppClick(this.href); return false;">
     <img src="https://www.romanulislam.com/assets/images/whatsapp.gif" alt="WhatsApp" width="60" height="60" loading="lazy">
 </a>
 
@@ -1442,5 +1442,19 @@ src="https://www.facebook.com/tr?id=2313434906139548&ev=PageView&noscript=1"
         gtag('js', new Date());
         gtag('config', 'G-S8DEQ62FVN');
     </script>
+
+    <script>
+function trackWhatsAppClick(url) {
+    if (typeof fbq === 'function') {
+        fbq('track', 'Contact');
+    }
+
+    setTimeout(function () {
+        window.open(url, '_blank');
+    }, 200);
+}
+</script>
+
+    
 </body>
 </html>
