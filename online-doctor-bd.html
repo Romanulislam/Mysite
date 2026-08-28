@@ -1163,7 +1163,7 @@ src="https://www.facebook.com/tr?id=2313434906139548&ev=PageView&noscript=1"
         (function () {
             const p = new URLSearchParams(location.search);
             const c = p.get('utm_content');
-            const allowed = ['creative_01', 'creative_02', 'creative_3_paid_consultation'];
+            const allowed = ['1', '2', '3'];
             if (c && allowed.includes(c)) {
                 localStorage.setItem('ad_creative', c);
                 localStorage.setItem('ad_campaign', p.get('utm_campaign') || '');
