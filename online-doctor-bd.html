@@ -55,8 +55,8 @@ fbq('track','PageView');
   --teal:#075f57;
   --teal-dark:#064b45;
   --teal-soft:#eaf8f5;
-  --green:#087a4a;
-  --green-dark:#06643d;
+  --green:#05603f;
+  --green-dark:#044d33;
   --ink:#142421;
   --muted:#4d625e;
   --line:#d8e7e3;
@@ -184,7 +184,7 @@ footer{background:#103b36;color:#dceeea;padding:25px 0;font-size:13px}footer a{c
         <li>ক্লিনিক্যালি উপযুক্ত হলে প্রয়োজনীয় প্রেসক্রিপশন</li>
         <li>একই সমস্যার প্রয়োজনীয় follow-up বিনা অতিরিক্ত ফিতে</li>
       </ul>
-      <p style="color:var(--muted);font-size:13px;margin-bottom:0">ডা. মোহাম্মদ রোমানুল ইসলাম • MBBS • BMDC নিবন্ধন নং: ১২৯৪৩৮</p>
+      <p style="color:var(--muted);font-size:13px;margin-bottom:0">ডা. মোহাম্মদ রোমানুল ইসলাম • MBBS • FCPS PART 2 (MEDICINE) • MCGP • CMU • CCD • BMDC নিবন্ধন নং: ১২৯৪৩৮</p>
     </div>
   </div>
 </section>
@@ -234,57 +234,60 @@ footer{background:#103b36;color:#dceeea;padding:25px 0;font-size:13px}footer a{c
 
 <script>
 (function(){
-  const p=new URLSearchParams(location.search);
-  const allowed=['1','2','3'];
-  const c=p.get('utm_content');
-  if(allowed.includes(c)){
-    localStorage.setItem('ad_creative',c);
-    localStorage.setItem('ad_campaign',p.get('utm_campaign')||'');
-    localStorage.setItem('ad_source',p.get('utm_source')||'');
-    localStorage.setItem('ad_medium',p.get('utm_medium')||'');
-    localStorage.setItem('ad_landing_ts',String(Date.now()));
+  const p = new URLSearchParams(window.location.search);
+  const c = p.get('utm_content');
+  if (['1','2','3'].includes(c)) {
+    // First-touch ad attribution. Organic/direct visits never overwrite it.
+    localStorage.setItem('ad_creative', c);
+    localStorage.setItem('ad_campaign', p.get('utm_campaign') || '');
+    localStorage.setItem('ad_source', p.get('utm_source') || '');
+    localStorage.setItem('ad_medium', p.get('utm_medium') || '');
   }
 })();
 
 function getAttribution(){
-  const p=new URLSearchParams(location.search);
+  const p = new URLSearchParams(window.location.search);
   return {
-    creative:p.get('utm_content')||localStorage.getItem('ad_creative')||'organic',
-    campaign:p.get('utm_campaign')||localStorage.getItem('ad_campaign')||'',
-    source:p.get('utm_source')||localStorage.getItem('ad_source')||'',
-    medium:p.get('utm_medium')||localStorage.getItem('ad_medium')||''
+    creative: p.get('utm_content') || localStorage.getItem('ad_creative') || 'organic',
+    campaign: p.get('utm_campaign') || localStorage.getItem('ad_campaign') || '',
+    source: p.get('utm_source') || localStorage.getItem('ad_source') || '',
+    medium: p.get('utm_medium') || localStorage.getItem('ad_medium') || ''
   };
 }
 
-function trackWhatsAppClick(e,el){
-  if(e)e.preventDefault();
-  const a=getAttribution();
-  const ref=a.creative!=='organic' ? '\nRef: '+a.creative : '';
-  const msg='অনলাইন কনসালটেশন নিতে চাই।\nনাম: \nবয়স: \nসমস্যা: '+ref;
-  const url='https://wa.me/8801826589958?text='+encodeURIComponent(msg);
+function trackWhatsAppClick(e, el){
+  if (e) e.preventDefault();
+  const a = getAttribution();
+  const ref = a.creative !== 'organic' ? '\nRef: ' + a.creative : '';
+  const msg = 'অনলাইন কনসালটেশন নিতে চাই।\nনাম: \nবয়স: \nসমস্যা: ' + ref;
+  const url = 'https://wa.me/8801826589958?text=' + encodeURIComponent(msg);
 
-  // Open a blank tab immediately so browser popup blockers do not interfere.
-  const tab=window.open('about:blank','_blank');
+  // Open immediately so WhatsApp still opens reliably in a new tab.
+  const tab = window.open('about:blank', '_blank', 'noopener');
 
-  if(typeof fbq==='function'){
-    fbq('trackCustom','WhatsAppClick',{
-      creative:a.creative,
-      utm_campaign:a.campaign,
-      utm_source:a.source,
-      utm_medium:a.medium
+  if (typeof fbq === 'function') {
+    fbq('trackCustom', 'WhatsAppClick', {
+      creative: a.creative,
+      utm_campaign: a.campaign,
+      utm_source: a.source,
+      utm_medium: a.medium
     });
   }
 
-  if(typeof gtag==='function'){
-    gtag('event','whatsapp_click',{
-      creative:a.creative,
-      campaign:a.campaign,
-      source:a.source,
-      medium:a.medium
+  if (typeof gtag === 'function') {
+    gtag('event', 'whatsapp_click', {
+      creative: a.creative,
+      campaign: a.campaign,
+      source: a.source,
+      medium: a.medium
     });
   }
 
-  if(tab){tab.location.href=url;}else{window.location.href=url;}
+  if (tab) {
+    tab.location.href = url;
+  } else {
+    window.location.href = url;
+  }
   return false;
 }
 </script>
