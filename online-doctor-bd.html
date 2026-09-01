@@ -96,12 +96,47 @@ h2{font-size:clamp(24px,3vw,34px);line-height:1.25;margin:0 0 10px}.section-intr
 .fee{background:var(--teal-dark);color:#fff;border-radius:18px;padding:28px;text-align:center}.fee .amount{font-size:42px;font-weight:950;line-height:1}.fee p{margin:8px auto 18px;max-width:700px;opacity:.94}.fee .cta{background:#fff;color:var(--teal-dark);box-shadow:none}.fee .cta:hover{background:#f1fffb}
 .faq{max-width:820px;margin:auto}details{border:1px solid var(--line);border-radius:11px;margin:8px 0;background:#fff;overflow:hidden}summary{cursor:pointer;padding:14px 16px;font-weight:850}details p{padding:0 16px 15px;margin:0;color:var(--muted)}
 .final{padding:44px 0 68px;text-align:center}.final .box{background:#f0faf7;border:1px solid #cfe8e2;border-radius:17px;padding:28px 19px}.warning{font-size:13px;color:#684400;background:var(--gold-bg);border:1px solid #efd48e;border-radius:9px;padding:11px;margin-top:16px}
-footer{background:#103b36;color:#dceeea;padding:25px 0;font-size:13px}footer a{color:#fff}.float{position:fixed;right:16px;bottom:16px;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff;text-decoration:none;font-size:23px;box-shadow:0 9px 22px rgba(0,0,0,.18);z-index:20}.float:focus-visible{outline:3px solid #0b5fff;outline-offset:3px}
+footer{background:#103b36;color:#dceeea;padding:25px 0;font-size:13px}footer a{color:#fff}.float{
+  position:fixed;
+  right:16px;
+  bottom:16px;
+  min-height:54px;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  padding:8px 14px 8px 10px;
+  border-radius:999px;
+  background:var(--green);
+  color:#fff;
+  text-decoration:none;
+  box-shadow:0 9px 24px rgba(0,0,0,.20);
+  z-index:20;
+  font-size:13px;
+  line-height:1.25;
+  font-weight:700;
+  transition:transform .15s ease,background .15s ease;
+}
+.float:hover{background:var(--green-dark);transform:translateY(-2px)}
+.float:focus-visible{outline:3px solid #0b5fff;outline-offset:3px}
+.float-icon{
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:#fff;
+  color:var(--green);
+  font-size:20px;
+  flex:0 0 38px;
+}
+.float-text{white-space:nowrap}
+.float-text strong{font-size:14px}
+
 @media(max-width:800px){
   .hero-grid,.trust{grid-template-columns:1fr}.hero-copy{order:1}.doctor-card{order:2;max-width:390px;margin:20px auto 0}.benefits{grid-template-columns:1fr}.steps{grid-template-columns:1fr}
 }
 @media(max-width:560px){
-  .topbar{font-size:12px}.hero{padding-top:22px}.lead{font-size:16px}.problem-grid{grid-template-columns:1fr}.section{padding:38px 0}.cta{width:100%;font-size:16px}.now{font-size:33px}.doctor-card{padding:9px}.float{right:13px;bottom:13px}
+  .topbar{font-size:12px}.hero{padding-top:22px}.lead{font-size:16px}.problem-grid{grid-template-columns:1fr}.section{padding:38px 0}.cta{width:100%;font-size:16px}.now{font-size:33px}.doctor-card{padding:9px}.float{right:12px;bottom:12px;padding:7px 12px 7px 8px}.float-icon{width:36px;height:36px;flex-basis:36px}.float-text{font-size:12px}.float-text strong{font-size:13px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
@@ -121,7 +156,7 @@ footer{background:#103b36;color:#dceeea;padding:25px 0;font-size:13px}footer a{c
 
       <div class="filter"><strong>গুরুত্বপূর্ণ:</strong> শুধু ফ্রি পরামর্শের জন্য যোগাযোগ করবেন না। আপনি যদি সত্যিই কনসালটেশন নিতে প্রস্তুত থাকেন, WhatsApp-এ নাম, বয়স ও প্রধান সমস্যাটি লিখুন। সমস্যা উপযুক্ত হলে ৳৫০০ ফি দিয়ে কনসালটেশন শুরু হবে। একই সমস্যার প্রয়োজনীয় follow-up ফ্রি।</div>
 
-      <a class="cta" href="https://wa.me/8801826589958" target="_blank" rel="noopener" onclick="return trackWhatsAppClick(event,this)">WhatsApp-এ কনসালটেশন শুরু করুন</a>
+      <a class="cta" href="https://wa.me/8801826589958" onclick="return trackWhatsAppClick(event,this)">WhatsApp-এ কনসালটেশন শুরু করুন</a>
       <p class="cta-note">পেমেন্টের আগে আপনার সমস্যাটি অনলাইন কনসালটেশনের জন্য উপযুক্ত কি না দেখা হবে।</p>
     </div>
 
@@ -195,7 +230,7 @@ footer{background:#103b36;color:#dceeea;padding:25px 0;font-size:13px}footer a{c
       <div style="font-size:14px;opacity:.82;text-decoration:line-through">নিয়মিত ফি ৳৮০০</div>
       <div class="amount">৳৫০০</div>
       <p>বর্তমান অনলাইন কনসালটেশন ফি। আগে আপনার সমস্যা মূল্যায়ন করা হবে। উপযুক্ত হলে পেমেন্টের নির্দেশনা দেওয়া হবে। প্রয়োজনীয় follow-up ফ্রি।</p>
-      <a class="cta" href="https://wa.me/8801826589958" target="_blank" rel="noopener" onclick="return trackWhatsAppClick(event,this)">WhatsApp-এ শুরু করুন</a>
+      <a class="cta" href="https://wa.me/8801826589958" onclick="return trackWhatsAppClick(event,this)">WhatsApp-এ শুরু করুন</a>
     </div>
   </div>
 </section>
@@ -215,7 +250,7 @@ footer{background:#103b36;color:#dceeea;padding:25px 0;font-size:13px}footer a{c
     <div class="box">
       <h2>আপনি কি সত্যিই কনসালটেশন নিতে চান?</h2>
       <p style="color:var(--muted);max-width:650px;margin:8px auto 18px">শুধু ফ্রি পরামর্শের জন্য নয়। আপনার সমস্যা নিয়ে চিকিৎসকের সাথে কথা বলতে প্রস্তুত থাকলে WhatsApp-এ যোগাযোগ করুন।</p>
-      <a class="cta" href="https://wa.me/8801826589958" target="_blank" rel="noopener" onclick="return trackWhatsAppClick(event,this)">ডাক্তারের সাথে WhatsApp-এ কথা বলুন</a>
+      <a class="cta" href="https://wa.me/8801826589958" onclick="return trackWhatsAppClick(event,this)">ডাক্তারের সাথে WhatsApp-এ কথা বলুন</a>
       <div class="warning">জরুরি অবস্থা, তীব্র শ্বাসকষ্ট, তীব্র বুকে ব্যথা, গুরুতর রক্তপাত, অচেতনতা বা তাৎক্ষণিক শারীরিক চিকিৎসার প্রয়োজন হলে অনলাইন কনসালটেশনের বদলে জরুরি চিকিৎসা নিন।</div>
     </div>
   </div>
@@ -225,12 +260,17 @@ footer{background:#103b36;color:#dceeea;padding:25px 0;font-size:13px}footer a{c
 <footer>
   <div class="container">
     <strong>ডা. মোহাম্মদ রোমানুল ইসলাম</strong><br>
-    BMDC নিবন্ধন নং: ১২৯৪৩৮ • WhatsApp: <a href="https://wa.me/8801826589958" target="_blank" rel="noopener">+8801826589958</a>
+    BMDC নিবন্ধন নং: ১২৯৪৩৮ • WhatsApp: <a href="https://wa.me/8801826589958">+8801826589958</a>
     <div style="margin-top:7px">© ২০২৬ RomanulIslam.com • <a href="https://www.romanulislam.com/privacy-policy">গোপনীয়তা নীতি</a></div>
   </div>
 </footer>
 
-<a class="float" href="https://wa.me/8801826589958" target="_blank" rel="noopener" aria-label="WhatsApp-এ যোগাযোগ করুন" onclick="return trackWhatsAppClick(event,this)">WA</a>
+<a class="float" href="https://wa.me/8801826589958"
+   aria-label="WhatsApp-এ অনলাইন কনসালটেশন শুরু করুন"
+   onclick="return trackWhatsAppClick(event,this)">
+  <span class="float-icon" aria-hidden="true">☘</span>
+  <span class="float-text">WhatsApp-এ<br><strong>কনসালটেশন শুরু করুন</strong></span>
+</a>
 
 <script>
 (function(){
@@ -257,14 +297,13 @@ function getAttribution(){
 
 function trackWhatsAppClick(e, el){
   if (e) e.preventDefault();
+
   const a = getAttribution();
   const ref = a.creative !== 'organic' ? '\nRef: ' + a.creative : '';
   const msg = 'অনলাইন কনসালটেশন নিতে চাই।\nনাম: \nবয়স: \nসমস্যা: ' + ref;
   const url = 'https://wa.me/8801826589958?text=' + encodeURIComponent(msg);
 
-  // Open immediately so WhatsApp still opens reliably in a new tab.
-  const tab = window.open('about:blank', '_blank', 'noopener');
-
+  // Keep the existing Meta + GA tracking.
   if (typeof fbq === 'function') {
     fbq('trackCustom', 'WhatsAppClick', {
       creative: a.creative,
@@ -283,11 +322,8 @@ function trackWhatsAppClick(e, el){
     });
   }
 
-  if (tab) {
-    tab.location.href = url;
-  } else {
-    window.location.href = url;
-  }
+  // Open WhatsApp directly in the current tab. No popup and no blank tab.
+  window.location.href = url;
   return false;
 }
 </script>
